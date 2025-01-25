@@ -13,9 +13,17 @@ This toolbox is implemented in C++, built on top of ``pinocchio`` and ``ros2_con
 * **soem_ros2**\: Basic interface for robots using EtherCAT Bus.
 * **cleardrive_ros2**\: Hardware interface based on SOEM for robots using ClearDrive, such as the Berkeley Humanoid.
 
-As we build the toolbox with **ROS2 Humble**, for Ubuntu 22.04 users, you can directly build and run.
 
-For Ubuntu 18.04 and 20.04 users, you should use Docker.
+
+How to use the legged_control2?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+legged_control2 can be easily installed on Ubuntu. The `source code`_ is also publicly available.
+To get started with the legged_control2, please refer to the 
+:ref:`Installation started <doxid-legged_control2_doc_installation>`, and
+:ref:`Getting Started <doxid-legged_control2_doc_getting_started>` pages.
+
+.. _`source code`: https://github.com/qiayuanl/legged_control2
 
 
 |GitHub| Source code on GitHub: `qiayuanl/legged_control2 <https://github.com/qiayuanl/legged_control2>`_
