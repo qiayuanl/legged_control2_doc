@@ -1,5 +1,5 @@
 .. index:: pair: page; Sim-to-real
-.. _doxid-ocs2_doc_sim-to-real:
+.. _doxid-legged_control2_doc_sim-to-real:
 
 Sim-to-real
 ============

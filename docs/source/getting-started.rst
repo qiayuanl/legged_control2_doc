@@ -1,6 +1,6 @@
 .. index:: pair: page; Quick Start
 
-.. _doxid-ocs2_doc_getting_started:
+.. _doxid-legged_control2_doc_getting_started:
 
 Quick Start
 ===============
