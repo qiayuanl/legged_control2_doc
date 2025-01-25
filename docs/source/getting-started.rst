@@ -29,7 +29,7 @@ For Ubuntu 22.04 user, you can follow the **Quick Start** to try the **sim-to-si
     # Install the compile tool pkg
     sudo apt install ninja-build
 
-- Create a catkin workspace, and build it:
+- Create a colcon workspace, and build it:
 
   .. code-block:: bash
 
