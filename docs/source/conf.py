@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'legged_control2'
+copyright = '2025, Qiayuan Liao'
+author = 'Qiayuan Liao'
 
 release = '0.1'
 version = '0.1.0'
