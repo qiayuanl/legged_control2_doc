@@ -1,6 +1,6 @@
-.. index:: pair: page; Introduction
+.. index:: pair: page; Overview
 
-Introduction
+Overview
 ============
 
 **legged_control2** is a  C++ toolbox for legged robots. It provides basic state estimation and observer for debugging and analysis, and a unified hardware interface that facilitates the easy deployment of Reinforcement Learning (RL) policies on real-world robots.
