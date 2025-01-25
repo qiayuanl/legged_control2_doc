@@ -44,7 +44,7 @@ After Sim-to-sim, you can continue with the sim-to-real part.
 Run with Docker for Ubuntu 20.04, 18.04
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- Create a catkin workspace:
+- Create a colcon workspace:
 
   .. code-block:: bash
 

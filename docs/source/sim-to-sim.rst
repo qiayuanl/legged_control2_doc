@@ -33,7 +33,7 @@ Installation (for Ubuntu 22.04)
     # Install the compile tool pkg
     sudo apt install ninja-build
 
-- Create a catkin workspace, and build it:
+- Create a colcon workspace, and build it:
 
   .. code-block:: bash
 
@@ -78,7 +78,7 @@ Install Docker
 Run the sim2sim docker
 -----------------------
 
-- Create a catkin workspace, and build it:
+- Create a colcon workspace, and build it:
 
   .. code-block:: bash
 
