@@ -24,7 +24,7 @@ Installation
 ~~~~~~~~~~~~
 
 
-From Debian Source (recommended)
+Debian Source (recommended)
 --------------------------------
 
 For Ubuntu 22.04 user, you can directly install the legged_control2 from the apt source.
@@ -51,3 +51,41 @@ For Ubuntu 22.04 user, you can directly install the legged_control2 from the apt
     
         sudo apt install ros-humble-mujoco-ros2-control # For MuJoCo
         sudo apt install ros-humble-legged-gazebo # For Gazebo
+
+Docker
+------
+
+For Ubuntu 18.04 and 20.04 users, especially for Unitree on-board computer, you should use Docker.
+
+We have pre-built Docker images for different specific robots. You can pull the image from Docker Hub. For more details, please refer to the TODO.
+
+
+Build from Source
+------------------
+
+For Ubuntu 22.04 users, you can build from source.
+
+- Create a new colcon workspace:
+
+
+    .. code-block:: bash
+
+        mkdir -p ~/colcon_ws/src && cd ~/colcon_ws/src
+
+- Clone the source code:
+
+    .. code-block:: bash
+
+        git clone git@github.com:qiayuanl/legged_control2.git && cd ..
+        
+- Install dependencies:
+
+    .. code-block:: bash
+
+        rosdep install --from-paths src --ignore-src -r -y
+
+- Build the workspace:
+
+    .. code-block:: bash
+
+        colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=RelwithDebInfo --packages-up-to legged_control2
