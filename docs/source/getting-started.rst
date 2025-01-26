@@ -6,6 +6,8 @@ Getting Started
 ===============
 We provided two examples to help you get started with the Unitree Go1 sim-to-sim and sim-to-real.
 
+.. _doxid-legged_control2_doc_sim-to-sim:
+
 Running the Unitree Go1 in MuJoCo
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -48,4 +50,28 @@ Make sure that you have installed the basic package of ``legged_control2`` as we
 
 Running the Unitree Go1 in Real
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Run on the user computer
+------------------------
+
+We can run all the software on the user computer, and use the EtherNet calbe to receive the readings and send the commands to the robot. This is a good way to test the software before deploying it on the robot.
+
+- Install the Unitree hardware dependency (SDKs):
+
+  .. code-block:: bash
+
+    sudo apt-get install ros-humble-unitree-systems
+
+- Follow the instructions in the <doxid-legged_control2_doc_sim-to-sim> to clone and build the `unitree_description` package. Everything is the same except the launch file.
+
+- Acquire the network interface:
+
+  ..  code-block:: bash
+
+    ros2 launch unitree_description real.launch.py robot_type:='go1'
+
+
+Run on the on-board computer
+----------------------------
+
 
