@@ -30,9 +30,9 @@ Make sure that you have installed the basic package of ``legged_control2`` as we
 
   .. code-block:: bash
 
-    sudo apt-get install ros-humble-ros2-control ros-humble-ros2-controllers ros-humble-rqt ros-humble-rqt-controller-manager ros-humble-rqt-publisher ros-humble-rviz2
+    sudo apt-get install ros-humble-ros2-controllers ros-humble-rqt ros-humble-rqt-controller-manager ros-humble-rqt-publisher ros-humble-rviz2
 
-- Launch the simulation!
+- Launch the simulation:
 
   .. code-block:: bash
 
@@ -45,3 +45,7 @@ Make sure that you have installed the basic package of ``legged_control2`` as we
     rqt
 
   Load `controller plugin` in rqt, right click to config & load different controllers.
+
+Running the Unitree Go1 in Real
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
