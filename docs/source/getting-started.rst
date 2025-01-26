@@ -62,9 +62,7 @@ We can run all the software on the user computer, and use the EtherNet calbe to 
 
     sudo apt-get install ros-humble-unitree-systems
 
-- Follow the instructions in the <doxid-legged_control2_doc_sim-to-sim> to clone and build the `unitree_description` package. Everything is the same except the launch file.
-
-- Acquire the network interface:
+- Follow the instructions in the :ref:`sim-to-sim <doxid-legged_control2_doc_sim-to-sim>` to clone and build the `unitree_description` package. Everything is the same except the launch file:
 
   ..  code-block:: bash
 

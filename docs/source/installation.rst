@@ -18,8 +18,6 @@ The source code is hosted on GitHub: `qiayuanl/legged_control2 <https://github.c
         git clone git@github.com:qiayuanl/legged_control2.git
 
 
-.. _doxid-legged_control2_doc_installation_legged_control2_doc_install:
-
 Installation
 ~~~~~~~~~~~~
 
