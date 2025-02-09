@@ -40,7 +40,6 @@ For Ubuntu 22.04 user, you can directly install the legged_control2 from the apt
     
       .. code-block:: bash
     
-        sudo apt-get install ros-humble-legged-control2
         sudo apt-get install ros-humble-legged-controllers
 
 - Install simulation packages (**Do not install in robot's on-board computer**):
