@@ -73,3 +73,7 @@ Run on the on-board computer
 ----------------------------
 
 
+
+Writing your own controller
+----------------------------
+Check template in `legged_template_controller <https://github.com/qiayuanl/legged_template_controller>`_ package.
