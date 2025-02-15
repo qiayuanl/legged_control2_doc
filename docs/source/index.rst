@@ -7,3 +7,4 @@ Table of Contents
    overview.rst
    installation.rst
    getting-started.rst
+   digging-deeper.rst
