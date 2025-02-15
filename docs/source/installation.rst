@@ -40,7 +40,6 @@ For Ubuntu 22.04 user, you can directly install the legged_control2 from the apt
     
       .. code-block:: bash
     
-        sudo apt-get install ros-humble-legged-control2
         sudo apt-get install ros-humble-legged-controllers
 
 - Install simulation packages (**Do not install in robot's on-board computer**):
@@ -53,7 +52,7 @@ For Ubuntu 22.04 user, you can directly install the legged_control2 from the apt
 Docker
 ------
 
-For Ubuntu 18.04 and 20.04 users, especially for Unitree on-board computer, you should use Docker.
+For Ubuntu 18.04 and 20.04 users, especially for Unitree on-board computers, you should use Docker.
 
 We have pre-built Docker images for different specific robots. You can pull the image from Docker Hub. For more details, please refer to the TODO.
 
@@ -86,4 +85,4 @@ For Ubuntu 22.04 users, you can build from source.
 
     .. code-block:: bash
 
-        colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=RelwithDebInfo --packages-up-to legged_control2
+        colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=RelwithDebInfo --packages-up-to legged_controllers

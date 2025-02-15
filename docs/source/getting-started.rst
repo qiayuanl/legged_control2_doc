@@ -13,19 +13,19 @@ Running the Unitree Go1 in MuJoCo
 
 Make sure that you have installed the basic package of ``legged_control2`` as well as ``mujuco_ros2_control``.
 
-- Clone the ``unitree_ros2`` package, which consists of two pacakge:\
+- Clone the ``unitree_ros2`` package, which consists of two package:\
 
   * **unitree_description**: URDF, launch, config files, needed for both sim-to-sim and sim-to-real.
   * **unitree_systems**: Hardware interface for Unitree SDK1/2, **only needed for sim-to-real**.
 
-  We only build the ``unitree_description`` package for sim-to-sim. (TODO: seprate to two repo)
+  We only build the ``unitree_description`` package for sim-to-sim. (TODO: separate to two repo)
 
   .. code-block:: bash
 
     mkdir -p ~/colcon_ws/src && cd ~/colcon_ws/src
     git clone git@github.com:qiayuanl/unitree_ros2.git
     cd ~/colcon_ws
-    colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=RelwithDebInfo -packages-up-to unitree_description
+    colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=RelwithDebInfo --packages-up-to unitree_description
     source install/setup.bash
 
 - Some visualization tools are useful but not necessary:
@@ -73,3 +73,7 @@ Run on the on-board computer
 ----------------------------
 
 
+
+Writing your own controller
+----------------------------
+Check template in `legged_template_controller <https://github.com/qiayuanl/legged_template_controller>`_ package.

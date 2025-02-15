@@ -20,7 +20,7 @@ How to use the legged_control2?
 
 legged_control2 can be easily installed on Ubuntu. The `source code`_ is also publicly available.
 To get started with the legged_control2, please refer to the 
-:ref:`Installation started <doxid-legged_control2_doc_installation>`, and
+:ref:`Installation <doxid-legged_control2_doc_installation>`, and
 :ref:`Getting Started <doxid-legged_control2_doc_getting_started>` pages.
 
 .. _`source code`: https://github.com/qiayuanl/legged_control2
