@@ -1,0 +1,39 @@
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Changelog for package legged_model_ros2
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1.4.0 (2025-04-02)
+------------------
+
+1.3.1 (2025-04-01)
+------------------
+
+1.3.0 (2025-03-29)
+------------------
+
+1.2.1 (2025-03-29)
+------------------
+* Add and run pre-commit
+* Contributors: qiayuanl
+
+1.2.0 (2025-03-28)
+------------------
+
+1.1.0 (2025-03-26)
+------------------
+* Remove the client for getting robot_description
+* Move exec_depend from unitree_description to legged_controllers
+* Get robot_description from robot_state_publisher
+* Add param interface for LeggedModelRos2
+* Replace all ZYX with quaternion
+* Fix dependency problem of legged_model_ros2
+* Correct state_interface order of LeggedModeRos2
+* Correct "Remove imu inside LeggedModelRos2"
+* Remove imu inside LeggedModelRos2
+* Add IMU in LeggedModelRos2
+* Minor change
+* Fix initialization of pinModelPtr\_
+* Use shared_library
+* Using SharedPtr = std::shared_ptr
+* Add legged_model_ros2
+* Contributors: qiayuanl

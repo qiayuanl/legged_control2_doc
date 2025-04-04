@@ -1,0 +1,23 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classlegged_1_1ObservationTerm.html" title=" " alt="" coords="5,129,191,155"/>
+<area shape="rect" id="Node000001" href="$classlegged_1_1BaseAngVelObservationTerm.html" title=" " alt="" coords="239,5,501,31"/>
+<area shape="poly" id="edge14_Node000000_Node000001" title=" " alt="" coords="121,118,172,77,204,57,238,40,272,28,274,33,240,44,207,61,175,82,124,122"/>
+<area shape="rect" id="Node000002" href="$classlegged_1_1CommandObservationTerm.html" title=" " alt="" coords="244,55,496,80"/>
+<area shape="poly" id="edge15_Node000000_Node000002" title=" " alt="" coords="142,122,238,89,288,77,289,83,239,94,143,127"/>
+<area shape="rect" id="Node000003" href="$classlegged_1_1JointObservationTerm.html" title=" " alt="" coords="263,104,477,129"/>
+<area shape="poly" id="edge16_Node000000_Node000003" title=" " alt="" coords="204,129,262,124,263,129,205,135"/>
+<area shape="rect" id="Node000006" href="$classlegged_1_1LastActionObservationTerm.html" title=" " alt="" coords="243,153,497,179"/>
+<area shape="poly" id="edge19_Node000000_Node000006" title=" " alt="" coords="205,149,243,152,243,157,204,154"/>
+<area shape="rect" id="Node000007" href="$classlegged_1_1LocalObservationTerm.html" title=" " alt="" coords="261,203,479,228"/>
+<area shape="poly" id="edge20_Node000000_Node000007" title=" " alt="" coords="146,157,239,187,295,200,293,205,238,193,144,162"/>
+<area shape="rect" id="Node000010" href="$classlegged_1_1PhaseObservationTerm.html" title=" " alt="" coords="258,252,482,277"/>
+<area shape="poly" id="edge23_Node000000_Node000010" title=" " alt="" coords="125,161,176,201,207,220,240,237,279,249,277,255,238,242,204,225,173,205,122,166"/>
+<area shape="rect" id="Node000004" href="$classlegged_1_1JointPositionsObservationTerm.html" title=" " alt="" coords="551,67,825,92"/>
+<area shape="poly" id="edge17_Node000003_Node000004" title=" " alt="" coords="491,100,579,89,580,95,492,105"/>
+<area shape="rect" id="Node000005" href="$classlegged_1_1JointVelocitiesObservationTerm.html" title=" " alt="" coords="549,116,827,141"/>
+<area shape="poly" id="edge18_Node000003_Node000005" title=" " alt="" coords="491,119,549,121,549,126,491,124"/>
+<area shape="rect" id="Node000008" href="$classlegged_1_1BaseLinVelObservationTerm.html" title=" " alt="" coords="560,189,816,215"/>
+<area shape="poly" id="edge21_Node000007_Node000008" title=" " alt="" coords="493,208,560,205,560,210,493,213"/>
+<area shape="rect" id="Node000009" href="$classlegged_1_1ProjectedGravityObservationTerm.html" title=" " alt="" coords="597,239,779,279"/>
+<area shape="poly" id="edge22_Node000007_Node000009" title=" " alt="" coords="476,227,597,244,596,249,475,233"/>
+</map>
