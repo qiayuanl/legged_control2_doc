@@ -26,10 +26,8 @@ To get started with the legged_control2, please refer to the
 .. _`source code`: https://github.com/qiayuanl/legged_control2
 
 
-|GitHub| Source code on GitHub: `qiayuanl/legged_control2 <https://github.com/qiayuanl/legged_control2>`_
+|github| Source code on GitHub: `qiayuanl/legged_control2 <https://github.com/qiayuanl/legged_control2>`_
 
-  .. |GitHub| image:: ./img/GitHub-Mark-120px-plus.png
-     :scale: 25
-     :alt: GitHub logo cannot be displayed!
-     :target: ./img/GitHub-Mark-120px-plus.png
-     :class: no-scaled-link
+.. |github| image:: images/github.png
+    :scale: 25
+    :alt: GitHub logo cannot be displayed!
