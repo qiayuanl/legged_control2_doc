@@ -8,3 +8,4 @@ Table of Contents
    doc/installation.rst
    doc/getting-started.rst
    doc/digging-deeper.rst
+   doc/api_list/api_list.rst
