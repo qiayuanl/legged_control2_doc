@@ -1,4 +1,4 @@
-.. include:: overview.rst
+.. include:: doc/overview.rst
 
 Table of Contents
 -----------------
