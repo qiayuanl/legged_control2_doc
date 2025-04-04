@@ -16,9 +16,11 @@ jobs:
           token: ${{ secrets.GH_PAT }}
           path: 'doc/legged_control2'
       - uses: actions/setup-python@v5
-      - name: Install dependencies
+      - name: Install python dependencies
         run: |
           pip install sphinx sphinx_rtd_theme myst_parser
+      - name: Install doxygen and graphviz
+        run: sudo apt-get install -y doxygen graphviz
       - name: Sphinx build
         run: |
           make html-with-api
