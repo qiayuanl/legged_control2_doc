@@ -18,13 +18,13 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: qiayuanl/mujoco_sim_ros2
-          path: 'src/mujoco_sim_ros2'
+          path: 'doc/mujoco_sim_ros2'
           fetch-tags: true
       - uses: actions/checkout@v4
         with:
           repository: qiayuanl/mujoco_ros2_control
           token: ${{ secrets.GH_PAT }}
-          path: 'src/mujoco_ros2_control'
+          path: 'doc/mujoco_ros2_control'
           ref: 'legged_control'
           fetch-tags: true
       - uses: actions/setup-python@v5
