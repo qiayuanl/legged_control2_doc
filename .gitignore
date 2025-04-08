@@ -155,3 +155,5 @@ cython_debug/
 
 # End of https://www.toptal.com/developers/gitignore/api/python,jupyternotebooks
 doc/legged_control2
+doc/mujoco_ros2_control
+doc/mujoco_sim_ros2
