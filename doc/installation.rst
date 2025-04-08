@@ -27,7 +27,7 @@ Debian Source (recommended)
 
 For Ubuntu 22.04 user, you can directly install the legged_control2 from the apt source.
 
-- Add apt source:
+- Basic packages:
 
     .. code-block:: bash
 
@@ -36,18 +36,21 @@ For Ubuntu 22.04 user, you can directly install the legged_control2 from the apt
         echo "yaml https://github.com/qiayuanl/legged_buildfarm/raw/jammy-humble-amd64/local.yaml humble" | sudo tee /etc/ros/rosdep/sources.list.d/1-qiayuanl_legged_buildfarm.list
         sudo apt-get update
 
-- Install basic packages:
-    
-      .. code-block:: bash
-    
-        sudo apt-get install ros-humble-legged-controllers
+        # Instsall basic packages
+        sudo apt-get install ros-humble-legged-control-base
 
-- Install simulation packages (**Do not install in robot's on-board computer**):
+
+- Simulation packages (**Do not install in robot's on-board computer**):
     
       .. code-block:: bash
-    
-        sudo apt install ros-humble-mujoco-ros2-control # For MuJoCo
-        sudo apt install ros-humble-legged-gazebo # For Gazebo
+
+        # Add apt source
+        echo "deb [trusted=yes] https://github.com/qiayuanl/simulation_buildfarm/raw/jammy-humble-amd64/ ./" | sudo tee /etc/apt/sources.list.d/qiayuanl_simulation_buildfarm.list
+        echo "yaml https://github.com/qiayuanl/simulation_buildfarm/raw/jammy-humble-amd64/local.yaml humble" | sudo tee /etc/ros/rosdep/sources.list.d/1-qiayuanl_simulation_buildfarm.list
+        sudo apt-get update
+
+        # Install MuJoCo
+        sudo apt install ros-humble-mujoco-ros2-control
 
 Docker
 ------
