@@ -1,0 +1,322 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digging Deeper &mdash; legged_control2 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=2709fde1"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="API Documentation" href="api_list/api_list.html" />
+    <link rel="prev" title="Getting Started" href="getting-started.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            legged_control2
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Digging Deeper</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#robot-model">Robot Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#generalized-momentum-observer">Generalized Momentum Observer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#external-torque">External Torque</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#generalized-momentum">Generalized Momentum</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#kalman-filter-for-base-position-and-linear-velocity">Kalman Filter for Base Position and Linear Velocity</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api_list/api_list.html">API Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">legged_control2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Digging Deeper</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/digging-deeper.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="digging-deeper">
+<h1>Digging Deeper<a class="headerlink" href="#digging-deeper" title="Link to this heading"></a></h1>
+<section id="robot-model">
+<h2>Robot Model<a class="headerlink" href="#robot-model" title="Link to this heading"></a></h2>
+<p>We model the robot with the following floating base multi-rigid-body dynamics equation of motion:</p>
+<div class="math notranslate nohighlight" id="equation-eom">
+<span class="eqno">(1)<a class="headerlink" href="#equation-eom" title="Link to this equation"></a></span>\[\mathbf{M}(\mathbf{q})\,\dot{\mathbf{v}} + \mathbf{c}(\mathbf{q},\mathbf{v}) + \mathbf{g}(\mathbf{q})
+= \mathbf{S}^T\,\boldsymbol{\tau} + \boldsymbol{\tau}_{\text{ext}}\]</div>
+<p>where</p>
+<ul class="simple">
+<li><p><strong>Generalized Position:</strong>
+<span class="math notranslate nohighlight">\(\mathbf{q} = [\mathbf{q}_{\text{b}}^T, \mathbf{q}_{\text{j}}^T]^T \in \mathbb{R}^{n_q}\)</span> is the generalized position, consisting of the base pose
+<span class="math notranslate nohighlight">\(\mathbf{q}_{\text{b}} \in \mathbb{R}^7\)</span> and joint positions <span class="math notranslate nohighlight">\(\mathbf{q}_{\text{j}} \in \mathbb{R}^{n_{\text{j}}}\)</span>.</p></li>
+<li><p><strong>Generalized Velocity and Acceleration:</strong>
+<span class="math notranslate nohighlight">\(\mathbf{v},\; \dot{\mathbf{v}} \in \mathbb{R}^{n_q}\)</span> are the generalized velocity and acceleration, respectively.</p></li>
+<li><p><strong>Mass Matrix:</strong>
+<span class="math notranslate nohighlight">\(\mathbf{M}(\mathbf{q}): \mathbb{R}^{n_q} \rightarrow \mathbb{R}^{n_q \times n_q}\)</span>.</p></li>
+<li><p><strong>Coriolis Force:</strong>
+<span class="math notranslate nohighlight">\(\mathbf{c}(\mathbf{q},\mathbf{v}): \mathbb{R}^{n_q} \times \mathbb{R}^{n_q} \rightarrow \mathbb{R}^{n_q}\)</span>.</p></li>
+<li><p><strong>Gravity:</strong>
+<span class="math notranslate nohighlight">\(\mathbf{g}(\mathbf{q}): \mathbb{R}^{n_q} \rightarrow \mathbb{R}^{n_q}\)</span>.</p></li>
+<li><p><strong>Selection Matrix:</strong>
+<span class="math notranslate nohighlight">\(\mathbf{S} = \Bigl[\mathbf{0}_{n_\tau \times (n_q - n_\tau)},\; \mathbb{I}_{n_\tau}\Bigr]\)</span>.</p></li>
+<li><p><strong>Joint Torque:</strong>
+<span class="math notranslate nohighlight">\(\boldsymbol{\tau} \in \mathbb{R}^{n_\tau}\)</span>.</p></li>
+<li><p><strong>External Torque:</strong>
+<span class="math notranslate nohighlight">\(\boldsymbol{\tau}_{\text{ext}}\)</span> is defined below.</p></li>
+</ul>
+<p>The external torque is given by</p>
+<div class="math notranslate nohighlight" id="equation-external-torque">
+<span class="eqno">(2)<a class="headerlink" href="#equation-external-torque" title="Link to this equation"></a></span>\[\boldsymbol{\tau}_{\text{ext}} = \mathbf{J}(\mathbf{q})^T\,\mathbf{f}_{\text{ext}}
+= \mathbf{J}(\mathbf{q})^T\,\Bigl[\mathbf{f}_{\text{b}}^T, \mathbf{f}_1^T, \ldots, \mathbf{f}_{n_{\text{c}}}^T\Bigr]^T\]</div>
+<p>where</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mathbf{f}_{\text{b}},\; \mathbf{f}_i \in \mathbb{R}^{6}\)</span> are the base and contact wrenches, and</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathbf{J}(\mathbf{q}): \mathbb{R}^{n_q} \rightarrow \mathbb{R}^{(n_{\text{c}}+1) \times 6 \times n_q}\)</span> is the contact Jacobian.</p></li>
+</ul>
+<p>We also have an actuator model with motor velocity-torque saturation and friction for each joint:</p>
+<div class="math notranslate nohighlight">
+\[\boldsymbol{\tau} = \max\!\Bigl\{\min\!\Bigl\{\tau_{\text{cmd}},\; \underline{\tau}\Bigr\},\; \overline{\tau}\Bigr\} - \tau_{\mu}\]</div>
+<p>Let <span class="math notranslate nohighlight">\(q_j\)</span> denote the <span class="math notranslate nohighlight">\(j\)</span> th joint position and <span class="math notranslate nohighlight">\(\tau_{\text{cmd}}\)</span> the command from the controller. The velocity-dependent torque limits are defined as</p>
+<ul class="simple">
+<li><p>Upper torque limit:
+<span class="math notranslate nohighlight">\(\overline{\tau} = [\overline{\tau}_{1}, \overline{\tau}_{2}, \ldots, \overline{\tau}_{n_{\text{j}}}]^T\)</span></p></li>
+<li><p>Lower torque limit:
+<span class="math notranslate nohighlight">\(\underline{\tau} = [\underline{\tau}_{1}, \underline{\tau}_{2}, \ldots, \underline{\tau}_{n_{\text{j}}}]^T\)</span></p></li>
+</ul>
+<p>with</p>
+<div class="math notranslate nohighlight">
+\[\overline{\tau}_j(\dot{q}_j) = \operatorname{clip}\!\left(\tau_{\text{sat},j} \times \Bigl(1 - \frac{\dot{q}_j}{\overline{\dot{q}}_j}\Bigr),\; 0,\; \overline{\tau}_j\right),\quad
+\underline{\tau}_j(\dot{q}_j) = \operatorname{clip}\!\left(\tau_{\text{sat},j} \times \Bigl(-1 - \frac{\dot{q}_j}{\overline{\dot{q}}_j}\Bigr),\; -\overline{\tau}_j,\; 0\right)\]</div>
+<p>Finally, the joint friction maybe modeled as</p>
+<div class="math notranslate nohighlight">
+\[\tau_{\mu,j} = \mu_{\text{v},j}\,\dot{q}_j + \mu_{\text{c}}\,\tanh\!\left(\frac{\dot{q}_j}{\dot{q}_{\text{s},j}}\right),\]</div>
+<p>where <span class="math notranslate nohighlight">\(\tau_{\mu} = [\tau_{\mu,1}, \tau_{\mu,2}, \ldots, \tau_{\mu,n_{\text{j}}}]^T\)</span>.</p>
+<p>Most of the model parameters are obtained from the URDF file, and by using <cite>pinocchio</cite> we can compute most of the dynamics quantities we need for the below modules.</p>
+</section>
+<section id="generalized-momentum-observer">
+<h2>Generalized Momentum Observer<a class="headerlink" href="#generalized-momentum-observer" title="Link to this heading"></a></h2>
+<section id="external-torque">
+<h3>External Torque<a class="headerlink" href="#external-torque" title="Link to this heading"></a></h3>
+<p>As shown in <a class="reference internal" href="#equation-external-torque">(2)</a>, external torque is very useful—it can include:</p>
+<ul class="simple">
+<li><p>Base disturbance wrench or payload</p></li>
+<li><p>End-effector wrench (contact state)</p></li>
+<li><p>Joint friction</p></li>
+</ul>
+<p>From <a class="reference internal" href="#equation-eom">(1)</a>, we know that we can obtain external torque from the generalized coordinate, velocity, acceleration, and joint torques. However, note that joint acceleration is twice the derivative of raw sensor data, which is very noisy.</p>
+</section>
+<section id="generalized-momentum">
+<h3>Generalized Momentum<a class="headerlink" href="#generalized-momentum" title="Link to this heading"></a></h3>
+<p>Generalized momentum is defined as follows:</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{p} = \mathbf{M}\mathbf{v}.\]</div>
+<p>The derivative of the generalized momentum is</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\dot{\mathbf{p}} &amp;= \dot{\mathbf{M}}\mathbf{v} + \mathbf{M}\dot{\mathbf{v}} \\
+                 &amp;= \dot{\mathbf{M}}\mathbf{v} + \mathbf{S}^T\boldsymbol{\tau} + \boldsymbol{\tau}_{\text{ext}} - \mathbf{C}\mathbf{v} - \mathbf{g} \\
+                 &amp;= (\mathbf{C} + \mathbf{C}^T)\mathbf{v} + \mathbf{S}^T\boldsymbol{\tau} + \boldsymbol{\tau}_{\text{ext}} - \mathbf{C}\mathbf{v} - \mathbf{g} \\
+                 &amp;= \boldsymbol{\tau}_{\text{ext}} + \mathbf{S}^T\boldsymbol{\tau} + \mathbf{C}^T\mathbf{v} - \mathbf{g}.
+\end{aligned}\end{split}\]</div>
+<p>We can formulate a generalized momentum observer:</p>
+<ul class="simple">
+<li><p><strong>Input:</strong>
+- Generalized coordinate
+- Generalized velocity
+- Torque of each joint</p></li>
+<li><p><strong>Output:</strong> External torque</p></li>
+</ul>
+<p>Assume a low-pass filter is applied to the external torque:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\hat{\boldsymbol{\tau}}_{\text{ext}} &amp;= \frac{\lambda}{s+\lambda}\,\boldsymbol{\tau}_{\text{ext}}, \\
+\hat{\boldsymbol{\tau}}_{\text{ext}}\,(s+\lambda) &amp;= \lambda\,\boldsymbol{\tau}_{\text{ext}}, \\
+\dot{\hat{\boldsymbol{\tau}}}_{\text{ext}} &amp;= \lambda\,\Bigl(\boldsymbol{\tau}_{\text{ext}} - \hat{\boldsymbol{\tau}}_{\text{ext}}\Bigr), \\
+\dot{\hat{\boldsymbol{\tau}}}_{\text{ext}} &amp;= \lambda\,\Bigl(\dot{\mathbf{p}} - \bigl(\mathbf{S}^T\boldsymbol{\tau} + \mathbf{C}^T\mathbf{v} - \mathbf{g} + \hat{\boldsymbol{\tau}}_{\text{ext}}\bigr)\Bigr).
+\end{aligned}\end{split}\]</div>
+<p>Integrating the above equation, we have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\hat{\boldsymbol{\tau}}_{\text{ext}} &amp;= \lambda\,\mathbf{p} - \lambda \int_{0}^{t} \Bigl(\mathbf{S}^T\boldsymbol{\tau} + \mathbf{C}^T\mathbf{v} - \mathbf{g} + \hat{\boldsymbol{\tau}}_{\text{ext}}\Bigr)\,dt, \\
+\hat{\boldsymbol{\tau}}_{\text{ext}} &amp;= \lambda\,\mathbf{p} - \frac{\lambda}{s}\Bigl(\mathbf{S}^T\boldsymbol{\tau} + \mathbf{C}^T\mathbf{v} - \mathbf{g} + \hat{\boldsymbol{\tau}}_{\text{ext}}\Bigr), \\
+\frac{\lambda+s}{s}\,\hat{\boldsymbol{\tau}}_{\text{ext}} &amp;= \lambda\,\mathbf{p} - \frac{\lambda}{s}\Bigl(\mathbf{S}^T\boldsymbol{\tau} + \mathbf{C}^T\mathbf{v} - \mathbf{g}\Bigr), \\
+\hat{\boldsymbol{\tau}}_{\text{ext}} &amp;= \frac{\lambda s}{\lambda+s}\,\mathbf{p} - \frac{\lambda}{\lambda+s}\Bigl(\mathbf{S}^T\boldsymbol{\tau} + \mathbf{C}^T\mathbf{v} - \mathbf{g}\Bigr), \\
+\hat{\boldsymbol{\tau}}_{\text{ext}} &amp;= \frac{\lambda s}{\lambda+s}\,\mathbf{p} - \frac{\lambda}{\lambda+s}\Bigl(\mathbf{S}^T\boldsymbol{\tau} + \mathbf{C}^T\mathbf{v} - \mathbf{g}\Bigr), \\
+\hat{\boldsymbol{\tau}}_{\text{ext}} &amp;= \frac{\lambda (\lambda+s)}{\lambda+s}\,\mathbf{p} - \frac{\lambda^2}{\lambda+s}\,\mathbf{p} - \frac{\lambda}{\lambda+s}\Bigl(\mathbf{S}^T\boldsymbol{\tau} + \mathbf{C}^T\mathbf{v} - \mathbf{g}\Bigr), \\
+\hat{\boldsymbol{\tau}}_{\text{ext}} &amp;= \lambda\,\mathbf{p} - \frac{\lambda}{\lambda+s}\Bigl(\mathbf{S}^T\boldsymbol{\tau} + \mathbf{C}^T\mathbf{v} - \mathbf{g} + \lambda\,\mathbf{p}\Bigr).
+\end{aligned}\end{split}\]</div>
+<p>It turns out that the low-pass filtered external torque <span class="math notranslate nohighlight">\(\hat{\boldsymbol{\tau}}_{\text{ext}}\)</span> can be implemented by measuring the generalized momentum <span class="math notranslate nohighlight">\(\mathbf{p}\)</span> and maintaining a low-pass filte: with
+<span class="math notranslate nohighlight">\(\mathbf{S}^T\boldsymbol{\tau} + \mathbf{C}^T\mathbf{v} - \mathbf{g} + \lambda\,\mathbf{p}\)</span> as input and <span class="math notranslate nohighlight">\(\lambda\)</span> as the cutoff frequency.</p>
+<p>Finally, the external wrench can be estimated by</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{f}_{\text{ext}} = \Bigl(\mathbf{J}(\mathbf{q})^T\Bigr)^\dagger\,\hat{\boldsymbol{\tau}}_{\text{ext}},\]</div>
+<p>where <span class="math notranslate nohighlight">\(\Bigl(\mathbf{J}(\mathbf{q})^T\Bigr)^\dagger\)</span> is the pseudo-inverse of <span class="math notranslate nohighlight">\(\mathbf{J}(\mathbf{q})^T\)</span>.</p>
+</section>
+</section>
+<section id="kalman-filter-for-base-position-and-linear-velocity">
+<h2>Kalman Filter for Base Position and Linear Velocity<a class="headerlink" href="#kalman-filter-for-base-position-and-linear-velocity" title="Link to this heading"></a></h2>
+<p>The state of the Kalman filter is</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{x}_k = \begin{bmatrix}
+    \mathbf{p}_{\text{b}}^T, &amp; \mathbf{v}_{\text{b}}^T, &amp; \mathbf{p}_{\text{c}}^T
+\end{bmatrix}^T,\]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{p}_{\text{c}} = \begin{bmatrix}
+    \mathbf{p}_{c,1}^T, &amp; \cdots, &amp; \mathbf{p}_{c,n_c}^T
+\end{bmatrix}^T\]</div>
+<p>represents the positions of the foot-end contact points. Without loss of generality, assume that the inertial measurement unit coincides with the body center of mass and that the coordinate systems are aligned.</p>
+<p>Given the accelerometer measurement <span class="math notranslate nohighlight">\(^{\mathcal{B}}\mathbf{a}\)</span> and the body attitude rotation matrix <span class="math notranslate nohighlight">\(^{\mathcal{W}}\mathbf{R}_{\mathcal{B}}\)</span> provided by the inertial measurement unit, the system input is defined as</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{u}_k = \Bigl[\,^{\mathcal{W}}\mathbf{R}_{\mathcal{B}}\;^{\mathcal{B}}\mathbf{a} + \mathbf{g}\Bigr]^T.\]</div>
+<p>The measurement is defined as</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{y}_k = \begin{bmatrix}
+    -\mathbf{r}_{\text{b},\text{c}}^T, &amp; \mathbf{z}_{\text{c}}^T
+\end{bmatrix}^T,\]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{r}_{\text{b},\text{c}} = \begin{bmatrix}
+    \mathbf{r}_{b,c_1}^T, &amp; \cdots, &amp; \mathbf{r}_{b,c_{n_c}}^T
+\end{bmatrix}^T,
+\qquad \text{with} \qquad \mathbf{r}_{b,c_i} = \mathbf{p}_{c_i} - \mathbf{p}_b.\]</div>
+<p>The foot-end heights</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{z}_c = \begin{bmatrix}
+    z_{c_1}, &amp; \cdots, &amp; z_{c_4}
+\end{bmatrix}^T\]</div>
+<p>can be provided by external perception sensors (e.g., vision or radar). If no perception data is available, <span class="math notranslate nohighlight">\(\mathbf{z}_c\)</span> can be set to <span class="math notranslate nohighlight">\(\mathbf{0}\)</span>.</p>
+<p>Assuming the contact point positions remain unchanged (i.e. no slippage occurs), the process and measurement models are linear:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\mathbf{x}_{k+1} &amp;= \mathbf{A}\,\mathbf{x}_k + \mathbf{B}\,\mathbf{u}_k + \mathcal{N}(0,\mathbf{Q}), \\
+\mathbf{y}_k     &amp;= \mathbf{C}\,\mathbf{x}_k + \mathcal{N}(0,\mathbf{R}_k).
+\end{aligned}\end{split}\]</div>
+<p>The state transition and input matrices are given by</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathbf{A} =
+\begin{bmatrix}
+    \mathbb{I}_3       &amp; \delta t           &amp; \mathbf{0}_{3\times n_c} \\
+    \mathbf{0}_{3\times3} &amp; \mathbb{I}_3       &amp; \mathbf{0}_{3\times n_c} \\
+    \mathbf{0}_{n_c\times3} &amp; \mathbf{0}_{n_c\times3} &amp; \mathbb{I}_{n_c}
+\end{bmatrix},
+\quad
+\mathbf{B} =
+\begin{bmatrix}
+    \frac{1}{2}\,\delta t^2\,\mathbb{I}_3 \\
+    \delta t\,\mathbb{I}_3 \\
+    \mathbf{0}_{n_c\times3}
+\end{bmatrix}.\end{split}\]</div>
+<p>The measurement matrix is defined as</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\mathbf{C} =
+\begin{bmatrix}
+    \mathbb{I}_3 &amp; \mathbf{0}_{3\times3} &amp; -\mathbb{I}_3 &amp; \mathbf{0}_{3\times3} &amp; \cdots &amp; \mathbf{0}_{3\times3} \\
+    \vdots     &amp; \vdots              &amp; \vdots       &amp; \ddots         &amp; \ddots &amp; \vdots \\
+    \mathbb{I}_3 &amp; \mathbf{0}_{3\times3} &amp; \mathbf{0}_{3\times3} &amp; \mathbf{0}_{3\times3} &amp; \cdots &amp; -\mathbb{I}_3 \\
+    \mathbf{0}_{1\times3} &amp; \mathbf{0}_{1\times3} &amp; [0,0,1] &amp; \mathbf{0}_{1\times3} &amp; \cdots &amp; \mathbf{0}_{1\times3} \\
+    \vdots     &amp; \vdots              &amp; \vdots       &amp; \ddots         &amp; \ddots &amp; \vdots \\
+    \mathbf{0}_{1\times3} &amp; \mathbf{0}_{1\times3} &amp; \mathbf{0}_{1\times3} &amp; \mathbf{0}_{1\times3} &amp; \cdots &amp; [0,0,1]
+\end{bmatrix}.\end{split}\]</div>
+<p>The process noise covariance matrix is constant:</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{Q} = \Bigl(\operatorname{blockDiag}\bigl(\mathbf{0}_{3\times3},\; \delta t\,\sigma_{\text{accel}}\,\mathbb{I}_3,\; \delta t\,\boldsymbol{\sigma}_{\dot{p}_c}\,\mathbb{I}\bigr)\Bigr)^2.\]</div>
+<p>Most importantly, the time-varying measurement noise covariance matrix is</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{R}_k = \Bigl(\operatorname{blockDiag}\bigl(\boldsymbol{\sigma}_{p_c\mathbb{I},\, k},\; \boldsymbol{\sigma}_z\bigr)\Bigr)^2,\]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[\boldsymbol{\sigma}_{p_c\mathbb{I}} = \operatorname{blockDiag}\bigl(\sigma_{c_1}\,\mathbb{I}_3,\; \cdots,\; \sigma_{c_{n_c}}\,\mathbb{I}_3\bigr),
+\qquad \text{and} \qquad \sigma_{c_i} = \frac{\sigma_{\text{kine}}}{w_{c,i}},\]</div>
+<p>with <span class="math notranslate nohighlight">\(\sigma_{\text{kine}}\)</span> a constant, and <span class="math notranslate nohighlight">\(w_{c,i}\)</span> is the weight depending on the contact state, defined as</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}w_{c,i} =
+\begin{cases}
+    1,       &amp; \text{if } i \in \mathcal{C}, \\
+    \epsilon, &amp; \text{if } i \notin \mathcal{C},
+\end{cases}
+\qquad \forall\, i \in \{1,\cdots,n_c\},\end{split}\]</div>
+<p>which can be estimated by thresholding the contact force magnitude from the generalized momentum observer.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="getting-started.html" class="btn btn-neutral float-left" title="Getting Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="api_list/api_list.html" class="btn btn-neutral float-right" title="API Documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Qiayuan Liao.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+<map id="mujoco_ros2_control::MujocoRos2ControlPlugin" name="mujoco_ros2_control::MujocoRos2ControlPlugin">
+<area shape="rect" id="Node000001" title=" " alt="" coords="27,93,223,133"/>
+<area shape="rect" id="Node000002" href="$classmujoco__sim__ros2_1_1MujocoPhysicsPlugin.html" title=" " alt="" coords="5,5,245,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,59,128,93,123,93,123,59"/>
+</map>
