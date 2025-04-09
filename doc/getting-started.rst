@@ -6,6 +6,18 @@ Getting Started
 ===============
 We provided two examples to help you get started with the Unitree Go1 sim-to-sim and sim-to-real.
 
+You need to add the apt source of Unitree build farm to your system, and install the Unitree description packages, which contains the URDF, MJCF files, needed for both sim-to-sim and sim-to-real.
+
+  .. code-block:: bash
+
+      # Add apt source
+      echo "deb [trusted=yes] https://github.com/qiayuanl/unitree_buildfarm/raw/jammy-humble-amd64/ ./" | sudo tee /etc/apt/sources.list.d/qiayuanl_unitree_buildfarm.list
+      echo "yaml https://github.com/qiayuanl/unitree_buildfarm/raw/jammy-humble-amd64/local.yaml humble" | sudo tee /etc/ros/rosdep/sources.list.d/1-qiayuanl_unitree_buildfarm.list
+      sudo apt-get update
+
+      # Instsall description packages
+      sudo apt-get install ros-humble-unitree-description
+
 .. _doxid-legged_control2_doc_sim-to-sim:
 
 Running the Unitree Go1 in MuJoCo
