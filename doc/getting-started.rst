@@ -13,19 +13,14 @@ Running the Unitree Go1 in MuJoCo
 
 Make sure that you have installed the basic package of ``legged_control2`` as well as ``mujuco_ros2_control``.
 
-- Clone the ``unitree_ros2`` package, which consists of two package:\
-
-  * **unitree_description**: URDF, launch, config files, needed for both sim-to-sim and sim-to-real.
-  * **unitree_systems**: Hardware interface for Unitree SDK1/2, **only needed for sim-to-real**.
-
-  We only build the ``unitree_description`` package for sim-to-sim. (TODO: separate to two repo)
+- Clone and build the ``unitree_bringup`` package
 
   .. code-block:: bash
 
     mkdir -p ~/colcon_ws/src && cd ~/colcon_ws/src
-    git clone git@github.com:qiayuanl/unitree_ros2.git
+    git clone git@github.com:qiayuanl/unitree_bringup.git
     cd ~/colcon_ws
-    colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=RelwithDebInfo --packages-up-to unitree_description
+    colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=RelwithDebInfo --packages-up-to unitree_bringup
     source install/setup.bash
 
 - Some visualization tools are useful but not necessary:
@@ -38,7 +33,7 @@ Make sure that you have installed the basic package of ``legged_control2`` as we
 
   .. code-block:: bash
 
-    ros2 launch unitree_description mujoco.launch.py robot_type:='go1'
+    ros2 launch unitree_bringup mujoco.launch.py robot_type:='go1'
 
 - Switch between controllers:
 
@@ -62,11 +57,11 @@ We can run all the software on the user computer, and use the EtherNet calbe to 
 
     sudo apt-get install ros-humble-unitree-systems
 
-- Follow the instructions in the :ref:`sim-to-sim <doxid-legged_control2_doc_sim-to-sim>` to clone and build the `unitree_description` package. Everything is the same except the launch file:
+- Follow the instructions in the :ref:`sim-to-sim <doxid-legged_control2_doc_sim-to-sim>` to clone and build the `unitree_bringup` package. Everything is the same except the launch file:
 
   ..  code-block:: bash
 
-    ros2 launch unitree_description real.launch.py robot_type:='go1'
+    ros2 launch unitree_bringup real.launch.py robot_type:='go1'
 
 
 Run on the on-board computer
