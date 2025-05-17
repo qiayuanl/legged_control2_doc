@@ -11,7 +11,7 @@ Per-Package API Documentation
 #############################
 In the following, you can find links to the per-package API documentation.
 
-ros2_control
+legged_control2
 *************
 
 
