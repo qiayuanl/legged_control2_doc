@@ -25,3 +25,7 @@ html-with-api: Makefile
 	$(SPHINXBUILD) $(SPHINXOPTS) $(SOURCEDIR) $(BUILDDIR)/html
 	@echo Step 2: Building API
 	./make_help_scripts/create_api.py
+
+rosdoc2:
+	@echo Individual ROS packages
+	./make_help_scripts/create_rosdoc2.py
