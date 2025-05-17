@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1Policy" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>legged::Policy</compoundname>
+    <derivedcompoundref refid="classlegged_1_1OnnxPolicy" prot="public" virt="non-virtual">legged::OnnxPolicy</derivedcompoundref>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlegged_1_1Policy_1a58ed7ae76d1fb6fc19ea793fa92e9b39" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classlegged_1_1Policy" kindref="compound">Policy</ref> &gt;</type>
+        <definition>using legged::Policy::SharedPtr =  std::shared_ptr&lt;Policy&gt;</definition>
+        <argsstring></argsstring>
+        <name>SharedPtr</name>
+        <qualifiedname>legged::Policy::SharedPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="14" column="3" bodyfile="include/legged_rl_controllers/Policy.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classlegged_1_1Policy_1aa46297e75f39e97ac8973be477a98f42" prot="protected" static="no" mutable="no">
+        <type>vector_t</type>
+        <definition>vector_t legged::Policy::lastOutput_</definition>
+        <argsstring></argsstring>
+        <name>lastOutput_</name>
+        <qualifiedname>legged::Policy::lastOutput_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="24" column="12" bodyfile="include/legged_rl_controllers/Policy.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlegged_1_1Policy_1af08fd661726c2ae6b8815b39ab3e0f87" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual legged::Policy::~Policy</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Policy</name>
+        <qualifiedname>legged::Policy::~Policy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="15" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1Policy_1a2e6b801b696476e87c2c865e97c22c68" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t</type>
+        <definition>virtual size_t legged::Policy::getInputSize</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getInputSize</name>
+        <qualifiedname>legged::Policy::getInputSize</qualifiedname>
+        <reimplementedby refid="classlegged_1_1OnnxPolicy_1a6fe3bc5c2bb344220113d929b1deee00">getInputSize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="16" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1Policy_1aa73aa0916f45448682903c7bec93f384" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t</type>
+        <definition>virtual size_t legged::Policy::getOutputSize</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getOutputSize</name>
+        <qualifiedname>legged::Policy::getOutputSize</qualifiedname>
+        <reimplementedby refid="classlegged_1_1OnnxPolicy_1a8347d15430185d587ba0c97f96ab77d2">getOutputSize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="17" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1Policy_1a2b31e71b8e3ff8b65de4868a485a4449" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void legged::Policy::reset</definition>
+        <argsstring>()=0</argsstring>
+        <name>reset</name>
+        <qualifiedname>legged::Policy::reset</qualifiedname>
+        <reimplementedby refid="classlegged_1_1OnnxPolicy_1ada57bc34be5bd8ab82ba9c37e5324d47">reset</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="19" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1Policy_1a8422cbad179385a85c2190f7c776e233" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>vector_t</type>
+        <definition>virtual vector_t legged::Policy::run</definition>
+        <argsstring>(const vector_t &amp;observations)=0</argsstring>
+        <name>run</name>
+        <qualifiedname>legged::Policy::run</qualifiedname>
+        <reimplementedby refid="classlegged_1_1OnnxPolicy_1af7a079378791ab24e415c682f7da35bd">run</reimplementedby>
+        <param>
+          <type>const vector_t &amp;</type>
+          <declname>observations</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="20" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1Policy_1a7d055b167aa03f60770c4a1e280f032d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>vector_t</type>
+        <definition>virtual vector_t legged::Policy::getLastOutput</definition>
+        <argsstring>() const</argsstring>
+        <name>getLastOutput</name>
+        <qualifiedname>legged::Policy::getLastOutput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="21" column="20" bodyfile="include/legged_rl_controllers/Policy.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>legged::OnnxPolicy</label>
+        <link refid="classlegged_1_1OnnxPolicy"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>legged::Policy</label>
+        <link refid="classlegged_1_1Policy"/>
+      </node>
+    </inheritancegraph>
+    <location file="include/legged_rl_controllers/Policy.h" line="12" column="1" bodyfile="include/legged_rl_controllers/Policy.h" bodystart="12" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1Policy_1a2e6b801b696476e87c2c865e97c22c68" prot="public" virt="pure-virtual"><scope>legged::Policy</scope><name>getInputSize</name></member>
+      <member refid="classlegged_1_1Policy_1a7d055b167aa03f60770c4a1e280f032d" prot="public" virt="virtual"><scope>legged::Policy</scope><name>getLastOutput</name></member>
+      <member refid="classlegged_1_1Policy_1aa73aa0916f45448682903c7bec93f384" prot="public" virt="pure-virtual"><scope>legged::Policy</scope><name>getOutputSize</name></member>
+      <member refid="classlegged_1_1Policy_1aa46297e75f39e97ac8973be477a98f42" prot="protected" virt="non-virtual"><scope>legged::Policy</scope><name>lastOutput_</name></member>
+      <member refid="classlegged_1_1Policy_1a2b31e71b8e3ff8b65de4868a485a4449" prot="public" virt="pure-virtual"><scope>legged::Policy</scope><name>reset</name></member>
+      <member refid="classlegged_1_1Policy_1a8422cbad179385a85c2190f7c776e233" prot="public" virt="pure-virtual"><scope>legged::Policy</scope><name>run</name></member>
+      <member refid="classlegged_1_1Policy_1a58ed7ae76d1fb6fc19ea793fa92e9b39" prot="public" virt="non-virtual"><scope>legged::Policy</scope><name>SharedPtr</name></member>
+      <member refid="classlegged_1_1Policy_1af08fd661726c2ae6b8815b39ab3e0f87" prot="public" virt="virtual"><scope>legged::Policy</scope><name>~Policy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

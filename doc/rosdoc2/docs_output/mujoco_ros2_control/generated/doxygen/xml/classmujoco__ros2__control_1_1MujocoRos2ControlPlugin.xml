@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>mujoco_ros2_control::MujocoRos2ControlPlugin</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">mujoco_sim_ros2::MujocoPhysicsPlugin</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin_1a7cf229ce36062c2ba61e18b14be53067" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; <ref refid="classmujoco__ros2__control_1_1MujocoRos2Control" kindref="compound">MujocoRos2Control</ref> &gt;</type>
+        <definition>std::unique_ptr&lt;MujocoRos2Control&gt; mujoco_ros2_control::MujocoRos2ControlPlugin::control_</definition>
+        <argsstring></argsstring>
+        <name>control_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2ControlPlugin::control_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control_plugin.hpp" line="34" column="19" bodyfile="include/mujoco_ros2_control/mujoco_ros2_control_plugin.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin_1ab1a2b1fccc9456fb712a346afebb9452" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mujoco_ros2_control::MujocoRos2ControlPlugin::MujocoRos2ControlPlugin</definition>
+        <argsstring>()=default</argsstring>
+        <name>MujocoRos2ControlPlugin</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2ControlPlugin::MujocoRos2ControlPlugin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control_plugin.hpp" line="22" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin_1a294dfa3e7cdc42431716c861ca7b90c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual mujoco_ros2_control::MujocoRos2ControlPlugin::~MujocoRos2ControlPlugin</definition>
+        <argsstring>()=default</argsstring>
+        <name>~MujocoRos2ControlPlugin</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2ControlPlugin::~MujocoRos2ControlPlugin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control_plugin.hpp" line="23" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin_1a9d3f35bba159db4dcfd886ddb9a98c00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mujoco_ros2_control::MujocoRos2ControlPlugin::Configure</definition>
+        <argsstring>(rclcpp::Node::SharedPtr &amp;node, rclcpp::NodeOptions cm_node_option, mjModel *model, mjData *data) override</argsstring>
+        <name>Configure</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2ControlPlugin::Configure</qualifiedname>
+        <param>
+          <type>rclcpp::Node::SharedPtr &amp;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>rclcpp::NodeOptions</type>
+          <declname>cm_node_option</declname>
+        </param>
+        <param>
+          <type>mjModel *</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>mjData *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control_plugin.hpp" line="25" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin_1a709e2137d8f82cb741dbfb156965ea36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mujoco_ros2_control::MujocoRos2ControlPlugin::Reset</definition>
+        <argsstring>(mjModel *model, mjData *data) override</argsstring>
+        <name>Reset</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2ControlPlugin::Reset</qualifiedname>
+        <param>
+          <type>mjModel *</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>mjData *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control_plugin.hpp" line="28" column="8" bodyfile="include/mujoco_ros2_control/mujoco_ros2_control_plugin.hpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin_1affa00c49cb3e39f323005ebaaf2ffa8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mujoco_ros2_control::MujocoRos2ControlPlugin::PreUpdate</definition>
+        <argsstring>(mjModel *model, mjData *data) override</argsstring>
+        <name>PreUpdate</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2ControlPlugin::PreUpdate</qualifiedname>
+        <param>
+          <type>mjModel *</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>mjData *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control_plugin.hpp" line="29" column="8" bodyfile="include/mujoco_ros2_control/mujoco_ros2_control_plugin.hpp" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin_1a90deacf2a90f1914c43081ab3df4dd0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mujoco_ros2_control::MujocoRos2ControlPlugin::Update</definition>
+        <argsstring>(mjModel *model, mjData *data) override</argsstring>
+        <name>Update</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2ControlPlugin::Update</qualifiedname>
+        <param>
+          <type>mjModel *</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>mjData *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control_plugin.hpp" line="30" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin_1a78f3049b2141041c045035d67bb93b02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mujoco_ros2_control::MujocoRos2ControlPlugin::PostUpdate</definition>
+        <argsstring>(mjModel *model, mjData *data) override</argsstring>
+        <name>PostUpdate</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2ControlPlugin::PostUpdate</qualifiedname>
+        <param>
+          <type>mjModel *</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>mjData *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control_plugin.hpp" line="31" column="8" bodyfile="include/mujoco_ros2_control/mujoco_ros2_control_plugin.hpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>mujoco_ros2_control::MujocoRos2ControlPlugin</label>
+        <link refid="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mujoco_sim_ros2::MujocoPhysicsPlugin</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>mujoco_ros2_control::MujocoRos2ControlPlugin</label>
+        <link refid="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mujoco_sim_ros2::MujocoPhysicsPlugin</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/mujoco_ros2_control/mujoco_ros2_control_plugin.hpp" line="19" column="1" bodyfile="include/mujoco_ros2_control/mujoco_ros2_control_plugin.hpp" bodystart="20" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin_1a9d3f35bba159db4dcfd886ddb9a98c00" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2ControlPlugin</scope><name>Configure</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin_1a7cf229ce36062c2ba61e18b14be53067" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2ControlPlugin</scope><name>control_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin_1ab1a2b1fccc9456fb712a346afebb9452" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2ControlPlugin</scope><name>MujocoRos2ControlPlugin</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin_1a78f3049b2141041c045035d67bb93b02" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2ControlPlugin</scope><name>PostUpdate</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin_1affa00c49cb3e39f323005ebaaf2ffa8e" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2ControlPlugin</scope><name>PreUpdate</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin_1a709e2137d8f82cb741dbfb156965ea36" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2ControlPlugin</scope><name>Reset</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin_1a90deacf2a90f1914c43081ab3df4dd0e" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2ControlPlugin</scope><name>Update</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin_1a294dfa3e7cdc42431716c861ca7b90c3" prot="public" virt="virtual"><scope>mujoco_ros2_control::MujocoRos2ControlPlugin</scope><name>~MujocoRos2ControlPlugin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

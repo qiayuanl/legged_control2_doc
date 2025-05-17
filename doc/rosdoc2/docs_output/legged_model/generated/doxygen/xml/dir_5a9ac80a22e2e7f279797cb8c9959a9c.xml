@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_5a9ac80a22e2e7f279797cb8c9959a9c" kind="dir">
+    <compoundname>include/legged_model</compoundname>
+    <innerfile refid="common_8h">common.h</innerfile>
+    <innerfile refid="LeggedModel_8h">LeggedModel.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/legged_model/"/>
+  </compounddef>
+</doxygen>

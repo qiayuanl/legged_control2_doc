@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structmujoco__ros2__control_1_1MujocoSystem_1_1FTSensorData" kind="struct" language="C++" prot="public">
+    <compoundname>mujoco_ros2_control::MujocoSystem::FTSensorData</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1FTSensorData_1a73aa336b28309142c8299577626441ee" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mujoco_ros2_control::MujocoSystem::FTSensorData::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::FTSensorData::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="87" column="17" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1FTSensorData_1aa34588465d9f1b1a956d5c6a9116a264" prot="public" static="no" mutable="no">
+        <type><ref refid="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData" kindref="compound">SensorData</ref>&lt; Eigen::Vector3d &gt;</type>
+        <definition>SensorData&lt;Eigen::Vector3d&gt; mujoco_ros2_control::MujocoSystem::FTSensorData::force</definition>
+        <argsstring></argsstring>
+        <name>force</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::FTSensorData::force</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="88" column="16" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1FTSensorData_1a41bf5a03bf293f8084995eb38d8ab507" prot="public" static="no" mutable="no">
+        <type><ref refid="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData" kindref="compound">SensorData</ref>&lt; Eigen::Vector3d &gt;</type>
+        <definition>SensorData&lt;Eigen::Vector3d&gt; mujoco_ros2_control::MujocoSystem::FTSensorData::torque</definition>
+        <argsstring></argsstring>
+        <name>torque</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::FTSensorData::torque</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="89" column="16" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>mujoco_ros2_control::MujocoSystem::SensorData&lt; Eigen::Vector3d &gt;</label>
+        <link refid="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData"/>
+      </node>
+      <node id="1">
+        <label>mujoco_ros2_control::MujocoSystem::FTSensorData</label>
+        <link refid="structmujoco__ros2__control_1_1MujocoSystem_1_1FTSensorData"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>force</edgelabel>
+          <edgelabel>torque</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="85" column="3" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="86" bodyend="90"/>
+    <listofallmembers>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1FTSensorData_1aa34588465d9f1b1a956d5c6a9116a264" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::FTSensorData</scope><name>force</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1FTSensorData_1a73aa336b28309142c8299577626441ee" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::FTSensorData</scope><name>name</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1FTSensorData_1a41bf5a03bf293f8084995eb38d8ab507" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::FTSensorData</scope><name>torque</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1OnnxPolicy" kind="class" language="C++" prot="public">
+    <compoundname>legged::OnnxPolicy</compoundname>
+    <basecompoundref refid="classlegged_1_1Policy" prot="public" virt="non-virtual">legged::Policy</basecompoundref>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlegged_1_1OnnxPolicy_1a4485fdd8d8000549ce3bd83e19368939" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classlegged_1_1OnnxPolicy" kindref="compound">OnnxPolicy</ref> &gt;</type>
+        <definition>using legged::OnnxPolicy::SharedPtr =  std::shared_ptr&lt;OnnxPolicy&gt;</definition>
+        <argsstring></argsstring>
+        <name>SharedPtr</name>
+        <qualifiedname>legged::OnnxPolicy::SharedPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/OnnxPolicy.h" line="18" column="3" bodyfile="include/legged_rl_controllers/OnnxPolicy.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlegged_1_1OnnxPolicy_1a335f36fa0f3fc087d15b12544b5dd825" prot="public" static="no">
+        <type>float</type>
+        <definition>using legged::OnnxPolicy::tensor_element_t =  float</definition>
+        <argsstring></argsstring>
+        <name>tensor_element_t</name>
+        <qualifiedname>legged::OnnxPolicy::tensor_element_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/OnnxPolicy.h" line="19" column="3" bodyfile="include/legged_rl_controllers/OnnxPolicy.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classlegged_1_1OnnxPolicy_1a7a56e6e54a5ab7c59288e04561ae59c9" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; Ort::Env &gt;</type>
+        <definition>std::shared_ptr&lt;Ort::Env&gt; legged::OnnxPolicy::onnxEnvPrt_</definition>
+        <argsstring></argsstring>
+        <name>onnxEnvPrt_</name>
+        <qualifiedname>legged::OnnxPolicy::onnxEnvPrt_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/OnnxPolicy.h" line="28" column="19" bodyfile="include/legged_rl_controllers/OnnxPolicy.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1OnnxPolicy_1a2e11e757daffff53a0c002db6414ce1f" prot="protected" static="no" mutable="no">
+        <type>std::unique_ptr&lt; Ort::Session &gt;</type>
+        <definition>std::unique_ptr&lt;Ort::Session&gt; legged::OnnxPolicy::sessionPtr_</definition>
+        <argsstring></argsstring>
+        <name>sessionPtr_</name>
+        <qualifiedname>legged::OnnxPolicy::sessionPtr_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/OnnxPolicy.h" line="29" column="19" bodyfile="include/legged_rl_controllers/OnnxPolicy.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1OnnxPolicy_1aaa0d1f6144b9ce40aea9619224d17636" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; const char * &gt;</type>
+        <definition>std::vector&lt;const char*&gt; legged::OnnxPolicy::inputNames_</definition>
+        <argsstring></argsstring>
+        <name>inputNames_</name>
+        <qualifiedname>legged::OnnxPolicy::inputNames_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/OnnxPolicy.h" line="30" column="15" bodyfile="include/legged_rl_controllers/OnnxPolicy.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1OnnxPolicy_1ad780a7f76da5de1c17793fb116545b14" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; const char * &gt;</type>
+        <definition>std::vector&lt;const char*&gt; legged::OnnxPolicy::outputNames_</definition>
+        <argsstring></argsstring>
+        <name>outputNames_</name>
+        <qualifiedname>legged::OnnxPolicy::outputNames_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/OnnxPolicy.h" line="31" column="15" bodyfile="include/legged_rl_controllers/OnnxPolicy.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1OnnxPolicy_1a36c2c9f0d1008e4be71d42713ac539fe" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int64_t &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;int64_t&gt; &gt; legged::OnnxPolicy::inputShapes_</definition>
+        <argsstring></argsstring>
+        <name>inputShapes_</name>
+        <qualifiedname>legged::OnnxPolicy::inputShapes_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/OnnxPolicy.h" line="32" column="15" bodyfile="include/legged_rl_controllers/OnnxPolicy.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1OnnxPolicy_1a36100b0fb8422eaba349944f5a8bdf59" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int64_t &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;int64_t&gt; &gt; legged::OnnxPolicy::outputShapes_</definition>
+        <argsstring></argsstring>
+        <name>outputShapes_</name>
+        <qualifiedname>legged::OnnxPolicy::outputShapes_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/OnnxPolicy.h" line="33" column="15" bodyfile="include/legged_rl_controllers/OnnxPolicy.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlegged_1_1OnnxPolicy_1aec5db2a7b4c66ca9c2af5a7e43e8ea8d" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>legged::OnnxPolicy::OnnxPolicy</definition>
+        <argsstring>(const std::string &amp;modelPath)</argsstring>
+        <name>OnnxPolicy</name>
+        <qualifiedname>legged::OnnxPolicy::OnnxPolicy</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>modelPath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/OnnxPolicy.h" line="20" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1OnnxPolicy_1a6fe3bc5c2bb344220113d929b1deee00" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>size_t</type>
+        <definition>size_t legged::OnnxPolicy::getInputSize</definition>
+        <argsstring>() const override</argsstring>
+        <name>getInputSize</name>
+        <qualifiedname>legged::OnnxPolicy::getInputSize</qualifiedname>
+        <reimplements refid="classlegged_1_1Policy_1a2e6b801b696476e87c2c865e97c22c68">getInputSize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/OnnxPolicy.h" line="21" column="10" bodyfile="include/legged_rl_controllers/OnnxPolicy.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1OnnxPolicy_1a8347d15430185d587ba0c97f96ab77d2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>size_t</type>
+        <definition>size_t legged::OnnxPolicy::getOutputSize</definition>
+        <argsstring>() const override</argsstring>
+        <name>getOutputSize</name>
+        <qualifiedname>legged::OnnxPolicy::getOutputSize</qualifiedname>
+        <reimplements refid="classlegged_1_1Policy_1aa73aa0916f45448682903c7bec93f384">getOutputSize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/OnnxPolicy.h" line="22" column="10" bodyfile="include/legged_rl_controllers/OnnxPolicy.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1OnnxPolicy_1ada57bc34be5bd8ab82ba9c37e5324d47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void legged::OnnxPolicy::reset</definition>
+        <argsstring>() override</argsstring>
+        <name>reset</name>
+        <qualifiedname>legged::OnnxPolicy::reset</qualifiedname>
+        <reimplements refid="classlegged_1_1Policy_1a2b31e71b8e3ff8b65de4868a485a4449">reset</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/OnnxPolicy.h" line="24" column="8" bodyfile="include/legged_rl_controllers/OnnxPolicy.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1OnnxPolicy_1af7a079378791ab24e415c682f7da35bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>vector_t</type>
+        <definition>vector_t legged::OnnxPolicy::run</definition>
+        <argsstring>(const vector_t &amp;observations) override</argsstring>
+        <name>run</name>
+        <qualifiedname>legged::OnnxPolicy::run</qualifiedname>
+        <reimplements refid="classlegged_1_1Policy_1a8422cbad179385a85c2190f7c776e233">run</reimplements>
+        <param>
+          <type>const vector_t &amp;</type>
+          <declname>observations</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/OnnxPolicy.h" line="25" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>legged::OnnxPolicy</label>
+        <link refid="classlegged_1_1OnnxPolicy"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>legged::Policy</label>
+        <link refid="classlegged_1_1Policy"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>legged::OnnxPolicy</label>
+        <link refid="classlegged_1_1OnnxPolicy"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>legged::Policy</label>
+        <link refid="classlegged_1_1Policy"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/legged_rl_controllers/OnnxPolicy.h" line="16" column="1" bodyfile="include/legged_rl_controllers/OnnxPolicy.h" bodystart="16" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1OnnxPolicy_1a6fe3bc5c2bb344220113d929b1deee00" prot="public" virt="virtual"><scope>legged::OnnxPolicy</scope><name>getInputSize</name></member>
+      <member refid="classlegged_1_1Policy_1a7d055b167aa03f60770c4a1e280f032d" prot="public" virt="virtual"><scope>legged::OnnxPolicy</scope><name>getLastOutput</name></member>
+      <member refid="classlegged_1_1OnnxPolicy_1a8347d15430185d587ba0c97f96ab77d2" prot="public" virt="virtual"><scope>legged::OnnxPolicy</scope><name>getOutputSize</name></member>
+      <member refid="classlegged_1_1OnnxPolicy_1aaa0d1f6144b9ce40aea9619224d17636" prot="protected" virt="non-virtual"><scope>legged::OnnxPolicy</scope><name>inputNames_</name></member>
+      <member refid="classlegged_1_1OnnxPolicy_1a36c2c9f0d1008e4be71d42713ac539fe" prot="protected" virt="non-virtual"><scope>legged::OnnxPolicy</scope><name>inputShapes_</name></member>
+      <member refid="classlegged_1_1Policy_1aa46297e75f39e97ac8973be477a98f42" prot="protected" virt="non-virtual"><scope>legged::OnnxPolicy</scope><name>lastOutput_</name></member>
+      <member refid="classlegged_1_1OnnxPolicy_1a7a56e6e54a5ab7c59288e04561ae59c9" prot="protected" virt="non-virtual"><scope>legged::OnnxPolicy</scope><name>onnxEnvPrt_</name></member>
+      <member refid="classlegged_1_1OnnxPolicy_1aec5db2a7b4c66ca9c2af5a7e43e8ea8d" prot="public" virt="non-virtual"><scope>legged::OnnxPolicy</scope><name>OnnxPolicy</name></member>
+      <member refid="classlegged_1_1OnnxPolicy_1ad780a7f76da5de1c17793fb116545b14" prot="protected" virt="non-virtual"><scope>legged::OnnxPolicy</scope><name>outputNames_</name></member>
+      <member refid="classlegged_1_1OnnxPolicy_1a36100b0fb8422eaba349944f5a8bdf59" prot="protected" virt="non-virtual"><scope>legged::OnnxPolicy</scope><name>outputShapes_</name></member>
+      <member refid="classlegged_1_1OnnxPolicy_1ada57bc34be5bd8ab82ba9c37e5324d47" prot="public" virt="virtual"><scope>legged::OnnxPolicy</scope><name>reset</name></member>
+      <member refid="classlegged_1_1OnnxPolicy_1af7a079378791ab24e415c682f7da35bd" prot="public" virt="virtual"><scope>legged::OnnxPolicy</scope><name>run</name></member>
+      <member refid="classlegged_1_1OnnxPolicy_1a2e11e757daffff53a0c002db6414ce1f" prot="protected" virt="non-virtual"><scope>legged::OnnxPolicy</scope><name>sessionPtr_</name></member>
+      <member refid="classlegged_1_1OnnxPolicy_1a4485fdd8d8000549ce3bd83e19368939" prot="public" virt="non-virtual"><scope>legged::OnnxPolicy</scope><name>SharedPtr</name></member>
+      <member refid="classlegged_1_1OnnxPolicy_1a335f36fa0f3fc087d15b12544b5dd825" prot="public" virt="non-virtual"><scope>legged::OnnxPolicy</scope><name>tensor_element_t</name></member>
+      <member refid="classlegged_1_1Policy_1af08fd661726c2ae6b8815b39ab3e0f87" prot="public" virt="virtual"><scope>legged::OnnxPolicy</scope><name>~Policy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

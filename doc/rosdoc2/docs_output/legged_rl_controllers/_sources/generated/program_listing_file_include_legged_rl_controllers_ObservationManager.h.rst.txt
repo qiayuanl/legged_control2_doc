@@ -1,0 +1,214 @@
+
+.. _program_listing_file_include_legged_rl_controllers_ObservationManager.h:
+
+Program Listing for File ObservationManager.h
+=============================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_legged_rl_controllers_ObservationManager.h>` (``include/legged_rl_controllers/ObservationManager.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   //
+   // Created by qiayuanl on 3/5/25.
+   //
+   
+   #pragma once
+   
+   #include <deque>
+   #include <memory>
+   #include <string>
+   #include <utility>
+   #include <vector>
+   
+   #include "legged_rl_controllers/CommandManager.h"
+   #include "legged_rl_controllers/Policy.h"
+   
+   namespace legged {
+   class ObservationTerm {
+    public:
+     using SharedPtr = std::shared_ptr<ObservationTerm>;
+     ObservationTerm() = default;
+     virtual ~ObservationTerm() = default;
+     vector_t getValue() { return modify(evaluate()); }
+     virtual size_t getSize() const = 0;
+     virtual void reset() {}
+     virtual void setModel(const LeggedModel::SharedPtr& model) { model_ = model; }
+   
+    protected:
+     virtual vector_t evaluate() = 0;
+     virtual vector_t modify(const vector_t& observation) { return observation; }
+   
+     LeggedModel::SharedPtr model_;
+   };
+   
+   class ObservationManager : public ManagerBase<ObservationTerm> {
+    public:
+     explicit ObservationManager(const LeggedModel::SharedPtr& model, const size_t historySize = 1, bool byTerms = true)
+         : ManagerBase(model), historyLength_(historySize), byTerms_(byTerms) {}
+   
+     vector_t getValue() override {
+       vector_t value(getSize());
+       history_.pop_front();
+       history_.push_back(ManagerBase::getValue());
+   
+       if (byTerms_) {
+         size_t accumulatedT = 0;
+         size_t accumulatedI = 0;
+         for (size_t t = 0; t < terms_.size(); ++t) {
+           const size_t termSize = terms_[t]->getSize();
+           for (size_t i = 0; i < historyLength_; ++i) {
+             value.segment(accumulatedI, termSize) = history_[i].segment(accumulatedT, termSize);
+             accumulatedI += termSize;
+           }
+           accumulatedT += termSize;
+         }
+       } else {
+         for (size_t i = 0; i < historyLength_; ++i) {
+           value.segment(i * ManagerBase::getSize(), ManagerBase::getSize()) = history_[i];
+         }
+       }
+       return value;
+     }
+   
+     size_t getSize() const override {
+       const size_t signalStepSize = ManagerBase::getSize();
+       return historyLength_ * signalStepSize;
+     }
+   
+     void reset() override {
+       ManagerBase::reset();
+       history_.clear();
+       for (size_t i = 0; i < historyLength_; ++i) {
+         history_.push_back(vector_t::Zero(getSize()));
+       }
+     }
+   
+    protected:
+     size_t historyLength_;
+     bool byTerms_;
+     std::deque<vector_t> history_;
+   };
+   
+   class BaseLinVelObservationTerm final : public ObservationTerm {
+    public:
+     using ObservationTerm::ObservationTerm;
+     size_t getSize() const override { return 3; }
+   
+    protected:
+     vector_t evaluate() override { return model_->getGeneralizedVelocity().segment<3>(0); }
+   };
+   
+   class BaseAngVelObservationTerm final : public ObservationTerm {
+    public:
+     using ObservationTerm::ObservationTerm;
+     size_t getSize() const override { return 3; }
+   
+    protected:
+     vector_t evaluate() override { return model_->getGeneralizedVelocity().segment<3>(3); }
+   };
+   
+   class LocalObservationTerm : public ObservationTerm {
+    public:
+     using ObservationTerm::ObservationTerm;
+     size_t getSize() const override { return 3; }
+   
+    protected:
+     vector_t modify(const vector_t& observation) override { return model_->getBaseRotation().toRotationMatrix().transpose() * observation; }
+   };
+   
+   class ProjectedGravityObservationTerm final : public LocalObservationTerm {
+    public:
+     using LocalObservationTerm::LocalObservationTerm;
+   
+    protected:
+     vector_t evaluate() override { return vector3_t(0, 0, -1); }
+   };
+   
+   class JointObservationTerm : public ObservationTerm {
+    public:
+     explicit JointObservationTerm(std::vector<std::string> jointNameInPolicy) : jointNameInPolicy_(std::move(jointNameInPolicy)) {}
+     size_t getSize() const override { return jointNameInPolicy_.size(); }
+   
+    protected:
+     vector_t modify(const vector_t& observation) override {
+       vector_t modifiedObservation = observation;
+       for (size_t i = 0; i < jointNameInPolicy_.size(); ++i) {
+         modifiedObservation[i] = observation[model_->getJointIndex(jointNameInPolicy_[i])];
+       }
+       return modifiedObservation;
+     }
+   
+     std::vector<std::string> jointNameInPolicy_;
+   };
+   
+   class JointPositionsObservationTerm final : public JointObservationTerm {
+    public:
+     JointPositionsObservationTerm(const std::vector<std::string>& jointNameInPolicy, vector_t defaultPosition)
+         : JointObservationTerm(jointNameInPolicy), defaultPosition_(std::move(defaultPosition)) {}
+   
+    protected:
+     vector_t evaluate() override { return model_->getGeneralizedPosition().tail(model_->getJointNames().size()); }
+     vector_t modify(const vector_t& observation) override { return JointObservationTerm::modify(observation) - defaultPosition_; }
+     vector_t defaultPosition_;
+   };
+   
+   class JointVelocitiesObservationTerm final : public JointObservationTerm {
+    public:
+     using JointObservationTerm::JointObservationTerm;
+   
+    protected:
+     vector_t evaluate() override { return model_->getGeneralizedVelocity().tail(model_->getJointNames().size()); }
+   };
+   
+   class LastActionObservationTerm final : public ObservationTerm {
+    public:
+     LastActionObservationTerm(Policy::SharedPtr policy) : policy_(std::move(policy)) {}
+     size_t getSize() const override { return policy_->getOutputSize(); }
+   
+    protected:
+     vector_t evaluate() override { return policy_->getLastOutput(); }
+     Policy::SharedPtr policy_;
+   };
+   
+   class PhaseObservationTerm final : public ObservationTerm {
+    public:
+     using ObservationTerm::ObservationTerm;
+     PhaseObservationTerm() {}
+     size_t getSize() const override { return 4; }
+     void reset() override {
+       phase_ = vector_t::Zero(2);
+       phase_[1] = M_PI;
+     }
+   
+    protected:
+     vector_t evaluate() override {
+       phase_[0] = std::fmod(phase_[0] + phaseDt_ + M_PI, 2 * M_PI) - M_PI;
+       phase_[1] = std::fmod(phase_[1] + phaseDt_ + M_PI, 2 * M_PI) - M_PI;
+   
+       vector_t obs(4);
+       vector_t phase(2);
+       phase = phase_;
+       obs[0] = std::cos(phase[0]);
+       obs[1] = std::cos(phase[1]);
+       obs[2] = std::sin(phase[0]);
+       obs[3] = std::sin(phase[1]);
+       return obs;
+     }
+   
+     vector_t phase_;
+     scalar_t phaseDt_{2 * M_PI * 0.02 * 1.5};
+   };
+   
+   class CommandObservationTerm : public ObservationTerm {
+    public:
+     explicit CommandObservationTerm(CommandManager::SharedPtr command) : commandManager_(std::move(command)) {}
+     size_t getSize() const override { return commandManager_->getSize(); }
+   
+    protected:
+     vector_t evaluate() override { return commandManager_->getValue(); }
+     CommandManager::SharedPtr commandManager_;
+   };
+   
+   }  // namespace legged

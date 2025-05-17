@@ -1,0 +1,221 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class MujocoRendering &mdash; mujoco_ros2_control 0.1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=01f34227"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class MujocoRos2Control" href="classmujoco__ros2__control_1_1MujocoRos2Control.html" />
+    <link rel="prev" title="Class MujocoCameras" href="classmujoco__ros2__control_1_1MujocoCameras.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            mujoco_ros2_control
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">C++ API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#full-c-api">Full C++ API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#namespaces">Namespaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="namespace_hardware_interface.html">Namespace hardware_interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_mujoco_ros2_control.html">Namespace mujoco_ros2_control</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_mujoco_sim_ros2.html">Namespace mujoco_sim_ros2</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#classes-and-structs">Classes and Structs</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="structmujoco__ros2__control_1_1CameraData.html">Struct CameraData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structmujoco__ros2__control_1_1MujocoSystem_1_1FTSensorData.html">Struct MujocoSystem::FTSensorData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData.html">Struct MujocoSystem::IMUSensorData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState.html">Struct MujocoSystem::JointState</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData.html">Template Struct MujocoSystem::SensorData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmujoco__ros2__control_1_1MujocoCameras.html">Class MujocoCameras</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Class MujocoRendering</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmujoco__ros2__control_1_1MujocoRos2Control.html">Class MujocoRos2Control</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin.html">Class MujocoRos2ControlPlugin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmujoco__ros2__control_1_1MujocoSystem.html">Class MujocoSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmujoco__ros2__control_1_1MujocoSystemInterface.html">Class MujocoSystemInterface</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#variables">Variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="variable_mujoco__system_8hpp_1ad6f5a3b76cf98c6a7bd6c61446b81675.html">Variable mujoco_ros2_control::HW_IF_DAMPING</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_mujoco__system_8hpp_1ac51074381bd7ecd32cd11d0445cff323.html">Variable mujoco_ros2_control::HW_IF_STIFFNESS</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#typedefs">Typedefs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="typedef_mujoco__system__interface_8hpp_1ad61493c4f5cf48aee2654e4c3a7bd2fc.html">Typedef mujoco_ros2_control::CallbackReturn</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#directories">Directories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dir_include.html">Directory include</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_mujoco_ros2_control.html">Directory mujoco_ros2_control</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#files">Files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="file_include_mujoco_ros2_control_mujoco_cameras.hpp.html">File mujoco_cameras.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_mujoco_ros2_control_mujoco_rendering.hpp.html">File mujoco_rendering.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_mujoco_ros2_control_mujoco_ros2_control.hpp.html">File mujoco_ros2_control.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_mujoco_ros2_control_mujoco_ros2_control_plugin.hpp.html">File mujoco_ros2_control_plugin.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_mujoco_ros2_control_mujoco_system.hpp.html">File mujoco_system.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_mujoco_ros2_control_mujoco_system_interface.hpp.html">File mujoco_system_interface.hpp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../standards.html">Standard Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../standard_docs/PACKAGE.html">PACKAGE</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">mujoco_ros2_control</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">C++ API</a></li>
+      <li class="breadcrumb-item active">Class MujocoRendering</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/classmujoco__ros2__control_1_1MujocoRendering.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-mujocorendering">
+<span id="exhale-class-classmujoco-ros2-control-1-1mujocorendering"></span><h1>Class MujocoRendering<a class="headerlink" href="#class-mujocorendering" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_include_mujoco_ros2_control_mujoco_rendering.hpp.html#file-include-mujoco-ros2-control-mujoco-rendering-hpp"><span class="std std-ref">File mujoco_rendering.hpp</span></a></p></li>
+</ul>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control15MujocoRenderingE">
+<span id="_CPPv3N19mujoco_ros2_control15MujocoRenderingE"></span><span id="_CPPv2N19mujoco_ros2_control15MujocoRenderingE"></span><span id="mujoco_ros2_control::MujocoRendering"></span><span class="target" id="classmujoco__ros2__control_1_1MujocoRendering"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MujocoRendering</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control15MujocoRenderingE" title="Link to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control15MujocoRendering15MujocoRenderingERK15MujocoRendering">
+<span id="_CPPv3N19mujoco_ros2_control15MujocoRendering15MujocoRenderingERK15MujocoRendering"></span><span id="_CPPv2N19mujoco_ros2_control15MujocoRendering15MujocoRenderingERK15MujocoRendering"></span><span id="mujoco_ros2_control::MujocoRendering::MujocoRendering__MujocoRenderingCR"></span><span class="target" id="classmujoco__ros2__control_1_1MujocoRendering_1a7d9ccdd58017234d7b7998209d22a5cd"></span><span class="sig-name descname"><span class="n"><span class="pre">MujocoRendering</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19mujoco_ros2_control15MujocoRendering15MujocoRenderingERK15MujocoRendering" title="mujoco_ros2_control::MujocoRendering::MujocoRendering"><span class="n"><span class="pre">MujocoRendering</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">obj</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">delete</span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control15MujocoRendering15MujocoRenderingERK15MujocoRendering" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control15MujocoRenderingaSERK15MujocoRendering">
+<span id="_CPPv3N19mujoco_ros2_control15MujocoRenderingaSERK15MujocoRendering"></span><span id="_CPPv2N19mujoco_ros2_control15MujocoRenderingaSERK15MujocoRendering"></span><span id="mujoco_ros2_control::MujocoRendering::assign-operator__MujocoRenderingCR"></span><span class="target" id="classmujoco__ros2__control_1_1MujocoRendering_1a5663a21201d04089fccfae2eba66ca9f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19mujoco_ros2_control15MujocoRenderingE" title="mujoco_ros2_control::MujocoRendering"><span class="n"><span class="pre">MujocoRendering</span></span></a><span class="p"><span class="pre">&amp;</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">delete</span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control15MujocoRenderingaSERK15MujocoRendering" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control15MujocoRendering4initEP7mjModelP6mjData">
+<span id="_CPPv3N19mujoco_ros2_control15MujocoRendering4initEP7mjModelP6mjData"></span><span id="_CPPv2N19mujoco_ros2_control15MujocoRendering4initEP7mjModelP6mjData"></span><span id="mujoco_ros2_control::MujocoRendering::init__mjModelP.mjDataP"></span><span class="target" id="classmujoco__ros2__control_1_1MujocoRendering_1a6e1a008e2f00aecd530db43ac898b3b8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">mjModel</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">mujoco_model</span></span>, <span class="n"><span class="pre">mjData</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">mujoco_data</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control15MujocoRendering4initEP7mjModelP6mjData" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control15MujocoRendering20is_close_flag_raisedEv">
+<span id="_CPPv3N19mujoco_ros2_control15MujocoRendering20is_close_flag_raisedEv"></span><span id="_CPPv2N19mujoco_ros2_control15MujocoRendering20is_close_flag_raisedEv"></span><span id="mujoco_ros2_control::MujocoRendering::is_close_flag_raised"></span><span class="target" id="classmujoco__ros2__control_1_1MujocoRendering_1a9489ee1fb4bc63d8c68230b90d215bdf"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">is_close_flag_raised</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control15MujocoRendering20is_close_flag_raisedEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control15MujocoRendering6updateEv">
+<span id="_CPPv3N19mujoco_ros2_control15MujocoRendering6updateEv"></span><span id="_CPPv2N19mujoco_ros2_control15MujocoRendering6updateEv"></span><span id="mujoco_ros2_control::MujocoRendering::update"></span><span class="target" id="classmujoco__ros2__control_1_1MujocoRendering_1a2dc23a508d7407234a7c211d946deafe"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">update</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control15MujocoRendering6updateEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control15MujocoRendering5closeEv">
+<span id="_CPPv3N19mujoco_ros2_control15MujocoRendering5closeEv"></span><span id="_CPPv2N19mujoco_ros2_control15MujocoRendering5closeEv"></span><span id="mujoco_ros2_control::MujocoRendering::close"></span><span class="target" id="classmujoco__ros2__control_1_1MujocoRendering_1a8a8c5c6792683386fcc625c75fdba898"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">close</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control15MujocoRendering5closeEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control15MujocoRendering12get_instanceEv">
+<span id="_CPPv3N19mujoco_ros2_control15MujocoRendering12get_instanceEv"></span><span id="_CPPv2N19mujoco_ros2_control15MujocoRendering12get_instanceEv"></span><span id="mujoco_ros2_control::MujocoRendering::get_instance"></span><span class="target" id="classmujoco__ros2__control_1_1MujocoRendering_1a0871250c7f783bf49677f495dc80f50a"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N19mujoco_ros2_control15MujocoRenderingE" title="mujoco_ros2_control::MujocoRendering"><span class="n"><span class="pre">MujocoRendering</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">get_instance</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control15MujocoRendering12get_instanceEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="classmujoco__ros2__control_1_1MujocoCameras.html" class="btn btn-neutral float-left" title="Class MujocoCameras" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="classmujoco__ros2__control_1_1MujocoRos2Control.html" class="btn btn-neutral float-right" title="Class MujocoRos2Control" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright The &lt;mujoco_ros2_control&gt; Contributors. License: MIT.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

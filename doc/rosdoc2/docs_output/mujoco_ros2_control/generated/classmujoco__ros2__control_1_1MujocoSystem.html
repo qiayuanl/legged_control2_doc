@@ -1,0 +1,426 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class MujocoSystem &mdash; mujoco_ros2_control 0.1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=01f34227"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class MujocoSystemInterface" href="classmujoco__ros2__control_1_1MujocoSystemInterface.html" />
+    <link rel="prev" title="Class MujocoRos2ControlPlugin" href="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            mujoco_ros2_control
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">C++ API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#full-c-api">Full C++ API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#namespaces">Namespaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="namespace_hardware_interface.html">Namespace hardware_interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_mujoco_ros2_control.html">Namespace mujoco_ros2_control</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_mujoco_sim_ros2.html">Namespace mujoco_sim_ros2</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#classes-and-structs">Classes and Structs</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="structmujoco__ros2__control_1_1CameraData.html">Struct CameraData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structmujoco__ros2__control_1_1MujocoSystem_1_1FTSensorData.html">Struct MujocoSystem::FTSensorData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData.html">Struct MujocoSystem::IMUSensorData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState.html">Struct MujocoSystem::JointState</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData.html">Template Struct MujocoSystem::SensorData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmujoco__ros2__control_1_1MujocoCameras.html">Class MujocoCameras</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmujoco__ros2__control_1_1MujocoRendering.html">Class MujocoRendering</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmujoco__ros2__control_1_1MujocoRos2Control.html">Class MujocoRos2Control</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin.html">Class MujocoRos2ControlPlugin</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Class MujocoSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmujoco__ros2__control_1_1MujocoSystemInterface.html">Class MujocoSystemInterface</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#variables">Variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="variable_mujoco__system_8hpp_1ad6f5a3b76cf98c6a7bd6c61446b81675.html">Variable mujoco_ros2_control::HW_IF_DAMPING</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_mujoco__system_8hpp_1ac51074381bd7ecd32cd11d0445cff323.html">Variable mujoco_ros2_control::HW_IF_STIFFNESS</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#typedefs">Typedefs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="typedef_mujoco__system__interface_8hpp_1ad61493c4f5cf48aee2654e4c3a7bd2fc.html">Typedef mujoco_ros2_control::CallbackReturn</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#directories">Directories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dir_include.html">Directory include</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_mujoco_ros2_control.html">Directory mujoco_ros2_control</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#files">Files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="file_include_mujoco_ros2_control_mujoco_cameras.hpp.html">File mujoco_cameras.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_mujoco_ros2_control_mujoco_rendering.hpp.html">File mujoco_rendering.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_mujoco_ros2_control_mujoco_ros2_control.hpp.html">File mujoco_ros2_control.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_mujoco_ros2_control_mujoco_ros2_control_plugin.hpp.html">File mujoco_ros2_control_plugin.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_mujoco_ros2_control_mujoco_system.hpp.html">File mujoco_system.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_mujoco_ros2_control_mujoco_system_interface.hpp.html">File mujoco_system_interface.hpp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../standards.html">Standard Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../standard_docs/PACKAGE.html">PACKAGE</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">mujoco_ros2_control</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">C++ API</a></li>
+      <li class="breadcrumb-item active">Class MujocoSystem</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/classmujoco__ros2__control_1_1MujocoSystem.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-mujocosystem">
+<span id="exhale-class-classmujoco-ros2-control-1-1mujocosystem"></span><h1>Class MujocoSystem<a class="headerlink" href="#class-mujocosystem" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_include_mujoco_ros2_control_mujoco_system.hpp.html#file-include-mujoco-ros2-control-mujoco-system-hpp"><span class="std std-ref">File mujoco_system.hpp</span></a></p></li>
+</ul>
+<section id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Link to this heading"></a></h2>
+<section id="nested-types">
+<h3>Nested Types<a class="headerlink" href="#nested-types" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="structmujoco__ros2__control_1_1MujocoSystem_1_1FTSensorData.html#exhale-struct-structmujoco-ros2-control-1-1mujocosystem-1-1ftsensordata"><span class="std std-ref">Struct MujocoSystem::FTSensorData</span></a></p></li>
+<li><p><a class="reference internal" href="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData.html#exhale-struct-structmujoco-ros2-control-1-1mujocosystem-1-1imusensordata"><span class="std std-ref">Struct MujocoSystem::IMUSensorData</span></a></p></li>
+<li><p><a class="reference internal" href="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState.html#exhale-struct-structmujoco-ros2-control-1-1mujocosystem-1-1jointstate"><span class="std std-ref">Struct MujocoSystem::JointState</span></a></p></li>
+<li><p><a class="reference internal" href="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData.html#exhale-struct-structmujoco-ros2-control-1-1mujocosystem-1-1sensordata"><span class="std std-ref">Template Struct MujocoSystem::SensorData</span></a></p></li>
+</ul>
+</section>
+</section>
+<section id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Link to this heading"></a></h2>
+<section id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">mujoco_ros2_control::MujocoSystemInterface</span></code> (<a class="reference internal" href="classmujoco__ros2__control_1_1MujocoSystemInterface.html#exhale-class-classmujoco-ros2-control-1-1mujocosysteminterface"><span class="std std-ref">Class MujocoSystemInterface</span></a>)</p></li>
+</ul>
+</section>
+</section>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystemE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystemE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystemE"></span><span id="mujoco_ros2_control::MujocoSystem"></span><span class="target" id="classmujoco__ros2__control_1_1MujocoSystem"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MujocoSystem</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">mujoco_ros2_control</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classmujoco__ros2__control_1_1MujocoSystemInterface.html#_CPPv4N19mujoco_ros2_control21MujocoSystemInterfaceE" title="mujoco_ros2_control::MujocoSystemInterface"><span class="n"><span class="pre">MujocoSystemInterface</span></span></a><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystemE" title="Link to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem12MujocoSystemEv">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem12MujocoSystemEv"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem12MujocoSystemEv"></span><span id="mujoco_ros2_control::MujocoSystem::MujocoSystem"></span><span class="target" id="classmujoco__ros2__control_1_1MujocoSystem_1ad341c426cfd825395ee339c7c58b52a3"></span><span class="sig-name descname"><span class="n"><span class="pre">MujocoSystem</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem12MujocoSystemEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem23export_state_interfacesEv">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem23export_state_interfacesEv"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem23export_state_interfacesEv"></span><span id="mujoco_ros2_control::MujocoSystem::export_state_interfaces"></span><span class="target" id="classmujoco__ros2__control_1_1MujocoSystem_1a2a54f868db4f5152c0924553a18142b3"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">hardware_interface</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">StateInterface</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">export_state_interfaces</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem23export_state_interfacesEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem25export_command_interfacesEv">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem25export_command_interfacesEv"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem25export_command_interfacesEv"></span><span id="mujoco_ros2_control::MujocoSystem::export_command_interfaces"></span><span class="target" id="classmujoco__ros2__control_1_1MujocoSystem_1af1395d02283b2c620ff4747e37256e6b"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">hardware_interface</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">CommandInterface</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">export_command_interfaces</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem25export_command_interfacesEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem4readERKN6rclcpp4TimeERKN6rclcpp8DurationE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem4readERKN6rclcpp4TimeERKN6rclcpp8DurationE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem4readERKN6rclcpp4TimeERKN6rclcpp8DurationE"></span><span id="mujoco_ros2_control::MujocoSystem::read__rclcpp::TimeCR.rclcpp::DurationCR"></span><span class="target" id="classmujoco__ros2__control_1_1MujocoSystem_1aeebea7ba4fde4fa91aab68e5ac95855c"></span><span class="n"><span class="pre">hardware_interface</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">return_type</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">read</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">rclcpp</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Time</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">time</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">rclcpp</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Duration</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">period</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem4readERKN6rclcpp4TimeERKN6rclcpp8DurationE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem5writeERKN6rclcpp4TimeERKN6rclcpp8DurationE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem5writeERKN6rclcpp4TimeERKN6rclcpp8DurationE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem5writeERKN6rclcpp4TimeERKN6rclcpp8DurationE"></span><span id="mujoco_ros2_control::MujocoSystem::write__rclcpp::TimeCR.rclcpp::DurationCR"></span><span class="target" id="classmujoco__ros2__control_1_1MujocoSystem_1adaf667cd2d52a9fae57b098c3b87e8ff"></span><span class="n"><span class="pre">hardware_interface</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">return_type</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">write</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">rclcpp</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Time</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">time</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">rclcpp</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Duration</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">period</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem5writeERKN6rclcpp4TimeERKN6rclcpp8DurationE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem8init_simERN6rclcpp4Node9SharedPtrEP7mjModelP6mjDataRKN4urdf5ModelERKN18hardware_interface12HardwareInfoE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem8init_simERN6rclcpp4Node9SharedPtrEP7mjModelP6mjDataRKN4urdf5ModelERKN18hardware_interface12HardwareInfoE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem8init_simERN6rclcpp4Node9SharedPtrEP7mjModelP6mjDataRKN4urdf5ModelERKN18hardware_interface12HardwareInfoE"></span><span id="mujoco_ros2_control::MujocoSystem::init_sim__rclcpp::Node::SharedPtrR.mjModelP.mjDataP.urdf::ModelCR.hardware_interface::HardwareInfoCR"></span><span class="target" id="classmujoco__ros2__control_1_1MujocoSystem_1a4a49f2788b5301977a1b158d4da067f6"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init_sim</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">rclcpp</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Node</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">SharedPtr</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">node</span></span>, <span class="n"><span class="pre">mjModel</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">mujoco_model</span></span>, <span class="n"><span class="pre">mjData</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">mujoco_data</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">urdf</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Model</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">urdf_model</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">hardware_interface</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">HardwareInfo</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">hardware_info</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem8init_simERN6rclcpp4Node9SharedPtrEP7mjModelP6mjDataRKN4urdf5ModelERKN18hardware_interface12HardwareInfoE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem12FTSensorDataE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem12FTSensorDataE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem12FTSensorDataE"></span><span id="mujoco_ros2_control::MujocoSystem::FTSensorData"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1FTSensorData"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">FTSensorData</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem12FTSensorDataE" title="Link to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem12FTSensorData4nameE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem12FTSensorData4nameE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem12FTSensorData4nameE"></span><span id="mujoco_ros2_control::MujocoSystem::FTSensorData::name__ss"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1FTSensorData_1a73aa336b28309142c8299577626441ee"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem12FTSensorData4nameE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem12FTSensorData5forceE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem12FTSensorData5forceE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem12FTSensorData5forceE"></span><span id="mujoco_ros2_control::MujocoSystem::FTSensorData::force__SensorData:Eigen::Vector3d:"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1FTSensorData_1aa34588465d9f1b1a956d5c6a9116a264"></span><a class="reference internal" href="#_CPPv4I0EN19mujoco_ros2_control12MujocoSystem10SensorDataE" title="mujoco_ros2_control::MujocoSystem::SensorData"><span class="n"><span class="pre">SensorData</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector3d</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">force</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem12FTSensorData5forceE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem12FTSensorData6torqueE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem12FTSensorData6torqueE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem12FTSensorData6torqueE"></span><span id="mujoco_ros2_control::MujocoSystem::FTSensorData::torque__SensorData:Eigen::Vector3d:"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1FTSensorData_1a41bf5a03bf293f8084995eb38d8ab507"></span><a class="reference internal" href="#_CPPv4I0EN19mujoco_ros2_control12MujocoSystem10SensorDataE" title="mujoco_ros2_control::MujocoSystem::SensorData"><span class="n"><span class="pre">SensorData</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector3d</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">torque</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem12FTSensorData6torqueE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem13IMUSensorDataE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem13IMUSensorDataE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem13IMUSensorDataE"></span><span id="mujoco_ros2_control::MujocoSystem::IMUSensorData"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">IMUSensorData</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem13IMUSensorDataE" title="Link to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem13IMUSensorData4nameE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem13IMUSensorData4nameE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem13IMUSensorData4nameE"></span><span id="mujoco_ros2_control::MujocoSystem::IMUSensorData::name__ss"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData_1ac1db7e0319fd95530214a2785da38af9"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem13IMUSensorData4nameE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem13IMUSensorData11orientationE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem13IMUSensorData11orientationE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem13IMUSensorData11orientationE"></span><span id="mujoco_ros2_control::MujocoSystem::IMUSensorData::orientation__SensorData:Eigen::Quaternion:double::"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData_1aa9c83dc2867fd9c2a44b2ac882738034"></span><a class="reference internal" href="#_CPPv4I0EN19mujoco_ros2_control12MujocoSystem10SensorDataE" title="mujoco_ros2_control::MujocoSystem::SensorData"><span class="n"><span class="pre">SensorData</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Quaternion</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">orientation</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem13IMUSensorData11orientationE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem13IMUSensorData16angular_velocityE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem13IMUSensorData16angular_velocityE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem13IMUSensorData16angular_velocityE"></span><span id="mujoco_ros2_control::MujocoSystem::IMUSensorData::angular_velocity__SensorData:Eigen::Vector3d:"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData_1a5f5124f485d87e362656a17e7e243c3a"></span><a class="reference internal" href="#_CPPv4I0EN19mujoco_ros2_control12MujocoSystem10SensorDataE" title="mujoco_ros2_control::MujocoSystem::SensorData"><span class="n"><span class="pre">SensorData</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector3d</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">angular_velocity</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem13IMUSensorData16angular_velocityE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem13IMUSensorData19linear_accelerationE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem13IMUSensorData19linear_accelerationE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem13IMUSensorData19linear_accelerationE"></span><span id="mujoco_ros2_control::MujocoSystem::IMUSensorData::linear_acceleration__SensorData:Eigen::Vector3d:"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData_1afc6ec91913fa2d60ab5f786dab4a18cd"></span><a class="reference internal" href="#_CPPv4I0EN19mujoco_ros2_control12MujocoSystem10SensorDataE" title="mujoco_ros2_control::MujocoSystem::SensorData"><span class="n"><span class="pre">SensorData</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">Eigen</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Vector3d</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">linear_acceleration</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem13IMUSensorData19linear_accelerationE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10JointStateE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10JointStateE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10JointStateE"></span><span id="mujoco_ros2_control::MujocoSystem::JointState"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">JointState</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10JointStateE" title="Link to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState4nameE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10JointState4nameE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10JointState4nameE"></span><span id="mujoco_ros2_control::MujocoSystem::JointState::name__ss"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a700e40706588facc0c8d685f893406fe"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState4nameE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState8positionE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10JointState8positionE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10JointState8positionE"></span><span id="mujoco_ros2_control::MujocoSystem::JointState::position__double"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a4011f4af07ab7d184bc79ce1b6040b84"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">position</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState8positionE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState8velocityE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10JointState8velocityE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10JointState8velocityE"></span><span id="mujoco_ros2_control::MujocoSystem::JointState::velocity__double"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1afe65e8e2d5d9913d4c61e252e205f338"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">velocity</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState8velocityE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState6effortE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10JointState6effortE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10JointState6effortE"></span><span id="mujoco_ros2_control::MujocoSystem::JointState::effort__double"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a8347ba9a5a9e45c04f65a725a905fc5e"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">effort</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState6effortE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState16position_commandE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10JointState16position_commandE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10JointState16position_commandE"></span><span id="mujoco_ros2_control::MujocoSystem::JointState::position_command__double"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a288fc3684667cd7ad498f0fc5acca319"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">position_command</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState16position_commandE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState16velocity_commandE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10JointState16velocity_commandE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10JointState16velocity_commandE"></span><span id="mujoco_ros2_control::MujocoSystem::JointState::velocity_command__double"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1aac19ba799baff062e45cc410a907b474"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">velocity_command</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState16velocity_commandE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState14effort_commandE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10JointState14effort_commandE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10JointState14effort_commandE"></span><span id="mujoco_ros2_control::MujocoSystem::JointState::effort_command__double"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a2ddd7a88c04f23d956d5bbf262cc50e0"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">effort_command</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState14effort_commandE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState17stiffness_commandE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10JointState17stiffness_commandE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10JointState17stiffness_commandE"></span><span id="mujoco_ros2_control::MujocoSystem::JointState::stiffness_command__double"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a2cf285728e257c437c28ce071307ed12"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">stiffness_command</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState17stiffness_commandE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState15damping_commandE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10JointState15damping_commandE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10JointState15damping_commandE"></span><span id="mujoco_ros2_control::MujocoSystem::JointState::damping_command__double"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1ab2f9ef51fda96fb37ca017053a440a36"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">damping_command</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState15damping_commandE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState20min_position_commandE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10JointState20min_position_commandE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10JointState20min_position_commandE"></span><span id="mujoco_ros2_control::MujocoSystem::JointState::min_position_command__double"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a1da2b6218d1dd4ea963a480e4245eb76"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">min_position_command</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState20min_position_commandE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState20max_position_commandE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10JointState20max_position_commandE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10JointState20max_position_commandE"></span><span id="mujoco_ros2_control::MujocoSystem::JointState::max_position_command__double"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a4cad3ab23586d1aa4a4faaea84353378"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_position_command</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState20max_position_commandE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState20min_velocity_commandE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10JointState20min_velocity_commandE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10JointState20min_velocity_commandE"></span><span id="mujoco_ros2_control::MujocoSystem::JointState::min_velocity_command__double"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a668c7dda0a42cf04922d96b405f961c1"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">min_velocity_command</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState20min_velocity_commandE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState20max_velocity_commandE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10JointState20max_velocity_commandE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10JointState20max_velocity_commandE"></span><span id="mujoco_ros2_control::MujocoSystem::JointState::max_velocity_command__double"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a7143a0ee2549b263dc5894d96168fd4d"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_velocity_command</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState20max_velocity_commandE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState18min_effort_commandE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10JointState18min_effort_commandE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10JointState18min_effort_commandE"></span><span id="mujoco_ros2_control::MujocoSystem::JointState::min_effort_command__double"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a1c9e83caa41170d0abca68432415d1f3"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">min_effort_command</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState18min_effort_commandE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState18max_effort_commandE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10JointState18max_effort_commandE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10JointState18max_effort_commandE"></span><span id="mujoco_ros2_control::MujocoSystem::JointState::max_effort_command__double"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1af93d5f8e6babb3f70886e97675f166c8"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">max_effort_command</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState18max_effort_commandE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState12joint_limitsE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10JointState12joint_limitsE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10JointState12joint_limitsE"></span><span id="mujoco_ros2_control::MujocoSystem::JointState::joint_limits__joint_limits::JointLimits"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a2681fced02b3de30d43d5eb36a63dcc8"></span><a class="reference internal" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState12joint_limitsE" title="mujoco_ros2_control::MujocoSystem::JointState::joint_limits"><span class="n"><span class="pre">joint_limits</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">JointLimits</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">joint_limits</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState12joint_limitsE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState8is_mimicE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10JointState8is_mimicE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10JointState8is_mimicE"></span><span id="mujoco_ros2_control::MujocoSystem::JointState::is_mimic__b"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1ad85e210fbe9b3481a34057a8044efd2c"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">is_mimic</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="k"><span class="pre">false</span></span><span class="p"><span class="pre">}</span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState8is_mimicE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState20mimicked_joint_indexE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10JointState20mimicked_joint_indexE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10JointState20mimicked_joint_indexE"></span><span id="mujoco_ros2_control::MujocoSystem::JointState::mimicked_joint_index__i"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a8894ce3f7516b27d87d771b63e902b0e"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mimicked_joint_index</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState20mimicked_joint_indexE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState16mimic_multiplierE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10JointState16mimic_multiplierE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10JointState16mimic_multiplierE"></span><span id="mujoco_ros2_control::MujocoSystem::JointState::mimic_multiplier__double"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1af7afc04113615f5a739ad896c371a5d6"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mimic_multiplier</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState16mimic_multiplierE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState13mj_joint_typeE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10JointState13mj_joint_typeE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10JointState13mj_joint_typeE"></span><span id="mujoco_ros2_control::MujocoSystem::JointState::mj_joint_type__i"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a847cc7aa70253200939ddb9f4c8548a1"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mj_joint_type</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState13mj_joint_typeE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState10mj_pos_adrE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10JointState10mj_pos_adrE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10JointState10mj_pos_adrE"></span><span id="mujoco_ros2_control::MujocoSystem::JointState::mj_pos_adr__i"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1af015104f1e4e5f1e2670a131f8a13af6"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mj_pos_adr</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState10mj_pos_adrE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState10mj_vel_adrE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10JointState10mj_vel_adrE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10JointState10mj_vel_adrE"></span><span id="mujoco_ros2_control::MujocoSystem::JointState::mj_vel_adr__i"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a7b6b9da8c7400a4795a648bc72f60c24"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mj_vel_adr</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10JointState10mj_vel_adrE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4I0EN19mujoco_ros2_control12MujocoSystem10SensorDataE">
+<span id="_CPPv3I0EN19mujoco_ros2_control12MujocoSystem10SensorDataE"></span><span id="_CPPv2I0EN19mujoco_ros2_control12MujocoSystem10SensorDataE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">T</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SensorData</span></span></span><a class="headerlink" href="#_CPPv4I0EN19mujoco_ros2_control12MujocoSystem10SensorDataE" title="Link to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10SensorData4nameE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10SensorData4nameE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10SensorData4nameE"></span><span id="mujoco_ros2_control::MujocoSystem::SensorData::name__ss"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData_1a33fb3073dd1f566101ba64f4c38c21b1"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">name</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10SensorData4nameE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10SensorData4dataE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10SensorData4dataE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10SensorData4dataE"></span><span id="mujoco_ros2_control::MujocoSystem::SensorData::data__T"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData_1af820273514bb30ec785951aab8d6f9a9"></span><a class="reference internal" href="#_CPPv4I0EN19mujoco_ros2_control12MujocoSystem10SensorDataE" title="mujoco_ros2_control::MujocoSystem::SensorData::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">data</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10SensorData4dataE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N19mujoco_ros2_control12MujocoSystem10SensorData15mj_sensor_indexE">
+<span id="_CPPv3N19mujoco_ros2_control12MujocoSystem10SensorData15mj_sensor_indexE"></span><span id="_CPPv2N19mujoco_ros2_control12MujocoSystem10SensorData15mj_sensor_indexE"></span><span id="mujoco_ros2_control::MujocoSystem::SensorData::mj_sensor_index__i"></span><span class="target" id="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData_1a8673e285788e5607e9b2a69cd1df12dc"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mj_sensor_index</span></span></span><a class="headerlink" href="#_CPPv4N19mujoco_ros2_control12MujocoSystem10SensorData15mj_sensor_indexE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin.html" class="btn btn-neutral float-left" title="Class MujocoRos2ControlPlugin" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="classmujoco__ros2__control_1_1MujocoSystemInterface.html" class="btn btn-neutral float-right" title="Class MujocoSystemInterface" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright The &lt;mujoco_ros2_control&gt; Contributors. License: MIT.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

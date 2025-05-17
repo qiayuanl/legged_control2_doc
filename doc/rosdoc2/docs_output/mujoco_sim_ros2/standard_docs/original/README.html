@@ -1,0 +1,186 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mujoco Simulate App with ROS2 Integration &mdash; mujoco_sim_ros2 2.7.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=dfec817d"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="../../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            mujoco_sim_ros2
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../generated/index.html">C++ API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/index.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/index.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../generated/index.html#full-c-api">Full C++ API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/index.html#namespaces">Namespaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/namespace_mujoco_sim_ros2.html">Namespace mujoco_sim_ros2</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/index.html#classes-and-structs">Classes and Structs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/classmujoco__sim__ros2_1_1MujocoPhysicsPlugin.html">Class MujocoPhysicsPlugin</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/index.html#directories">Directories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/dir_include.html">Directory include</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/dir_include_mujoco_sim_ros2.html">Directory mujoco_sim_ros2</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../generated/index.html#files">Files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../generated/file_include_mujoco_sim_ros2_mujoco_physics_plugin.hpp.html">File mujoco_physics_plugin.hpp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../standards.html">Standard Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../PACKAGE.html">PACKAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../README.html">README</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../README.html#mujoco-simulate-app-with-ros2-integration">Mujoco Simulate App with ROS2 Integration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../README.html#build-the-packages">Build the packages</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">mujoco_sim_ros2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Mujoco Simulate App with ROS2 Integration</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/standard_docs/original/README.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="mujoco-simulate-app-with-ros2-integration">
+<h1>Mujoco Simulate App with ROS2 Integration<a class="headerlink" href="#mujoco-simulate-app-with-ros2-integration" title="Link to this heading"></a></h1>
+<p><img alt="CI" src="https://github.com/rxdu/mujoco_sim_ros2/actions/workflows/default.yaml/badge.svg" /></p>
+<p>This package utilizes the <a class="reference external" href="https://github.com/ros/pluginlib">pluginlib</a> to make the <a class="reference external" href="https://github.com/google-deepmind/mujoco/tree/main/simulate"><code class="docutils literal notranslate"><span class="pre">simulate</span></code></a> app from mujoco easily extendable. With this plugin support, <a class="reference external" href="https://github.com/rxdu/mujoco_ros2_control">mujoco_ros2_control</a> is integrated to enable a flexible control interface of the simulated robot and sensors with the ros2_control framework. You can use this package together with the <a class="reference external" href="https://github.com/rxdu/mujoco_ros2_control">mujoco_ros2_control</a> package to get a similar setup as the <a class="reference external" href="https://github.com/ros-controls/gz_ros2_control">gz_ros2_control</a> package for Gazebo.</p>
+<p>The following environment and software versions are supported and regularly tested:</p>
+<ul class="simple">
+<li><p>Ubuntu 24.04</p></li>
+<li><p>ROS2 Jazzy</p></li>
+<li><p>Mujoco 3.3.0</p></li>
+</ul>
+<p>Notes on design and maintenance considerations of this package:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">simulate</span></code> provides a good out-of-box user experience and is sufficient for most applications. Thus, I try to avoid re-inventing the wheels (i.e. maintaining a different setup of the simulation loop and GUI).</p></li>
+<li><p>It’s a lot easier to maintain a ROS-native version of the <code class="docutils literal notranslate"><span class="pre">simulate</span></code> app outside of the <code class="docutils literal notranslate"><span class="pre">mujoco</span></code> package. Minimum changes are applied (mainly the plugin support) to the original app and in general it doesn’t require a strict version match with the main library.</p></li>
+<li><p>Future changes in the ROS part will be applied at the top (newest) of the git commit history. In case of a code sync of the <code class="docutils literal notranslate"><span class="pre">simulate</span></code> app, a rebase will be performed at the bottom (oldest) of the commit history. This strategy makes it easy to keep <code class="docutils literal notranslate"><span class="pre">simulate</span></code> up-to-date but the rebase will rewrite the git history.</p></li>
+</ul>
+<section id="build-the-packages">
+<h2>Build the packages<a class="headerlink" href="#build-the-packages" title="Link to this heading"></a></h2>
+<p>It’s recommended to clone and build the <code class="docutils literal notranslate"><span class="pre">mujoco_demo_robot</span></code> package to get a working example of the simulation setup.
+The demo robot model <code class="docutils literal notranslate"><span class="pre">test_cart.xml</span></code> is defined in <code class="docutils literal notranslate"><span class="pre">mujoco_ros2_control</span></code> and the <code class="docutils literal notranslate"><span class="pre">mujoco_demo_robot</span></code> package
+demonstrates how to start the simulation as well as the ros2 controllers.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>&lt;colcon-ws&gt;/src
+git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span><span class="m">3</span>.3.0<span class="w"> </span>https://github.com/google-deepmind/mujoco.git
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/rxdu/mujoco_sim_ros2.git
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/rxdu/mujoco_ros2_control.git
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/rxdu/mujoco_demo_robot.git
+<span class="nb">cd</span><span class="w"> </span>&lt;colcon-ws&gt;
+colcon<span class="w"> </span>build<span class="w"> </span>--symlink-install
+</pre></div>
+</div>
+<p>Now you can start the simulation with the demo robot.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>launch<span class="w"> </span>mujoco_demo_robot<span class="w"> </span>cart_effort.launch.py
+</pre></div>
+</div>
+<p><img alt="start_simulator" src="standard_docs/original/docs/cart_effort.png" /></p>
+<p>You can check the ros2_control setup by listing available hardware and controllers:</p>
+<p><img alt="controllers" src="standard_docs/original/docs/controllers.png" />
+<img alt="hardware_interaces" src="standard_docs/original/docs/hardware_interface.png" /></p>
+<p>You can test the controller by sending a command to the effort controller:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ros2<span class="w"> </span>run<span class="w"> </span>mujoco_ros2_control_demos<span class="w"> </span>example_effort
+</pre></div>
+</div>
+<p><img alt="test_effort_control" src="standard_docs/original/docs/test_effort_control.gif" /></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright The &lt;mujoco_sim_ros2&gt; Contributors. License: Apache.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

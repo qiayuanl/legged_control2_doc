@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_a25d77f70819c3e09b3c4506fc81aac5" kind="dir">
+    <compoundname>include/legged_rl_controllers</compoundname>
+    <innerfile refid="CommandManager_8h">CommandManager.h</innerfile>
+    <innerfile refid="ManagerBased_8h">ManagerBased.h</innerfile>
+    <innerfile refid="ManagerBasedImpl_8h">ManagerBasedImpl.h</innerfile>
+    <innerfile refid="ObservationManager_8h">ObservationManager.h</innerfile>
+    <innerfile refid="OnnxController_8h">OnnxController.h</innerfile>
+    <innerfile refid="OnnxPolicy_8h">OnnxPolicy.h</innerfile>
+    <innerfile refid="Policy_8h">Policy.h</innerfile>
+    <innerfile refid="RlController_8h">RlController.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/legged_rl_controllers/"/>
+  </compounddef>
+</doxygen>

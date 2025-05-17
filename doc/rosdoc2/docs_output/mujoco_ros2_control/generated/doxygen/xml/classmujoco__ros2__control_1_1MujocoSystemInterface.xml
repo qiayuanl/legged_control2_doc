@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmujoco__ros2__control_1_1MujocoSystemInterface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>mujoco_ros2_control::MujocoSystemInterface</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">hardware_interface::SystemInterface</basecompoundref>
+    <derivedcompoundref refid="classmujoco__ros2__control_1_1MujocoSystem" prot="public" virt="non-virtual">mujoco_ros2_control::MujocoSystem</derivedcompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoSystemInterface_1adea9c7df6c1a1784b631f135d61ae771" prot="protected" static="no" mutable="no">
+        <type>rclcpp::Node::SharedPtr</type>
+        <definition>rclcpp::Node::SharedPtr mujoco_ros2_control::MujocoSystemInterface::node_</definition>
+        <argsstring></argsstring>
+        <name>node_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystemInterface::node_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system_interface.hpp" line="41" column="27" bodyfile="include/mujoco_ros2_control/mujoco_system_interface.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoSystemInterface_1acea5606481a4e873a8918ad84a0ef49b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool mujoco_ros2_control::MujocoSystemInterface::init_sim</definition>
+        <argsstring>(rclcpp::Node::SharedPtr &amp;node, mjModel *mujoco_model, mjData *mujoco_data, const urdf::Model &amp;urdf_model, const hardware_interface::HardwareInfo &amp;hardware_info)=0</argsstring>
+        <name>init_sim</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystemInterface::init_sim</qualifiedname>
+        <reimplementedby refid="classmujoco__ros2__control_1_1MujocoSystem_1a4a49f2788b5301977a1b158d4da067f6">init_sim</reimplementedby>
+        <param>
+          <type>rclcpp::Node::SharedPtr &amp;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>mjModel *</type>
+          <declname>mujoco_model</declname>
+        </param>
+        <param>
+          <type>mjData *</type>
+          <declname>mujoco_data</declname>
+        </param>
+        <param>
+          <type>const urdf::Model &amp;</type>
+          <declname>urdf_model</declname>
+        </param>
+        <param>
+          <type>const hardware_interface::HardwareInfo &amp;</type>
+          <declname>hardware_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system_interface.hpp" line="36" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>hardware_interface::SystemInterface</label>
+      </node>
+      <node id="3">
+        <label>mujoco_ros2_control::MujocoSystem</label>
+        <link refid="classmujoco__ros2__control_1_1MujocoSystem"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mujoco_ros2_control::MujocoSystemInterface</label>
+        <link refid="classmujoco__ros2__control_1_1MujocoSystemInterface"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>hardware_interface::SystemInterface</label>
+      </node>
+      <node id="1">
+        <label>mujoco_ros2_control::MujocoSystemInterface</label>
+        <link refid="classmujoco__ros2__control_1_1MujocoSystemInterface"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mujoco_ros2_control/mujoco_system_interface.hpp" line="33" column="1" bodyfile="include/mujoco_ros2_control/mujoco_system_interface.hpp" bodystart="34" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classmujoco__ros2__control_1_1MujocoSystemInterface_1acea5606481a4e873a8918ad84a0ef49b" prot="public" virt="pure-virtual"><scope>mujoco_ros2_control::MujocoSystemInterface</scope><name>init_sim</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoSystemInterface_1adea9c7df6c1a1784b631f135d61ae771" prot="protected" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystemInterface</scope><name>node_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,297 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program Listing for File mujoco_system.hpp &mdash; mujoco_ros2_control 0.1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=01f34227"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="File mujoco_system_interface.hpp" href="file_include_mujoco_ros2_control_mujoco_system_interface.hpp.html" />
+    <link rel="prev" title="File mujoco_system.hpp" href="file_include_mujoco_ros2_control_mujoco_system.hpp.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            mujoco_ros2_control
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">C++ API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#full-c-api">Full C++ API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#namespaces">Namespaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="namespace_hardware_interface.html">Namespace hardware_interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_mujoco_ros2_control.html">Namespace mujoco_ros2_control</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_mujoco_sim_ros2.html">Namespace mujoco_sim_ros2</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#classes-and-structs">Classes and Structs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="structmujoco__ros2__control_1_1CameraData.html">Struct CameraData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structmujoco__ros2__control_1_1MujocoSystem_1_1FTSensorData.html">Struct MujocoSystem::FTSensorData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData.html">Struct MujocoSystem::IMUSensorData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState.html">Struct MujocoSystem::JointState</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData.html">Template Struct MujocoSystem::SensorData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmujoco__ros2__control_1_1MujocoCameras.html">Class MujocoCameras</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmujoco__ros2__control_1_1MujocoRendering.html">Class MujocoRendering</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmujoco__ros2__control_1_1MujocoRos2Control.html">Class MujocoRos2Control</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin.html">Class MujocoRos2ControlPlugin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmujoco__ros2__control_1_1MujocoSystem.html">Class MujocoSystem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classmujoco__ros2__control_1_1MujocoSystemInterface.html">Class MujocoSystemInterface</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#variables">Variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="variable_mujoco__system_8hpp_1ad6f5a3b76cf98c6a7bd6c61446b81675.html">Variable mujoco_ros2_control::HW_IF_DAMPING</a></li>
+<li class="toctree-l4"><a class="reference internal" href="variable_mujoco__system_8hpp_1ac51074381bd7ecd32cd11d0445cff323.html">Variable mujoco_ros2_control::HW_IF_STIFFNESS</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#typedefs">Typedefs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="typedef_mujoco__system__interface_8hpp_1ad61493c4f5cf48aee2654e4c3a7bd2fc.html">Typedef mujoco_ros2_control::CallbackReturn</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#directories">Directories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dir_include.html">Directory include</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_mujoco_ros2_control.html">Directory mujoco_ros2_control</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#files">Files</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="file_include_mujoco_ros2_control_mujoco_cameras.hpp.html">File mujoco_cameras.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_mujoco_ros2_control_mujoco_rendering.hpp.html">File mujoco_rendering.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_mujoco_ros2_control_mujoco_ros2_control.hpp.html">File mujoco_ros2_control.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_mujoco_ros2_control_mujoco_ros2_control_plugin.hpp.html">File mujoco_ros2_control_plugin.hpp</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="file_include_mujoco_ros2_control_mujoco_system.hpp.html">File mujoco_system.hpp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_mujoco_ros2_control_mujoco_system_interface.hpp.html">File mujoco_system_interface.hpp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../standards.html">Standard Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../standard_docs/PACKAGE.html">PACKAGE</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">mujoco_ros2_control</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">C++ API</a></li>
+          <li class="breadcrumb-item"><a href="file_include_mujoco_ros2_control_mujoco_system.hpp.html">File mujoco_system.hpp</a></li>
+      <li class="breadcrumb-item active">Program Listing for File mujoco_system.hpp</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/program_listing_file_include_mujoco_ros2_control_mujoco_system.hpp.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="program-listing-for-file-mujoco-system-hpp">
+<span id="program-listing-file-include-mujoco-ros2-control-mujoco-system-hpp"></span><h1>Program Listing for File mujoco_system.hpp<a class="headerlink" href="#program-listing-for-file-mujoco-system-hpp" title="Link to this heading"></a></h1>
+<p>↰ <a class="reference internal" href="file_include_mujoco_ros2_control_mujoco_system.hpp.html#file-include-mujoco-ros2-control-mujoco-system-hpp"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">include/mujoco_ros2_control/mujoco_system.hpp</span></code>)</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// Copyright (c) 2025 Sangtaek Lee</span>
+<span class="c1">//</span>
+<span class="c1">// Permission is hereby granted, free of charge, to any person obtaining a copy</span>
+<span class="c1">// of this software and associated documentation files (the &quot;Software&quot;), to deal</span>
+<span class="c1">// in the Software without restriction, including without limitation the rights</span>
+<span class="c1">// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell</span>
+<span class="c1">// copies of the Software, and to permit persons to whom the Software is</span>
+<span class="c1">// furnished to do so, subject to the following conditions:</span>
+<span class="c1">//</span>
+<span class="c1">// The above copyright notice and this permission notice shall be included in</span>
+<span class="c1">// all copies or substantial portions of the Software.</span>
+<span class="c1">//</span>
+<span class="c1">// THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
+<span class="c1">// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
+<span class="c1">// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL</span>
+<span class="c1">// THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</span>
+<span class="c1">// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</span>
+<span class="c1">// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN</span>
+<span class="c1">// THE SOFTWARE.</span>
+
+<span class="cp">#ifndef MUJOCO_ROS2_CONTROL__MUJOCO_SYSTEM_HPP_</span>
+<span class="cp">#define MUJOCO_ROS2_CONTROL__MUJOCO_SYSTEM_HPP_</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Eigen/Dense&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vector&gt;</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;joint_limits/joint_limits.hpp&quot;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;mujoco_ros2_control/mujoco_system_interface.hpp&quot;</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">mujoco_ros2_control</span>
+<span class="p">{</span>
+<span class="k">constexpr</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">HW_IF_STIFFNESS</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;stiffness&quot;</span><span class="p">;</span>
+<span class="k">constexpr</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">HW_IF_DAMPING</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;damping&quot;</span><span class="p">;</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">MujocoSystem</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">MujocoSystemInterface</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">  </span><span class="n">MujocoSystem</span><span class="p">();</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">hardware_interface</span><span class="o">::</span><span class="n">StateInterface</span><span class="o">&gt;</span><span class="w"> </span><span class="n">export_state_interfaces</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">hardware_interface</span><span class="o">::</span><span class="n">CommandInterface</span><span class="o">&gt;</span><span class="w"> </span><span class="n">export_command_interfaces</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">hardware_interface</span><span class="o">::</span><span class="n">return_type</span><span class="w"> </span><span class="nf">read</span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Time</span><span class="w"> </span><span class="o">&amp;</span><span class="n">time</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Duration</span><span class="w"> </span><span class="o">&amp;</span><span class="n">period</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="w">  </span><span class="n">hardware_interface</span><span class="o">::</span><span class="n">return_type</span><span class="w"> </span><span class="nf">write</span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Time</span><span class="w"> </span><span class="o">&amp;</span><span class="n">time</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Duration</span><span class="w"> </span><span class="o">&amp;</span><span class="n">period</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+
+<span class="w">  </span><span class="kt">bool</span><span class="w"> </span><span class="nf">init_sim</span><span class="p">(</span>
+<span class="w">    </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Node</span><span class="o">::</span><span class="n">SharedPtr</span><span class="w"> </span><span class="o">&amp;</span><span class="n">node</span><span class="p">,</span><span class="w"> </span><span class="n">mjModel</span><span class="w"> </span><span class="o">*</span><span class="n">mujoco_model</span><span class="p">,</span><span class="w"> </span><span class="n">mjData</span><span class="w"> </span><span class="o">*</span><span class="n">mujoco_data</span><span class="p">,</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">urdf</span><span class="o">::</span><span class="n">Model</span><span class="w"> </span><span class="o">&amp;</span><span class="n">urdf_model</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">hardware_interface</span><span class="o">::</span><span class="n">HardwareInfo</span><span class="w"> </span><span class="o">&amp;</span><span class="n">hardware_info</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+
+<span class="w">  </span><span class="k">struct</span><span class="w"> </span><span class="nc">JointState</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">position</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">velocity</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">effort</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">position_command</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">velocity_command</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">effort_command</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">stiffness_command</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">damping_command</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">min_position_command</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">max_position_command</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">min_velocity_command</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">max_velocity_command</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">min_effort_command</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">max_effort_command</span><span class="p">;</span>
+<span class="w">    </span><span class="n">joint_limits</span><span class="o">::</span><span class="n">JointLimits</span><span class="w"> </span><span class="n">joint_limits</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_mimic</span><span class="p">{</span><span class="nb">false</span><span class="p">};</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">mimicked_joint_index</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">mimic_multiplier</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">mj_joint_type</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">mj_pos_adr</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">mj_vel_adr</span><span class="p">;</span>
+<span class="w">  </span><span class="p">};</span>
+
+<span class="w">  </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
+<span class="w">  </span><span class="k">struct</span><span class="w"> </span><span class="nc">SensorData</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
+<span class="w">    </span><span class="n">T</span><span class="w"> </span><span class="n">data</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">mj_sensor_index</span><span class="p">;</span>
+<span class="w">  </span><span class="p">};</span>
+
+<span class="w">  </span><span class="k">struct</span><span class="w"> </span><span class="nc">FTSensorData</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
+<span class="w">    </span><span class="n">SensorData</span><span class="o">&lt;</span><span class="n">Eigen</span><span class="o">::</span><span class="n">Vector3d</span><span class="o">&gt;</span><span class="w"> </span><span class="n">force</span><span class="p">;</span>
+<span class="w">    </span><span class="n">SensorData</span><span class="o">&lt;</span><span class="n">Eigen</span><span class="o">::</span><span class="n">Vector3d</span><span class="o">&gt;</span><span class="w"> </span><span class="n">torque</span><span class="p">;</span>
+<span class="w">  </span><span class="p">};</span>
+
+<span class="w">  </span><span class="k">struct</span><span class="w"> </span><span class="nc">IMUSensorData</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
+<span class="w">    </span><span class="n">SensorData</span><span class="o">&lt;</span><span class="n">Eigen</span><span class="o">::</span><span class="n">Quaternion</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">orientation</span><span class="p">;</span>
+<span class="w">    </span><span class="n">SensorData</span><span class="o">&lt;</span><span class="n">Eigen</span><span class="o">::</span><span class="n">Vector3d</span><span class="o">&gt;</span><span class="w"> </span><span class="n">angular_velocity</span><span class="p">;</span>
+<span class="w">    </span><span class="n">SensorData</span><span class="o">&lt;</span><span class="n">Eigen</span><span class="o">::</span><span class="n">Vector3d</span><span class="o">&gt;</span><span class="w"> </span><span class="n">linear_acceleration</span><span class="p">;</span>
+<span class="w">  </span><span class="p">};</span>
+
+<span class="k">private</span><span class="o">:</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="n">register_joints</span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">urdf</span><span class="o">::</span><span class="n">Model</span><span class="w"> </span><span class="o">&amp;</span><span class="n">urdf_model</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">hardware_interface</span><span class="o">::</span><span class="n">HardwareInfo</span><span class="w"> </span><span class="o">&amp;</span><span class="n">hardware_info</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">register_sensors</span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">urdf</span><span class="o">::</span><span class="n">Model</span><span class="w"> </span><span class="o">&amp;</span><span class="n">urdf_model</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">hardware_interface</span><span class="o">::</span><span class="n">HardwareInfo</span><span class="w"> </span><span class="o">&amp;</span><span class="n">hardware_info</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">set_initial_pose</span><span class="p">();</span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">get_joint_limits</span><span class="p">(</span>
+<span class="w">    </span><span class="n">urdf</span><span class="o">::</span><span class="n">JointConstSharedPtr</span><span class="w"> </span><span class="n">urdf_joint</span><span class="p">,</span><span class="w"> </span><span class="n">joint_limits</span><span class="o">::</span><span class="n">JointLimits</span><span class="w"> </span><span class="o">&amp;</span><span class="n">joint_limits</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="nf">clamp</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">v</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">lo</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">hi</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="n">v</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">lo</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">lo</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="n">hi</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">v</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">hi</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">v</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">hardware_interface</span><span class="o">::</span><span class="n">StateInterface</span><span class="o">&gt;</span><span class="w"> </span><span class="n">state_interfaces_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">hardware_interface</span><span class="o">::</span><span class="n">CommandInterface</span><span class="o">&gt;</span><span class="w"> </span><span class="n">command_interfaces_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">JointState</span><span class="o">&gt;</span><span class="w"> </span><span class="n">joint_states_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">FTSensorData</span><span class="o">&gt;</span><span class="w"> </span><span class="n">ft_sensor_data_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">IMUSensorData</span><span class="o">&gt;</span><span class="w"> </span><span class="n">imu_sensor_data_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">mjModel</span><span class="w"> </span><span class="o">*</span><span class="n">mj_model_</span><span class="p">;</span>
+<span class="w">  </span><span class="n">mjData</span><span class="w"> </span><span class="o">*</span><span class="n">mj_data_</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">rclcpp</span><span class="o">::</span><span class="n">Logger</span><span class="w"> </span><span class="n">logger_</span><span class="p">;</span><span class="w">  </span><span class="c1">// TODO(sangteak601): delete?</span>
+<span class="p">};</span>
+<span class="p">}</span><span class="w">  </span><span class="c1">// namespace mujoco_ros2_control</span>
+
+<span class="cp">#endif  </span><span class="c1">// MUJOCO_ROS2_CONTROL__MUJOCO_SYSTEM_HPP_</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="file_include_mujoco_ros2_control_mujoco_system.hpp.html" class="btn btn-neutral float-left" title="File mujoco_system.hpp" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="file_include_mujoco_ros2_control_mujoco_system_interface.hpp.html" class="btn btn-neutral float-right" title="File mujoco_system_interface.hpp" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright The &lt;mujoco_ros2_control&gt; Contributors. License: MIT.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
