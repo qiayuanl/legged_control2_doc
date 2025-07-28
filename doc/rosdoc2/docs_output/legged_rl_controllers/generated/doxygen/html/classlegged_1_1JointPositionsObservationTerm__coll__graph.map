@@ -1,0 +1,7 @@
+<map id="legged::JointPositionsObservationTerm" name="legged::JointPositionsObservationTerm">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,152,279,177"/>
+<area shape="rect" id="Node000002" href="$classlegged_1_1JointObservationTerm.html" title=" " alt="" coords="35,79,249,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,118,145,152,139,152,139,118"/>
+<area shape="rect" id="Node000003" href="$classlegged_1_1ObservationTerm.html" title=" " alt="" coords="49,5,235,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="145,44,145,79,139,79,139,44"/>
+</map>

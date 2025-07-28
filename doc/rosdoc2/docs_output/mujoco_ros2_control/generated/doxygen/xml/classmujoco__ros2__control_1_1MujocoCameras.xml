@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmujoco__ros2__control_1_1MujocoCameras" kind="class" language="C++" prot="public">
+    <compoundname>mujoco_ros2_control::MujocoCameras</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoCameras_1a0848473c75d2078f754703790a796839" prot="private" static="no" mutable="no">
+        <type>rclcpp::Node::SharedPtr</type>
+        <definition>rclcpp::Node::SharedPtr mujoco_ros2_control::MujocoCameras::node_</definition>
+        <argsstring></argsstring>
+        <name>node_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoCameras::node_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="73" column="27" bodyfile="include/mujoco_ros2_control/mujoco_cameras.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoCameras_1a0415079480bc1220488eea354400cd51" prot="private" static="no" mutable="no">
+        <type>mjvOption</type>
+        <definition>mjvOption mujoco_ros2_control::MujocoCameras::mjv_opt_</definition>
+        <argsstring></argsstring>
+        <name>mjv_opt_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoCameras::mjv_opt_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="76" column="13" bodyfile="include/mujoco_ros2_control/mujoco_cameras.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoCameras_1a1010e18cb8b9334b4a70c52b8475de0c" prot="private" static="no" mutable="no">
+        <type>mjvScene</type>
+        <definition>mjvScene mujoco_ros2_control::MujocoCameras::mjv_scn_</definition>
+        <argsstring></argsstring>
+        <name>mjv_scn_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoCameras::mjv_scn_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="77" column="12" bodyfile="include/mujoco_ros2_control/mujoco_cameras.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoCameras_1a85ce56f6850e3b6f590db34d0fc4c126" prot="private" static="no" mutable="no">
+        <type>mjrContext</type>
+        <definition>mjrContext mujoco_ros2_control::MujocoCameras::mjr_con_</definition>
+        <argsstring></argsstring>
+        <name>mjr_con_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoCameras::mjr_con_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="78" column="14" bodyfile="include/mujoco_ros2_control/mujoco_cameras.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoCameras_1a89f349614552473829cc879c78e5d00d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structmujoco__ros2__control_1_1CameraData" kindref="compound">CameraData</ref> &gt;</type>
+        <definition>std::vector&lt;CameraData&gt; mujoco_ros2_control::MujocoCameras::cameras_</definition>
+        <argsstring></argsstring>
+        <name>cameras_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoCameras::cameras_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="81" column="15" bodyfile="include/mujoco_ros2_control/mujoco_cameras.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoCameras_1a875c7e328e300a8de0e7381da0721c5e" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mujoco_ros2_control::MujocoCameras::MujocoCameras</definition>
+        <argsstring>(rclcpp::Node::SharedPtr &amp;node)</argsstring>
+        <name>MujocoCameras</name>
+        <qualifiedname>mujoco_ros2_control::MujocoCameras::MujocoCameras</qualifiedname>
+        <param>
+          <type>rclcpp::Node::SharedPtr &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="64" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoCameras_1aaff35a5db5da80dc0bc844f37e80e98e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mujoco_ros2_control::MujocoCameras::init</definition>
+        <argsstring>(mjModel *mujoco_model)</argsstring>
+        <name>init</name>
+        <qualifiedname>mujoco_ros2_control::MujocoCameras::init</qualifiedname>
+        <param>
+          <type>mjModel *</type>
+          <declname>mujoco_model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="66" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoCameras_1a99bbfa198f777a94a7d1068c492f801c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mujoco_ros2_control::MujocoCameras::update</definition>
+        <argsstring>(mjModel *mujoco_model, mjData *mujoco_data)</argsstring>
+        <name>update</name>
+        <qualifiedname>mujoco_ros2_control::MujocoCameras::update</qualifiedname>
+        <param>
+          <type>mjModel *</type>
+          <declname>mujoco_model</declname>
+        </param>
+        <param>
+          <type>mjData *</type>
+          <declname>mujoco_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="67" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoCameras_1a4572178ed188a83fe4af067dc5c33a99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mujoco_ros2_control::MujocoCameras::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <qualifiedname>mujoco_ros2_control::MujocoCameras::close</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="68" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoCameras_1ac2489418c79daf664b9424e1d28b24e2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mujoco_ros2_control::MujocoCameras::register_cameras</definition>
+        <argsstring>(const mjModel *mujoco_model)</argsstring>
+        <name>register_cameras</name>
+        <qualifiedname>mujoco_ros2_control::MujocoCameras::register_cameras</qualifiedname>
+        <param>
+          <type>const mjModel *</type>
+          <declname>mujoco_model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="71" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="61" column="1" bodyfile="include/mujoco_ros2_control/mujoco_cameras.hpp" bodystart="62" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classmujoco__ros2__control_1_1MujocoCameras_1a89f349614552473829cc879c78e5d00d" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoCameras</scope><name>cameras_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoCameras_1a4572178ed188a83fe4af067dc5c33a99" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoCameras</scope><name>close</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoCameras_1aaff35a5db5da80dc0bc844f37e80e98e" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoCameras</scope><name>init</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoCameras_1a85ce56f6850e3b6f590db34d0fc4c126" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoCameras</scope><name>mjr_con_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoCameras_1a0415079480bc1220488eea354400cd51" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoCameras</scope><name>mjv_opt_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoCameras_1a1010e18cb8b9334b4a70c52b8475de0c" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoCameras</scope><name>mjv_scn_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoCameras_1a875c7e328e300a8de0e7381da0721c5e" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoCameras</scope><name>MujocoCameras</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoCameras_1a0848473c75d2078f754703790a796839" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoCameras</scope><name>node_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoCameras_1ac2489418c79daf664b9424e1d28b24e2" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoCameras</scope><name>register_cameras</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoCameras_1a99bbfa198f777a94a7d1068c492f801c" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoCameras</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

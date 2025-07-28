@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structlegged_1_1LinearKalmanFilter_1_1Configurations" kind="struct" language="C++" prot="public">
+    <compoundname>legged::LinearKalmanFilter::Configurations</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlegged_1_1LinearKalmanFilter_1_1Configurations_1ae9ee775b828af5b86b6e65bc8f29901b" prot="public" static="no" mutable="no">
+        <type>scalar_t</type>
+        <definition>scalar_t legged::LinearKalmanFilter::Configurations::imuAccelerationNoiseDensity</definition>
+        <argsstring></argsstring>
+        <name>imuAccelerationNoiseDensity</name>
+        <qualifiedname>legged::LinearKalmanFilter::Configurations::imuAccelerationNoiseDensity</qualifiedname>
+        <initializer>= 1e-2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="19" column="14" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a4ba59f413f2769f91811272f4cdcdcd9" prot="public" static="no" mutable="no">
+        <type>scalar_t</type>
+        <definition>scalar_t legged::LinearKalmanFilter::Configurations::imuAccelerationBiasNoiseDensity</definition>
+        <argsstring></argsstring>
+        <name>imuAccelerationBiasNoiseDensity</name>
+        <qualifiedname>legged::LinearKalmanFilter::Configurations::imuAccelerationBiasNoiseDensity</qualifiedname>
+        <initializer>= 5e-3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="20" column="14" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a3e91660a1ac39d9074f6d0f6079c78c0" prot="public" static="no" mutable="no">
+        <type>scalar_t</type>
+        <definition>scalar_t legged::LinearKalmanFilter::Configurations::contactProcessNoisePosition</definition>
+        <argsstring></argsstring>
+        <name>contactProcessNoisePosition</name>
+        <qualifiedname>legged::LinearKalmanFilter::Configurations::contactProcessNoisePosition</qualifiedname>
+        <initializer>= 0.002</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="21" column="14" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a64bc238ca364f1b255ac99bb2a088da7" prot="public" static="no" mutable="no">
+        <type>scalar_t</type>
+        <definition>scalar_t legged::LinearKalmanFilter::Configurations::contactSensorNoisePosition</definition>
+        <argsstring></argsstring>
+        <name>contactSensorNoisePosition</name>
+        <qualifiedname>legged::LinearKalmanFilter::Configurations::contactSensorNoisePosition</qualifiedname>
+        <initializer>= 0.002</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="22" column="14" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a70edad9bc134e3b0b478464ac02f90de" prot="public" static="no" mutable="no">
+        <type>scalar_t</type>
+        <definition>scalar_t legged::LinearKalmanFilter::Configurations::contactHeightSensorNoise</definition>
+        <argsstring></argsstring>
+        <name>contactHeightSensorNoise</name>
+        <qualifiedname>legged::LinearKalmanFilter::Configurations::contactHeightSensorNoise</qualifiedname>
+        <initializer>= 0.002</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="23" column="14" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a930d625cc03e6ff5e1b6a61e411cdffd" prot="public" static="no" mutable="no">
+        <type>scalar_t</type>
+        <definition>scalar_t legged::LinearKalmanFilter::Configurations::contactRadius</definition>
+        <argsstring></argsstring>
+        <name>contactRadius</name>
+        <qualifiedname>legged::LinearKalmanFilter::Configurations::contactRadius</qualifiedname>
+        <initializer>= 0.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="24" column="14" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a753f6f16c11a5a0511bc96ae09f1d8a0" prot="public" static="no" mutable="no">
+        <type>scalar_t</type>
+        <definition>scalar_t legged::LinearKalmanFilter::Configurations::contactForceThreshold</definition>
+        <argsstring></argsstring>
+        <name>contactForceThreshold</name>
+        <qualifiedname>legged::LinearKalmanFilter::Configurations::contactForceThreshold</qualifiedname>
+        <initializer>= 150.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="25" column="14" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a10f2f10c9df537a2439621f257b30bfb" prot="public" static="no" mutable="no">
+        <type>scalar_t</type>
+        <definition>scalar_t legged::LinearKalmanFilter::Configurations::contactForceScale</definition>
+        <argsstring></argsstring>
+        <name>contactForceScale</name>
+        <qualifiedname>legged::LinearKalmanFilter::Configurations::contactForceScale</qualifiedname>
+        <initializer>= 15.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="26" column="14" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a02ac513f6d71bcdc41a30bcb03e32e49" prot="public" static="no" mutable="no">
+        <type>scalar_t</type>
+        <definition>scalar_t legged::LinearKalmanFilter::Configurations::contactZmpLengthX</definition>
+        <argsstring></argsstring>
+        <name>contactZmpLengthX</name>
+        <qualifiedname>legged::LinearKalmanFilter::Configurations::contactZmpLengthX</qualifiedname>
+        <initializer>= 0.08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="27" column="14" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlegged_1_1LinearKalmanFilter_1_1Configurations_1ab7466b0d61019ef6cb1c0b295cf3039e" prot="public" static="no" mutable="no">
+        <type>scalar_t</type>
+        <definition>scalar_t legged::LinearKalmanFilter::Configurations::contactZmpLengthY</definition>
+        <argsstring></argsstring>
+        <name>contactZmpLengthY</name>
+        <qualifiedname>legged::LinearKalmanFilter::Configurations::contactZmpLengthY</qualifiedname>
+        <initializer>= 0.025</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="28" column="14" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a96054644c288effe18922e66193c6d9a" prot="public" static="no" mutable="no">
+        <type>scalar_t</type>
+        <definition>scalar_t legged::LinearKalmanFilter::Configurations::positionNoiseDensity</definition>
+        <argsstring></argsstring>
+        <name>positionNoiseDensity</name>
+        <qualifiedname>legged::LinearKalmanFilter::Configurations::positionNoiseDensity</qualifiedname>
+        <initializer>= 1e-2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="29" column="14" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/legged_estimation/LinearKalmanFilter.h" line="18" column="3" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="18" bodyend="30"/>
+    <listofallmembers>
+      <member refid="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a10f2f10c9df537a2439621f257b30bfb" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilter::Configurations</scope><name>contactForceScale</name></member>
+      <member refid="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a753f6f16c11a5a0511bc96ae09f1d8a0" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilter::Configurations</scope><name>contactForceThreshold</name></member>
+      <member refid="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a70edad9bc134e3b0b478464ac02f90de" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilter::Configurations</scope><name>contactHeightSensorNoise</name></member>
+      <member refid="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a3e91660a1ac39d9074f6d0f6079c78c0" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilter::Configurations</scope><name>contactProcessNoisePosition</name></member>
+      <member refid="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a930d625cc03e6ff5e1b6a61e411cdffd" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilter::Configurations</scope><name>contactRadius</name></member>
+      <member refid="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a64bc238ca364f1b255ac99bb2a088da7" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilter::Configurations</scope><name>contactSensorNoisePosition</name></member>
+      <member refid="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a02ac513f6d71bcdc41a30bcb03e32e49" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilter::Configurations</scope><name>contactZmpLengthX</name></member>
+      <member refid="structlegged_1_1LinearKalmanFilter_1_1Configurations_1ab7466b0d61019ef6cb1c0b295cf3039e" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilter::Configurations</scope><name>contactZmpLengthY</name></member>
+      <member refid="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a4ba59f413f2769f91811272f4cdcdcd9" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilter::Configurations</scope><name>imuAccelerationBiasNoiseDensity</name></member>
+      <member refid="structlegged_1_1LinearKalmanFilter_1_1Configurations_1ae9ee775b828af5b86b6e65bc8f29901b" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilter::Configurations</scope><name>imuAccelerationNoiseDensity</name></member>
+      <member refid="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a96054644c288effe18922e66193c6d9a" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilter::Configurations</scope><name>positionNoiseDensity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

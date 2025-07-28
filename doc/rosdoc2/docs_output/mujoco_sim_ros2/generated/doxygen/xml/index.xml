@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="classmujoco__sim__ros2_1_1MujocoPhysicsPlugin" kind="class"><name>mujoco_sim_ros2::MujocoPhysicsPlugin</name>
+    <member refid="classmujoco__sim__ros2_1_1MujocoPhysicsPlugin_1a61ce9dba0bcfaec0cb0c9f2416eef038" kind="function"><name>~MujocoPhysicsPlugin</name></member>
+    <member refid="classmujoco__sim__ros2_1_1MujocoPhysicsPlugin_1a5e7eb246479576c465cb06c5fc2568c7" kind="function"><name>Configure</name></member>
+    <member refid="classmujoco__sim__ros2_1_1MujocoPhysicsPlugin_1a87f1fa9d7011d2d7a43df5904b1f2770" kind="function"><name>Reset</name></member>
+    <member refid="classmujoco__sim__ros2_1_1MujocoPhysicsPlugin_1ad4a91ed408e9fe3cfe658c2525a4e8a1" kind="function"><name>PreUpdate</name></member>
+    <member refid="classmujoco__sim__ros2_1_1MujocoPhysicsPlugin_1a3a3bbbeb2d46e840f73853f0639d103a" kind="function"><name>Update</name></member>
+    <member refid="classmujoco__sim__ros2_1_1MujocoPhysicsPlugin_1ae1faee17882ffe1273f8c46cf7b742c1" kind="function"><name>PostUpdate</name></member>
+    <member refid="classmujoco__sim__ros2_1_1MujocoPhysicsPlugin_1a571bb4e32a67fd95c510a8bad9690349" kind="function"><name>MujocoPhysicsPlugin</name></member>
+  </compound>
+  <compound refid="namespacemujoco__sim__ros2" kind="namespace"><name>mujoco_sim_ros2</name>
+  </compound>
+  <compound refid="mujoco__physics__plugin_8hpp" kind="file"><name>mujoco_physics_plugin.hpp</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_58b3c85bcaeb9209278c00c4a07dacff" kind="dir"><name>include/mujoco_sim_ros2</name>
+  </compound>
+</doxygenindex>

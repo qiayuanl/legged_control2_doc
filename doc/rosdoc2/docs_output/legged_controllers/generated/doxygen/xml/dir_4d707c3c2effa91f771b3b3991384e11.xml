@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_4d707c3c2effa91f771b3b3991384e11" kind="dir">
+    <compoundname>include/legged_controllers</compoundname>
+    <innerfile refid="ControllerBase_8h">ControllerBase.h</innerfile>
+    <innerfile refid="GmObserverRos2_8h">GmObserverRos2.h</innerfile>
+    <innerfile refid="JointSensors_8h">JointSensors.h</innerfile>
+    <innerfile refid="LinearKalmanFilterRos2_8h">LinearKalmanFilterRos2.h</innerfile>
+    <innerfile refid="StandbyController_8h">StandbyController.h</innerfile>
+    <innerfile refid="StateEstimator_8h">StateEstimator.h</innerfile>
+    <innerfile refid="visualization__helpers_8h">visualization_helpers.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/legged_controllers/"/>
+  </compounddef>
+</doxygen>
