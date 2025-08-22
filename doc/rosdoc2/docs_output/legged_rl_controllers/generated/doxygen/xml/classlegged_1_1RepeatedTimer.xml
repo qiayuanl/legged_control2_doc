@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1RepeatedTimer" kind="class" language="C++" prot="public">
+    <compoundname>legged::RepeatedTimer</compoundname>
+    <includes refid="RlController_8h" local="no">RlController.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlegged_1_1RepeatedTimer_1accd3736ef51d0692de015ab2b299409c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int legged::RepeatedTimer::numTimedIntervals_</definition>
+        <argsstring></argsstring>
+        <name>numTimedIntervals_</name>
+        <qualifiedname>legged::RepeatedTimer::numTimedIntervals_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="87" column="7" bodyfile="include/legged_rl_controllers/RlController.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1RepeatedTimer_1a8147505dc2bdfd0098b674d03b3834e6" prot="private" static="no" mutable="no">
+        <type>std::chrono::nanoseconds</type>
+        <definition>std::chrono::nanoseconds legged::RepeatedTimer::totalTime_</definition>
+        <argsstring></argsstring>
+        <name>totalTime_</name>
+        <qualifiedname>legged::RepeatedTimer::totalTime_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="88" column="28" bodyfile="include/legged_rl_controllers/RlController.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1RepeatedTimer_1afb4766585dd5ae80b969b6a9b2e6ba9e" prot="private" static="no" mutable="no">
+        <type>std::chrono::nanoseconds</type>
+        <definition>std::chrono::nanoseconds legged::RepeatedTimer::maxIntervalTime_</definition>
+        <argsstring></argsstring>
+        <name>maxIntervalTime_</name>
+        <qualifiedname>legged::RepeatedTimer::maxIntervalTime_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="89" column="28" bodyfile="include/legged_rl_controllers/RlController.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1RepeatedTimer_1a3c71e68cf244a6a7e731e3738907e31e" prot="private" static="no" mutable="no">
+        <type>std::chrono::nanoseconds</type>
+        <definition>std::chrono::nanoseconds legged::RepeatedTimer::lastIntervalTime_</definition>
+        <argsstring></argsstring>
+        <name>lastIntervalTime_</name>
+        <qualifiedname>legged::RepeatedTimer::lastIntervalTime_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="90" column="28" bodyfile="include/legged_rl_controllers/RlController.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1RepeatedTimer_1a37ae5b1650a5560d123133ccfe8379a9" prot="private" static="no" mutable="no">
+        <type>std::chrono::steady_clock::time_point</type>
+        <definition>std::chrono::steady_clock::time_point legged::RepeatedTimer::startTime_</definition>
+        <argsstring></argsstring>
+        <name>startTime_</name>
+        <qualifiedname>legged::RepeatedTimer::startTime_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="91" column="41" bodyfile="include/legged_rl_controllers/RlController.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlegged_1_1RepeatedTimer_1add63c23b824152774faa67f1d2af9ec5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>legged::RepeatedTimer::RepeatedTimer</definition>
+        <argsstring>()</argsstring>
+        <name>RepeatedTimer</name>
+        <qualifiedname>legged::RepeatedTimer::RepeatedTimer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="28" column="3" bodyfile="include/legged_rl_controllers/RlController.h" bodystart="28" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1RepeatedTimer_1a7c23a34c5d576175ad34e645fc945957" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void legged::RepeatedTimer::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>legged::RepeatedTimer::reset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset the timer statistics </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="38" column="8" bodyfile="include/legged_rl_controllers/RlController.h" bodystart="38" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1RepeatedTimer_1ae3419b45c162f8f4a14399bd4caf345f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void legged::RepeatedTimer::startTimer</definition>
+        <argsstring>()</argsstring>
+        <name>startTimer</name>
+        <qualifiedname>legged::RepeatedTimer::startTimer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start timing an interval </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="48" column="8" bodyfile="include/legged_rl_controllers/RlController.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1RepeatedTimer_1a94c6afb0f8db16ef0641bfcc96ef18d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void legged::RepeatedTimer::endTimer</definition>
+        <argsstring>()</argsstring>
+        <name>endTimer</name>
+        <qualifiedname>legged::RepeatedTimer::endTimer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop timing of an interval </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="53" column="8" bodyfile="include/legged_rl_controllers/RlController.h" bodystart="53" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1RepeatedTimer_1a7c4957e1538728db505102d8a937da22" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int legged::RepeatedTimer::getNumTimedIntervals</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumTimedIntervals</name>
+        <qualifiedname>legged::RepeatedTimer::getNumTimedIntervals</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of intervals that were timed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="64" column="7" bodyfile="include/legged_rl_controllers/RlController.h" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1RepeatedTimer_1a7dd8da680df9ee271ae946b10e488857" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>scalar_t</type>
+        <definition>scalar_t legged::RepeatedTimer::getTotalInMilliseconds</definition>
+        <argsstring>() const</argsstring>
+        <name>getTotalInMilliseconds</name>
+        <qualifiedname>legged::RepeatedTimer::getTotalInMilliseconds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Total cumulative time of timed intervals </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="69" column="12" bodyfile="include/legged_rl_controllers/RlController.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1RepeatedTimer_1abc2d628e3f4fe01b713b4195bf007513" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>scalar_t</type>
+        <definition>scalar_t legged::RepeatedTimer::getMaxIntervalInMilliseconds</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaxIntervalInMilliseconds</name>
+        <qualifiedname>legged::RepeatedTimer::getMaxIntervalInMilliseconds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Maximum duration of a single interval </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="74" column="12" bodyfile="include/legged_rl_controllers/RlController.h" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1RepeatedTimer_1ab7195b37185adb8091d07080b3c4ef9b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>scalar_t</type>
+        <definition>scalar_t legged::RepeatedTimer::getLastIntervalInMilliseconds</definition>
+        <argsstring>() const</argsstring>
+        <name>getLastIntervalInMilliseconds</name>
+        <qualifiedname>legged::RepeatedTimer::getLastIntervalInMilliseconds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Duration of the last timed interval </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="79" column="12" bodyfile="include/legged_rl_controllers/RlController.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1RepeatedTimer_1a222da34d5dc6efa9bb0db96b8268afd2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>scalar_t</type>
+        <definition>scalar_t legged::RepeatedTimer::getAverageInMilliseconds</definition>
+        <argsstring>() const</argsstring>
+        <name>getAverageInMilliseconds</name>
+        <qualifiedname>legged::RepeatedTimer::getAverageInMilliseconds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Average duration of all timed intervals </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="84" column="12" bodyfile="include/legged_rl_controllers/RlController.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Timer class that can be repeatedly started and stopped. Statistics are collected for all measured intervals . </para>
+    </detaileddescription>
+    <location file="include/legged_rl_controllers/RlController.h" line="26" column="1" bodyfile="include/legged_rl_controllers/RlController.h" bodystart="26" bodyend="92"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1RepeatedTimer_1a94c6afb0f8db16ef0641bfcc96ef18d3" prot="public" virt="non-virtual"><scope>legged::RepeatedTimer</scope><name>endTimer</name></member>
+      <member refid="classlegged_1_1RepeatedTimer_1a222da34d5dc6efa9bb0db96b8268afd2" prot="public" virt="non-virtual"><scope>legged::RepeatedTimer</scope><name>getAverageInMilliseconds</name></member>
+      <member refid="classlegged_1_1RepeatedTimer_1ab7195b37185adb8091d07080b3c4ef9b" prot="public" virt="non-virtual"><scope>legged::RepeatedTimer</scope><name>getLastIntervalInMilliseconds</name></member>
+      <member refid="classlegged_1_1RepeatedTimer_1abc2d628e3f4fe01b713b4195bf007513" prot="public" virt="non-virtual"><scope>legged::RepeatedTimer</scope><name>getMaxIntervalInMilliseconds</name></member>
+      <member refid="classlegged_1_1RepeatedTimer_1a7c4957e1538728db505102d8a937da22" prot="public" virt="non-virtual"><scope>legged::RepeatedTimer</scope><name>getNumTimedIntervals</name></member>
+      <member refid="classlegged_1_1RepeatedTimer_1a7dd8da680df9ee271ae946b10e488857" prot="public" virt="non-virtual"><scope>legged::RepeatedTimer</scope><name>getTotalInMilliseconds</name></member>
+      <member refid="classlegged_1_1RepeatedTimer_1a3c71e68cf244a6a7e731e3738907e31e" prot="private" virt="non-virtual"><scope>legged::RepeatedTimer</scope><name>lastIntervalTime_</name></member>
+      <member refid="classlegged_1_1RepeatedTimer_1afb4766585dd5ae80b969b6a9b2e6ba9e" prot="private" virt="non-virtual"><scope>legged::RepeatedTimer</scope><name>maxIntervalTime_</name></member>
+      <member refid="classlegged_1_1RepeatedTimer_1accd3736ef51d0692de015ab2b299409c" prot="private" virt="non-virtual"><scope>legged::RepeatedTimer</scope><name>numTimedIntervals_</name></member>
+      <member refid="classlegged_1_1RepeatedTimer_1add63c23b824152774faa67f1d2af9ec5" prot="public" virt="non-virtual"><scope>legged::RepeatedTimer</scope><name>RepeatedTimer</name></member>
+      <member refid="classlegged_1_1RepeatedTimer_1a7c23a34c5d576175ad34e645fc945957" prot="public" virt="non-virtual"><scope>legged::RepeatedTimer</scope><name>reset</name></member>
+      <member refid="classlegged_1_1RepeatedTimer_1a37ae5b1650a5560d123133ccfe8379a9" prot="private" virt="non-virtual"><scope>legged::RepeatedTimer</scope><name>startTime_</name></member>
+      <member refid="classlegged_1_1RepeatedTimer_1ae3419b45c162f8f4a14399bd4caf345f" prot="public" virt="non-virtual"><scope>legged::RepeatedTimer</scope><name>startTimer</name></member>
+      <member refid="classlegged_1_1RepeatedTimer_1a8147505dc2bdfd0098b674d03b3834e6" prot="private" virt="non-virtual"><scope>legged::RepeatedTimer</scope><name>totalTime_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

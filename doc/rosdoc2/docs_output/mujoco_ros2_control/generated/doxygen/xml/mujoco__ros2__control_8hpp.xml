@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="mujoco__ros2__control_8hpp" kind="file" language="C++">
+    <compoundname>mujoco_ros2_control.hpp</compoundname>
+    <includes local="no">memory</includes>
+    <includes local="no">controller_manager/controller_manager.hpp</includes>
+    <includes local="no">nav_msgs/msg/odometry.hpp</includes>
+    <includes local="no">pluginlib/class_loader.hpp</includes>
+    <includes local="no">rclcpp/rclcpp.hpp</includes>
+    <includes local="no">rosgraph_msgs/msg/clock.hpp</includes>
+    <includes local="yes">mujoco/mujoco.h</includes>
+    <includes refid="mujoco__system_8hpp" local="yes">mujoco_ros2_control/mujoco_system.hpp</includes>
+    <includedby refid="mujoco__ros2__control__plugin_8hpp" local="yes">include/mujoco_ros2_control/mujoco_ros2_control_plugin.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>include/mujoco_ros2_control/mujoco_ros2_control.hpp</label>
+        <link refid="mujoco__ros2__control_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>mujoco_ros2_control/mujoco_system.hpp</label>
+        <link refid="mujoco__system_8hpp_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>mujoco_ros2_control/mujoco_system_interface.hpp</label>
+        <link refid="mujoco__system__interface_8hpp_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Eigen/Dense</label>
+      </node>
+      <node id="3">
+        <label>controller_manager/controller_manager.hpp</label>
+      </node>
+      <node id="14">
+        <label>hardware_interface/system_interface.hpp</label>
+      </node>
+      <node id="12">
+        <label>joint_limits/joint_limits.hpp</label>
+      </node>
+      <node id="2">
+        <label>memory</label>
+      </node>
+      <node id="8">
+        <label>mujoco/mujoco.h</label>
+      </node>
+      <node id="4">
+        <label>nav_msgs/msg/odometry.hpp</label>
+      </node>
+      <node id="5">
+        <label>pluginlib/class_loader.hpp</label>
+      </node>
+      <node id="6">
+        <label>rclcpp/rclcpp.hpp</label>
+      </node>
+      <node id="7">
+        <label>rosgraph_msgs/msg/clock.hpp</label>
+      </node>
+      <node id="15">
+        <label>urdf/model.h</label>
+      </node>
+      <node id="11">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/mujoco_ros2_control/mujoco_ros2_control.hpp</label>
+        <link refid="mujoco__ros2__control_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/mujoco_ros2_control/mujoco_ros2_control_plugin.hpp</label>
+        <link refid="mujoco__ros2__control__plugin_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classmujoco__ros2__control_1_1MujocoRos2Control" prot="public">mujoco_ros2_control::MujocoRos2Control</innerclass>
+    <innernamespace refid="namespacemujoco__ros2__control">mujoco_ros2_control</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Copyright<sp/>(c)<sp/>2025<sp/>Sangtaek<sp/>Lee</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THE<sp/>SOFTWARE.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MUJOCO_ROS2_CONTROL__MUJOCO_ROS2_CONTROL_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MUJOCO_ROS2_CONTROL__MUJOCO_ROS2_CONTROL_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;controller_manager/controller_manager.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;nav_msgs/msg/odometry.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pluginlib/class_loader.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rclcpp/rclcpp.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;rosgraph_msgs/msg/clock.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;mujoco/mujoco.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;mujoco_ros2_control/mujoco_system.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">mujoco_ros2_control</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38" refid="classmujoco__ros2__control_1_1MujocoRos2Control" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmujoco__ros2__control_1_1MujocoRos2Control" kindref="compound">MujocoRos2Control</ref></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><ref refid="classmujoco__ros2__control_1_1MujocoRos2Control" kindref="compound">MujocoRos2Control</ref>(rclcpp::Node::SharedPtr<sp/>&amp;node,<sp/>mjModel<sp/>*mujoco_model,<sp/>mjData<sp/>*mujoco_data);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><ref refid="classmujoco__ros2__control_1_1MujocoRos2Control" kindref="compound">~MujocoRos2Control</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>publish_sim_time(rclcpp::Time<sp/>sim_time);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>publish_poses(rclcpp::Time<sp/>sim_time);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>rclcpp::Node::SharedPtr<sp/>node_;<sp/><sp/></highlight><highlight class="comment">//<sp/>TODO(sangteak601):<sp/>delete<sp/>node</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>mjModel<sp/>*mj_model_;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>mjData<sp/>*mj_data_;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>rclcpp::Logger<sp/>logger_;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;pluginlib::ClassLoader&lt;MujocoSystemInterface&gt;&gt;<sp/>robot_hw_sim_loader_;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;controller_manager::ControllerManager&gt;<sp/>controller_manager_;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>rclcpp::executors::MultiThreadedExecutor::SharedPtr<sp/>cm_executor_;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>std::thread<sp/>cm_thread_;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>stop_cm_thread_;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>rclcpp::Duration<sp/>control_period_;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>rclcpp::Time<sp/>last_update_sim_time_ros_;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>rclcpp::Publisher&lt;rosgraph_msgs::msg::Clock&gt;::SharedPtr<sp/>clock_publisher_;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>std::map&lt;std::string,<sp/>rclcpp::Publisher&lt;nav_msgs::msg::Odometry&gt;::SharedPtr&gt;<sp/>odom_publishers_;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>std::map&lt;std::string,<sp/>nav_msgs::msg::Odometry&gt;<sp/>odom_msgs_;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>mujoco_ros2_control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>MUJOCO_ROS2_CONTROL__MUJOCO_ROS2_CONTROL_HPP_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/mujoco_ros2_control/mujoco_ros2_control.hpp"/>
+  </compounddef>
+</doxygen>

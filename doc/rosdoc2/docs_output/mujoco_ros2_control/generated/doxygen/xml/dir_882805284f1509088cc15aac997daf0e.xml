@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_882805284f1509088cc15aac997daf0e" kind="dir">
+    <compoundname>include/mujoco_ros2_control</compoundname>
+    <innerfile refid="mujoco__cameras_8hpp">mujoco_cameras.hpp</innerfile>
+    <innerfile refid="mujoco__rendering_8hpp">mujoco_rendering.hpp</innerfile>
+    <innerfile refid="mujoco__ros2__control_8hpp">mujoco_ros2_control.hpp</innerfile>
+    <innerfile refid="mujoco__ros2__control__plugin_8hpp">mujoco_ros2_control_plugin.hpp</innerfile>
+    <innerfile refid="mujoco__system_8hpp">mujoco_system.hpp</innerfile>
+    <innerfile refid="mujoco__system__interface_8hpp">mujoco_system_interface.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/mujoco_ros2_control/"/>
+  </compounddef>
+</doxygen>

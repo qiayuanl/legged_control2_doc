@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacesemantic__components" kind="namespace" language="C++">
+    <compoundname>semantic_components</compoundname>
+    <innerclass refid="classsemantic__components_1_1JointSensors" prot="public">semantic_components::JointSensors</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/legged_controllers/JointSensors.h" line="14" column="1"/>
+  </compounddef>
+</doxygen>

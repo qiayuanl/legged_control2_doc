@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="classlegged_1_1LeggedModel" kind="class"><name>legged::LeggedModel</name>
+    <member refid="classlegged_1_1LeggedModel_1af43c4f8e9ed02589f2dad8556e28a0af" kind="typedef"><name>SharedPtr</name></member>
+    <member refid="classlegged_1_1LeggedModel_1a9068fcf9996af9e8899944aafaa149ae" kind="variable"><name>pinModelPtr_</name></member>
+    <member refid="classlegged_1_1LeggedModel_1ab96ebaa55f74a30919d20db19eac053f" kind="variable"><name>pinDataPtr_</name></member>
+    <member refid="classlegged_1_1LeggedModel_1ab5d28cdff3139da1f98c3f4500a409b5" kind="variable"><name>q_</name></member>
+    <member refid="classlegged_1_1LeggedModel_1a3c4c081063e28e5781e8eb96341300f3" kind="variable"><name>v_</name></member>
+    <member refid="classlegged_1_1LeggedModel_1a8d9758bd6d8123f99000e84144597bcc" kind="variable"><name>tau_</name></member>
+    <member refid="classlegged_1_1LeggedModel_1a5033c13343632a884fb71b50a4fa7824" kind="variable"><name>numThreeDofContacts_</name></member>
+    <member refid="classlegged_1_1LeggedModel_1ad2cb42e9754c0362f2818fe5d02f611f" kind="variable"><name>numSixDofContacts_</name></member>
+    <member refid="classlegged_1_1LeggedModel_1aa66deaf79be60d9a1f5b316b19e5e5ad" kind="variable"><name>endEffectorFrameIndices_</name></member>
+    <member refid="classlegged_1_1LeggedModel_1ab21dfc3a8c1825a853fe2a72949be701" kind="variable"><name>baseFrameIndex_</name></member>
+    <member refid="classlegged_1_1LeggedModel_1a66f453536ea27ac1ea507df925bca72b" kind="variable"><name>jointIndexMap_</name></member>
+    <member refid="classlegged_1_1LeggedModel_1a3d508fc6f8648ef3a8be87993f0f9441" kind="function"><name>LeggedModel</name></member>
+    <member refid="classlegged_1_1LeggedModel_1a7a1ef9c09ee942f54ed07ab03e98fef9" kind="function"><name>~LeggedModel</name></member>
+    <member refid="classlegged_1_1LeggedModel_1a6a2960cbfc78016639b0bdd6e157386f" kind="function"><name>setEndEffectorNames</name></member>
+    <member refid="classlegged_1_1LeggedModel_1aae60acb737652477ef33fb6297ad6470" kind="function"><name>setBaseNames</name></member>
+    <member refid="classlegged_1_1LeggedModel_1aa7f10226a59822e8751683f1a4c58190" kind="function"><name>getFrameName</name></member>
+    <member refid="classlegged_1_1LeggedModel_1a49e187cdbd45ddb1d19c05bac3b5105a" kind="function"><name>getBaseName</name></member>
+    <member refid="classlegged_1_1LeggedModel_1a37884613660d30804a3d26ece8af7919" kind="function"><name>getContactNames</name></member>
+    <member refid="classlegged_1_1LeggedModel_1a080abdc87bb91b9aacb8033b56fdc608" kind="function"><name>getJointNames</name></member>
+    <member refid="classlegged_1_1LeggedModel_1a886e2b9895a1c1483a790862b6dad98d" kind="function"><name>getPinModel</name></member>
+    <member refid="classlegged_1_1LeggedModel_1a8058cce0407b739012c71351c6ffee51" kind="function"><name>getPinData</name></member>
+    <member refid="classlegged_1_1LeggedModel_1aca78d99a2b2c7b926ba9b1e43261f8ca" kind="function"><name>getPinData</name></member>
+    <member refid="classlegged_1_1LeggedModel_1a4e47b029f8099239ca973212d3a03e33" kind="function"><name>getGeneralizedPosition</name></member>
+    <member refid="classlegged_1_1LeggedModel_1a1754416ccd811f4ff1a00817a671483e" kind="function"><name>getGeneralizedVelocity</name></member>
+    <member refid="classlegged_1_1LeggedModel_1a43137469d3b6f082f5a37c324f3daf0a" kind="function"><name>getTorque</name></member>
+    <member refid="classlegged_1_1LeggedModel_1a75583db19723070954de5bf9364dd032" kind="function"><name>update</name></member>
+    <member refid="classlegged_1_1LeggedModel_1aa26713dbf820be0d3219fc11f8479763" kind="function"><name>getNumJoints</name></member>
+    <member refid="classlegged_1_1LeggedModel_1a36e41dc13ab97a26dae90d5c184183cf" kind="function"><name>getNumThreeDofContacts</name></member>
+    <member refid="classlegged_1_1LeggedModel_1af1b4b92ec7810731d5896df49ab21346" kind="function"><name>getNumSixDofContacts</name></member>
+    <member refid="classlegged_1_1LeggedModel_1a713b94bca99de2604297613dbdd6ce9a" kind="function"><name>getEndEffectorFrameIndices</name></member>
+    <member refid="classlegged_1_1LeggedModel_1ad14fd02f87a10a3532f5fc8f87bb2127" kind="function"><name>getBaseFrameIndex</name></member>
+    <member refid="classlegged_1_1LeggedModel_1a7d30eac45996ceed15906c5c35582bde" kind="function"><name>getJointIndex</name></member>
+    <member refid="classlegged_1_1LeggedModel_1ab1581b546cad39aa5a0ea7c7890fe1a8" kind="function"><name>getBaseRotation</name></member>
+    <member refid="classlegged_1_1LeggedModel_1a93df1a8cb4cd4a73a776d256325fc43d" kind="function"><name>getMassMatrix</name></member>
+    <member refid="classlegged_1_1LeggedModel_1aeef6a217006674a8624a5fe9bb78de0b" kind="function"><name>getCoriolisMatrix</name></member>
+    <member refid="classlegged_1_1LeggedModel_1abd5433d0ff9ce516fc8c128786f4e2bb" kind="function"><name>getGeneralizedGravity</name></member>
+    <member refid="classlegged_1_1LeggedModel_1ac191ef055f449b42e9016162b3d740e2" kind="function"><name>getSelectionMatrix</name></member>
+    <member refid="classlegged_1_1LeggedModel_1a2d0366c20b4cd39d1a3c51d2a1266d76" kind="function"><name>getContactJacobian</name></member>
+    <member refid="classlegged_1_1LeggedModel_1a77c5856ee4a79c74124d797bb71a567d" kind="function"><name>getBaseJacobian</name></member>
+  </compound>
+  <compound refid="namespacelegged" kind="namespace"><name>legged</name>
+    <member refid="common_8h_1a396ade7dfa3fe01e8924f23e178b6a4c" kind="typedef"><name>scalar_t</name></member>
+    <member refid="common_8h_1af65965ade3b59e215b4ac4db28793016" kind="typedef"><name>vector_t</name></member>
+    <member refid="common_8h_1aae8f6e340d4bdf5b0f4d5c548abfe6d1" kind="typedef"><name>matrix_t</name></member>
+    <member refid="common_8h_1aa86f3c819dc3b889cebc431c43ca0da6" kind="typedef"><name>vector2_t</name></member>
+    <member refid="common_8h_1a28247b86418eef26e2106d33c0ad2d73" kind="typedef"><name>vector3_t</name></member>
+    <member refid="common_8h_1aeef0103efdc2e2128dee6d5a05678f28" kind="typedef"><name>matrix3_t</name></member>
+    <member refid="common_8h_1ad11991e29ea80cd17b93273332c8f588" kind="typedef"><name>quaternion_t</name></member>
+    <member refid="LeggedModel_8h_1a0c301b87db9f68e225807977bc25e560" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="common_8h" kind="file"><name>common.h</name>
+  </compound>
+  <compound refid="LeggedModel_8h" kind="file"><name>LeggedModel.h</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_5a9ac80a22e2e7f279797cb8c9959a9c" kind="dir"><name>include/legged_model</name>
+  </compound>
+</doxygenindex>

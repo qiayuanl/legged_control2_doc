@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1CommandManager" kind="class" language="C++" prot="public">
+    <compoundname>legged::CommandManager</compoundname>
+    <basecompoundref refid="classlegged_1_1ManagerBase" prot="public" virt="non-virtual">legged::ManagerBase&lt; CommandTerm &gt;</basecompoundref>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classlegged_1_1CommandManager_1aa09dbd80254b2751fff23f06b6da15a5" prot="private" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>legged::ManagerBase&lt; TermType &gt;::ManagerBase</definition>
+        <argsstring>(LeggedModel::SharedPtr model)</argsstring>
+        <name>ManagerBase</name>
+        <qualifiedname>legged::CommandManager::ManagerBase</qualifiedname>
+        <param>
+          <type>LeggedModel::SharedPtr</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/CommandManager.h" line="35" column="3" bodyfile="include/legged_rl_controllers/ManagerBased.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>legged::ManagerBase&lt; CommandTerm &gt;</label>
+        <link refid="classlegged_1_1ManagerBase"/>
+      </node>
+      <node id="1">
+        <label>legged::CommandManager</label>
+        <link refid="classlegged_1_1CommandManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>legged::ManagerBase&lt; CommandTerm &gt;</label>
+        <link refid="classlegged_1_1ManagerBase"/>
+      </node>
+      <node id="1">
+        <label>legged::CommandManager</label>
+        <link refid="classlegged_1_1CommandManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/legged_rl_controllers/CommandManager.h" line="34" column="1" bodyfile="include/legged_rl_controllers/CommandManager.h" bodystart="34" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1ManagerBase_1a791712025d4e844443c417a0d7263cfe" prot="public" virt="non-virtual"><scope>legged::CommandManager</scope><name>addTerm</name></member>
+      <member refid="classlegged_1_1ManagerBase_1ab4321846ddb1ffd5a5e5096656747693" prot="public" virt="virtual"><scope>legged::CommandManager</scope><name>getSize</name></member>
+      <member refid="classlegged_1_1ManagerBase_1a62457d0d0d8555552aaf7b9cb9e9d713" prot="public" virt="non-virtual"><scope>legged::CommandManager</scope><name>getTerms</name></member>
+      <member refid="classlegged_1_1ManagerBase_1acd7d20bb9972881f02b013a179b1e90d" prot="public" virt="virtual"><scope>legged::CommandManager</scope><name>getValue</name></member>
+      <member refid="classlegged_1_1CommandManager_1aa09dbd80254b2751fff23f06b6da15a5" prot="private" virt="non-virtual"><scope>legged::CommandManager</scope><name>ManagerBase</name></member>
+      <member refid="classlegged_1_1ManagerBase_1a3fc40a973ade6ad12f29724cac59c542" prot="protected" virt="non-virtual"><scope>legged::CommandManager</scope><name>model_</name></member>
+      <member refid="classlegged_1_1ManagerBase_1a8ada74014b84d348c06e083ec9970942" prot="public" virt="virtual"><scope>legged::CommandManager</scope><name>reset</name></member>
+      <member refid="classlegged_1_1ManagerBase_1a9c2e42723e6c013a5e12c6674eed5cf7" prot="public" virt="non-virtual"><scope>legged::CommandManager</scope><name>SharedPtr</name></member>
+      <member refid="classlegged_1_1ManagerBase_1aa4b10489f81aba2aa3c79292cbf54888" prot="public" virt="non-virtual"><scope>legged::CommandManager</scope><name>TermPtr</name></member>
+      <member refid="classlegged_1_1ManagerBase_1aa53c33361c6a124470eef5289084bc80" prot="public" virt="non-virtual"><scope>legged::CommandManager</scope><name>Terms</name></member>
+      <member refid="classlegged_1_1ManagerBase_1a63ebb0da1cfd2821c4889635c51b1469" prot="protected" virt="non-virtual"><scope>legged::CommandManager</scope><name>terms_</name></member>
+      <member refid="classlegged_1_1ManagerBase_1a38082391c908f3ac75ab8078491ecb29" prot="public" virt="virtual"><scope>legged::CommandManager</scope><name>~ManagerBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

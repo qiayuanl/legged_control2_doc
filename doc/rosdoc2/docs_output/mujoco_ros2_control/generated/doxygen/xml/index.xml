@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="structmujoco__ros2__control_1_1CameraData" kind="struct"><name>mujoco_ros2_control::CameraData</name>
+    <member refid="structmujoco__ros2__control_1_1CameraData_1ad79cc7e22c9f3b2b5ddf772cb68d95ac" kind="variable"><name>mjv_cam</name></member>
+    <member refid="structmujoco__ros2__control_1_1CameraData_1a4abdb8978305e2ade03fbdf6342ad0f0" kind="variable"><name>viewport</name></member>
+    <member refid="structmujoco__ros2__control_1_1CameraData_1a2f5d8a26b18480d326157f612c6bde2c" kind="variable"><name>name</name></member>
+    <member refid="structmujoco__ros2__control_1_1CameraData_1a6f3b6026174a23b12391b490f7da2fef" kind="variable"><name>frame_name</name></member>
+    <member refid="structmujoco__ros2__control_1_1CameraData_1ac19fd39c91cd8073c02b27f05be812b6" kind="variable"><name>width</name></member>
+    <member refid="structmujoco__ros2__control_1_1CameraData_1a860621232c195d9348ddc560c3d59479" kind="variable"><name>height</name></member>
+    <member refid="structmujoco__ros2__control_1_1CameraData_1a28e0e481f82015af1e8b17e75ec9805d" kind="variable"><name>image_buffer</name></member>
+    <member refid="structmujoco__ros2__control_1_1CameraData_1a804179d5268b3be068c5b80f5e8e64a5" kind="variable"><name>depth_buffer</name></member>
+    <member refid="structmujoco__ros2__control_1_1CameraData_1ac1aace77e6838d9054de54987111b910" kind="variable"><name>depth_buffer_flipped</name></member>
+    <member refid="structmujoco__ros2__control_1_1CameraData_1aabb1bec606e146a185b118deae4ebde6" kind="variable"><name>image</name></member>
+    <member refid="structmujoco__ros2__control_1_1CameraData_1a18ee0055ddfb1ab8f7770a8c4814db50" kind="variable"><name>depth_image</name></member>
+    <member refid="structmujoco__ros2__control_1_1CameraData_1affa359df9bc4516347a82b25e9f32bae" kind="variable"><name>camera_info</name></member>
+    <member refid="structmujoco__ros2__control_1_1CameraData_1a3db749f896e9098f51a4cfbec43fc692" kind="variable"><name>image_pub</name></member>
+    <member refid="structmujoco__ros2__control_1_1CameraData_1aa986b548a2886914fc5cdfc4c9452206" kind="variable"><name>depth_image_pub</name></member>
+    <member refid="structmujoco__ros2__control_1_1CameraData_1abdac0aad83a18254f0a9dbff821f1bfb" kind="variable"><name>camera_info_pub</name></member>
+  </compound>
+  <compound refid="structmujoco__ros2__control_1_1MujocoSystem_1_1FTSensorData" kind="struct"><name>mujoco_ros2_control::MujocoSystem::FTSensorData</name>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1FTSensorData_1a73aa336b28309142c8299577626441ee" kind="variable"><name>name</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1FTSensorData_1aa34588465d9f1b1a956d5c6a9116a264" kind="variable"><name>force</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1FTSensorData_1a41bf5a03bf293f8084995eb38d8ab507" kind="variable"><name>torque</name></member>
+  </compound>
+  <compound refid="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData" kind="struct"><name>mujoco_ros2_control::MujocoSystem::IMUSensorData</name>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData_1ac1db7e0319fd95530214a2785da38af9" kind="variable"><name>name</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData_1aa9c83dc2867fd9c2a44b2ac882738034" kind="variable"><name>orientation</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData_1a5f5124f485d87e362656a17e7e243c3a" kind="variable"><name>angular_velocity</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData_1afc6ec91913fa2d60ab5f786dab4a18cd" kind="variable"><name>linear_acceleration</name></member>
+  </compound>
+  <compound refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState" kind="struct"><name>mujoco_ros2_control::MujocoSystem::JointState</name>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a700e40706588facc0c8d685f893406fe" kind="variable"><name>name</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a4011f4af07ab7d184bc79ce1b6040b84" kind="variable"><name>position</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1afe65e8e2d5d9913d4c61e252e205f338" kind="variable"><name>velocity</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a8347ba9a5a9e45c04f65a725a905fc5e" kind="variable"><name>effort</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a288fc3684667cd7ad498f0fc5acca319" kind="variable"><name>position_command</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1aac19ba799baff062e45cc410a907b474" kind="variable"><name>velocity_command</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a2ddd7a88c04f23d956d5bbf262cc50e0" kind="variable"><name>effort_command</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a2cf285728e257c437c28ce071307ed12" kind="variable"><name>stiffness_command</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1ab2f9ef51fda96fb37ca017053a440a36" kind="variable"><name>damping_command</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a1da2b6218d1dd4ea963a480e4245eb76" kind="variable"><name>min_position_command</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a4cad3ab23586d1aa4a4faaea84353378" kind="variable"><name>max_position_command</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a668c7dda0a42cf04922d96b405f961c1" kind="variable"><name>min_velocity_command</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a7143a0ee2549b263dc5894d96168fd4d" kind="variable"><name>max_velocity_command</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a1c9e83caa41170d0abca68432415d1f3" kind="variable"><name>min_effort_command</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1af93d5f8e6babb3f70886e97675f166c8" kind="variable"><name>max_effort_command</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a2681fced02b3de30d43d5eb36a63dcc8" kind="variable"><name>joint_limits</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1ad85e210fbe9b3481a34057a8044efd2c" kind="variable"><name>is_mimic</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a8894ce3f7516b27d87d771b63e902b0e" kind="variable"><name>mimicked_joint_index</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1af7afc04113615f5a739ad896c371a5d6" kind="variable"><name>mimic_multiplier</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a847cc7aa70253200939ddb9f4c8548a1" kind="variable"><name>mj_joint_type</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1af015104f1e4e5f1e2670a131f8a13af6" kind="variable"><name>mj_pos_adr</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a7b6b9da8c7400a4795a648bc72f60c24" kind="variable"><name>mj_vel_adr</name></member>
+  </compound>
+  <compound refid="classmujoco__ros2__control_1_1MujocoCameras" kind="class"><name>mujoco_ros2_control::MujocoCameras</name>
+    <member refid="classmujoco__ros2__control_1_1MujocoCameras_1a0848473c75d2078f754703790a796839" kind="variable"><name>node_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoCameras_1a0415079480bc1220488eea354400cd51" kind="variable"><name>mjv_opt_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoCameras_1a1010e18cb8b9334b4a70c52b8475de0c" kind="variable"><name>mjv_scn_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoCameras_1a85ce56f6850e3b6f590db34d0fc4c126" kind="variable"><name>mjr_con_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoCameras_1a89f349614552473829cc879c78e5d00d" kind="variable"><name>cameras_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoCameras_1a875c7e328e300a8de0e7381da0721c5e" kind="function"><name>MujocoCameras</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoCameras_1aaff35a5db5da80dc0bc844f37e80e98e" kind="function"><name>init</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoCameras_1a99bbfa198f777a94a7d1068c492f801c" kind="function"><name>update</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoCameras_1a4572178ed188a83fe4af067dc5c33a99" kind="function"><name>close</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoCameras_1ac2489418c79daf664b9424e1d28b24e2" kind="function"><name>register_cameras</name></member>
+  </compound>
+  <compound refid="classmujoco__ros2__control_1_1MujocoRendering" kind="class"><name>mujoco_ros2_control::MujocoRendering</name>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1adbd0967672d5da89caf5470ea2d6ef7c" kind="variable"><name>instance_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1abfc7e678aef7f4dde1f4f58eba01b90e" kind="variable"><name>mj_model_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1a03eb0c90035fdca5c7d40379582a40ca" kind="variable"><name>mj_data_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1ab584536159c89a1b0ed56ed28279b203" kind="variable"><name>window_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1a7c90697f82a28b3eaa7e0e3c40762162" kind="variable"><name>mjv_cam_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1add4bd69c584435e3badb9cd60cfc38c8" kind="variable"><name>mjv_opt_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1a99510c4330a71c3c9c587201fd9bfd0c" kind="variable"><name>mjv_scn_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1ac2f6fa25c3f88ac5fc5ca676e31cf92c" kind="variable"><name>mjr_con_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1a20f864e103e58abc227ae100357533c8" kind="variable"><name>button_left_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1a45b3fddd725cfe29796c7ac4c3536a0b" kind="variable"><name>button_middle_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1ae12c6a08418e02f45bcce254fb3dfa33" kind="variable"><name>button_right_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1affe95838adc4f952726c881153471532" kind="variable"><name>lastx_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1a30d60000c6136299953c3bbc8a2cb6b6" kind="variable"><name>lasty_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1a7d9ccdd58017234d7b7998209d22a5cd" kind="function"><name>MujocoRendering</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1a5663a21201d04089fccfae2eba66ca9f" kind="function"><name>operator=</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1a6e1a008e2f00aecd530db43ac898b3b8" kind="function"><name>init</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1a9489ee1fb4bc63d8c68230b90d215bdf" kind="function"><name>is_close_flag_raised</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1a2dc23a508d7407234a7c211d946deafe" kind="function"><name>update</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1a8a8c5c6792683386fcc625c75fdba898" kind="function"><name>close</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1a0871250c7f783bf49677f495dc80f50a" kind="function"><name>get_instance</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1a82c3df75cb0e1a9c79bfa0a58358456d" kind="function"><name>MujocoRendering</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1a0e71224be944cafab9e5d1f2665344f2" kind="function"><name>keyboard_callback_impl</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1a0779862efce26f4ba421e6ba5b2ac5cd" kind="function"><name>mouse_button_callback_impl</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1afdb83e89591c21299c1d77c7e9e5febd" kind="function"><name>mouse_move_callback_impl</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1a4a423c02b95d6d2bc8df317359e05036" kind="function"><name>scroll_callback_impl</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1abe77453bfa9d02a6f615fab223394e57" kind="function"><name>keyboard_callback</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1ab3b3149a9906b049b3f1301f340dbbbb" kind="function"><name>mouse_button_callback</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1a65de7bcbd7fac5dc9e63b2a4d0211cdd" kind="function"><name>mouse_move_callback</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRendering_1adb1450736dd9719aff97858a861d99ff" kind="function"><name>scroll_callback</name></member>
+  </compound>
+  <compound refid="classmujoco__ros2__control_1_1MujocoRos2Control" kind="class"><name>mujoco_ros2_control::MujocoRos2Control</name>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a0f9618755950bb656a21b5ddb949efac" kind="variable"><name>node_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a4817e5b63ff9357eaff337e17a4742ed" kind="variable"><name>mj_model_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a398e256b4b9804437775da62053f83b2" kind="variable"><name>mj_data_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1ab70a31d72e12cad60287c7dd2d2e693d" kind="variable"><name>logger_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a7aef99015571464f079dc1421e6cb4d9" kind="variable"><name>robot_hw_sim_loader_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1ab2f669eb4641297e208328a0591a997b" kind="variable"><name>controller_manager_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a59f2575ac62285186918b291014ff5f4" kind="variable"><name>cm_executor_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a176195395ecd9a05270ed859d7af4946" kind="variable"><name>cm_thread_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a37a7d1f074604ed22ca04c4c2169df75" kind="variable"><name>stop_cm_thread_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1abc11f61039b1b10a74a8c65760e44961" kind="variable"><name>control_period_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a5ccee2e714d58c61f5aebba3ac2a014a" kind="variable"><name>last_update_sim_time_ros_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a7d605230b5fd4a893ac3478e6991d3b6" kind="variable"><name>clock_publisher_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a2841f36f3893edb559d5971f2b3959f1" kind="variable"><name>odom_publishers_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1af792d5a22f9cec854b6fe152170ff193" kind="variable"><name>odom_msgs_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1aa0855370702e12e7b25ee9c0bb79689d" kind="function"><name>MujocoRos2Control</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a927a9d3221c5485385d0ca97d72e1884" kind="function"><name>~MujocoRos2Control</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a94de2c782bf1e50efe3ee834a071da2a" kind="function"><name>init</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a4c23e1fc1b2e0d3d20c9a3cf71291f2b" kind="function"><name>update</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a11c2866ec24bacd256801ec6beb5f7c2" kind="function"><name>publish_sim_time</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a6f9f146500a7fca5aaac59636e36c459" kind="function"><name>publish_poses</name></member>
+  </compound>
+  <compound refid="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin" kind="class"><name>mujoco_ros2_control::MujocoRos2ControlPlugin</name>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin_1a7cf229ce36062c2ba61e18b14be53067" kind="variable"><name>control_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin_1ab1a2b1fccc9456fb712a346afebb9452" kind="function"><name>MujocoRos2ControlPlugin</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin_1a294dfa3e7cdc42431716c861ca7b90c3" kind="function"><name>~MujocoRos2ControlPlugin</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin_1a9d3f35bba159db4dcfd886ddb9a98c00" kind="function"><name>Configure</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin_1a709e2137d8f82cb741dbfb156965ea36" kind="function"><name>Reset</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin_1affa00c49cb3e39f323005ebaaf2ffa8e" kind="function"><name>PreUpdate</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin_1a90deacf2a90f1914c43081ab3df4dd0e" kind="function"><name>Update</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin_1a78f3049b2141041c045035d67bb93b02" kind="function"><name>PostUpdate</name></member>
+  </compound>
+  <compound refid="classmujoco__ros2__control_1_1MujocoSystem" kind="class"><name>mujoco_ros2_control::MujocoSystem</name>
+    <member refid="classmujoco__ros2__control_1_1MujocoSystem_1a736af7aa3240c2007c72fb3c26725c6c" kind="variable"><name>state_interfaces_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoSystem_1aced3898393dd00645e3cabf96dc106b4" kind="variable"><name>command_interfaces_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoSystem_1afb88ef435e1b4854fec9004e11e3bba9" kind="variable"><name>joint_states_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoSystem_1a975b7b7a8ae9dac1bc21602029d34458" kind="variable"><name>ft_sensor_data_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoSystem_1a024c99ec6e1d052a4ebf77a0ef6ccd15" kind="variable"><name>imu_sensor_data_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoSystem_1a54b347b5fb85c910e7743c630213dd58" kind="variable"><name>mj_model_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoSystem_1a124b3f2e113dcb96360e42c251c69c33" kind="variable"><name>mj_data_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoSystem_1ae43a14dfc5338c4ba1b0dd6ee915a4b1" kind="variable"><name>logger_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoSystem_1ad341c426cfd825395ee339c7c58b52a3" kind="function"><name>MujocoSystem</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoSystem_1a2a54f868db4f5152c0924553a18142b3" kind="function"><name>export_state_interfaces</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoSystem_1af1395d02283b2c620ff4747e37256e6b" kind="function"><name>export_command_interfaces</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoSystem_1aeebea7ba4fde4fa91aab68e5ac95855c" kind="function"><name>read</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoSystem_1adaf667cd2d52a9fae57b098c3b87e8ff" kind="function"><name>write</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoSystem_1a4a49f2788b5301977a1b158d4da067f6" kind="function"><name>init_sim</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoSystem_1a28d59af878cb0d4a2e54824b4c810b94" kind="function"><name>register_joints</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoSystem_1a558e060a8fc035c1cda7574ceb03ae24" kind="function"><name>register_sensors</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoSystem_1a3989453928eeb981393e80b739aad781" kind="function"><name>set_initial_pose</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoSystem_1a4c208c47afcc385cec1ec104cce237fa" kind="function"><name>get_joint_limits</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoSystem_1ab524d2cdff63e24def7ee6a78e9b7f0c" kind="function"><name>clamp</name></member>
+  </compound>
+  <compound refid="classmujoco__ros2__control_1_1MujocoSystemInterface" kind="class"><name>mujoco_ros2_control::MujocoSystemInterface</name>
+    <member refid="classmujoco__ros2__control_1_1MujocoSystemInterface_1adea9c7df6c1a1784b631f135d61ae771" kind="variable"><name>node_</name></member>
+    <member refid="classmujoco__ros2__control_1_1MujocoSystemInterface_1acea5606481a4e873a8918ad84a0ef49b" kind="function"><name>init_sim</name></member>
+  </compound>
+  <compound refid="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData" kind="struct"><name>mujoco_ros2_control::MujocoSystem::SensorData</name>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData_1a33fb3073dd1f566101ba64f4c38c21b1" kind="variable"><name>name</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData_1af820273514bb30ec785951aab8d6f9a9" kind="variable"><name>data</name></member>
+    <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData_1a8673e285788e5607e9b2a69cd1df12dc" kind="variable"><name>mj_sensor_index</name></member>
+  </compound>
+  <compound refid="namespacehardware__interface" kind="namespace"><name>hardware_interface</name>
+  </compound>
+  <compound refid="namespacemujoco__ros2__control" kind="namespace"><name>mujoco_ros2_control</name>
+    <member refid="mujoco__system__interface_8hpp_1ad61493c4f5cf48aee2654e4c3a7bd2fc" kind="typedef"><name>CallbackReturn</name></member>
+    <member refid="mujoco__system_8hpp_1ac51074381bd7ecd32cd11d0445cff323" kind="variable"><name>HW_IF_STIFFNESS</name></member>
+    <member refid="mujoco__system_8hpp_1ad6f5a3b76cf98c6a7bd6c61446b81675" kind="variable"><name>HW_IF_DAMPING</name></member>
+  </compound>
+  <compound refid="namespacemujoco__sim__ros2" kind="namespace"><name>mujoco_sim_ros2</name>
+  </compound>
+  <compound refid="mujoco__cameras_8hpp" kind="file"><name>mujoco_cameras.hpp</name>
+  </compound>
+  <compound refid="mujoco__rendering_8hpp" kind="file"><name>mujoco_rendering.hpp</name>
+  </compound>
+  <compound refid="mujoco__ros2__control_8hpp" kind="file"><name>mujoco_ros2_control.hpp</name>
+  </compound>
+  <compound refid="mujoco__ros2__control__plugin_8hpp" kind="file"><name>mujoco_ros2_control_plugin.hpp</name>
+  </compound>
+  <compound refid="mujoco__system_8hpp" kind="file"><name>mujoco_system.hpp</name>
+  </compound>
+  <compound refid="mujoco__system__interface_8hpp" kind="file"><name>mujoco_system_interface.hpp</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_882805284f1509088cc15aac997daf0e" kind="dir"><name>include/mujoco_ros2_control</name>
+  </compound>
+</doxygenindex>

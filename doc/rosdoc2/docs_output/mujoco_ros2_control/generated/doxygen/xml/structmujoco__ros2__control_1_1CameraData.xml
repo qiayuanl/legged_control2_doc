@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structmujoco__ros2__control_1_1CameraData" kind="struct" language="C++" prot="public">
+    <compoundname>mujoco_ros2_control::CameraData</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1CameraData_1ad79cc7e22c9f3b2b5ddf772cb68d95ac" prot="public" static="no" mutable="no">
+        <type>mjvCamera</type>
+        <definition>mjvCamera mujoco_ros2_control::CameraData::mjv_cam</definition>
+        <argsstring></argsstring>
+        <name>mjv_cam</name>
+        <qualifiedname>mujoco_ros2_control::CameraData::mjv_cam</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="40" column="13" bodyfile="include/mujoco_ros2_control/mujoco_cameras.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1CameraData_1a4abdb8978305e2ade03fbdf6342ad0f0" prot="public" static="no" mutable="no">
+        <type>mjrRect</type>
+        <definition>mjrRect mujoco_ros2_control::CameraData::viewport</definition>
+        <argsstring></argsstring>
+        <name>viewport</name>
+        <qualifiedname>mujoco_ros2_control::CameraData::viewport</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="41" column="11" bodyfile="include/mujoco_ros2_control/mujoco_cameras.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1CameraData_1a2f5d8a26b18480d326157f612c6bde2c" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mujoco_ros2_control::CameraData::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>mujoco_ros2_control::CameraData::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="43" column="15" bodyfile="include/mujoco_ros2_control/mujoco_cameras.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1CameraData_1a6f3b6026174a23b12391b490f7da2fef" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mujoco_ros2_control::CameraData::frame_name</definition>
+        <argsstring></argsstring>
+        <name>frame_name</name>
+        <qualifiedname>mujoco_ros2_control::CameraData::frame_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="44" column="15" bodyfile="include/mujoco_ros2_control/mujoco_cameras.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1CameraData_1ac19fd39c91cd8073c02b27f05be812b6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t mujoco_ros2_control::CameraData::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>mujoco_ros2_control::CameraData::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="45" column="12" bodyfile="include/mujoco_ros2_control/mujoco_cameras.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1CameraData_1a860621232c195d9348ddc560c3d59479" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t mujoco_ros2_control::CameraData::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>mujoco_ros2_control::CameraData::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="46" column="12" bodyfile="include/mujoco_ros2_control/mujoco_cameras.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1CameraData_1a28e0e481f82015af1e8b17e75ec9805d" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; uint8_t &gt;</type>
+        <definition>std::vector&lt;uint8_t&gt; mujoco_ros2_control::CameraData::image_buffer</definition>
+        <argsstring></argsstring>
+        <name>image_buffer</name>
+        <qualifiedname>mujoco_ros2_control::CameraData::image_buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="48" column="15" bodyfile="include/mujoco_ros2_control/mujoco_cameras.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1CameraData_1a804179d5268b3be068c5b80f5e8e64a5" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; mujoco_ros2_control::CameraData::depth_buffer</definition>
+        <argsstring></argsstring>
+        <name>depth_buffer</name>
+        <qualifiedname>mujoco_ros2_control::CameraData::depth_buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="49" column="15" bodyfile="include/mujoco_ros2_control/mujoco_cameras.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1CameraData_1ac1aace77e6838d9054de54987111b910" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; mujoco_ros2_control::CameraData::depth_buffer_flipped</definition>
+        <argsstring></argsstring>
+        <name>depth_buffer_flipped</name>
+        <qualifiedname>mujoco_ros2_control::CameraData::depth_buffer_flipped</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="50" column="15" bodyfile="include/mujoco_ros2_control/mujoco_cameras.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1CameraData_1aabb1bec606e146a185b118deae4ebde6" prot="public" static="no" mutable="no">
+        <type>sensor_msgs::msg::Image</type>
+        <definition>sensor_msgs::msg::Image mujoco_ros2_control::CameraData::image</definition>
+        <argsstring></argsstring>
+        <name>image</name>
+        <qualifiedname>mujoco_ros2_control::CameraData::image</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="52" column="27" bodyfile="include/mujoco_ros2_control/mujoco_cameras.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1CameraData_1a18ee0055ddfb1ab8f7770a8c4814db50" prot="public" static="no" mutable="no">
+        <type>sensor_msgs::msg::Image</type>
+        <definition>sensor_msgs::msg::Image mujoco_ros2_control::CameraData::depth_image</definition>
+        <argsstring></argsstring>
+        <name>depth_image</name>
+        <qualifiedname>mujoco_ros2_control::CameraData::depth_image</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="53" column="27" bodyfile="include/mujoco_ros2_control/mujoco_cameras.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1CameraData_1affa359df9bc4516347a82b25e9f32bae" prot="public" static="no" mutable="no">
+        <type>sensor_msgs::msg::CameraInfo</type>
+        <definition>sensor_msgs::msg::CameraInfo mujoco_ros2_control::CameraData::camera_info</definition>
+        <argsstring></argsstring>
+        <name>camera_info</name>
+        <qualifiedname>mujoco_ros2_control::CameraData::camera_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="54" column="32" bodyfile="include/mujoco_ros2_control/mujoco_cameras.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1CameraData_1a3db749f896e9098f51a4cfbec43fc692" prot="public" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; sensor_msgs::msg::Image &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;sensor_msgs::msg::Image&gt;::SharedPtr mujoco_ros2_control::CameraData::image_pub</definition>
+        <argsstring></argsstring>
+        <name>image_pub</name>
+        <qualifiedname>mujoco_ros2_control::CameraData::image_pub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="56" column="33" bodyfile="include/mujoco_ros2_control/mujoco_cameras.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1CameraData_1aa986b548a2886914fc5cdfc4c9452206" prot="public" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; sensor_msgs::msg::Image &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;sensor_msgs::msg::Image&gt;::SharedPtr mujoco_ros2_control::CameraData::depth_image_pub</definition>
+        <argsstring></argsstring>
+        <name>depth_image_pub</name>
+        <qualifiedname>mujoco_ros2_control::CameraData::depth_image_pub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="57" column="33" bodyfile="include/mujoco_ros2_control/mujoco_cameras.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1CameraData_1abdac0aad83a18254f0a9dbff821f1bfb" prot="public" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; sensor_msgs::msg::CameraInfo &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;sensor_msgs::msg::CameraInfo&gt;::SharedPtr mujoco_ros2_control::CameraData::camera_info_pub</definition>
+        <argsstring></argsstring>
+        <name>camera_info_pub</name>
+        <qualifiedname>mujoco_ros2_control::CameraData::camera_info_pub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="58" column="33" bodyfile="include/mujoco_ros2_control/mujoco_cameras.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="38" column="1" bodyfile="include/mujoco_ros2_control/mujoco_cameras.hpp" bodystart="39" bodyend="59"/>
+    <listofallmembers>
+      <member refid="structmujoco__ros2__control_1_1CameraData_1affa359df9bc4516347a82b25e9f32bae" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::CameraData</scope><name>camera_info</name></member>
+      <member refid="structmujoco__ros2__control_1_1CameraData_1abdac0aad83a18254f0a9dbff821f1bfb" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::CameraData</scope><name>camera_info_pub</name></member>
+      <member refid="structmujoco__ros2__control_1_1CameraData_1a804179d5268b3be068c5b80f5e8e64a5" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::CameraData</scope><name>depth_buffer</name></member>
+      <member refid="structmujoco__ros2__control_1_1CameraData_1ac1aace77e6838d9054de54987111b910" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::CameraData</scope><name>depth_buffer_flipped</name></member>
+      <member refid="structmujoco__ros2__control_1_1CameraData_1a18ee0055ddfb1ab8f7770a8c4814db50" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::CameraData</scope><name>depth_image</name></member>
+      <member refid="structmujoco__ros2__control_1_1CameraData_1aa986b548a2886914fc5cdfc4c9452206" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::CameraData</scope><name>depth_image_pub</name></member>
+      <member refid="structmujoco__ros2__control_1_1CameraData_1a6f3b6026174a23b12391b490f7da2fef" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::CameraData</scope><name>frame_name</name></member>
+      <member refid="structmujoco__ros2__control_1_1CameraData_1a860621232c195d9348ddc560c3d59479" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::CameraData</scope><name>height</name></member>
+      <member refid="structmujoco__ros2__control_1_1CameraData_1aabb1bec606e146a185b118deae4ebde6" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::CameraData</scope><name>image</name></member>
+      <member refid="structmujoco__ros2__control_1_1CameraData_1a28e0e481f82015af1e8b17e75ec9805d" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::CameraData</scope><name>image_buffer</name></member>
+      <member refid="structmujoco__ros2__control_1_1CameraData_1a3db749f896e9098f51a4cfbec43fc692" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::CameraData</scope><name>image_pub</name></member>
+      <member refid="structmujoco__ros2__control_1_1CameraData_1ad79cc7e22c9f3b2b5ddf772cb68d95ac" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::CameraData</scope><name>mjv_cam</name></member>
+      <member refid="structmujoco__ros2__control_1_1CameraData_1a2f5d8a26b18480d326157f612c6bde2c" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::CameraData</scope><name>name</name></member>
+      <member refid="structmujoco__ros2__control_1_1CameraData_1a4abdb8978305e2ade03fbdf6342ad0f0" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::CameraData</scope><name>viewport</name></member>
+      <member refid="structmujoco__ros2__control_1_1CameraData_1ac19fd39c91cd8073c02b27f05be812b6" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::CameraData</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

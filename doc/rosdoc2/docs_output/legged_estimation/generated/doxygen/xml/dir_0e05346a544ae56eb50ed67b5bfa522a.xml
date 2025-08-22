@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_0e05346a544ae56eb50ed67b5bfa522a" kind="dir">
+    <compoundname>include/legged_estimation</compoundname>
+    <innerfile refid="GmObserver_8h">GmObserver.h</innerfile>
+    <innerfile refid="LinearKalmanFilter_8h">LinearKalmanFilter.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/legged_estimation/"/>
+  </compounddef>
+</doxygen>

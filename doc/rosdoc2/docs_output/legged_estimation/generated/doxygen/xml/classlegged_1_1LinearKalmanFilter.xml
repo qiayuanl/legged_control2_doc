@@ -1,0 +1,607 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1LinearKalmanFilter" kind="class" language="C++" prot="public">
+    <compoundname>legged::LinearKalmanFilter</compoundname>
+    <innerclass refid="structlegged_1_1LinearKalmanFilter_1_1Configurations" prot="public">legged::LinearKalmanFilter::Configurations</innerclass>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlegged_1_1LinearKalmanFilter_1a14e1441e1662561b427514397f0aa908" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classlegged_1_1LinearKalmanFilter" kindref="compound">LinearKalmanFilter</ref> &gt;</type>
+        <definition>using legged::LinearKalmanFilter::SharedPtr =  std::shared_ptr&lt;LinearKalmanFilter&gt;</definition>
+        <argsstring></argsstring>
+        <name>SharedPtr</name>
+        <qualifiedname>legged::LinearKalmanFilter::SharedPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="15" column="3" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilter_1a68b218e8e7aeba9a311a7f7b83b9d4ed" prot="public" static="no" mutable="no">
+        <type>const scalar_t</type>
+        <definition>const scalar_t legged::LinearKalmanFilter::highSuspectNumber_</definition>
+        <argsstring></argsstring>
+        <name>highSuspectNumber_</name>
+        <qualifiedname>legged::LinearKalmanFilter::highSuspectNumber_</qualifiedname>
+        <initializer>{1e-3}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="16" column="18" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilter_1ad98949824cfa0413691ce339de017256" prot="protected" static="no" mutable="no">
+        <type>LeggedModel::SharedPtr</type>
+        <definition>LeggedModel::SharedPtr legged::LinearKalmanFilter::leggedModel_</definition>
+        <argsstring></argsstring>
+        <name>leggedModel_</name>
+        <qualifiedname>legged::LinearKalmanFilter::leggedModel_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="53" column="26" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilter_1a4adb5578d5c959db1e7d2d60f40585f2" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t legged::LinearKalmanFilter::numContacts_</definition>
+        <argsstring></argsstring>
+        <name>numContacts_</name>
+        <qualifiedname>legged::LinearKalmanFilter::numContacts_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="54" column="10" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilter_1a77aa03a60f386b6a3f83d05635503dd4" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t legged::LinearKalmanFilter::dimContacts_</definition>
+        <argsstring></argsstring>
+        <name>dimContacts_</name>
+        <qualifiedname>legged::LinearKalmanFilter::dimContacts_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="54" column="23" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilter_1a7fcd5d6b59fe35c311b39295dd7a6573" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t legged::LinearKalmanFilter::numState_</definition>
+        <argsstring></argsstring>
+        <name>numState_</name>
+        <qualifiedname>legged::LinearKalmanFilter::numState_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="54" column="36" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilter_1a750112a76ce9ac1b3b617aefdb44ff26" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t legged::LinearKalmanFilter::dimContactObserve_</definition>
+        <argsstring></argsstring>
+        <name>dimContactObserve_</name>
+        <qualifiedname>legged::LinearKalmanFilter::dimContactObserve_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="54" column="46" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilter_1a615b6c2bad3168e7c29dfed1329433f8" prot="protected" static="no" mutable="no">
+        <type><ref refid="structlegged_1_1LinearKalmanFilter_1_1Configurations" kindref="compound">Configurations</ref></type>
+        <definition>Configurations legged::LinearKalmanFilter::configs_</definition>
+        <argsstring></argsstring>
+        <name>configs_</name>
+        <qualifiedname>legged::LinearKalmanFilter::configs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="55" column="18" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilter_1a6efe5558e5a875524ba5deb8b9d44aaa" prot="protected" static="no" mutable="no">
+        <type>vector3_t</type>
+        <definition>vector3_t legged::LinearKalmanFilter::accelerationLocal_</definition>
+        <argsstring></argsstring>
+        <name>accelerationLocal_</name>
+        <qualifiedname>legged::LinearKalmanFilter::accelerationLocal_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="57" column="13" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilter_1a420e29e907b9385b4c69afe43c5869d4" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; vector_t &gt;</type>
+        <definition>std::vector&lt;vector_t&gt; legged::LinearKalmanFilter::contactWrenches_</definition>
+        <argsstring></argsstring>
+        <name>contactWrenches_</name>
+        <qualifiedname>legged::LinearKalmanFilter::contactWrenches_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="58" column="15" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilter_1aa0b91e7ca78244b21d1b9f95855e4e61" prot="protected" static="no" mutable="no">
+        <type>vector_t</type>
+        <definition>vector_t legged::LinearKalmanFilter::feetHeights_</definition>
+        <argsstring></argsstring>
+        <name>feetHeights_</name>
+        <qualifiedname>legged::LinearKalmanFilter::feetHeights_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="60" column="12" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilter_1a47026bf23fe4336a6aa4e68bd4965430" prot="protected" static="no" mutable="no">
+        <type>vector_t</type>
+        <definition>vector_t legged::LinearKalmanFilter::contactProbabilities_</definition>
+        <argsstring></argsstring>
+        <name>contactProbabilities_</name>
+        <qualifiedname>legged::LinearKalmanFilter::contactProbabilities_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="61" column="12" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilter_1ad73912996b3e91d28611871d2018b3d9" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; vector2_t &gt;</type>
+        <definition>std::vector&lt;vector2_t&gt; legged::LinearKalmanFilter::zmps_</definition>
+        <argsstring></argsstring>
+        <name>zmps_</name>
+        <qualifiedname>legged::LinearKalmanFilter::zmps_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="62" column="15" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilter_1a1cc44014209a4e8bf75cd78cbe501fa9" prot="protected" static="no" mutable="no">
+        <type>matrix_t</type>
+        <definition>matrix_t legged::LinearKalmanFilter::a_</definition>
+        <argsstring></argsstring>
+        <name>a_</name>
+        <qualifiedname>legged::LinearKalmanFilter::a_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="64" column="12" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilter_1a68b0fc61208417f4d819f6703664f623" prot="protected" static="no" mutable="no">
+        <type>matrix_t</type>
+        <definition>matrix_t legged::LinearKalmanFilter::b_</definition>
+        <argsstring></argsstring>
+        <name>b_</name>
+        <qualifiedname>legged::LinearKalmanFilter::b_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="64" column="15" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilter_1a7bdd67f0f05064183f7f73c98433ef30" prot="protected" static="no" mutable="no">
+        <type>matrix_t</type>
+        <definition>matrix_t legged::LinearKalmanFilter::p_</definition>
+        <argsstring></argsstring>
+        <name>p_</name>
+        <qualifiedname>legged::LinearKalmanFilter::p_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="64" column="18" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilter_1ae4bf0b0433a41679ada450e5d465f72a" prot="protected" static="no" mutable="no">
+        <type>matrix_t</type>
+        <definition>matrix_t legged::LinearKalmanFilter::cContact_</definition>
+        <argsstring></argsstring>
+        <name>cContact_</name>
+        <qualifiedname>legged::LinearKalmanFilter::cContact_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="64" column="21" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilter_1a987736e368544f7a587a4acc339b8fef" prot="protected" static="no" mutable="no">
+        <type>matrix_t</type>
+        <definition>matrix_t legged::LinearKalmanFilter::cPosition_</definition>
+        <argsstring></argsstring>
+        <name>cPosition_</name>
+        <qualifiedname>legged::LinearKalmanFilter::cPosition_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="64" column="31" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilter_1a8d7b8f57db2e1b317536da99e6b43309" prot="protected" static="no" mutable="no">
+        <type>vector_t</type>
+        <definition>vector_t legged::LinearKalmanFilter::xHat_</definition>
+        <argsstring></argsstring>
+        <name>xHat_</name>
+        <qualifiedname>legged::LinearKalmanFilter::xHat_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="65" column="12" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlegged_1_1LinearKalmanFilter_1a5bc59dd4e31388448b3ce2dd24282a83" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>legged::LinearKalmanFilter::LinearKalmanFilter</definition>
+        <argsstring>(const std::shared_ptr&lt; LeggedModel &gt; &amp;leggedModel)</argsstring>
+        <name>LinearKalmanFilter</name>
+        <qualifiedname>legged::LinearKalmanFilter::LinearKalmanFilter</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="classlegged_1_1LeggedModel" kindref="compound" external="/home/runner/work/legged_control2_doc/legged_control2_doc/build/html/doc/rosdoc2/cross_reference/legged_model/legged_model.tag">LeggedModel</ref> &gt; &amp;</type>
+          <declname>leggedModel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="32" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LinearKalmanFilter_1ae142d1841ec84e81bea29ed7ce5296a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual legged::LinearKalmanFilter::~LinearKalmanFilter</definition>
+        <argsstring>()=default</argsstring>
+        <name>~LinearKalmanFilter</name>
+        <qualifiedname>legged::LinearKalmanFilter::~LinearKalmanFilter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="33" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LinearKalmanFilter_1a295e3d4b10e2db6d292711ef3021e74c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void legged::LinearKalmanFilter::setConfigurations</definition>
+        <argsstring>(const Configurations &amp;configs)</argsstring>
+        <name>setConfigurations</name>
+        <qualifiedname>legged::LinearKalmanFilter::setConfigurations</qualifiedname>
+        <param>
+          <type>const <ref refid="structlegged_1_1LinearKalmanFilter_1_1Configurations" kindref="compound">Configurations</ref> &amp;</type>
+          <declname>configs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="34" column="8" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LinearKalmanFilter_1a7eff454b79a524ac34c317a26b967711" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void legged::LinearKalmanFilter::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>legged::LinearKalmanFilter::reset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="35" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LinearKalmanFilter_1a6855aabe1ba869d31a12b7dfc8e596ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void legged::LinearKalmanFilter::updateImuProcess</definition>
+        <argsstring>(scalar_t period)</argsstring>
+        <name>updateImuProcess</name>
+        <qualifiedname>legged::LinearKalmanFilter::updateImuProcess</qualifiedname>
+        <param>
+          <type>scalar_t</type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="36" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LinearKalmanFilter_1a585fbb265803b66b6072f004633530fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void legged::LinearKalmanFilter::updateContactsMeasurement</definition>
+        <argsstring>(scalar_t period)</argsstring>
+        <name>updateContactsMeasurement</name>
+        <qualifiedname>legged::LinearKalmanFilter::updateContactsMeasurement</qualifiedname>
+        <param>
+          <type>scalar_t</type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="37" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LinearKalmanFilter_1ac5b5df362d7ad693a5826664a118d18e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void legged::LinearKalmanFilter::updatePositionMeasurement</definition>
+        <argsstring>(scalar_t period, vector3_t position)</argsstring>
+        <name>updatePositionMeasurement</name>
+        <qualifiedname>legged::LinearKalmanFilter::updatePositionMeasurement</qualifiedname>
+        <param>
+          <type>scalar_t</type>
+          <declname>period</declname>
+        </param>
+        <param>
+          <type>vector3_t</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="38" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LinearKalmanFilter_1ab9293f2047e158710b9b9b832c1757b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void legged::LinearKalmanFilter::setAccelerationLocal</definition>
+        <argsstring>(const vector3_t &amp;accelerationLocal)</argsstring>
+        <name>setAccelerationLocal</name>
+        <qualifiedname>legged::LinearKalmanFilter::setAccelerationLocal</qualifiedname>
+        <param>
+          <type>const vector3_t &amp;</type>
+          <declname>accelerationLocal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="40" column="8" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LinearKalmanFilter_1a0b1b24994bb5fcf44d56864ddfdb322a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void legged::LinearKalmanFilter::setContactWrenches</definition>
+        <argsstring>(const std::vector&lt; vector_t &gt; &amp;wrenches)</argsstring>
+        <name>setContactWrenches</name>
+        <qualifiedname>legged::LinearKalmanFilter::setContactWrenches</qualifiedname>
+        <param>
+          <type>const std::vector&lt; vector_t &gt; &amp;</type>
+          <declname>wrenches</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="41" column="8" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LinearKalmanFilter_1a426fec5fd6ab6879318d9f302a697401" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>vector3_t</type>
+        <definition>vector3_t legged::LinearKalmanFilter::getPosition</definition>
+        <argsstring>() const</argsstring>
+        <name>getPosition</name>
+        <qualifiedname>legged::LinearKalmanFilter::getPosition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="43" column="13" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LinearKalmanFilter_1aae8e43206b01b9322246dfd6cf9ec4c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>vector3_t</type>
+        <definition>vector3_t legged::LinearKalmanFilter::getVelocityGlobal</definition>
+        <argsstring>() const</argsstring>
+        <name>getVelocityGlobal</name>
+        <qualifiedname>legged::LinearKalmanFilter::getVelocityGlobal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="44" column="13" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LinearKalmanFilter_1a9c4f297e98b79e11f1aeda9a38ed7bf1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>vector3_t</type>
+        <definition>vector3_t legged::LinearKalmanFilter::getVelocityLocal</definition>
+        <argsstring>() const</argsstring>
+        <name>getVelocityLocal</name>
+        <qualifiedname>legged::LinearKalmanFilter::getVelocityLocal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="45" column="13" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classlegged_1_1LinearKalmanFilter_1a697d8a79a1d0309fa75c7f21f360411d" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>matrix3_t</type>
+        <definition>matrix3_t legged::LinearKalmanFilter::getRotation</definition>
+        <argsstring>() const</argsstring>
+        <name>getRotation</name>
+        <qualifiedname>legged::LinearKalmanFilter::getRotation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="48" column="13" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LinearKalmanFilter_1a35e325e68b02a1e2ceb46ce633a15aa7" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>matrix_t</type>
+        <definition>matrix_t legged::LinearKalmanFilter::getKalmanGain</definition>
+        <argsstring>(matrix_t c, matrix_t r) const</argsstring>
+        <name>getKalmanGain</name>
+        <qualifiedname>legged::LinearKalmanFilter::getKalmanGain</qualifiedname>
+        <param>
+          <type>matrix_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>matrix_t</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="49" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LinearKalmanFilter_1ab7220d97047ecfd12c9cba08a2a73725" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>matrix_t</type>
+        <definition>matrix_t legged::LinearKalmanFilter::getImuProcessNoiseCovariance</definition>
+        <argsstring>(scalar_t dt) const</argsstring>
+        <name>getImuProcessNoiseCovariance</name>
+        <qualifiedname>legged::LinearKalmanFilter::getImuProcessNoiseCovariance</qualifiedname>
+        <param>
+          <type>scalar_t</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="50" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LinearKalmanFilter_1aa55948c7b2c498485d4905956eb11aa8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void legged::LinearKalmanFilter::updateContactProbabilities</definition>
+        <argsstring>()</argsstring>
+        <name>updateContactProbabilities</name>
+        <qualifiedname>legged::LinearKalmanFilter::updateContactProbabilities</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/LinearKalmanFilter.h" line="51" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>legged::LinearKalmanFilter</label>
+        <link refid="classlegged_1_1LinearKalmanFilter"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>configs_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>legged::LinearKalmanFilter::Configurations</label>
+        <link refid="structlegged_1_1LinearKalmanFilter_1_1Configurations"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/legged_estimation/LinearKalmanFilter.h" line="13" column="1" bodyfile="include/legged_estimation/LinearKalmanFilter.h" bodystart="13" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1LinearKalmanFilter_1a1cc44014209a4e8bf75cd78cbe501fa9" prot="protected" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>a_</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1a6efe5558e5a875524ba5deb8b9d44aaa" prot="protected" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>accelerationLocal_</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1a68b0fc61208417f4d819f6703664f623" prot="protected" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>b_</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1ae4bf0b0433a41679ada450e5d465f72a" prot="protected" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>cContact_</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1a615b6c2bad3168e7c29dfed1329433f8" prot="protected" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>configs_</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1a47026bf23fe4336a6aa4e68bd4965430" prot="protected" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>contactProbabilities_</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1a420e29e907b9385b4c69afe43c5869d4" prot="protected" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>contactWrenches_</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1a987736e368544f7a587a4acc339b8fef" prot="protected" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>cPosition_</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1a750112a76ce9ac1b3b617aefdb44ff26" prot="protected" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>dimContactObserve_</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1a77aa03a60f386b6a3f83d05635503dd4" prot="protected" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>dimContacts_</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1aa0b91e7ca78244b21d1b9f95855e4e61" prot="protected" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>feetHeights_</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1ab7220d97047ecfd12c9cba08a2a73725" prot="protected" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>getImuProcessNoiseCovariance</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1a35e325e68b02a1e2ceb46ce633a15aa7" prot="protected" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>getKalmanGain</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1a426fec5fd6ab6879318d9f302a697401" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>getPosition</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1a697d8a79a1d0309fa75c7f21f360411d" prot="protected" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>getRotation</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1aae8e43206b01b9322246dfd6cf9ec4c9" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>getVelocityGlobal</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1a9c4f297e98b79e11f1aeda9a38ed7bf1" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>getVelocityLocal</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1a68b218e8e7aeba9a311a7f7b83b9d4ed" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>highSuspectNumber_</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1ad98949824cfa0413691ce339de017256" prot="protected" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>leggedModel_</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1a5bc59dd4e31388448b3ce2dd24282a83" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>LinearKalmanFilter</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1a4adb5578d5c959db1e7d2d60f40585f2" prot="protected" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>numContacts_</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1a7fcd5d6b59fe35c311b39295dd7a6573" prot="protected" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>numState_</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1a7bdd67f0f05064183f7f73c98433ef30" prot="protected" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>p_</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1a7eff454b79a524ac34c317a26b967711" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>reset</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1ab9293f2047e158710b9b9b832c1757b0" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>setAccelerationLocal</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1a295e3d4b10e2db6d292711ef3021e74c" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>setConfigurations</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1a0b1b24994bb5fcf44d56864ddfdb322a" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>setContactWrenches</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1a14e1441e1662561b427514397f0aa908" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>SharedPtr</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1aa55948c7b2c498485d4905956eb11aa8" prot="protected" virt="virtual"><scope>legged::LinearKalmanFilter</scope><name>updateContactProbabilities</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1a585fbb265803b66b6072f004633530fc" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>updateContactsMeasurement</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1a6855aabe1ba869d31a12b7dfc8e596ad" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>updateImuProcess</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1ac5b5df362d7ad693a5826664a118d18e" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>updatePositionMeasurement</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1a8d7b8f57db2e1b317536da99e6b43309" prot="protected" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>xHat_</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1ad73912996b3e91d28611871d2018b3d9" prot="protected" virt="non-virtual"><scope>legged::LinearKalmanFilter</scope><name>zmps_</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilter_1ae142d1841ec84e81bea29ed7ce5296a4" prot="public" virt="virtual"><scope>legged::LinearKalmanFilter</scope><name>~LinearKalmanFilter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
