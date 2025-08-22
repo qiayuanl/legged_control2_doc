@@ -18,7 +18,8 @@ This toolbox is implemented in C++, built on top of ``pinocchio`` and ``ros2_con
 How to use the legged_control2?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-legged_control2 can be easily installed on Ubuntu. The `source code`_ is also publicly available.
+The `source code`_ for legged_control2 isn’t available right now, and it’s proprietary to Hybrid Robotics. Instead, it’s released as prebuilt binaries, which are easy to install on Ubuntu.
+
 To get started with the legged_control2, please refer to the 
 :ref:`Installation <doxid-legged_control2_doc_installation>`, and
 :ref:`Getting Started <doxid-legged_control2_doc_getting_started>` pages.
