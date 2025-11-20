@@ -25,7 +25,7 @@ if os.environ.get('BASE_BRANCH_PR') is not None:
 elif os.environ.get('BASE_BRANCH') is not None:
   base_branch = os.environ.get('BASE_BRANCH')
 else:
-  base_branch = "humble"
+  base_branch = "jazzy"
 print(f"Using base_branch: {base_branch}")
 
 build_dir = "build"
@@ -46,7 +46,7 @@ pr_stats_files = [
 # branches on which the temporary commits are created
 # {"branch checked out for multiversion": "branch checked out for all subrepos with maps below"}
 branch_version = {
-    "humble": "humble",
-    base_branch: "humble"  # PRs are tested on rolling
+    "jazzy": "jazzy",
+    base_branch: "jazzy"  # PRs are tested on rolling
 }
 

@@ -11,12 +11,12 @@ You need to add the apt source of Unitree build farm to your system, and install
   .. code-block:: bash
 
       # Add apt source
-      echo "deb [trusted=yes] https://github.com/qiayuanl/unitree_buildfarm/raw/jammy-humble-amd64/ ./" | sudo tee /etc/apt/sources.list.d/qiayuanl_unitree_buildfarm.list
-      echo "yaml https://github.com/qiayuanl/unitree_buildfarm/raw/jammy-humble-amd64/local.yaml humble" | sudo tee /etc/ros/rosdep/sources.list.d/1-qiayuanl_unitree_buildfarm.list
+      echo "deb [trusted=yes] https://github.com/qiayuanl/unitree_buildfarm/raw/noble-jazzy-amd64/ ./" | sudo tee /etc/apt/sources.list.d/qiayuanl_unitree_buildfarm.list
+      echo "yaml https://github.com/qiayuanl/unitree_buildfarm/raw/noble-jazzy-amd64/local.yaml jazzy" | sudo tee /etc/ros/rosdep/sources.list.d/1-qiayuanl_unitree_buildfarm.list
       sudo apt-get update
 
       # Instsall description packages
-      sudo apt-get install ros-humble-unitree-description
+      sudo apt-get install ros-jazzy-unitree-description
 
 .. _doxid-legged_control2_doc_sim-to-sim:
 
@@ -39,7 +39,7 @@ Make sure that you have installed the basic package of ``legged_control2`` as we
 
   .. code-block:: bash
 
-    sudo apt-get install ros-humble-ros2-controllers ros-humble-rqt ros-humble-rqt-controller-manager ros-humble-rqt-publisher ros-humble-rviz2
+    sudo apt-get install ros-jazzy-ros2-controllers ros-jazzy-rqt ros-jazzy-rqt-controller-manager ros-jazzy-rqt-publisher ros-jazzy-rviz2
 
 - Launch the simulation:
 
@@ -67,7 +67,7 @@ We can run all the software on the user computer, and use the EtherNet calbe to 
 
   .. code-block:: bash
 
-    sudo apt-get install ros-humble-unitree-systems
+    sudo apt-get install ros-jazzy-unitree-systems
 
 - Follow the instructions in the :ref:`sim-to-sim <doxid-legged_control2_doc_sim-to-sim>` to clone and build the `unitree_bringup` package. Everything is the same except the launch file:
 

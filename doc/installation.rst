@@ -6,7 +6,7 @@ Installation
 Prerequisites
 ~~~~~~~~~~~~~
 
-The legged_control2 library is written in C++. It is tested under Ubuntu 22.04 with library versions as provided in the package sources.
+The legged_control2 library is written in C++. It is tested under Ubuntu 24.04 with library versions as provided in the package sources.
 
 Source code
 ------------
@@ -25,19 +25,19 @@ Installation
 Debian Source (recommended)
 --------------------------------
 
-For Ubuntu 22.04 user, you can directly install the legged_control2 from the apt source.
+For Ubuntu 24.04 user, you can directly install the legged_control2 from the apt source.
 
 - Basic packages:
 
     .. code-block:: bash
 
         # Add apt source
-        echo "deb [trusted=yes] https://github.com/qiayuanl/legged_buildfarm/raw/jammy-humble-amd64/ ./" | sudo tee /etc/apt/sources.list.d/qiayuanl_legged_buildfarm.list
-        echo "yaml https://github.com/qiayuanl/legged_buildfarm/raw/jammy-humble-amd64/local.yaml humble" | sudo tee /etc/ros/rosdep/sources.list.d/1-qiayuanl_legged_buildfarm.list
+        echo "deb [trusted=yes] https://github.com/qiayuanl/legged_buildfarm/raw/noble-jazzy-amd64/ ./" | sudo tee /etc/apt/sources.list.d/qiayuanl_legged_buildfarm.list
+        echo "yaml https://github.com/qiayuanl/legged_buildfarm/raw/noble-jazzy-amd64/local.yaml jazzy" | sudo tee /etc/ros/rosdep/sources.list.d/1-qiayuanl_legged_buildfarm.list
         sudo apt-get update
 
         # Instsall basic packages
-        sudo apt-get install ros-humble-legged-control-base
+        sudo apt-get install ros-jazzy-legged-control-base
 
 
 - Simulation packages (**Do not install in robot's on-board computer**):
@@ -45,17 +45,17 @@ For Ubuntu 22.04 user, you can directly install the legged_control2 from the apt
       .. code-block:: bash
 
         # Add apt source
-        echo "deb [trusted=yes] https://github.com/qiayuanl/simulation_buildfarm/raw/jammy-humble-amd64/ ./" | sudo tee /etc/apt/sources.list.d/qiayuanl_simulation_buildfarm.list
-        echo "yaml https://github.com/qiayuanl/simulation_buildfarm/raw/jammy-humble-amd64/local.yaml humble" | sudo tee /etc/ros/rosdep/sources.list.d/1-qiayuanl_simulation_buildfarm.list
+        echo "deb [trusted=yes] https://github.com/qiayuanl/simulation_buildfarm/raw/noble-jazzy-amd64/ ./" | sudo tee /etc/apt/sources.list.d/qiayuanl_simulation_buildfarm.list
+        echo "yaml https://github.com/qiayuanl/simulation_buildfarm/raw/noble-jazzy-amd64/local.yaml jazzy" | sudo tee /etc/ros/rosdep/sources.list.d/1-qiayuanl_simulation_buildfarm.list
         sudo apt-get update
 
         # Install MuJoCo
-        sudo apt install ros-humble-mujoco-ros2-control
+        sudo apt install ros-jazzy-mujoco-ros2-control
 
 Docker
 ------
 
-For Ubuntu 18.04 and 20.04 users, especially for Unitree on-board computers, you should use Docker.
+For Ubuntu 18.04, 20.04 and 24.04 users, especially for Unitree on-board computers, you should use Docker.
 
 We have pre-built Docker images for different specific robots. You can pull the image from Docker Hub. For more details, please refer to the TODO.
 
@@ -63,7 +63,7 @@ We have pre-built Docker images for different specific robots. You can pull the 
 Build from Source
 ------------------
 
-For Ubuntu 22.04 users, you can build from source.
+For Ubuntu 24.04 users, you can build from source.
 
 - Create a new colcon workspace:
 
