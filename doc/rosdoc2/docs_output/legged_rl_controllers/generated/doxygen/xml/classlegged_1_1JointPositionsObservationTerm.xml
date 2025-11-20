@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1JointPositionsObservationTerm" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>legged::JointPositionsObservationTerm</compoundname>
+    <basecompoundref refid="classlegged_1_1JointObservationTerm" prot="public" virt="non-virtual">legged::JointObservationTerm</basecompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classlegged_1_1JointPositionsObservationTerm_1af8968591167a41057442eb5d57250924" prot="protected" static="no" mutable="no">
+        <type>vector_t</type>
+        <definition>vector_t legged::JointPositionsObservationTerm::defaultPosition_</definition>
+        <argsstring></argsstring>
+        <name>defaultPosition_</name>
+        <qualifiedname>legged::JointPositionsObservationTerm::defaultPosition_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="156" column="12" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlegged_1_1JointPositionsObservationTerm_1ade60fa140eba2c857721af03f43fff7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>legged::JointPositionsObservationTerm::JointPositionsObservationTerm</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;jointNameInPolicy, vector_t defaultPosition)</argsstring>
+        <name>JointPositionsObservationTerm</name>
+        <qualifiedname>legged::JointPositionsObservationTerm::JointPositionsObservationTerm</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>jointNameInPolicy</declname>
+        </param>
+        <param>
+          <type>vector_t</type>
+          <declname>defaultPosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="150" column="3" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="150" bodyend="151"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classlegged_1_1JointPositionsObservationTerm_1acad4a2c9f41633108765bac9f15c4c0c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>vector_t</type>
+        <definition>vector_t legged::JointPositionsObservationTerm::evaluate</definition>
+        <argsstring>() override</argsstring>
+        <name>evaluate</name>
+        <qualifiedname>legged::JointPositionsObservationTerm::evaluate</qualifiedname>
+        <reimplements refid="classlegged_1_1ObservationTerm_1a93a4179a31588f23d4056cd3c4a560bf">evaluate</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="154" column="12" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="154" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1JointPositionsObservationTerm_1a020ee70e3d8309a05b887a76cfeeb2ee" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>vector_t</type>
+        <definition>vector_t legged::JointPositionsObservationTerm::modify</definition>
+        <argsstring>(const vector_t &amp;observation) override</argsstring>
+        <name>modify</name>
+        <qualifiedname>legged::JointPositionsObservationTerm::modify</qualifiedname>
+        <reimplements refid="classlegged_1_1JointObservationTerm_1ab8f60518c2d7b46239175bca5b6d0666">modify</reimplements>
+        <param>
+          <type>const vector_t &amp;</type>
+          <declname>observation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="155" column="12" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="155" bodyend="155"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>legged::JointObservationTerm</label>
+        <link refid="classlegged_1_1JointObservationTerm"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>legged::JointPositionsObservationTerm</label>
+        <link refid="classlegged_1_1JointPositionsObservationTerm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>legged::ObservationTerm</label>
+        <link refid="classlegged_1_1ObservationTerm"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>legged::JointObservationTerm</label>
+        <link refid="classlegged_1_1JointObservationTerm"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>legged::JointPositionsObservationTerm</label>
+        <link refid="classlegged_1_1JointPositionsObservationTerm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>legged::ObservationTerm</label>
+        <link refid="classlegged_1_1ObservationTerm"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/legged_rl_controllers/ObservationManager.h" line="148" column="1" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="148" bodyend="157"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1JointPositionsObservationTerm_1af8968591167a41057442eb5d57250924" prot="protected" virt="non-virtual"><scope>legged::JointPositionsObservationTerm</scope><name>defaultPosition_</name></member>
+      <member refid="classlegged_1_1JointPositionsObservationTerm_1acad4a2c9f41633108765bac9f15c4c0c" prot="protected" virt="virtual"><scope>legged::JointPositionsObservationTerm</scope><name>evaluate</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a3e8d732bf648855a3ea3a57f29efed70" prot="public" virt="non-virtual"><scope>legged::JointPositionsObservationTerm</scope><name>getHistoryLength</name></member>
+      <member refid="classlegged_1_1JointObservationTerm_1adc7ca9ae450fd6361b685e97313ddd9c" prot="public" virt="virtual"><scope>legged::JointPositionsObservationTerm</scope><name>getSize</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a8560e826f364246851120ad55902f78b" prot="public" virt="non-virtual"><scope>legged::JointPositionsObservationTerm</scope><name>getTotalSize</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a5850878005f89e8437c7e0a989229c93" prot="public" virt="non-virtual"><scope>legged::JointPositionsObservationTerm</scope><name>getValue</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1aa2c87d8eb6d40955ef0b899ff3282c7f" prot="protected" virt="non-virtual"><scope>legged::JointPositionsObservationTerm</scope><name>history_</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a8224b2ebe2adc9ec9774b06c4eae8c4d" prot="protected" virt="non-virtual"><scope>legged::JointPositionsObservationTerm</scope><name>historyLength_</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a67484fe754557f02bbd193564344ec42" prot="protected" virt="non-virtual"><scope>legged::JointPositionsObservationTerm</scope><name>initialized_</name></member>
+      <member refid="classlegged_1_1JointObservationTerm_1ac1025d3a9d2923bdb3fd244e154f1eee" prot="protected" virt="non-virtual"><scope>legged::JointPositionsObservationTerm</scope><name>jointNameInPolicy_</name></member>
+      <member refid="classlegged_1_1JointObservationTerm_1af804b2c2f5766b6b85303f29285bdc38" prot="public" virt="non-virtual"><scope>legged::JointPositionsObservationTerm</scope><name>JointObservationTerm</name></member>
+      <member refid="classlegged_1_1JointPositionsObservationTerm_1ade60fa140eba2c857721af03f43fff7e" prot="public" virt="non-virtual"><scope>legged::JointPositionsObservationTerm</scope><name>JointPositionsObservationTerm</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1aedd7dcb2346a282bb60ff5d6708f5b10" prot="protected" virt="non-virtual"><scope>legged::JointPositionsObservationTerm</scope><name>model_</name></member>
+      <member refid="classlegged_1_1JointPositionsObservationTerm_1a020ee70e3d8309a05b887a76cfeeb2ee" prot="protected" virt="virtual"><scope>legged::JointPositionsObservationTerm</scope><name>modify</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1aa1506ca6648380d406baba2a7d262103" prot="public" virt="non-virtual"><scope>legged::JointPositionsObservationTerm</scope><name>ObservationTerm</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a2d4d7c6454eb10423d92891c9962d0c1" prot="public" virt="virtual"><scope>legged::JointPositionsObservationTerm</scope><name>reset</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1ad0d439aa8b3e17ffee134cc63f9719fc" prot="public" virt="non-virtual"><scope>legged::JointPositionsObservationTerm</scope><name>setHistoryLength</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1ae03af17c76ff709989f80fb8f7008eec" prot="public" virt="virtual"><scope>legged::JointPositionsObservationTerm</scope><name>setModel</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1aac6c0aef459411eb2f3e88fa31298c65" prot="public" virt="non-virtual"><scope>legged::JointPositionsObservationTerm</scope><name>SharedPtr</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a6631835909df0292eb219f84df0f380e" prot="public" virt="virtual"><scope>legged::JointPositionsObservationTerm</scope><name>~ObservationTerm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

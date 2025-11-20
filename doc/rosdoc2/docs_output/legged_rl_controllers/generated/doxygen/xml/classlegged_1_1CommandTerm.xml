@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1CommandTerm" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>legged::CommandTerm</compoundname>
+    <derivedcompoundref refid="classlegged_1_1VelocityTopicCommandTerm" prot="public" virt="non-virtual">legged::VelocityTopicCommandTerm</derivedcompoundref>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlegged_1_1CommandTerm_1ab50d173d3484f694a16ebecddc9617da" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classlegged_1_1CommandTerm" kindref="compound">CommandTerm</ref> &gt;</type>
+        <definition>using legged::CommandTerm::SharedPtr =  std::shared_ptr&lt;CommandTerm&gt;</definition>
+        <argsstring></argsstring>
+        <name>SharedPtr</name>
+        <qualifiedname>legged::CommandTerm::SharedPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/CommandManager.h" line="21" column="3" bodyfile="include/legged_rl_controllers/CommandManager.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classlegged_1_1CommandTerm_1aeacff5b3fe4f88094299f8bd2219238e" prot="protected" static="no" mutable="no">
+        <type>LeggedModel::SharedPtr</type>
+        <definition>LeggedModel::SharedPtr legged::CommandTerm::model_</definition>
+        <argsstring></argsstring>
+        <name>model_</name>
+        <qualifiedname>legged::CommandTerm::model_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/CommandManager.h" line="31" column="26" bodyfile="include/legged_rl_controllers/CommandManager.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlegged_1_1CommandTerm_1ab0cb0b8f7209acc5b6b7e8bb3d9536ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>legged::CommandTerm::CommandTerm</definition>
+        <argsstring>()=default</argsstring>
+        <name>CommandTerm</name>
+        <qualifiedname>legged::CommandTerm::CommandTerm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/CommandManager.h" line="22" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1CommandTerm_1a8d2caf8cdcb1edacd0fac0ef1b2e6908" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual legged::CommandTerm::~CommandTerm</definition>
+        <argsstring>()=default</argsstring>
+        <name>~CommandTerm</name>
+        <qualifiedname>legged::CommandTerm::~CommandTerm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/CommandManager.h" line="23" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1CommandTerm_1a3b6f5577cd5b81884f02afa1bde5950e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>vector_t</type>
+        <definition>virtual vector_t legged::CommandTerm::getValue</definition>
+        <argsstring>()=0</argsstring>
+        <name>getValue</name>
+        <qualifiedname>legged::CommandTerm::getValue</qualifiedname>
+        <reimplementedby refid="classlegged_1_1VelocityTopicCommandTerm_1a02972912e27b81b047da3cce7ab61663">getValue</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/CommandManager.h" line="25" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1CommandTerm_1a1f7ca19266a794428e2224848fbc28e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void legged::CommandTerm::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>legged::CommandTerm::reset</qualifiedname>
+        <reimplementedby refid="classlegged_1_1VelocityTopicCommandTerm_1a94bef758d64b37df8d282d7a57199270">reset</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/CommandManager.h" line="26" column="16" bodyfile="include/legged_rl_controllers/CommandManager.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1CommandTerm_1a4f17152b4c0fbdcc4bce67c0e4362726" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t</type>
+        <definition>virtual size_t legged::CommandTerm::getSize</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getSize</name>
+        <qualifiedname>legged::CommandTerm::getSize</qualifiedname>
+        <reimplementedby refid="classlegged_1_1VelocityTopicCommandTerm_1a270da0f4b11f5eb95d52260bb374cbd6">getSize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/CommandManager.h" line="27" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1CommandTerm_1a98e185fd51d15006b7b3dddce2146bdb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void legged::CommandTerm::setModel</definition>
+        <argsstring>(const LeggedModel::SharedPtr &amp;model)</argsstring>
+        <name>setModel</name>
+        <qualifiedname>legged::CommandTerm::setModel</qualifiedname>
+        <param>
+          <type>const LeggedModel::SharedPtr &amp;</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/CommandManager.h" line="28" column="16" bodyfile="include/legged_rl_controllers/CommandManager.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>legged::CommandTerm</label>
+        <link refid="classlegged_1_1CommandTerm"/>
+      </node>
+      <node id="2">
+        <label>legged::VelocityTopicCommandTerm</label>
+        <link refid="classlegged_1_1VelocityTopicCommandTerm"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="include/legged_rl_controllers/CommandManager.h" line="19" column="1" bodyfile="include/legged_rl_controllers/CommandManager.h" bodystart="19" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1CommandTerm_1ab0cb0b8f7209acc5b6b7e8bb3d9536ba" prot="public" virt="non-virtual"><scope>legged::CommandTerm</scope><name>CommandTerm</name></member>
+      <member refid="classlegged_1_1CommandTerm_1a4f17152b4c0fbdcc4bce67c0e4362726" prot="public" virt="pure-virtual"><scope>legged::CommandTerm</scope><name>getSize</name></member>
+      <member refid="classlegged_1_1CommandTerm_1a3b6f5577cd5b81884f02afa1bde5950e" prot="public" virt="pure-virtual"><scope>legged::CommandTerm</scope><name>getValue</name></member>
+      <member refid="classlegged_1_1CommandTerm_1aeacff5b3fe4f88094299f8bd2219238e" prot="protected" virt="non-virtual"><scope>legged::CommandTerm</scope><name>model_</name></member>
+      <member refid="classlegged_1_1CommandTerm_1a1f7ca19266a794428e2224848fbc28e5" prot="public" virt="virtual"><scope>legged::CommandTerm</scope><name>reset</name></member>
+      <member refid="classlegged_1_1CommandTerm_1a98e185fd51d15006b7b3dddce2146bdb" prot="public" virt="virtual"><scope>legged::CommandTerm</scope><name>setModel</name></member>
+      <member refid="classlegged_1_1CommandTerm_1ab50d173d3484f694a16ebecddc9617da" prot="public" virt="non-virtual"><scope>legged::CommandTerm</scope><name>SharedPtr</name></member>
+      <member refid="classlegged_1_1CommandTerm_1a8d2caf8cdcb1edacd0fac0ef1b2e6908" prot="public" virt="virtual"><scope>legged::CommandTerm</scope><name>~CommandTerm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

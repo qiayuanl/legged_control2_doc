@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState" kind="struct" language="C++" prot="public">
+    <compoundname>mujoco_ros2_control::MujocoSystem::JointState</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a700e40706588facc0c8d685f893406fe" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mujoco_ros2_control::MujocoSystem::JointState::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::JointState::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="53" column="17" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a4011f4af07ab7d184bc79ce1b6040b84" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mujoco_ros2_control::MujocoSystem::JointState::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::JointState::position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="54" column="12" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1afe65e8e2d5d9913d4c61e252e205f338" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mujoco_ros2_control::MujocoSystem::JointState::velocity</definition>
+        <argsstring></argsstring>
+        <name>velocity</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::JointState::velocity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="55" column="12" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a8347ba9a5a9e45c04f65a725a905fc5e" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mujoco_ros2_control::MujocoSystem::JointState::effort</definition>
+        <argsstring></argsstring>
+        <name>effort</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::JointState::effort</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="56" column="12" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a288fc3684667cd7ad498f0fc5acca319" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mujoco_ros2_control::MujocoSystem::JointState::position_command</definition>
+        <argsstring></argsstring>
+        <name>position_command</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::JointState::position_command</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="57" column="12" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1aac19ba799baff062e45cc410a907b474" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mujoco_ros2_control::MujocoSystem::JointState::velocity_command</definition>
+        <argsstring></argsstring>
+        <name>velocity_command</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::JointState::velocity_command</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="58" column="12" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a2ddd7a88c04f23d956d5bbf262cc50e0" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mujoco_ros2_control::MujocoSystem::JointState::effort_command</definition>
+        <argsstring></argsstring>
+        <name>effort_command</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::JointState::effort_command</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="59" column="12" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a2cf285728e257c437c28ce071307ed12" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mujoco_ros2_control::MujocoSystem::JointState::stiffness_command</definition>
+        <argsstring></argsstring>
+        <name>stiffness_command</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::JointState::stiffness_command</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="60" column="12" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1ab2f9ef51fda96fb37ca017053a440a36" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mujoco_ros2_control::MujocoSystem::JointState::damping_command</definition>
+        <argsstring></argsstring>
+        <name>damping_command</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::JointState::damping_command</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="61" column="12" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a1da2b6218d1dd4ea963a480e4245eb76" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mujoco_ros2_control::MujocoSystem::JointState::min_position_command</definition>
+        <argsstring></argsstring>
+        <name>min_position_command</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::JointState::min_position_command</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="62" column="12" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a4cad3ab23586d1aa4a4faaea84353378" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mujoco_ros2_control::MujocoSystem::JointState::max_position_command</definition>
+        <argsstring></argsstring>
+        <name>max_position_command</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::JointState::max_position_command</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="63" column="12" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a668c7dda0a42cf04922d96b405f961c1" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mujoco_ros2_control::MujocoSystem::JointState::min_velocity_command</definition>
+        <argsstring></argsstring>
+        <name>min_velocity_command</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::JointState::min_velocity_command</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="64" column="12" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a7143a0ee2549b263dc5894d96168fd4d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mujoco_ros2_control::MujocoSystem::JointState::max_velocity_command</definition>
+        <argsstring></argsstring>
+        <name>max_velocity_command</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::JointState::max_velocity_command</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="65" column="12" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a1c9e83caa41170d0abca68432415d1f3" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mujoco_ros2_control::MujocoSystem::JointState::min_effort_command</definition>
+        <argsstring></argsstring>
+        <name>min_effort_command</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::JointState::min_effort_command</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="66" column="12" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1af93d5f8e6babb3f70886e97675f166c8" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mujoco_ros2_control::MujocoSystem::JointState::max_effort_command</definition>
+        <argsstring></argsstring>
+        <name>max_effort_command</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::JointState::max_effort_command</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="67" column="12" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a2681fced02b3de30d43d5eb36a63dcc8" prot="public" static="no" mutable="no">
+        <type>joint_limits::JointLimits</type>
+        <definition>joint_limits::JointLimits mujoco_ros2_control::MujocoSystem::JointState::joint_limits</definition>
+        <argsstring></argsstring>
+        <name>joint_limits</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::JointState::joint_limits</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="68" column="31" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1ad85e210fbe9b3481a34057a8044efd2c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mujoco_ros2_control::MujocoSystem::JointState::is_mimic</definition>
+        <argsstring></argsstring>
+        <name>is_mimic</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::JointState::is_mimic</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="69" column="10" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a8894ce3f7516b27d87d771b63e902b0e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mujoco_ros2_control::MujocoSystem::JointState::mimicked_joint_index</definition>
+        <argsstring></argsstring>
+        <name>mimicked_joint_index</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::JointState::mimicked_joint_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="70" column="9" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1af7afc04113615f5a739ad896c371a5d6" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mujoco_ros2_control::MujocoSystem::JointState::mimic_multiplier</definition>
+        <argsstring></argsstring>
+        <name>mimic_multiplier</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::JointState::mimic_multiplier</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="71" column="12" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a847cc7aa70253200939ddb9f4c8548a1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mujoco_ros2_control::MujocoSystem::JointState::mj_joint_type</definition>
+        <argsstring></argsstring>
+        <name>mj_joint_type</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::JointState::mj_joint_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="72" column="9" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1af015104f1e4e5f1e2670a131f8a13af6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mujoco_ros2_control::MujocoSystem::JointState::mj_pos_adr</definition>
+        <argsstring></argsstring>
+        <name>mj_pos_adr</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::JointState::mj_pos_adr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="73" column="9" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a7b6b9da8c7400a4795a648bc72f60c24" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mujoco_ros2_control::MujocoSystem::JointState::mj_vel_adr</definition>
+        <argsstring></argsstring>
+        <name>mj_vel_adr</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::JointState::mj_vel_adr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="74" column="9" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="51" column="3" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="52" bodyend="75"/>
+    <listofallmembers>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1ab2f9ef51fda96fb37ca017053a440a36" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::JointState</scope><name>damping_command</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a8347ba9a5a9e45c04f65a725a905fc5e" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::JointState</scope><name>effort</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a2ddd7a88c04f23d956d5bbf262cc50e0" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::JointState</scope><name>effort_command</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1ad85e210fbe9b3481a34057a8044efd2c" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::JointState</scope><name>is_mimic</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a2681fced02b3de30d43d5eb36a63dcc8" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::JointState</scope><name>joint_limits</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1af93d5f8e6babb3f70886e97675f166c8" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::JointState</scope><name>max_effort_command</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a4cad3ab23586d1aa4a4faaea84353378" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::JointState</scope><name>max_position_command</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a7143a0ee2549b263dc5894d96168fd4d" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::JointState</scope><name>max_velocity_command</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1af7afc04113615f5a739ad896c371a5d6" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::JointState</scope><name>mimic_multiplier</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a8894ce3f7516b27d87d771b63e902b0e" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::JointState</scope><name>mimicked_joint_index</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a1c9e83caa41170d0abca68432415d1f3" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::JointState</scope><name>min_effort_command</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a1da2b6218d1dd4ea963a480e4245eb76" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::JointState</scope><name>min_position_command</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a668c7dda0a42cf04922d96b405f961c1" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::JointState</scope><name>min_velocity_command</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a847cc7aa70253200939ddb9f4c8548a1" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::JointState</scope><name>mj_joint_type</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1af015104f1e4e5f1e2670a131f8a13af6" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::JointState</scope><name>mj_pos_adr</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a7b6b9da8c7400a4795a648bc72f60c24" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::JointState</scope><name>mj_vel_adr</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a700e40706588facc0c8d685f893406fe" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::JointState</scope><name>name</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a4011f4af07ab7d184bc79ce1b6040b84" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::JointState</scope><name>position</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a288fc3684667cd7ad498f0fc5acca319" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::JointState</scope><name>position_command</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1a2cf285728e257c437c28ce071307ed12" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::JointState</scope><name>stiffness_command</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1afe65e8e2d5d9913d4c61e252e205f338" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::JointState</scope><name>velocity</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState_1aac19ba799baff062e45cc410a907b474" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::JointState</scope><name>velocity_command</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

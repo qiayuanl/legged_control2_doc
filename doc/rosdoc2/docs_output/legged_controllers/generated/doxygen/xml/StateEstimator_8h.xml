@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="StateEstimator_8h" kind="file" language="C++">
+    <compoundname>StateEstimator.h</compoundname>
+    <includes local="no">memory</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">controller_interface/chainable_controller_interface.hpp</includes>
+    <includes local="no">semantic_components/imu_sensor.hpp</includes>
+    <includes local="no">realtime_tools/realtime_thread_safe_box.hpp</includes>
+    <includes local="no">nav_msgs/msg/odometry.hpp</includes>
+    <includes local="no">sensor_msgs/msg/joint_state.hpp</includes>
+    <includes refid="GmObserverRos2_8h" local="yes">legged_controllers/GmObserverRos2.h</includes>
+    <includes refid="LinearKalmanFilterRos2_8h" local="yes">legged_controllers/LinearKalmanFilterRos2.h</includes>
+    <includes refid="JointSensors_8h" local="yes">legged_controllers/JointSensors.h</includes>
+    <incdepgraph>
+      <node id="10">
+        <label>legged_controllers/GmObserverRos2.h</label>
+        <link refid="GmObserverRos2_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>legged_controllers/JointSensors.h</label>
+        <link refid="JointSensors_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>legged_controllers/LinearKalmanFilterRos2.h</label>
+        <link refid="LinearKalmanFilterRos2_8h_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/legged_controllers/StateEstimator.h</label>
+        <link refid="StateEstimator_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>legged_controllers/visualization_helpers.h</label>
+        <link refid="visualization__helpers_8h_source"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>controller_interface/chainable_controller_interface.hpp</label>
+      </node>
+      <node id="22">
+        <label>geometry_msgs/msg/point.hpp</label>
+      </node>
+      <node id="12">
+        <label>geometry_msgs/msg/wrench_stamped.hpp</label>
+      </node>
+      <node id="25">
+        <label>hardware_interface/types/hardware_interface_type_values.hpp</label>
+      </node>
+      <node id="11">
+        <label>legged_estimation/GmObserver.h</label>
+      </node>
+      <node id="16">
+        <label>legged_estimation/LinearKalmanFilter.h</label>
+      </node>
+      <node id="20">
+        <label>legged_model/common.h</label>
+      </node>
+      <node id="2">
+        <label>memory</label>
+      </node>
+      <node id="8">
+        <label>nav_msgs/msg/odometry.hpp</label>
+      </node>
+      <node id="13">
+        <label>rclcpp_lifecycle/lifecycle_node.hpp</label>
+      </node>
+      <node id="14">
+        <label>realtime_tools/realtime_publisher.hpp</label>
+      </node>
+      <node id="7">
+        <label>realtime_tools/realtime_thread_safe_box.hpp</label>
+      </node>
+      <node id="6">
+        <label>semantic_components/imu_sensor.hpp</label>
+      </node>
+      <node id="26">
+        <label>semantic_components/semantic_component_interface.hpp</label>
+      </node>
+      <node id="9">
+        <label>sensor_msgs/msg/joint_state.hpp</label>
+      </node>
+      <node id="21">
+        <label>std_msgs/msg/color_rgba.hpp</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="17">
+        <label>tf2_msgs/msg/tf_message.hpp</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+      <node id="23">
+        <label>visualization_msgs/msg/marker.hpp</label>
+      </node>
+      <node id="18">
+        <label>visualization_msgs/msg/marker_array.hpp</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classlegged_1_1StateEstimator" prot="public">legged::StateEstimator</innerclass>
+    <innernamespace refid="namespacelegged">legged</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>qiayuanl<sp/>on<sp/>8/30/24.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;controller_interface/chainable_controller_interface.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;semantic_components/imu_sensor.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;realtime_tools/realtime_thread_safe_box.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;nav_msgs/msg/odometry.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sensor_msgs/msg/joint_state.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;legged_controllers/GmObserverRos2.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;legged_controllers/LinearKalmanFilterRos2.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;legged_controllers/JointSensors.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">legged<sp/>{</highlight></codeline>
+<codeline lineno="22" refid="classlegged_1_1StateEstimator" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlegged_1_1StateEstimator" kindref="compound">StateEstimator</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>controller_interface::ChainableControllerInterface<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Odom<sp/>=<sp/>nav_msgs::msg::Odometry;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>tfTopic_<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/tf&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>jointTopic_<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/joint_states&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>[[nodiscard]]<sp/>controller_interface::InterfaceConfiguration<sp/>command_interface_configuration()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>[[nodiscard]]<sp/>controller_interface::InterfaceConfiguration<sp/>state_interface_configuration()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>controller_interface::return_type<sp/>update_and_write_commands(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rclcpp::Time&amp;<sp/>time,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rclcpp::Duration&amp;<sp/>period)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>controller_interface::CallbackReturn<sp/>on_init()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>controller_interface::CallbackReturn<sp/>on_configure(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rclcpp_lifecycle::State&amp;<sp/>previous_state)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>controller_interface::CallbackReturn<sp/>on_activate(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rclcpp_lifecycle::State&amp;<sp/>previous_state)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>controller_interface::CallbackReturn<sp/>on_deactivate(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rclcpp_lifecycle::State&amp;<sp/>previous_state)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>std::vector&lt;hardware_interface::StateInterface&gt;<sp/>on_export_state_interfaces()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>controller_interface::return_type<sp/>update_reference_from_subscribers(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rclcpp::Time&amp;<sp/>time,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>rclcpp::Duration&amp;<sp/>period)</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>controller_interface::return_type::OK;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>LeggedModel::SharedPtr<sp/>leggedModel_;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>LeggedModel::SharedPtr*<sp/>leggedModelPtr_<sp/>=<sp/>&amp;leggedModel_;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;semantic_components::JointSensors&gt;<sp/>joints_;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;semantic_components::IMUSensor&gt;<sp/>imu_;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>GmObserverRos2::SharedPtr<sp/>gmObserver_;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>LinearKalmanFilterRos2::SharedPtr<sp/>linearKalmanFilter_;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;rclcpp::Subscription&lt;Odom&gt;&gt;<sp/>poseSubscriber_;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>realtime_tools::RealtimeThreadSafeBox&lt;Odom&gt;<sp/>poseStamped_;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>Odom<sp/>poseStampedLast_;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>topicFrameIndex_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>quaternion_t<sp/>worldToMap_<sp/>=<sp/>quaternion_t::Identity();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;rclcpp::Publisher&lt;tf2_msgs::msg::TFMessage&gt;&gt;<sp/>odomTfPublisher_;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;realtime_tools::RealtimePublisher&lt;tf2_msgs::msg::TFMessage&gt;&gt;<sp/>odomTfPublisherRealtime_;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;rclcpp::Publisher&lt;sensor_msgs::msg::JointState&gt;&gt;<sp/>jointStatesPublisher_;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>std::shared_ptr&lt;realtime_tools::RealtimePublisher&lt;sensor_msgs::msg::JointState&gt;&gt;<sp/>jointStatesPublisherRealtime_;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Scalar&gt;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">Eigen::Quaternion&lt;Scalar&gt;<sp/>yawQuaternion(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Eigen::Quaternion&lt;Scalar&gt;&amp;<sp/>q)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>Scalar<sp/>yaw<sp/>=<sp/>std::atan2(Scalar(2)<sp/>*<sp/>(q.w()<sp/>*<sp/>q.z()<sp/>+<sp/>q.x()<sp/>*<sp/>q.y()),<sp/>Scalar(1)<sp/>-<sp/>Scalar(2)<sp/>*<sp/>(q.y()<sp/>*<sp/>q.y()<sp/>+<sp/>q.z()<sp/>*<sp/>q.z()));</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>Scalar<sp/>half_yaw<sp/>=<sp/>yaw<sp/>*<sp/>Scalar(0.5);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>Eigen::Quaternion&lt;Scalar&gt;<sp/>ret(std::cos(half_yaw),<sp/>Scalar(0),<sp/>Scalar(0),<sp/>std::sin(half_yaw));</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret.normalized();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>legged</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/legged_controllers/StateEstimator.h"/>
+  </compounddef>
+</doxygen>

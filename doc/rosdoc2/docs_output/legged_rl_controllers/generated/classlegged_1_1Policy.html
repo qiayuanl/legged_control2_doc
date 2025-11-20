@@ -1,0 +1,356 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class Policy &mdash; legged_rl_controllers 3.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=dcedd534"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class ProjectedGravityObservationTerm" href="classlegged_1_1ProjectedGravityObservationTerm.html" />
+    <link rel="prev" title="Class PhaseObservationTerm" href="classlegged_1_1PhaseObservationTerm.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            legged_rl_controllers
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">C++ API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#full-c-api">Full C++ API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#namespaces">Namespaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="namespace_legged.html">Namespace legged</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#classes-and-structs">Classes and Structs</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1BaseAngVelObservationTerm.html">Class BaseAngVelObservationTerm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1BaseLinVelObservationTerm.html">Class BaseLinVelObservationTerm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1CommandManager.html">Class CommandManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1CommandObservationTerm.html">Class CommandObservationTerm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1CommandTerm.html">Class CommandTerm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1JointObservationTerm.html">Class JointObservationTerm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1JointPositionsObservationTerm.html">Class JointPositionsObservationTerm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1JointVelocitiesObservationTerm.html">Class JointVelocitiesObservationTerm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1LastActionObservationTerm.html">Class LastActionObservationTerm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1LocalObservationTerm.html">Class LocalObservationTerm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1ManagerBase.html">Template Class ManagerBase</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1ObservationManager.html">Class ObservationManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1ObservationTerm.html">Class ObservationTerm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1OnnxController.html">Class OnnxController</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1OnnxPolicy.html">Class OnnxPolicy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1PhaseObservationTerm.html">Class PhaseObservationTerm</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Class Policy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1ProjectedGravityObservationTerm.html">Class ProjectedGravityObservationTerm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1RlController.html">Class RlController</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1VelocityTopicCommandTerm.html">Class VelocityTopicCommandTerm</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="function_OnnxPolicy_8h_1a966afa3b76b693ebf0268f15204c4f05.html">Template Function legged::operator&lt;&lt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_OnnxPolicy_8h_1a1290afcc76b523d41afbaccb8300c990.html">Template Function legged::parseCsv</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#directories">Directories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dir_include.html">Directory include</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_legged_rl_controllers.html">Directory legged_rl_controllers</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#files">Files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="file_include_legged_rl_controllers_CommandManager.h.html">File CommandManager.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_legged_rl_controllers_ManagerBased.h.html">File ManagerBased.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_legged_rl_controllers_ManagerBasedImpl.h.html">File ManagerBasedImpl.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_legged_rl_controllers_ObservationManager.h.html">File ObservationManager.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_legged_rl_controllers_OnnxController.h.html">File OnnxController.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_legged_rl_controllers_OnnxPolicy.h.html">File OnnxPolicy.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_legged_rl_controllers_Policy.h.html">File Policy.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_legged_rl_controllers_RlController.h.html">File RlController.h</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../standards.html">Standard Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../standard_docs/CHANGELOG.html">CHANGELOG</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/CHANGELOG.html#changelog-for-package-legged-rl-controllers">Changelog for package legged_rl_controllers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id1">3.2.2 (2025-10-27)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id2">3.2.1 (2025-10-21)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id3">3.2.0 (2025-10-15)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id4">3.1.0 (2025-10-07)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id5">3.0.1 (2025-10-01)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id6">3.0.0 (2025-09-16)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id7">2.8.0 (2025-09-15)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id8">2.7.3 (2025-07-27)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id9">2.7.2 (2025-07-21)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id10">2.7.1 (2025-07-11)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id11">2.7.0 (2025-06-17)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id13">2.6.0 (2025-06-17)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id14">2.5.0 (2025-06-15)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id16">2.4.0 (2025-06-14)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id18">2.3.1 (2025-06-02)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id19">2.3.0 (2025-05-31)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id20">2.2.0 (2025-05-26)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id21">2.1.1 (2025-05-01)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id22">2.1.0 (2025-04-28)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id24">2.0.0 (2025-04-08)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id25">1.4.0 (2025-04-02)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id26">1.3.1 (2025-04-01)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id27">1.3.0 (2025-03-29)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id28">1.2.1 (2025-03-29)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id29">1.2.0 (2025-03-28)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id30">1.1.0 (2025-03-26)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../standard_docs/PACKAGE.html">PACKAGE</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">legged_rl_controllers</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">C++ API</a></li>
+      <li class="breadcrumb-item active">Class Policy</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/classlegged_1_1Policy.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-policy">
+<span id="exhale-class-classlegged-1-1policy"></span><h1>Class Policy<a class="headerlink" href="#class-policy" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_include_legged_rl_controllers_Policy.h.html#file-include-legged-rl-controllers-policy-h"><span class="std std-ref">File Policy.h</span></a></p></li>
+</ul>
+<section id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Link to this heading"></a></h2>
+<section id="derived-type">
+<h3>Derived Type<a class="headerlink" href="#derived-type" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">legged::OnnxPolicy</span></code> (<a class="reference internal" href="classlegged_1_1OnnxPolicy.html#exhale-class-classlegged-1-1onnxpolicy"><span class="std std-ref">Class OnnxPolicy</span></a>)</p></li>
+</ul>
+</section>
+</section>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged6PolicyE">
+<span id="_CPPv3N6legged6PolicyE"></span><span id="_CPPv2N6legged6PolicyE"></span><span id="legged::Policy"></span><span class="target" id="classlegged_1_1Policy"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Policy</span></span></span><a class="headerlink" href="#_CPPv4N6legged6PolicyE" title="Link to this definition"></a><br /></dt>
+<dd><p>Subclassed by <a class="reference internal" href="classlegged_1_1OnnxPolicy.html#classlegged_1_1OnnxPolicy"><span class="std std-ref">legged::OnnxPolicy</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged6Policy9SharedPtrE">
+<span id="_CPPv3N6legged6Policy9SharedPtrE"></span><span id="_CPPv2N6legged6Policy9SharedPtrE"></span><span class="target" id="classlegged_1_1Policy_1a58ed7ae76d1fb6fc19ea793fa92e9b39"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SharedPtr</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N6legged6PolicyE" title="legged::Policy"><span class="n"><span class="pre">Policy</span></span></a><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N6legged6Policy9SharedPtrE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged6PolicyD0Ev">
+<span id="_CPPv3N6legged6PolicyD0Ev"></span><span id="_CPPv2N6legged6PolicyD0Ev"></span><span id="legged::Policy::~Policy"></span><span class="target" id="classlegged_1_1Policy_1af08fd661726c2ae6b8815b39ab3e0f87"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~Policy</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><a class="headerlink" href="#_CPPv4N6legged6PolicyD0Ev" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6legged6Policy18getObservationSizeEv">
+<span id="_CPPv3NK6legged6Policy18getObservationSizeEv"></span><span id="_CPPv2NK6legged6Policy18getObservationSizeEv"></span><span id="legged::Policy::getObservationSizeC"></span><span class="target" id="classlegged_1_1Policy_1a2f0e7a4a7cd12ced827af9bb2280c155"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getObservationSize</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK6legged6Policy18getObservationSizeEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6legged6Policy13getActionSizeEv">
+<span id="_CPPv3NK6legged6Policy13getActionSizeEv"></span><span id="_CPPv2NK6legged6Policy13getActionSizeEv"></span><span id="legged::Policy::getActionSizeC"></span><span class="target" id="classlegged_1_1Policy_1a13978ee8a1982cba2692954b082bb4fa"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getActionSize</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK6legged6Policy13getActionSizeEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged6Policy4initEv">
+<span id="_CPPv3N6legged6Policy4initEv"></span><span id="_CPPv2N6legged6Policy4initEv"></span><span id="legged::Policy::init"></span><span class="target" id="classlegged_1_1Policy_1ab523cdd77472a2edb27e2e796c5f2060"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N6legged6Policy4initEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged6Policy5resetEv">
+<span id="_CPPv3N6legged6Policy5resetEv"></span><span id="_CPPv2N6legged6Policy5resetEv"></span><span id="legged::Policy::reset"></span><span class="target" id="classlegged_1_1Policy_1a2b31e71b8e3ff8b65de4868a485a4449"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">reset</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N6legged6Policy5resetEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged6Policy7forwardERK8vector_t">
+<span id="_CPPv3N6legged6Policy7forwardERK8vector_t"></span><span id="_CPPv2N6legged6Policy7forwardERK8vector_t"></span><span id="legged::Policy::forward__vector_tCR"></span><span class="target" id="classlegged_1_1Policy_1a19c83c44a2ad6ea91fa16785f79b2fc0"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">vector_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">forward</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector_t</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">observations</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N6legged6Policy7forwardERK8vector_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged6Policy13getLastActionEv">
+<span id="_CPPv3N6legged6Policy13getLastActionEv"></span><span id="_CPPv2N6legged6Policy13getLastActionEv"></span><span id="legged::Policy::getLastAction"></span><span class="target" id="classlegged_1_1Policy_1aaa9ca17c40c21988ec715197f8972361"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">vector_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getLastAction</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N6legged6Policy13getLastActionEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6legged6Policy13getJointNamesEv">
+<span id="_CPPv3NK6legged6Policy13getJointNamesEv"></span><span id="_CPPv2NK6legged6Policy13getJointNamesEv"></span><span id="legged::Policy::getJointNamesC"></span><span class="target" id="classlegged_1_1Policy_1a7f885f9f98edb48c4c659418e14a7d56"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getJointNames</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK6legged6Policy13getJointNamesEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6legged6Policy17getJointStiffnessEv">
+<span id="_CPPv3NK6legged6Policy17getJointStiffnessEv"></span><span id="_CPPv2NK6legged6Policy17getJointStiffnessEv"></span><span id="legged::Policy::getJointStiffnessC"></span><span class="target" id="classlegged_1_1Policy_1a7b28e0f308ca17e4d59997c9d4e027b7"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">vector_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getJointStiffness</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK6legged6Policy17getJointStiffnessEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6legged6Policy15getJointDampingEv">
+<span id="_CPPv3NK6legged6Policy15getJointDampingEv"></span><span id="_CPPv2NK6legged6Policy15getJointDampingEv"></span><span id="legged::Policy::getJointDampingC"></span><span class="target" id="classlegged_1_1Policy_1a37db5bf8f286461e1d160efaf30433d8"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">vector_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getJointDamping</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK6legged6Policy15getJointDampingEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6legged6Policy24getDefaultJointPositionsEv">
+<span id="_CPPv3NK6legged6Policy24getDefaultJointPositionsEv"></span><span id="_CPPv2NK6legged6Policy24getDefaultJointPositionsEv"></span><span id="legged::Policy::getDefaultJointPositionsC"></span><span class="target" id="classlegged_1_1Policy_1a7130b2db46ba8422436c2b99f775dc11"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">vector_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getDefaultJointPositions</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK6legged6Policy24getDefaultJointPositionsEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6legged6Policy15getCommandNamesEv">
+<span id="_CPPv3NK6legged6Policy15getCommandNamesEv"></span><span id="_CPPv2NK6legged6Policy15getCommandNamesEv"></span><span id="legged::Policy::getCommandNamesC"></span><span class="target" id="classlegged_1_1Policy_1a48468ed3d2183fb019f01f403ff3d7e0"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getCommandNames</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK6legged6Policy15getCommandNamesEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6legged6Policy19getObservationNamesEv">
+<span id="_CPPv3NK6legged6Policy19getObservationNamesEv"></span><span id="_CPPv2NK6legged6Policy19getObservationNamesEv"></span><span id="legged::Policy::getObservationNamesC"></span><span class="target" id="classlegged_1_1Policy_1a745a8dbcaada65b329aee18dd31a5652"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getObservationNames</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK6legged6Policy19getObservationNamesEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6legged6Policy25observationHistoryLengthsEv">
+<span id="_CPPv3NK6legged6Policy25observationHistoryLengthsEv"></span><span id="_CPPv2NK6legged6Policy25observationHistoryLengthsEv"></span><span id="legged::Policy::observationHistoryLengthsC"></span><span class="target" id="classlegged_1_1Policy_1a399e519d5364fe900721e5f099e98672"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">size_t</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">observationHistoryLengths</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK6legged6Policy25observationHistoryLengthsEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6legged6Policy14getActionScaleEv">
+<span id="_CPPv3NK6legged6Policy14getActionScaleEv"></span><span id="_CPPv2NK6legged6Policy14getActionScaleEv"></span><span id="legged::Policy::getActionScaleC"></span><span class="target" id="classlegged_1_1Policy_1a74932a88e720030143be718a69a9599d"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">vector_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getActionScale</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK6legged6Policy14getActionScaleEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged6Policy11jointNames_E">
+<span id="_CPPv3N6legged6Policy11jointNames_E"></span><span id="_CPPv2N6legged6Policy11jointNames_E"></span><span id="legged::Policy::jointNames___std::vector:ss:"></span><span class="target" id="classlegged_1_1Policy_1a2e63ace704c82473dff580e81348f0f7"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">jointNames_</span></span></span><a class="headerlink" href="#_CPPv4N6legged6Policy11jointNames_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged6Policy15jointStiffness_E">
+<span id="_CPPv3N6legged6Policy15jointStiffness_E"></span><span id="_CPPv2N6legged6Policy15jointStiffness_E"></span><span id="legged::Policy::jointStiffness___vector_t"></span><span class="target" id="classlegged_1_1Policy_1a6a532a9036e6a18c00530b8b046275e8"></span><span class="n"><span class="pre">vector_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">jointStiffness_</span></span></span><a class="headerlink" href="#_CPPv4N6legged6Policy15jointStiffness_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged6Policy13jointDamping_E">
+<span id="_CPPv3N6legged6Policy13jointDamping_E"></span><span id="_CPPv2N6legged6Policy13jointDamping_E"></span><span id="legged::Policy::jointDamping___vector_t"></span><span class="target" id="classlegged_1_1Policy_1ab9047d7bd986be9ad769c934097de2b8"></span><span class="n"><span class="pre">vector_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">jointDamping_</span></span></span><a class="headerlink" href="#_CPPv4N6legged6Policy13jointDamping_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged6Policy22defaultJointPositions_E">
+<span id="_CPPv3N6legged6Policy22defaultJointPositions_E"></span><span id="_CPPv2N6legged6Policy22defaultJointPositions_E"></span><span id="legged::Policy::defaultJointPositions___vector_t"></span><span class="target" id="classlegged_1_1Policy_1a3fa68cee5cff59221962a853a0752795"></span><span class="n"><span class="pre">vector_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">defaultJointPositions_</span></span></span><a class="headerlink" href="#_CPPv4N6legged6Policy22defaultJointPositions_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged6Policy13commandNames_E">
+<span id="_CPPv3N6legged6Policy13commandNames_E"></span><span id="_CPPv2N6legged6Policy13commandNames_E"></span><span id="legged::Policy::commandNames___std::vector:ss:"></span><span class="target" id="classlegged_1_1Policy_1ae2ea11725ef15cba8e707a5661372735"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">commandNames_</span></span></span><a class="headerlink" href="#_CPPv4N6legged6Policy13commandNames_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged6Policy17observationNames_E">
+<span id="_CPPv3N6legged6Policy17observationNames_E"></span><span id="_CPPv2N6legged6Policy17observationNames_E"></span><span id="legged::Policy::observationNames___std::vector:ss:"></span><span class="target" id="classlegged_1_1Policy_1a59f77e2570558e1d3f6b54a9fc9ae6f0"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">observationNames_</span></span></span><a class="headerlink" href="#_CPPv4N6legged6Policy17observationNames_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged6Policy26observationHistoryLengths_E">
+<span id="_CPPv3N6legged6Policy26observationHistoryLengths_E"></span><span id="_CPPv2N6legged6Policy26observationHistoryLengths_E"></span><span id="legged::Policy::observationHistoryLengths___std::vector:s:"></span><span class="target" id="classlegged_1_1Policy_1a016875a518ed602909b447ebab86234e"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">size_t</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">observationHistoryLengths_</span></span></span><a class="headerlink" href="#_CPPv4N6legged6Policy26observationHistoryLengths_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged6Policy12actionScale_E">
+<span id="_CPPv3N6legged6Policy12actionScale_E"></span><span id="_CPPv2N6legged6Policy12actionScale_E"></span><span id="legged::Policy::actionScale___vector_t"></span><span class="target" id="classlegged_1_1Policy_1a01cf3e69b1acfcdba28314d9eecb6472"></span><span class="n"><span class="pre">vector_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">actionScale_</span></span></span><a class="headerlink" href="#_CPPv4N6legged6Policy12actionScale_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="classlegged_1_1PhaseObservationTerm.html" class="btn btn-neutral float-left" title="Class PhaseObservationTerm" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="classlegged_1_1ProjectedGravityObservationTerm.html" class="btn btn-neutral float-right" title="Class ProjectedGravityObservationTerm" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright The &lt;legged_rl_controllers&gt; Contributors. License: Apache-2.0.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

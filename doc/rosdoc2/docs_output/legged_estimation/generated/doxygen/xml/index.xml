@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="structlegged_1_1LinearKalmanFilter_1_1Configurations" kind="struct"><name>legged::LinearKalmanFilter::Configurations</name>
+    <member refid="structlegged_1_1LinearKalmanFilter_1_1Configurations_1ae9ee775b828af5b86b6e65bc8f29901b" kind="variable"><name>imuAccelerationNoiseDensity</name></member>
+    <member refid="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a4ba59f413f2769f91811272f4cdcdcd9" kind="variable"><name>imuAccelerationBiasNoiseDensity</name></member>
+    <member refid="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a3e91660a1ac39d9074f6d0f6079c78c0" kind="variable"><name>contactProcessNoisePosition</name></member>
+    <member refid="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a64bc238ca364f1b255ac99bb2a088da7" kind="variable"><name>contactSensorNoisePosition</name></member>
+    <member refid="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a70edad9bc134e3b0b478464ac02f90de" kind="variable"><name>contactHeightSensorNoise</name></member>
+    <member refid="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a930d625cc03e6ff5e1b6a61e411cdffd" kind="variable"><name>contactRadius</name></member>
+    <member refid="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a753f6f16c11a5a0511bc96ae09f1d8a0" kind="variable"><name>contactForceThreshold</name></member>
+    <member refid="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a10f2f10c9df537a2439621f257b30bfb" kind="variable"><name>contactForceScale</name></member>
+    <member refid="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a02ac513f6d71bcdc41a30bcb03e32e49" kind="variable"><name>contactZmpLengthX</name></member>
+    <member refid="structlegged_1_1LinearKalmanFilter_1_1Configurations_1ab7466b0d61019ef6cb1c0b295cf3039e" kind="variable"><name>contactZmpLengthY</name></member>
+    <member refid="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a96054644c288effe18922e66193c6d9a" kind="variable"><name>positionNoiseDensity</name></member>
+  </compound>
+  <compound refid="classlegged_1_1GmObserver" kind="class"><name>legged::GmObserver</name>
+    <member refid="classlegged_1_1GmObserver_1a84f597117e54b6105c690d1b33bb2b38" kind="typedef"><name>SharedPtr</name></member>
+    <member refid="classlegged_1_1GmObserver_1ac96df444adcff2558e5a4742accb217d" kind="variable"><name>leggedModel_</name></member>
+    <member refid="classlegged_1_1GmObserver_1a7cc264d4f1841f8d69aca3b0f8b68dce" kind="variable"><name>cutoffFrequency_</name></member>
+    <member refid="classlegged_1_1GmObserver_1a9abd370ecf76fbf3a01c97ca6550ac57" kind="variable"><name>lowPassLast_</name></member>
+    <member refid="classlegged_1_1GmObserver_1a3b3c78f2feec7c434ec5163f8a293059" kind="variable"><name>tauExt_</name></member>
+    <member refid="classlegged_1_1GmObserver_1a69405c36c3f108f921b64df31ad99f6b" kind="variable"><name>fExt_</name></member>
+    <member refid="classlegged_1_1GmObserver_1ad1ecb4c569832a91bd79d6c87a789043" kind="function"><name>GmObserver</name></member>
+    <member refid="classlegged_1_1GmObserver_1a64366613fa2a93149fa38d2300bce471" kind="function"><name>setCutOffFrequency</name></member>
+    <member refid="classlegged_1_1GmObserver_1ad3a6af690d15f8b47afa18913eeb0501" kind="function"><name>update</name></member>
+    <member refid="classlegged_1_1GmObserver_1afde5027fc7f1e1dfbd63dcebbe2053e8" kind="function"><name>getContactWrenches</name></member>
+    <member refid="classlegged_1_1GmObserver_1aecc4b5445f960c46cc437b734335bc2b" kind="function"><name>getBaseWrench</name></member>
+  </compound>
+  <compound refid="classlegged_1_1LinearKalmanFilter" kind="class"><name>legged::LinearKalmanFilter</name>
+    <member refid="classlegged_1_1LinearKalmanFilter_1a14e1441e1662561b427514397f0aa908" kind="typedef"><name>SharedPtr</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1a68b218e8e7aeba9a311a7f7b83b9d4ed" kind="variable"><name>highSuspectNumber_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1ad98949824cfa0413691ce339de017256" kind="variable"><name>leggedModel_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1a4adb5578d5c959db1e7d2d60f40585f2" kind="variable"><name>numContacts_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1a77aa03a60f386b6a3f83d05635503dd4" kind="variable"><name>dimContacts_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1a7fcd5d6b59fe35c311b39295dd7a6573" kind="variable"><name>numState_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1a750112a76ce9ac1b3b617aefdb44ff26" kind="variable"><name>dimContactObserve_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1a615b6c2bad3168e7c29dfed1329433f8" kind="variable"><name>configs_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1a6efe5558e5a875524ba5deb8b9d44aaa" kind="variable"><name>accelerationLocal_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1a420e29e907b9385b4c69afe43c5869d4" kind="variable"><name>contactWrenches_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1aa0b91e7ca78244b21d1b9f95855e4e61" kind="variable"><name>feetHeights_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1a47026bf23fe4336a6aa4e68bd4965430" kind="variable"><name>contactProbabilities_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1ad73912996b3e91d28611871d2018b3d9" kind="variable"><name>zmps_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1a1cc44014209a4e8bf75cd78cbe501fa9" kind="variable"><name>a_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1a68b0fc61208417f4d819f6703664f623" kind="variable"><name>b_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1a7bdd67f0f05064183f7f73c98433ef30" kind="variable"><name>p_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1ae4bf0b0433a41679ada450e5d465f72a" kind="variable"><name>cContact_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1a987736e368544f7a587a4acc339b8fef" kind="variable"><name>cPosition_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1a8d7b8f57db2e1b317536da99e6b43309" kind="variable"><name>xHat_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1a5bc59dd4e31388448b3ce2dd24282a83" kind="function"><name>LinearKalmanFilter</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1ae142d1841ec84e81bea29ed7ce5296a4" kind="function"><name>~LinearKalmanFilter</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1a295e3d4b10e2db6d292711ef3021e74c" kind="function"><name>setConfigurations</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1a7eff454b79a524ac34c317a26b967711" kind="function"><name>reset</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1a6855aabe1ba869d31a12b7dfc8e596ad" kind="function"><name>updateImuProcess</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1a585fbb265803b66b6072f004633530fc" kind="function"><name>updateContactsMeasurement</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1ac5b5df362d7ad693a5826664a118d18e" kind="function"><name>updatePositionMeasurement</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1ab9293f2047e158710b9b9b832c1757b0" kind="function"><name>setAccelerationLocal</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1a0b1b24994bb5fcf44d56864ddfdb322a" kind="function"><name>setContactWrenches</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1a426fec5fd6ab6879318d9f302a697401" kind="function"><name>getPosition</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1aae8e43206b01b9322246dfd6cf9ec4c9" kind="function"><name>getVelocityGlobal</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1a9c4f297e98b79e11f1aeda9a38ed7bf1" kind="function"><name>getVelocityLocal</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1a697d8a79a1d0309fa75c7f21f360411d" kind="function"><name>getRotation</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1a35e325e68b02a1e2ceb46ce633a15aa7" kind="function"><name>getKalmanGain</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1ab7220d97047ecfd12c9cba08a2a73725" kind="function"><name>getImuProcessNoiseCovariance</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilter_1aa55948c7b2c498485d4905956eb11aa8" kind="function"><name>updateContactProbabilities</name></member>
+  </compound>
+  <compound refid="namespacelegged" kind="namespace"><name>legged</name>
+  </compound>
+  <compound refid="GmObserver_8h" kind="file"><name>GmObserver.h</name>
+  </compound>
+  <compound refid="LinearKalmanFilter_8h" kind="file"><name>LinearKalmanFilter.h</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_0e05346a544ae56eb50ed67b5bfa522a" kind="dir"><name>include/legged_estimation</name>
+  </compound>
+</doxygenindex>

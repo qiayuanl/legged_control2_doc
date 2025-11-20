@@ -1,0 +1,417 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmujoco__ros2__control_1_1MujocoSystem" kind="class" language="C++" prot="public">
+    <compoundname>mujoco_ros2_control::MujocoSystem</compoundname>
+    <basecompoundref refid="classmujoco__ros2__control_1_1MujocoSystemInterface" prot="public" virt="non-virtual">mujoco_ros2_control::MujocoSystemInterface</basecompoundref>
+    <innerclass refid="structmujoco__ros2__control_1_1MujocoSystem_1_1FTSensorData" prot="public">mujoco_ros2_control::MujocoSystem::FTSensorData</innerclass>
+    <innerclass refid="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData" prot="public">mujoco_ros2_control::MujocoSystem::IMUSensorData</innerclass>
+    <innerclass refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState" prot="public">mujoco_ros2_control::MujocoSystem::JointState</innerclass>
+    <innerclass refid="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData" prot="public">mujoco_ros2_control::MujocoSystem::SensorData</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoSystem_1a736af7aa3240c2007c72fb3c26725c6c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; hardware_interface::StateInterface &gt;</type>
+        <definition>std::vector&lt;hardware_interface::StateInterface&gt; mujoco_ros2_control::MujocoSystem::state_interfaces_</definition>
+        <argsstring></argsstring>
+        <name>state_interfaces_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::state_interfaces_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="110" column="15" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoSystem_1aced3898393dd00645e3cabf96dc106b4" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; hardware_interface::CommandInterface &gt;</type>
+        <definition>std::vector&lt;hardware_interface::CommandInterface&gt; mujoco_ros2_control::MujocoSystem::command_interfaces_</definition>
+        <argsstring></argsstring>
+        <name>command_interfaces_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::command_interfaces_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="111" column="15" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoSystem_1afb88ef435e1b4854fec9004e11e3bba9" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structmujoco__ros2__control_1_1MujocoSystem_1_1JointState" kindref="compound">JointState</ref> &gt;</type>
+        <definition>std::vector&lt;JointState&gt; mujoco_ros2_control::MujocoSystem::joint_states_</definition>
+        <argsstring></argsstring>
+        <name>joint_states_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::joint_states_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="113" column="15" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoSystem_1a975b7b7a8ae9dac1bc21602029d34458" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structmujoco__ros2__control_1_1MujocoSystem_1_1FTSensorData" kindref="compound">FTSensorData</ref> &gt;</type>
+        <definition>std::vector&lt;FTSensorData&gt; mujoco_ros2_control::MujocoSystem::ft_sensor_data_</definition>
+        <argsstring></argsstring>
+        <name>ft_sensor_data_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::ft_sensor_data_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="114" column="15" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoSystem_1a024c99ec6e1d052a4ebf77a0ef6ccd15" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData" kindref="compound">IMUSensorData</ref> &gt;</type>
+        <definition>std::vector&lt;IMUSensorData&gt; mujoco_ros2_control::MujocoSystem::imu_sensor_data_</definition>
+        <argsstring></argsstring>
+        <name>imu_sensor_data_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::imu_sensor_data_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="115" column="15" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoSystem_1a54b347b5fb85c910e7743c630213dd58" prot="private" static="no" mutable="no">
+        <type>mjModel *</type>
+        <definition>mjModel* mujoco_ros2_control::MujocoSystem::mj_model_</definition>
+        <argsstring></argsstring>
+        <name>mj_model_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::mj_model_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="117" column="11" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoSystem_1a124b3f2e113dcb96360e42c251c69c33" prot="private" static="no" mutable="no">
+        <type>mjData *</type>
+        <definition>mjData* mujoco_ros2_control::MujocoSystem::mj_data_</definition>
+        <argsstring></argsstring>
+        <name>mj_data_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::mj_data_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="118" column="10" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoSystem_1ae43a14dfc5338c4ba1b0dd6ee915a4b1" prot="private" static="no" mutable="no">
+        <type>rclcpp::Logger</type>
+        <definition>rclcpp::Logger mujoco_ros2_control::MujocoSystem::logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::logger_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="120" column="18" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="120" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoSystem_1ad341c426cfd825395ee339c7c58b52a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mujoco_ros2_control::MujocoSystem::MujocoSystem</definition>
+        <argsstring>()</argsstring>
+        <name>MujocoSystem</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::MujocoSystem</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="38" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoSystem_1a2a54f868db4f5152c0924553a18142b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; hardware_interface::StateInterface &gt;</type>
+        <definition>std::vector&lt; hardware_interface::StateInterface &gt; mujoco_ros2_control::MujocoSystem::export_state_interfaces</definition>
+        <argsstring>() override</argsstring>
+        <name>export_state_interfaces</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::export_state_interfaces</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="39" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoSystem_1af1395d02283b2c620ff4747e37256e6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; hardware_interface::CommandInterface &gt;</type>
+        <definition>std::vector&lt; hardware_interface::CommandInterface &gt; mujoco_ros2_control::MujocoSystem::export_command_interfaces</definition>
+        <argsstring>() override</argsstring>
+        <name>export_command_interfaces</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::export_command_interfaces</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="40" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoSystem_1aeebea7ba4fde4fa91aab68e5ac95855c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>hardware_interface::return_type</type>
+        <definition>hardware_interface::return_type mujoco_ros2_control::MujocoSystem::read</definition>
+        <argsstring>(const rclcpp::Time &amp;time, const rclcpp::Duration &amp;period) override</argsstring>
+        <name>read</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::read</qualifiedname>
+        <param>
+          <type>const rclcpp::Time &amp;</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>const rclcpp::Duration &amp;</type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="42" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoSystem_1adaf667cd2d52a9fae57b098c3b87e8ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>hardware_interface::return_type</type>
+        <definition>hardware_interface::return_type mujoco_ros2_control::MujocoSystem::write</definition>
+        <argsstring>(const rclcpp::Time &amp;time, const rclcpp::Duration &amp;period) override</argsstring>
+        <name>write</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::write</qualifiedname>
+        <param>
+          <type>const rclcpp::Time &amp;</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>const rclcpp::Duration &amp;</type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="44" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoSystem_1a4a49f2788b5301977a1b158d4da067f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool mujoco_ros2_control::MujocoSystem::init_sim</definition>
+        <argsstring>(rclcpp::Node::SharedPtr &amp;node, mjModel *mujoco_model, mjData *mujoco_data, const urdf::Model &amp;urdf_model, const hardware_interface::HardwareInfo &amp;hardware_info) override</argsstring>
+        <name>init_sim</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::init_sim</qualifiedname>
+        <reimplements refid="classmujoco__ros2__control_1_1MujocoSystemInterface_1acea5606481a4e873a8918ad84a0ef49b">init_sim</reimplements>
+        <param>
+          <type>rclcpp::Node::SharedPtr &amp;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>mjModel *</type>
+          <declname>mujoco_model</declname>
+        </param>
+        <param>
+          <type>mjData *</type>
+          <declname>mujoco_data</declname>
+        </param>
+        <param>
+          <type>const urdf::Model &amp;</type>
+          <declname>urdf_model</declname>
+        </param>
+        <param>
+          <type>const hardware_interface::HardwareInfo &amp;</type>
+          <declname>hardware_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="47" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoSystem_1a28d59af878cb0d4a2e54824b4c810b94" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mujoco_ros2_control::MujocoSystem::register_joints</definition>
+        <argsstring>(const urdf::Model &amp;urdf_model, const hardware_interface::HardwareInfo &amp;hardware_info)</argsstring>
+        <name>register_joints</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::register_joints</qualifiedname>
+        <param>
+          <type>const urdf::Model &amp;</type>
+          <declname>urdf_model</declname>
+        </param>
+        <param>
+          <type>const hardware_interface::HardwareInfo &amp;</type>
+          <declname>hardware_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="101" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoSystem_1a558e060a8fc035c1cda7574ceb03ae24" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mujoco_ros2_control::MujocoSystem::register_sensors</definition>
+        <argsstring>(const urdf::Model &amp;urdf_model, const hardware_interface::HardwareInfo &amp;hardware_info)</argsstring>
+        <name>register_sensors</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::register_sensors</qualifiedname>
+        <param>
+          <type>const urdf::Model &amp;</type>
+          <declname>urdf_model</declname>
+        </param>
+        <param>
+          <type>const hardware_interface::HardwareInfo &amp;</type>
+          <declname>hardware_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="103" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoSystem_1a3989453928eeb981393e80b739aad781" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mujoco_ros2_control::MujocoSystem::set_initial_pose</definition>
+        <argsstring>()</argsstring>
+        <name>set_initial_pose</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::set_initial_pose</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="105" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoSystem_1a4c208c47afcc385cec1ec104cce237fa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mujoco_ros2_control::MujocoSystem::get_joint_limits</definition>
+        <argsstring>(urdf::JointConstSharedPtr urdf_joint, joint_limits::JointLimits &amp;joint_limits)</argsstring>
+        <name>get_joint_limits</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::get_joint_limits</qualifiedname>
+        <param>
+          <type>urdf::JointConstSharedPtr</type>
+          <declname>urdf_joint</declname>
+        </param>
+        <param>
+          <type>joint_limits::JointLimits &amp;</type>
+          <declname>joint_limits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="106" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoSystem_1ab524d2cdff63e24def7ee6a78e9b7f0c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double mujoco_ros2_control::MujocoSystem::clamp</definition>
+        <argsstring>(double v, double lo, double hi)</argsstring>
+        <name>clamp</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::clamp</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="108" column="10" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="108" bodyend="108"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>hardware_interface::SystemInterface</label>
+      </node>
+      <node id="1">
+        <label>mujoco_ros2_control::MujocoSystem</label>
+        <link refid="classmujoco__ros2__control_1_1MujocoSystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mujoco_ros2_control::MujocoSystemInterface</label>
+        <link refid="classmujoco__ros2__control_1_1MujocoSystemInterface"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>hardware_interface::SystemInterface</label>
+      </node>
+      <node id="1">
+        <label>mujoco_ros2_control::MujocoSystem</label>
+        <link refid="classmujoco__ros2__control_1_1MujocoSystem"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>mujoco_ros2_control::MujocoSystemInterface</label>
+        <link refid="classmujoco__ros2__control_1_1MujocoSystemInterface"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="35" column="1" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="36" bodyend="121"/>
+    <listofallmembers>
+      <member refid="classmujoco__ros2__control_1_1MujocoSystem_1ab524d2cdff63e24def7ee6a78e9b7f0c" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem</scope><name>clamp</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoSystem_1aced3898393dd00645e3cabf96dc106b4" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem</scope><name>command_interfaces_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoSystem_1af1395d02283b2c620ff4747e37256e6b" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem</scope><name>export_command_interfaces</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoSystem_1a2a54f868db4f5152c0924553a18142b3" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem</scope><name>export_state_interfaces</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoSystem_1a975b7b7a8ae9dac1bc21602029d34458" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem</scope><name>ft_sensor_data_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoSystem_1a4c208c47afcc385cec1ec104cce237fa" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem</scope><name>get_joint_limits</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoSystem_1a024c99ec6e1d052a4ebf77a0ef6ccd15" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem</scope><name>imu_sensor_data_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoSystem_1a4a49f2788b5301977a1b158d4da067f6" prot="public" virt="virtual"><scope>mujoco_ros2_control::MujocoSystem</scope><name>init_sim</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoSystem_1afb88ef435e1b4854fec9004e11e3bba9" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem</scope><name>joint_states_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoSystem_1ae43a14dfc5338c4ba1b0dd6ee915a4b1" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem</scope><name>logger_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoSystem_1a124b3f2e113dcb96360e42c251c69c33" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem</scope><name>mj_data_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoSystem_1a54b347b5fb85c910e7743c630213dd58" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem</scope><name>mj_model_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoSystem_1ad341c426cfd825395ee339c7c58b52a3" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem</scope><name>MujocoSystem</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoSystemInterface_1adea9c7df6c1a1784b631f135d61ae771" prot="protected" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem</scope><name>node_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoSystem_1aeebea7ba4fde4fa91aab68e5ac95855c" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem</scope><name>read</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoSystem_1a28d59af878cb0d4a2e54824b4c810b94" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem</scope><name>register_joints</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoSystem_1a558e060a8fc035c1cda7574ceb03ae24" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem</scope><name>register_sensors</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoSystem_1a3989453928eeb981393e80b739aad781" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem</scope><name>set_initial_pose</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoSystem_1a736af7aa3240c2007c72fb3c26725c6c" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem</scope><name>state_interfaces_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoSystem_1adaf667cd2d52a9fae57b098c3b87e8ff" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,283 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacelegged" kind="namespace" language="C++">
+    <compoundname>legged</compoundname>
+    <innerclass refid="classlegged_1_1ControllerBase" prot="public">legged::ControllerBase</innerclass>
+    <innerclass refid="classlegged_1_1GmObserver" prot="public">legged::GmObserver</innerclass>
+    <innerclass refid="classlegged_1_1GmObserverRos2" prot="public">legged::GmObserverRos2</innerclass>
+    <innerclass refid="classlegged_1_1LeggedModel" prot="public">legged::LeggedModel</innerclass>
+    <innerclass refid="classlegged_1_1LinearKalmanFilter" prot="public">legged::LinearKalmanFilter</innerclass>
+    <innerclass refid="classlegged_1_1LinearKalmanFilterRos2" prot="public">legged::LinearKalmanFilterRos2</innerclass>
+    <innerclass refid="classlegged_1_1LinearKalmanFilterVisualization" prot="public">legged::LinearKalmanFilterVisualization</innerclass>
+    <innerclass refid="classlegged_1_1StandbyController" prot="public">legged::StandbyController</innerclass>
+    <innerclass refid="classlegged_1_1StateEstimator" prot="public">legged::StateEstimator</innerclass>
+    <innernamespace refid="structlegged_1_1LinearKalmanFilter_1_1Configurations">legged::LinearKalmanFilter</innernamespace>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="visualization__helpers_8h_1aedc28248df61a9e3c01bb5210e0e6512" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>Color</name>
+        <qualifiedname>legged::Color</qualifiedname>
+        <enumvalue id="visualization__helpers_8h_1aedc28248df61a9e3c01bb5210e0e6512a48d6215903dff56238e52e8891380c8f" prot="public">
+          <name>blue</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="visualization__helpers_8h_1aedc28248df61a9e3c01bb5210e0e6512afe01d67a002dfa0f3ac084298142eccd" prot="public">
+          <name>orange</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="visualization__helpers_8h_1aedc28248df61a9e3c01bb5210e0e6512ad487dd0b55dfcacdd920ccbdaeafa351" prot="public">
+          <name>yellow</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="visualization__helpers_8h_1aedc28248df61a9e3c01bb5210e0e6512abb7aedfa61007447dd6efaf9f37641e3" prot="public">
+          <name>purple</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="visualization__helpers_8h_1aedc28248df61a9e3c01bb5210e0e6512a9f27410725ab8cc8854a2769c7a516b8" prot="public">
+          <name>green</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="visualization__helpers_8h_1aedc28248df61a9e3c01bb5210e0e6512abda9643ac6601722a28f238714274da4" prot="public">
+          <name>red</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="visualization__helpers_8h_1aedc28248df61a9e3c01bb5210e0e6512a1ffd9e753c8054cc61456ac7fac1ac89" prot="public">
+          <name>black</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/visualization_helpers.h" line="15" column="1" bodyfile="include/legged_controllers/visualization_helpers.h" bodystart="15" bodyend="15"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="StateEstimator_8h_1ad1c56be35a48c34bc5aa700c324a9e20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Scalar</type>
+          </param>
+        </templateparamlist>
+        <type>Eigen::Quaternion&lt; Scalar &gt;</type>
+        <definition>Eigen::Quaternion&lt; Scalar &gt; legged::yawQuaternion</definition>
+        <argsstring>(const Eigen::Quaternion&lt; Scalar &gt; &amp;q)</argsstring>
+        <name>yawQuaternion</name>
+        <qualifiedname>legged::yawQuaternion</qualifiedname>
+        <param>
+          <type>const Eigen::Quaternion&lt; Scalar &gt; &amp;</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="72" column="19" bodyfile="include/legged_controllers/StateEstimator.h" bodystart="72" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="visualization__helpers_8h_1a88fe8ae4a77b7550f6e0178995a58e8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::array&lt; double, 3 &gt;</type>
+        <definition>std::array&lt; double, 3 &gt; legged::getRGB</definition>
+        <argsstring>(Color color)</argsstring>
+        <name>getRGB</name>
+        <qualifiedname>legged::getRGB</qualifiedname>
+        <param>
+          <type>Color</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/visualization_helpers.h" line="17" column="12" declfile="include/legged_controllers/visualization_helpers.h" declline="17" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="visualization__helpers_8h_1a266bc720d7192fb6bb572487691a85ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Color</type>
+        <definition>Color legged::getColorFromId</definition>
+        <argsstring>(size_t id)</argsstring>
+        <name>getColorFromId</name>
+        <qualifiedname>legged::getColorFromId</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/visualization_helpers.h" line="19" column="7" declfile="include/legged_controllers/visualization_helpers.h" declline="19" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="visualization__helpers_8h_1a0ebaa758e4e58ae0e2aa1e2b7433be97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std_msgs::msg::ColorRGBA</type>
+        <definition>std_msgs::msg::ColorRGBA legged::getColorMsg</definition>
+        <argsstring>(Color color, float alpha=1.0)</argsstring>
+        <name>getColorMsg</name>
+        <qualifiedname>legged::getColorMsg</qualifiedname>
+        <param>
+          <type>Color</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>alpha</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/visualization_helpers.h" line="21" column="26" declfile="include/legged_controllers/visualization_helpers.h" declline="21" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="visualization__helpers_8h_1a9d7b9ffb5bdd3027eff620cc2e1e3017" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std_msgs::msg::ColorRGBA</type>
+        <definition>std_msgs::msg::ColorRGBA legged::getColorMsgFromId</definition>
+        <argsstring>(size_t id, float alpha=1.0)</argsstring>
+        <name>getColorMsgFromId</name>
+        <qualifiedname>legged::getColorMsgFromId</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>alpha</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/visualization_helpers.h" line="23" column="26" declfile="include/legged_controllers/visualization_helpers.h" declline="23" declcolumn="26"/>
+      </memberdef>
+      <memberdef kind="function" id="visualization__helpers_8h_1afc3ee56d2eedcf24ae1a1b11ee5eba71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>visualization_msgs::msg::Marker</type>
+        <definition>visualization_msgs::msg::Marker legged::getLineMsg</definition>
+        <argsstring>(std::vector&lt; geometry_msgs::msg::Point &gt; &amp;points, Color color, double lineWidth)</argsstring>
+        <name>getLineMsg</name>
+        <qualifiedname>legged::getLineMsg</qualifiedname>
+        <param>
+          <type>std::vector&lt; geometry_msgs::msg::Point &gt; &amp;</type>
+          <declname>points</declname>
+        </param>
+        <param>
+          <type>Color</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lineWidth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/visualization_helpers.h" line="25" column="33" declfile="include/legged_controllers/visualization_helpers.h" declline="25" declcolumn="33"/>
+      </memberdef>
+      <memberdef kind="function" id="visualization__helpers_8h_1a6d9e1b8a32f48aa9012e53c47faecb38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>visualization_msgs::msg::Marker</type>
+        <definition>visualization_msgs::msg::Marker legged::getEllipseMsg</definition>
+        <argsstring>(const vector3_t &amp;position, const quaternion_t &amp;rotation, vector3_t scale, Color color)</argsstring>
+        <name>getEllipseMsg</name>
+        <qualifiedname>legged::getEllipseMsg</qualifiedname>
+        <param>
+          <type>const vector3_t &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const quaternion_t &amp;</type>
+          <declname>rotation</declname>
+        </param>
+        <param>
+          <type>vector3_t</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>Color</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/visualization_helpers.h" line="27" column="33" declfile="include/legged_controllers/visualization_helpers.h" declline="27" declcolumn="33"/>
+      </memberdef>
+      <memberdef kind="function" id="visualization__helpers_8h_1ac82beddc246bdab580d88402dceb448f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>geometry_msgs::msg::Point</type>
+        <definition>geometry_msgs::msg::Point legged::getPointMsg</definition>
+        <argsstring>(const vector3_t &amp;point)</argsstring>
+        <name>getPointMsg</name>
+        <qualifiedname>legged::getPointMsg</qualifiedname>
+        <param>
+          <type>const vector3_t &amp;</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/visualization_helpers.h" line="29" column="27" declfile="include/legged_controllers/visualization_helpers.h" declline="29" declcolumn="27"/>
+      </memberdef>
+      <memberdef kind="function" id="visualization__helpers_8h_1af657af087c0c7a5030a858066b8264f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>geometry_msgs::msg::Quaternion</type>
+        <definition>geometry_msgs::msg::Quaternion legged::getOrientationMsg</definition>
+        <argsstring>(const quaternion_t &amp;orientation)</argsstring>
+        <name>getOrientationMsg</name>
+        <qualifiedname>legged::getOrientationMsg</qualifiedname>
+        <param>
+          <type>const quaternion_t &amp;</type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/visualization_helpers.h" line="31" column="32" declfile="include/legged_controllers/visualization_helpers.h" declline="31" declcolumn="32"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/legged_controllers/ControllerBase.h" line="14" column="1"/>
+  </compounddef>
+</doxygen>

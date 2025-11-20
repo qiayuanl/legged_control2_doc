@@ -1,0 +1,7 @@
+<map id="mujoco_ros2_control::MujocoSystem::IMUSensorData" name="mujoco_ros2_control::MujocoSystem::IMUSensorData">
+<area shape="rect" id="Node000001" title=" " alt="" coords="421,53,656,93"/>
+<area shape="rect" id="Node000002" href="$structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData.html" title=" " alt="" coords="5,5,248,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="262,43,421,59,421,64,261,48"/>
+<area shape="rect" id="Node000003" href="$structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData.html" title=" " alt="" coords="22,84,231,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="245,101,397,89,421,86,422,91,398,94,246,107"/>
+</map>

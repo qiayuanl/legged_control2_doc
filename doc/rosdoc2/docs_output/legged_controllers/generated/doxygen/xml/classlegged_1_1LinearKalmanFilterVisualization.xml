@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1LinearKalmanFilterVisualization" kind="class" language="C++" prot="public">
+    <compoundname>legged::LinearKalmanFilterVisualization</compoundname>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlegged_1_1LinearKalmanFilterVisualization_1a74ee7e72588437078e3cce62bdcc2900" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classlegged_1_1LinearKalmanFilterVisualization" kindref="compound">LinearKalmanFilterVisualization</ref> &gt;</type>
+        <definition>using legged::LinearKalmanFilterVisualization::SharedPtr =  std::shared_ptr&lt;LinearKalmanFilterVisualization&gt;</definition>
+        <argsstring></argsstring>
+        <name>SharedPtr</name>
+        <qualifiedname>legged::LinearKalmanFilterVisualization::SharedPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/LinearKalmanFilterRos2.h" line="29" column="3" bodyfile="include/legged_controllers/LinearKalmanFilterRos2.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilterVisualization_1ac4421efa01dffd077db620ca8019c1f2" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string legged::LinearKalmanFilterVisualization::frameId_</definition>
+        <argsstring></argsstring>
+        <name>frameId_</name>
+        <qualifiedname>legged::LinearKalmanFilterVisualization::frameId_</qualifiedname>
+        <initializer>= &quot;odom&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/LinearKalmanFilterRos2.h" line="25" column="15" bodyfile="include/legged_controllers/LinearKalmanFilterRos2.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilterVisualization_1a9b40fd10c4c231046181efe6f5b9d5f3" prot="public" static="no" mutable="no">
+        <type>scalar_t</type>
+        <definition>scalar_t legged::LinearKalmanFilterVisualization::alpha_</definition>
+        <argsstring></argsstring>
+        <name>alpha_</name>
+        <qualifiedname>legged::LinearKalmanFilterVisualization::alpha_</qualifiedname>
+        <initializer>= 0.2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/LinearKalmanFilterRos2.h" line="26" column="12" bodyfile="include/legged_controllers/LinearKalmanFilterRos2.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilterVisualization_1a50bb89088ea83db4b0a5ecfa0eb5231e" prot="public" static="no" mutable="no">
+        <type>scalar_t</type>
+        <definition>scalar_t legged::LinearKalmanFilterVisualization::zmpScale_</definition>
+        <argsstring></argsstring>
+        <name>zmpScale_</name>
+        <qualifiedname>legged::LinearKalmanFilterVisualization::zmpScale_</qualifiedname>
+        <initializer>= 0.02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/LinearKalmanFilterRos2.h" line="27" column="12" bodyfile="include/legged_controllers/LinearKalmanFilterRos2.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilterVisualization_1aef243481c590fc0994e60221952c6749" prot="protected" static="no" mutable="no">
+        <type>LeggedModel::SharedPtr</type>
+        <definition>LeggedModel::SharedPtr legged::LinearKalmanFilterVisualization::leggedModel_</definition>
+        <argsstring></argsstring>
+        <name>leggedModel_</name>
+        <qualifiedname>legged::LinearKalmanFilterVisualization::leggedModel_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/LinearKalmanFilterRos2.h" line="36" column="26" bodyfile="include/legged_controllers/LinearKalmanFilterRos2.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilterVisualization_1a3e8a3397aeb74484db245fa3ed724c3a" prot="protected" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; visualization_msgs::msg::MarkerArray &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;visualization_msgs::msg::MarkerArray&gt;::SharedPtr legged::LinearKalmanFilterVisualization::publisher_</definition>
+        <argsstring></argsstring>
+        <name>publisher_</name>
+        <qualifiedname>legged::LinearKalmanFilterVisualization::publisher_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/LinearKalmanFilterRos2.h" line="37" column="33" bodyfile="include/legged_controllers/LinearKalmanFilterRos2.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlegged_1_1LinearKalmanFilterVisualization_1a67555435551c9fb4263852952bc1855a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>legged::LinearKalmanFilterVisualization::LinearKalmanFilterVisualization</definition>
+        <argsstring>(const LeggedModel::SharedPtr &amp;leggedModel, const rclcpp_lifecycle::LifecycleNode::SharedPtr &amp;node)</argsstring>
+        <name>LinearKalmanFilterVisualization</name>
+        <qualifiedname>legged::LinearKalmanFilterVisualization::LinearKalmanFilterVisualization</qualifiedname>
+        <param>
+          <type>const LeggedModel::SharedPtr &amp;</type>
+          <declname>leggedModel</declname>
+        </param>
+        <param>
+          <type>const rclcpp_lifecycle::LifecycleNode::SharedPtr &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/LinearKalmanFilterRos2.h" line="30" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LinearKalmanFilterVisualization_1aae1ff5463150f8a0206456849ae68049" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual legged::LinearKalmanFilterVisualization::~LinearKalmanFilterVisualization</definition>
+        <argsstring>()=default</argsstring>
+        <name>~LinearKalmanFilterVisualization</name>
+        <qualifiedname>legged::LinearKalmanFilterVisualization::~LinearKalmanFilterVisualization</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/LinearKalmanFilterRos2.h" line="31" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LinearKalmanFilterVisualization_1af2db9e59075cfd32d473b03d0049d1c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void legged::LinearKalmanFilterVisualization::update</definition>
+        <argsstring>(const rclcpp::Time &amp;time, const rclcpp::Duration &amp;period, const vector_t &amp;xHat, const matrix_t &amp;p, const std::vector&lt; vector2_t &gt; &amp;zmps)</argsstring>
+        <name>update</name>
+        <qualifiedname>legged::LinearKalmanFilterVisualization::update</qualifiedname>
+        <param>
+          <type>const rclcpp::Time &amp;</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>const rclcpp::Duration &amp;</type>
+          <declname>period</declname>
+        </param>
+        <param>
+          <type>const vector_t &amp;</type>
+          <declname>xHat</declname>
+        </param>
+        <param>
+          <type>const matrix_t &amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; vector2_t &gt; &amp;</type>
+          <declname>zmps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/LinearKalmanFilterRos2.h" line="32" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/legged_controllers/LinearKalmanFilterRos2.h" line="23" column="1" bodyfile="include/legged_controllers/LinearKalmanFilterRos2.h" bodystart="23" bodyend="38"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1LinearKalmanFilterVisualization_1a9b40fd10c4c231046181efe6f5b9d5f3" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilterVisualization</scope><name>alpha_</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilterVisualization_1ac4421efa01dffd077db620ca8019c1f2" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilterVisualization</scope><name>frameId_</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilterVisualization_1aef243481c590fc0994e60221952c6749" prot="protected" virt="non-virtual"><scope>legged::LinearKalmanFilterVisualization</scope><name>leggedModel_</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilterVisualization_1a67555435551c9fb4263852952bc1855a" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilterVisualization</scope><name>LinearKalmanFilterVisualization</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilterVisualization_1a3e8a3397aeb74484db245fa3ed724c3a" prot="protected" virt="non-virtual"><scope>legged::LinearKalmanFilterVisualization</scope><name>publisher_</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilterVisualization_1a74ee7e72588437078e3cce62bdcc2900" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilterVisualization</scope><name>SharedPtr</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilterVisualization_1af2db9e59075cfd32d473b03d0049d1c3" prot="public" virt="virtual"><scope>legged::LinearKalmanFilterVisualization</scope><name>update</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilterVisualization_1a50bb89088ea83db4b0a5ecfa0eb5231e" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilterVisualization</scope><name>zmpScale_</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilterVisualization_1aae1ff5463150f8a0206456849ae68049" prot="public" virt="virtual"><scope>legged::LinearKalmanFilterVisualization</scope><name>~LinearKalmanFilterVisualization</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

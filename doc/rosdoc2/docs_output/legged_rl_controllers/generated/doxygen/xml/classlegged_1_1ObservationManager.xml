@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1ObservationManager" kind="class" language="C++" prot="public">
+    <compoundname>legged::ObservationManager</compoundname>
+    <basecompoundref refid="classlegged_1_1ManagerBase" prot="public" virt="non-virtual">legged::ManagerBase&lt; ObservationTerm &gt;</basecompoundref>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlegged_1_1ObservationManager_1a35195df1764624ccad04289af8157cf0" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classlegged_1_1ObservationManager" kindref="compound">ObservationManager</ref> &gt;</type>
+        <definition>using legged::ObservationManager::SharedPtr =  std::shared_ptr&lt;ObservationManager&gt;</definition>
+        <argsstring></argsstring>
+        <name>SharedPtr</name>
+        <qualifiedname>legged::ObservationManager::SharedPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="67" column="3" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlegged_1_1ObservationManager_1a8b1dc5928c34f088e1734ded4e704880" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>legged::ObservationManager::ObservationManager</definition>
+        <argsstring>(const LeggedModel::SharedPtr &amp;model)</argsstring>
+        <name>ObservationManager</name>
+        <qualifiedname>legged::ObservationManager::ObservationManager</qualifiedname>
+        <param>
+          <type>const LeggedModel::SharedPtr &amp;</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="68" column="12" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1ObservationManager_1a24a8f06442db208828d87f61e07165c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void legged::ObservationManager::setHistoryLengths</definition>
+        <argsstring>(std::vector&lt; size_t &gt; historyLengths)</argsstring>
+        <name>setHistoryLengths</name>
+        <qualifiedname>legged::ObservationManager::setHistoryLengths</qualifiedname>
+        <param>
+          <type>std::vector&lt; size_t &gt;</type>
+          <declname>historyLengths</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="70" column="8" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="70" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1ObservationManager_1abfc19c44df73e84113ecff216fec5e6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>vector_t</type>
+        <definition>vector_t legged::ObservationManager::getValue</definition>
+        <argsstring>() override</argsstring>
+        <name>getValue</name>
+        <qualifiedname>legged::ObservationManager::getValue</qualifiedname>
+        <reimplements refid="classlegged_1_1ManagerBase_1acd7d20bb9972881f02b013a179b1e90d">getValue</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="76" column="12" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="76" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1ObservationManager_1a16362c2878cfcb408e428fea61b62f22" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>size_t</type>
+        <definition>size_t legged::ObservationManager::getSize</definition>
+        <argsstring>() const override</argsstring>
+        <name>getSize</name>
+        <qualifiedname>legged::ObservationManager::getSize</qualifiedname>
+        <reimplements refid="classlegged_1_1ManagerBase_1ab4321846ddb1ffd5a5e5096656747693">getSize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="87" column="10" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="87" bodyend="93"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>legged::ManagerBase&lt; ObservationTerm &gt;</label>
+        <link refid="classlegged_1_1ManagerBase"/>
+      </node>
+      <node id="1">
+        <label>legged::ObservationManager</label>
+        <link refid="classlegged_1_1ObservationManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>legged::ManagerBase&lt; ObservationTerm &gt;</label>
+        <link refid="classlegged_1_1ManagerBase"/>
+      </node>
+      <node id="1">
+        <label>legged::ObservationManager</label>
+        <link refid="classlegged_1_1ObservationManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/legged_rl_controllers/ObservationManager.h" line="65" column="1" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="65" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1ManagerBase_1a791712025d4e844443c417a0d7263cfe" prot="public" virt="non-virtual"><scope>legged::ObservationManager</scope><name>addTerm</name></member>
+      <member refid="classlegged_1_1ObservationManager_1a16362c2878cfcb408e428fea61b62f22" prot="public" virt="virtual"><scope>legged::ObservationManager</scope><name>getSize</name></member>
+      <member refid="classlegged_1_1ManagerBase_1a62457d0d0d8555552aaf7b9cb9e9d713" prot="public" virt="non-virtual"><scope>legged::ObservationManager</scope><name>getTerms</name></member>
+      <member refid="classlegged_1_1ObservationManager_1abfc19c44df73e84113ecff216fec5e6a" prot="public" virt="virtual"><scope>legged::ObservationManager</scope><name>getValue</name></member>
+      <member refid="classlegged_1_1ManagerBase_1aa09dbd80254b2751fff23f06b6da15a5" prot="public" virt="non-virtual"><scope>legged::ObservationManager</scope><name>ManagerBase</name></member>
+      <member refid="classlegged_1_1ManagerBase_1a3fc40a973ade6ad12f29724cac59c542" prot="protected" virt="non-virtual"><scope>legged::ObservationManager</scope><name>model_</name></member>
+      <member refid="classlegged_1_1ObservationManager_1a8b1dc5928c34f088e1734ded4e704880" prot="public" virt="non-virtual"><scope>legged::ObservationManager</scope><name>ObservationManager</name></member>
+      <member refid="classlegged_1_1ManagerBase_1a8ada74014b84d348c06e083ec9970942" prot="public" virt="virtual"><scope>legged::ObservationManager</scope><name>reset</name></member>
+      <member refid="classlegged_1_1ObservationManager_1a24a8f06442db208828d87f61e07165c4" prot="public" virt="non-virtual"><scope>legged::ObservationManager</scope><name>setHistoryLengths</name></member>
+      <member refid="classlegged_1_1ObservationManager_1a35195df1764624ccad04289af8157cf0" prot="public" virt="non-virtual"><scope>legged::ObservationManager</scope><name>SharedPtr</name></member>
+      <member refid="classlegged_1_1ManagerBase_1aa4b10489f81aba2aa3c79292cbf54888" prot="public" virt="non-virtual"><scope>legged::ObservationManager</scope><name>TermPtr</name></member>
+      <member refid="classlegged_1_1ManagerBase_1aa53c33361c6a124470eef5289084bc80" prot="public" virt="non-virtual"><scope>legged::ObservationManager</scope><name>Terms</name></member>
+      <member refid="classlegged_1_1ManagerBase_1a63ebb0da1cfd2821c4889635c51b1469" prot="protected" virt="non-virtual"><scope>legged::ObservationManager</scope><name>terms_</name></member>
+      <member refid="classlegged_1_1ManagerBase_1a38082391c908f3ac75ab8078491ecb29" prot="public" virt="virtual"><scope>legged::ObservationManager</scope><name>~ManagerBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1ProjectedGravityObservationTerm" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>legged::ProjectedGravityObservationTerm</compoundname>
+    <basecompoundref refid="classlegged_1_1LocalObservationTerm" prot="public" virt="non-virtual">legged::LocalObservationTerm</basecompoundref>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classlegged_1_1ProjectedGravityObservationTerm_1a9abc0c890f455d9a6a0050a03b8a417d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>vector_t</type>
+        <definition>vector_t legged::ProjectedGravityObservationTerm::evaluate</definition>
+        <argsstring>() override</argsstring>
+        <name>evaluate</name>
+        <qualifiedname>legged::ProjectedGravityObservationTerm::evaluate</qualifiedname>
+        <reimplements refid="classlegged_1_1ObservationTerm_1a93a4179a31588f23d4056cd3c4a560bf">evaluate</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="128" column="12" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="128" bodyend="128"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>legged::LocalObservationTerm</label>
+        <link refid="classlegged_1_1LocalObservationTerm"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>legged::ObservationTerm</label>
+        <link refid="classlegged_1_1ObservationTerm"/>
+      </node>
+      <node id="1">
+        <label>legged::ProjectedGravityObservationTerm</label>
+        <link refid="classlegged_1_1ProjectedGravityObservationTerm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>legged::LocalObservationTerm</label>
+        <link refid="classlegged_1_1LocalObservationTerm"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>legged::ObservationTerm</label>
+        <link refid="classlegged_1_1ObservationTerm"/>
+      </node>
+      <node id="1">
+        <label>legged::ProjectedGravityObservationTerm</label>
+        <link refid="classlegged_1_1ProjectedGravityObservationTerm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/legged_rl_controllers/ObservationManager.h" line="123" column="1" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="123" bodyend="129"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1ProjectedGravityObservationTerm_1a9abc0c890f455d9a6a0050a03b8a417d" prot="protected" virt="virtual"><scope>legged::ProjectedGravityObservationTerm</scope><name>evaluate</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a3e8d732bf648855a3ea3a57f29efed70" prot="public" virt="non-virtual"><scope>legged::ProjectedGravityObservationTerm</scope><name>getHistoryLength</name></member>
+      <member refid="classlegged_1_1LocalObservationTerm_1aeec700a3e974d04eb66415565b0810bb" prot="public" virt="virtual"><scope>legged::ProjectedGravityObservationTerm</scope><name>getSize</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a8560e826f364246851120ad55902f78b" prot="public" virt="non-virtual"><scope>legged::ProjectedGravityObservationTerm</scope><name>getTotalSize</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a5850878005f89e8437c7e0a989229c93" prot="public" virt="non-virtual"><scope>legged::ProjectedGravityObservationTerm</scope><name>getValue</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1aa2c87d8eb6d40955ef0b899ff3282c7f" prot="protected" virt="non-virtual"><scope>legged::ProjectedGravityObservationTerm</scope><name>history_</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a8224b2ebe2adc9ec9774b06c4eae8c4d" prot="protected" virt="non-virtual"><scope>legged::ProjectedGravityObservationTerm</scope><name>historyLength_</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a67484fe754557f02bbd193564344ec42" prot="protected" virt="non-virtual"><scope>legged::ProjectedGravityObservationTerm</scope><name>initialized_</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1aedd7dcb2346a282bb60ff5d6708f5b10" prot="protected" virt="non-virtual"><scope>legged::ProjectedGravityObservationTerm</scope><name>model_</name></member>
+      <member refid="classlegged_1_1LocalObservationTerm_1ae6653c1a239397300327288ab0d26506" prot="protected" virt="virtual"><scope>legged::ProjectedGravityObservationTerm</scope><name>modify</name></member>
+      <member refid="classlegged_1_1LocalObservationTerm_1aa1506ca6648380d406baba2a7d262103" prot="public" virt="non-virtual"><scope>legged::ProjectedGravityObservationTerm</scope><name>ObservationTerm</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a2d4d7c6454eb10423d92891c9962d0c1" prot="public" virt="virtual"><scope>legged::ProjectedGravityObservationTerm</scope><name>reset</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1ad0d439aa8b3e17ffee134cc63f9719fc" prot="public" virt="non-virtual"><scope>legged::ProjectedGravityObservationTerm</scope><name>setHistoryLength</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1ae03af17c76ff709989f80fb8f7008eec" prot="public" virt="virtual"><scope>legged::ProjectedGravityObservationTerm</scope><name>setModel</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1aac6c0aef459411eb2f3e88fa31298c65" prot="public" virt="non-virtual"><scope>legged::ProjectedGravityObservationTerm</scope><name>SharedPtr</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a6631835909df0292eb219f84df0f380e" prot="public" virt="virtual"><scope>legged::ProjectedGravityObservationTerm</scope><name>~ObservationTerm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

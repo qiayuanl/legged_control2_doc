@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacelegged" kind="namespace" language="C++">
+    <compoundname>legged</compoundname>
+    <innerclass refid="classlegged_1_1LeggedModel" prot="public">legged::LeggedModel</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="common_8h_1a396ade7dfa3fe01e8924f23e178b6a4c" prot="public" static="no">
+        <type>double</type>
+        <definition>using legged::scalar_t = typedef double</definition>
+        <argsstring></argsstring>
+        <name>scalar_t</name>
+        <qualifiedname>legged::scalar_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/common.h" line="11" column="1" bodyfile="include/legged_model/common.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="common_8h_1af65965ade3b59e215b4ac4db28793016" prot="public" static="no">
+        <type>Eigen::VectorXd</type>
+        <definition>using legged::vector_t = typedef Eigen::VectorXd</definition>
+        <argsstring></argsstring>
+        <name>vector_t</name>
+        <qualifiedname>legged::vector_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/common.h" line="12" column="1" bodyfile="include/legged_model/common.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="common_8h_1aae8f6e340d4bdf5b0f4d5c548abfe6d1" prot="public" static="no">
+        <type>Eigen::MatrixXd</type>
+        <definition>using legged::matrix_t = typedef Eigen::MatrixXd</definition>
+        <argsstring></argsstring>
+        <name>matrix_t</name>
+        <qualifiedname>legged::matrix_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/common.h" line="13" column="1" bodyfile="include/legged_model/common.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="common_8h_1aa86f3c819dc3b889cebc431c43ca0da6" prot="public" static="no">
+        <type>Eigen::Matrix&lt; scalar_t, 2, 1 &gt;</type>
+        <definition>using legged::vector2_t = typedef Eigen::Matrix&lt;scalar_t, 2, 1&gt;</definition>
+        <argsstring></argsstring>
+        <name>vector2_t</name>
+        <qualifiedname>legged::vector2_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/common.h" line="14" column="1" bodyfile="include/legged_model/common.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="common_8h_1a28247b86418eef26e2106d33c0ad2d73" prot="public" static="no">
+        <type>Eigen::Matrix&lt; scalar_t, 3, 1 &gt;</type>
+        <definition>using legged::vector3_t = typedef Eigen::Matrix&lt;scalar_t, 3, 1&gt;</definition>
+        <argsstring></argsstring>
+        <name>vector3_t</name>
+        <qualifiedname>legged::vector3_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/common.h" line="15" column="1" bodyfile="include/legged_model/common.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="common_8h_1aeef0103efdc2e2128dee6d5a05678f28" prot="public" static="no">
+        <type>Eigen::Matrix&lt; scalar_t, 3, 3 &gt;</type>
+        <definition>using legged::matrix3_t = typedef Eigen::Matrix&lt;scalar_t, 3, 3&gt;</definition>
+        <argsstring></argsstring>
+        <name>matrix3_t</name>
+        <qualifiedname>legged::matrix3_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/common.h" line="16" column="1" bodyfile="include/legged_model/common.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="common_8h_1ad11991e29ea80cd17b93273332c8f588" prot="public" static="no">
+        <type>Eigen::Quaterniond</type>
+        <definition>using legged::quaternion_t = typedef Eigen::Quaterniond</definition>
+        <argsstring></argsstring>
+        <name>quaternion_t</name>
+        <qualifiedname>legged::quaternion_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/common.h" line="17" column="1" bodyfile="include/legged_model/common.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="LeggedModel_8h_1a0c301b87db9f68e225807977bc25e560" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; legged::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const LeggedModel &amp;p)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>legged::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classlegged_1_1LeggedModel" kindref="compound">LeggedModel</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="68" column="1" declfile="include/legged_model/LeggedModel.h" declline="68" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/legged_model/common.h" line="10" column="1"/>
+  </compounddef>
+</doxygen>

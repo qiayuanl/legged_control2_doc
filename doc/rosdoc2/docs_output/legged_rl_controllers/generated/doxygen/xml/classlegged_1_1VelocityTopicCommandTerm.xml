@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1VelocityTopicCommandTerm" kind="class" language="C++" prot="public">
+    <compoundname>legged::VelocityTopicCommandTerm</compoundname>
+    <basecompoundref refid="classlegged_1_1CommandTerm" prot="public" virt="non-virtual">legged::CommandTerm</basecompoundref>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlegged_1_1VelocityTopicCommandTerm_1af21e07cbfd96926bb57be6b83b29afb7" prot="public" static="no">
+        <type>geometry_msgs::msg::TwistStamped</type>
+        <definition>using legged::VelocityTopicCommandTerm::Twist =  geometry_msgs::msg::TwistStamped</definition>
+        <argsstring></argsstring>
+        <name>Twist</name>
+        <qualifiedname>legged::VelocityTopicCommandTerm::Twist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/CommandManager.h" line="40" column="3" bodyfile="include/legged_rl_controllers/CommandManager.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classlegged_1_1VelocityTopicCommandTerm_1abaf70b94429930e85d68fe92f0e283af" prot="protected" static="no" mutable="no">
+        <type>rclcpp_lifecycle::LifecycleNode::SharedPtr</type>
+        <definition>rclcpp_lifecycle::LifecycleNode::SharedPtr legged::VelocityTopicCommandTerm::node_</definition>
+        <argsstring></argsstring>
+        <name>node_</name>
+        <qualifiedname>legged::VelocityTopicCommandTerm::node_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/CommandManager.h" line="70" column="46" bodyfile="include/legged_rl_controllers/CommandManager.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1VelocityTopicCommandTerm_1a9ce6ef78d4420c3f6a9b3b4e910fecab" prot="protected" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; Twist &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;Twist&gt;::SharedPtr legged::VelocityTopicCommandTerm::subscriber_</definition>
+        <argsstring></argsstring>
+        <name>subscriber_</name>
+        <qualifiedname>legged::VelocityTopicCommandTerm::subscriber_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/CommandManager.h" line="71" column="36" bodyfile="include/legged_rl_controllers/CommandManager.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1VelocityTopicCommandTerm_1a8a477df9124fe1f9055417799d186708" prot="protected" static="no" mutable="no">
+        <type>realtime_tools::RealtimeThreadSafeBox&lt; std::shared_ptr&lt; Twist &gt; &gt;</type>
+        <definition>realtime_tools::RealtimeThreadSafeBox&lt;std::shared_ptr&lt;Twist&gt; &gt; legged::VelocityTopicCommandTerm::receivedMsg_</definition>
+        <argsstring></argsstring>
+        <name>receivedMsg_</name>
+        <qualifiedname>legged::VelocityTopicCommandTerm::receivedMsg_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/CommandManager.h" line="72" column="41" bodyfile="include/legged_rl_controllers/CommandManager.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlegged_1_1VelocityTopicCommandTerm_1afdf3f46b1219b286f507893ea5e60bde" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>legged::VelocityTopicCommandTerm::VelocityTopicCommandTerm</definition>
+        <argsstring>(rclcpp_lifecycle::LifecycleNode::SharedPtr node, const std::string &amp;topicName)</argsstring>
+        <name>VelocityTopicCommandTerm</name>
+        <qualifiedname>legged::VelocityTopicCommandTerm::VelocityTopicCommandTerm</qualifiedname>
+        <param>
+          <type>rclcpp_lifecycle::LifecycleNode::SharedPtr</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>topicName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/CommandManager.h" line="41" column="3" bodyfile="include/legged_rl_controllers/CommandManager.h" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1VelocityTopicCommandTerm_1a02972912e27b81b047da3cce7ab61663" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>vector_t</type>
+        <definition>vector_t legged::VelocityTopicCommandTerm::getValue</definition>
+        <argsstring>() override</argsstring>
+        <name>getValue</name>
+        <qualifiedname>legged::VelocityTopicCommandTerm::getValue</qualifiedname>
+        <reimplements refid="classlegged_1_1CommandTerm_1a3b6f5577cd5b81884f02afa1bde5950e">getValue</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/CommandManager.h" line="45" column="12" bodyfile="include/legged_rl_controllers/CommandManager.h" bodystart="45" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1VelocityTopicCommandTerm_1a94bef758d64b37df8d282d7a57199270" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void legged::VelocityTopicCommandTerm::reset</definition>
+        <argsstring>() override</argsstring>
+        <name>reset</name>
+        <qualifiedname>legged::VelocityTopicCommandTerm::reset</qualifiedname>
+        <reimplements refid="classlegged_1_1CommandTerm_1a1f7ca19266a794428e2224848fbc28e5">reset</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/CommandManager.h" line="62" column="8" bodyfile="include/legged_rl_controllers/CommandManager.h" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1VelocityTopicCommandTerm_1a270da0f4b11f5eb95d52260bb374cbd6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>size_t</type>
+        <definition>size_t legged::VelocityTopicCommandTerm::getSize</definition>
+        <argsstring>() const override</argsstring>
+        <name>getSize</name>
+        <qualifiedname>legged::VelocityTopicCommandTerm::getSize</qualifiedname>
+        <reimplements refid="classlegged_1_1CommandTerm_1a4f17152b4c0fbdcc4bce67c0e4362726">getSize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/CommandManager.h" line="67" column="10" bodyfile="include/legged_rl_controllers/CommandManager.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>legged::CommandTerm</label>
+        <link refid="classlegged_1_1CommandTerm"/>
+      </node>
+      <node id="1">
+        <label>legged::VelocityTopicCommandTerm</label>
+        <link refid="classlegged_1_1VelocityTopicCommandTerm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>legged::CommandTerm</label>
+        <link refid="classlegged_1_1CommandTerm"/>
+      </node>
+      <node id="1">
+        <label>legged::VelocityTopicCommandTerm</label>
+        <link refid="classlegged_1_1VelocityTopicCommandTerm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/legged_rl_controllers/CommandManager.h" line="38" column="1" bodyfile="include/legged_rl_controllers/CommandManager.h" bodystart="38" bodyend="73"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1CommandTerm_1ab0cb0b8f7209acc5b6b7e8bb3d9536ba" prot="public" virt="non-virtual"><scope>legged::VelocityTopicCommandTerm</scope><name>CommandTerm</name></member>
+      <member refid="classlegged_1_1VelocityTopicCommandTerm_1a270da0f4b11f5eb95d52260bb374cbd6" prot="public" virt="virtual"><scope>legged::VelocityTopicCommandTerm</scope><name>getSize</name></member>
+      <member refid="classlegged_1_1VelocityTopicCommandTerm_1a02972912e27b81b047da3cce7ab61663" prot="public" virt="virtual"><scope>legged::VelocityTopicCommandTerm</scope><name>getValue</name></member>
+      <member refid="classlegged_1_1CommandTerm_1aeacff5b3fe4f88094299f8bd2219238e" prot="protected" virt="non-virtual"><scope>legged::VelocityTopicCommandTerm</scope><name>model_</name></member>
+      <member refid="classlegged_1_1VelocityTopicCommandTerm_1abaf70b94429930e85d68fe92f0e283af" prot="protected" virt="non-virtual"><scope>legged::VelocityTopicCommandTerm</scope><name>node_</name></member>
+      <member refid="classlegged_1_1VelocityTopicCommandTerm_1a8a477df9124fe1f9055417799d186708" prot="protected" virt="non-virtual"><scope>legged::VelocityTopicCommandTerm</scope><name>receivedMsg_</name></member>
+      <member refid="classlegged_1_1VelocityTopicCommandTerm_1a94bef758d64b37df8d282d7a57199270" prot="public" virt="virtual"><scope>legged::VelocityTopicCommandTerm</scope><name>reset</name></member>
+      <member refid="classlegged_1_1CommandTerm_1a98e185fd51d15006b7b3dddce2146bdb" prot="public" virt="virtual"><scope>legged::VelocityTopicCommandTerm</scope><name>setModel</name></member>
+      <member refid="classlegged_1_1CommandTerm_1ab50d173d3484f694a16ebecddc9617da" prot="public" virt="non-virtual"><scope>legged::VelocityTopicCommandTerm</scope><name>SharedPtr</name></member>
+      <member refid="classlegged_1_1VelocityTopicCommandTerm_1a9ce6ef78d4420c3f6a9b3b4e910fecab" prot="protected" virt="non-virtual"><scope>legged::VelocityTopicCommandTerm</scope><name>subscriber_</name></member>
+      <member refid="classlegged_1_1VelocityTopicCommandTerm_1af21e07cbfd96926bb57be6b83b29afb7" prot="public" virt="non-virtual"><scope>legged::VelocityTopicCommandTerm</scope><name>Twist</name></member>
+      <member refid="classlegged_1_1VelocityTopicCommandTerm_1afdf3f46b1219b286f507893ea5e60bde" prot="public" virt="non-virtual"><scope>legged::VelocityTopicCommandTerm</scope><name>VelocityTopicCommandTerm</name></member>
+      <member refid="classlegged_1_1CommandTerm_1a8d2caf8cdcb1edacd0fac0ef1b2e6908" prot="public" virt="virtual"><scope>legged::VelocityTopicCommandTerm</scope><name>~CommandTerm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

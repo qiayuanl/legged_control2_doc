@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1GmObserver" kind="class" language="C++" prot="public">
+    <compoundname>legged::GmObserver</compoundname>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlegged_1_1GmObserver_1a84f597117e54b6105c690d1b33bb2b38" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classlegged_1_1GmObserver" kindref="compound">GmObserver</ref> &gt;</type>
+        <definition>using legged::GmObserver::SharedPtr =  std::shared_ptr&lt;GmObserver&gt;</definition>
+        <argsstring></argsstring>
+        <name>SharedPtr</name>
+        <qualifiedname>legged::GmObserver::SharedPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/GmObserver.h" line="15" column="3" bodyfile="include/legged_estimation/GmObserver.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classlegged_1_1GmObserver_1ac96df444adcff2558e5a4742accb217d" prot="protected" static="no" mutable="no">
+        <type>LeggedModel::SharedPtr</type>
+        <definition>LeggedModel::SharedPtr legged::GmObserver::leggedModel_</definition>
+        <argsstring></argsstring>
+        <name>leggedModel_</name>
+        <qualifiedname>legged::GmObserver::leggedModel_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/GmObserver.h" line="28" column="26" bodyfile="include/legged_estimation/GmObserver.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1GmObserver_1a7cc264d4f1841f8d69aca3b0f8b68dce" prot="protected" static="no" mutable="no">
+        <type>scalar_t</type>
+        <definition>scalar_t legged::GmObserver::cutoffFrequency_</definition>
+        <argsstring></argsstring>
+        <name>cutoffFrequency_</name>
+        <qualifiedname>legged::GmObserver::cutoffFrequency_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/GmObserver.h" line="30" column="12" bodyfile="include/legged_estimation/GmObserver.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1GmObserver_1a9abd370ecf76fbf3a01c97ca6550ac57" prot="protected" static="no" mutable="no">
+        <type>vector_t</type>
+        <definition>vector_t legged::GmObserver::lowPassLast_</definition>
+        <argsstring></argsstring>
+        <name>lowPassLast_</name>
+        <qualifiedname>legged::GmObserver::lowPassLast_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/GmObserver.h" line="32" column="12" bodyfile="include/legged_estimation/GmObserver.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1GmObserver_1a3b3c78f2feec7c434ec5163f8a293059" prot="protected" static="no" mutable="no">
+        <type>vector_t</type>
+        <definition>vector_t legged::GmObserver::tauExt_</definition>
+        <argsstring></argsstring>
+        <name>tauExt_</name>
+        <qualifiedname>legged::GmObserver::tauExt_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/GmObserver.h" line="33" column="12" bodyfile="include/legged_estimation/GmObserver.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1GmObserver_1a69405c36c3f108f921b64df31ad99f6b" prot="protected" static="no" mutable="no">
+        <type>vector_t</type>
+        <definition>vector_t legged::GmObserver::fExt_</definition>
+        <argsstring></argsstring>
+        <name>fExt_</name>
+        <qualifiedname>legged::GmObserver::fExt_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/GmObserver.h" line="33" column="20" bodyfile="include/legged_estimation/GmObserver.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlegged_1_1GmObserver_1ad1ecb4c569832a91bd79d6c87a789043" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>legged::GmObserver::GmObserver</definition>
+        <argsstring>(const std::shared_ptr&lt; LeggedModel &gt; &amp;leggedModel, scalar_t cutoffFrequency=10)</argsstring>
+        <name>GmObserver</name>
+        <qualifiedname>legged::GmObserver::GmObserver</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="classlegged_1_1LeggedModel" kindref="compound" external="/home/runner/work/legged_control2_doc/legged_control2_doc/build/html/doc/rosdoc2/cross_reference/legged_model/legged_model.tag">LeggedModel</ref> &gt; &amp;</type>
+          <declname>leggedModel</declname>
+        </param>
+        <param>
+          <type>scalar_t</type>
+          <declname>cutoffFrequency</declname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/GmObserver.h" line="17" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1GmObserver_1a64366613fa2a93149fa38d2300bce471" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void legged::GmObserver::setCutOffFrequency</definition>
+        <argsstring>(scalar_t cutoffFrequency)</argsstring>
+        <name>setCutOffFrequency</name>
+        <qualifiedname>legged::GmObserver::setCutOffFrequency</qualifiedname>
+        <param>
+          <type>scalar_t</type>
+          <declname>cutoffFrequency</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/GmObserver.h" line="19" column="8" bodyfile="include/legged_estimation/GmObserver.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1GmObserver_1ad3a6af690d15f8b47afa18913eeb0501" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void legged::GmObserver::update</definition>
+        <argsstring>(scalar_t period)</argsstring>
+        <name>update</name>
+        <qualifiedname>legged::GmObserver::update</qualifiedname>
+        <param>
+          <type>scalar_t</type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/GmObserver.h" line="21" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1GmObserver_1afde5027fc7f1e1dfbd63dcebbe2053e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; vector_t &gt;</type>
+        <definition>std::vector&lt; vector_t &gt; legged::GmObserver::getContactWrenches</definition>
+        <argsstring>()</argsstring>
+        <name>getContactWrenches</name>
+        <qualifiedname>legged::GmObserver::getContactWrenches</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/GmObserver.h" line="23" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1GmObserver_1aecc4b5445f960c46cc437b734335bc2b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>vector_t</type>
+        <definition>vector_t legged::GmObserver::getBaseWrench</definition>
+        <argsstring>() const</argsstring>
+        <name>getBaseWrench</name>
+        <qualifiedname>legged::GmObserver::getBaseWrench</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_estimation/GmObserver.h" line="25" column="12" bodyfile="include/legged_estimation/GmObserver.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/legged_estimation/GmObserver.h" line="13" column="1" bodyfile="include/legged_estimation/GmObserver.h" bodystart="13" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1GmObserver_1a7cc264d4f1841f8d69aca3b0f8b68dce" prot="protected" virt="non-virtual"><scope>legged::GmObserver</scope><name>cutoffFrequency_</name></member>
+      <member refid="classlegged_1_1GmObserver_1a69405c36c3f108f921b64df31ad99f6b" prot="protected" virt="non-virtual"><scope>legged::GmObserver</scope><name>fExt_</name></member>
+      <member refid="classlegged_1_1GmObserver_1aecc4b5445f960c46cc437b734335bc2b" prot="public" virt="non-virtual"><scope>legged::GmObserver</scope><name>getBaseWrench</name></member>
+      <member refid="classlegged_1_1GmObserver_1afde5027fc7f1e1dfbd63dcebbe2053e8" prot="public" virt="non-virtual"><scope>legged::GmObserver</scope><name>getContactWrenches</name></member>
+      <member refid="classlegged_1_1GmObserver_1ad1ecb4c569832a91bd79d6c87a789043" prot="public" virt="non-virtual"><scope>legged::GmObserver</scope><name>GmObserver</name></member>
+      <member refid="classlegged_1_1GmObserver_1ac96df444adcff2558e5a4742accb217d" prot="protected" virt="non-virtual"><scope>legged::GmObserver</scope><name>leggedModel_</name></member>
+      <member refid="classlegged_1_1GmObserver_1a9abd370ecf76fbf3a01c97ca6550ac57" prot="protected" virt="non-virtual"><scope>legged::GmObserver</scope><name>lowPassLast_</name></member>
+      <member refid="classlegged_1_1GmObserver_1a64366613fa2a93149fa38d2300bce471" prot="public" virt="non-virtual"><scope>legged::GmObserver</scope><name>setCutOffFrequency</name></member>
+      <member refid="classlegged_1_1GmObserver_1a84f597117e54b6105c690d1b33bb2b38" prot="public" virt="non-virtual"><scope>legged::GmObserver</scope><name>SharedPtr</name></member>
+      <member refid="classlegged_1_1GmObserver_1a3b3c78f2feec7c434ec5163f8a293059" prot="protected" virt="non-virtual"><scope>legged::GmObserver</scope><name>tauExt_</name></member>
+      <member refid="classlegged_1_1GmObserver_1ad3a6af690d15f8b47afa18913eeb0501" prot="public" virt="virtual"><scope>legged::GmObserver</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

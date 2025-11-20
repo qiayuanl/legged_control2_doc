@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1BaseAngVelObservationTerm" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>legged::BaseAngVelObservationTerm</compoundname>
+    <basecompoundref refid="classlegged_1_1ObservationTerm" prot="public" virt="non-virtual">legged::ObservationTerm</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlegged_1_1BaseAngVelObservationTerm_1a15e59ac98d725636627150feddcae4ff" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>size_t</type>
+        <definition>size_t legged::BaseAngVelObservationTerm::getSize</definition>
+        <argsstring>() const override</argsstring>
+        <name>getSize</name>
+        <qualifiedname>legged::BaseAngVelObservationTerm::getSize</qualifiedname>
+        <reimplements refid="classlegged_1_1ObservationTerm_1a7bf67168ef7eed36f83e3cfa016a6499">getSize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="108" column="10" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="108" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1BaseAngVelObservationTerm_1aa1506ca6648380d406baba2a7d262103" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>legged::ObservationTerm::ObservationTerm</definition>
+        <argsstring>()=default</argsstring>
+        <name>ObservationTerm</name>
+        <qualifiedname>legged::BaseAngVelObservationTerm::ObservationTerm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="107" column="3"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classlegged_1_1BaseAngVelObservationTerm_1a223d716b85d1a4c4f00c7313d8b24e75" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>vector_t</type>
+        <definition>vector_t legged::BaseAngVelObservationTerm::evaluate</definition>
+        <argsstring>() override</argsstring>
+        <name>evaluate</name>
+        <qualifiedname>legged::BaseAngVelObservationTerm::evaluate</qualifiedname>
+        <reimplements refid="classlegged_1_1ObservationTerm_1a93a4179a31588f23d4056cd3c4a560bf">evaluate</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="111" column="12" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="111" bodyend="111"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>legged::BaseAngVelObservationTerm</label>
+        <link refid="classlegged_1_1BaseAngVelObservationTerm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>legged::ObservationTerm</label>
+        <link refid="classlegged_1_1ObservationTerm"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>legged::BaseAngVelObservationTerm</label>
+        <link refid="classlegged_1_1BaseAngVelObservationTerm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>legged::ObservationTerm</label>
+        <link refid="classlegged_1_1ObservationTerm"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/legged_rl_controllers/ObservationManager.h" line="105" column="1" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="105" bodyend="112"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1BaseAngVelObservationTerm_1a223d716b85d1a4c4f00c7313d8b24e75" prot="protected" virt="virtual"><scope>legged::BaseAngVelObservationTerm</scope><name>evaluate</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a3e8d732bf648855a3ea3a57f29efed70" prot="public" virt="non-virtual"><scope>legged::BaseAngVelObservationTerm</scope><name>getHistoryLength</name></member>
+      <member refid="classlegged_1_1BaseAngVelObservationTerm_1a15e59ac98d725636627150feddcae4ff" prot="public" virt="virtual"><scope>legged::BaseAngVelObservationTerm</scope><name>getSize</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a8560e826f364246851120ad55902f78b" prot="public" virt="non-virtual"><scope>legged::BaseAngVelObservationTerm</scope><name>getTotalSize</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a5850878005f89e8437c7e0a989229c93" prot="public" virt="non-virtual"><scope>legged::BaseAngVelObservationTerm</scope><name>getValue</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1aa2c87d8eb6d40955ef0b899ff3282c7f" prot="protected" virt="non-virtual"><scope>legged::BaseAngVelObservationTerm</scope><name>history_</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a8224b2ebe2adc9ec9774b06c4eae8c4d" prot="protected" virt="non-virtual"><scope>legged::BaseAngVelObservationTerm</scope><name>historyLength_</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a67484fe754557f02bbd193564344ec42" prot="protected" virt="non-virtual"><scope>legged::BaseAngVelObservationTerm</scope><name>initialized_</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1aedd7dcb2346a282bb60ff5d6708f5b10" prot="protected" virt="non-virtual"><scope>legged::BaseAngVelObservationTerm</scope><name>model_</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a5b4c6d4d8d6088554b4c055284cd1436" prot="protected" virt="virtual"><scope>legged::BaseAngVelObservationTerm</scope><name>modify</name></member>
+      <member refid="classlegged_1_1BaseAngVelObservationTerm_1aa1506ca6648380d406baba2a7d262103" prot="public" virt="non-virtual"><scope>legged::BaseAngVelObservationTerm</scope><name>ObservationTerm</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a2d4d7c6454eb10423d92891c9962d0c1" prot="public" virt="virtual"><scope>legged::BaseAngVelObservationTerm</scope><name>reset</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1ad0d439aa8b3e17ffee134cc63f9719fc" prot="public" virt="non-virtual"><scope>legged::BaseAngVelObservationTerm</scope><name>setHistoryLength</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1ae03af17c76ff709989f80fb8f7008eec" prot="public" virt="virtual"><scope>legged::BaseAngVelObservationTerm</scope><name>setModel</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1aac6c0aef459411eb2f3e88fa31298c65" prot="public" virt="non-virtual"><scope>legged::BaseAngVelObservationTerm</scope><name>SharedPtr</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a6631835909df0292eb219f84df0f380e" prot="public" virt="virtual"><scope>legged::BaseAngVelObservationTerm</scope><name>~ObservationTerm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

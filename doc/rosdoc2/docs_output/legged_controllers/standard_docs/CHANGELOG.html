@@ -1,0 +1,420 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHANGELOG &mdash; legged_controllers 3.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=dcedd534"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="PACKAGE" href="PACKAGE.html" />
+    <link rel="prev" title="Standard Documents" href="../standards.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            legged_controllers
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../generated/index.html">C++ API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../generated/index.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../generated/index.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../generated/index.html#full-c-api">Full C++ API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../generated/index.html#namespaces">Namespaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/namespace_controller_interface.html">Namespace controller_interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/namespace_legged.html">Namespace legged</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/namespace_semantic_components.html">Namespace semantic_components</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/index.html#classes-and-structs">Classes and Structs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/classlegged_1_1ControllerBase.html">Class ControllerBase</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/classlegged_1_1GmObserverRos2.html">Class GmObserverRos2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/classlegged_1_1LinearKalmanFilterRos2.html">Class LinearKalmanFilterRos2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/classlegged_1_1LinearKalmanFilterVisualization.html">Class LinearKalmanFilterVisualization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/classlegged_1_1StandbyController.html">Class StandbyController</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/classlegged_1_1StateEstimator.html">Class StateEstimator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/classsemantic__components_1_1JointSensors.html">Class JointSensors</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/index.html#enums">Enums</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/enum_visualization__helpers_8h_1aedc28248df61a9e3c01bb5210e0e6512.html">Enum Color</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/function_visualization__helpers_8h_1a266bc720d7192fb6bb572487691a85ce.html">Function legged::getColorFromId</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/function_visualization__helpers_8h_1a0ebaa758e4e58ae0e2aa1e2b7433be97.html">Function legged::getColorMsg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/function_visualization__helpers_8h_1a9d7b9ffb5bdd3027eff620cc2e1e3017.html">Function legged::getColorMsgFromId</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/function_visualization__helpers_8h_1a6d9e1b8a32f48aa9012e53c47faecb38.html">Function legged::getEllipseMsg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/function_visualization__helpers_8h_1afc3ee56d2eedcf24ae1a1b11ee5eba71.html">Function legged::getLineMsg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/function_visualization__helpers_8h_1af657af087c0c7a5030a858066b8264f4.html">Function legged::getOrientationMsg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/function_visualization__helpers_8h_1ac82beddc246bdab580d88402dceb448f.html">Function legged::getPointMsg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/function_visualization__helpers_8h_1a88fe8ae4a77b7550f6e0178995a58e8f.html">Function legged::getRGB</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/function_StateEstimator_8h_1ad1c56be35a48c34bc5aa700c324a9e20.html">Template Function legged::yawQuaternion</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/index.html#directories">Directories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/dir_include.html">Directory include</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/dir_include_legged_controllers.html">Directory legged_controllers</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../generated/index.html#files">Files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../generated/file_include_legged_controllers_ControllerBase.h.html">File ControllerBase.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/file_include_legged_controllers_GmObserverRos2.h.html">File GmObserverRos2.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/file_include_legged_controllers_JointSensors.h.html">File JointSensors.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/file_include_legged_controllers_LinearKalmanFilterRos2.h.html">File LinearKalmanFilterRos2.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/file_include_legged_controllers_StandbyController.h.html">File StandbyController.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/file_include_legged_controllers_StateEstimator.h.html">File StateEstimator.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../generated/file_include_legged_controllers_visualization_helpers.h.html">File visualization_helpers.h</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../standards.html">Standard Documents</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">CHANGELOG</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#changelog-for-package-legged-controllers">Changelog for package legged_controllers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">3.2.2 (2025-10-27)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">3.2.1 (2025-10-21)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">3.2.0 (2025-10-15)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">3.1.0 (2025-10-07)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">3.0.1 (2025-10-01)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">3.0.0 (2025-09-16)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id7">2.8.0 (2025-09-15)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id8">2.7.3 (2025-07-27)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">2.7.2 (2025-07-21)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id10">2.7.1 (2025-07-11)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id11">2.7.0 (2025-06-17)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id12">2.6.0 (2025-06-17)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id13">2.5.0 (2025-06-15)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id15">2.4.0 (2025-06-14)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id16">2.3.1 (2025-06-02)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id18">2.3.0 (2025-05-31)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id19">2.2.0 (2025-05-26)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id21">2.1.1 (2025-05-01)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id23">2.1.0 (2025-04-28)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id26">2.0.0 (2025-04-08)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id27">1.4.0 (2025-04-02)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id28">1.3.1 (2025-04-01)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id29">1.3.0 (2025-03-29)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id30">1.2.1 (2025-03-29)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id31">1.2.0 (2025-03-28)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id32">1.1.0 (2025-03-26)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="PACKAGE.html">PACKAGE</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">legged_controllers</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../standards.html">Standard Documents</a></li>
+      <li class="breadcrumb-item active">CHANGELOG</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/standard_docs/CHANGELOG.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="changelog">
+<h1>CHANGELOG<a class="headerlink" href="#changelog" title="Link to this heading"></a></h1>
+<section id="changelog-for-package-legged-controllers">
+<h2>Changelog for package legged_controllers<a class="headerlink" href="#changelog-for-package-legged-controllers" title="Link to this heading"></a></h2>
+<section id="id1">
+<h3>3.2.2 (2025-10-27)<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Add estimation position topic and frame_id declarations</p></li>
+<li><p>Contributors: qiayuanl</p></li>
+</ul>
+</section>
+<section id="id2">
+<h3>3.2.1 (2025-10-21)<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+</section>
+<section id="id3">
+<h3>3.2.0 (2025-10-15)<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Use StateInterface for state_estimator/legged_model output</p></li>
+<li><p>Contributors: qiayuanl</p></li>
+</ul>
+</section>
+<section id="id4">
+<h3>3.1.0 (2025-10-07)<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+</section>
+<section id="id5">
+<h3>3.0.1 (2025-10-01)<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Handle simulation reset in StateEstimator by skipping non-positive period</p></li>
+<li><p>Contributors: qiayuanl</p></li>
+</ul>
+</section>
+<section id="id6">
+<h3>3.0.0 (2025-09-16)<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Refactor parameter retrieval of LinearKalmanFilterRos2 and GmObserverRos2 to use declare_parameter</p></li>
+<li><p>Upgrade to jazzy: change the interface and remove custom update_rate/async support</p></li>
+<li><p>Contributors: qiayuanl</p></li>
+</ul>
+</section>
+<section id="id7">
+<h3>2.8.0 (2025-09-15)<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Add on_init method to StandbyController and StateEstimator for parameter declaration</p></li>
+<li><p>Handle zero duration in update_and_write_commands to prevent division by zero</p></li>
+<li><p>Contributors: qiayuanl</p></li>
+</ul>
+</section>
+<section id="id8">
+<h3>2.7.3 (2025-07-27)<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
+</section>
+<section id="id9">
+<h3>2.7.2 (2025-07-21)<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Update CHANGELOG.rst</p></li>
+<li><p>Contributors: qiayuanl</p></li>
+<li><p>Update CHANGELOG.rst</p></li>
+<li><p>Contributors: qiayuanl</p></li>
+</ul>
+</section>
+<section id="id10">
+<h3>2.7.1 (2025-07-11)<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
+</section>
+<section id="id11">
+<h3>2.7.0 (2025-06-17)<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Merge branch ‘master’ into feature/async
+# Conflicts:
+#     legged_rl_controllers/src/RlController.cpp</p></li>
+<li><p>Merge branch ‘master’ into feature/async</p></li>
+<li><p>Merge branch ‘master’ into feature/async</p></li>
+<li><p>Contributors: qiayuanl</p></li>
+</ul>
+</section>
+<section id="id12">
+<h3>2.6.0 (2025-06-17)<a class="headerlink" href="#id12" title="Link to this heading"></a></h3>
+</section>
+<section id="id13">
+<h3>2.5.0 (2025-06-15)<a class="headerlink" href="#id13" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Merge pull request <a class="reference external" href="https://github.com/qiayuanl/legged_control2/issues/7">#7</a> from qiayuanl/feature/onnx_metadata
+Read metadata from onnx files instead of ros parameters</p></li>
+<li><p>Read metadata from onnx files instead of ros parameters</p></li>
+<li><p>Contributors: Qiayuan Liao, qiayuanl</p></li>
+</ul>
+</section>
+<section id="id15">
+<h3>2.4.0 (2025-06-14)<a class="headerlink" href="#id15" title="Link to this heading"></a></h3>
+</section>
+<section id="id16">
+<h3>2.3.1 (2025-06-02)<a class="headerlink" href="#id16" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Merge pull request <a class="reference external" href="https://github.com/qiayuanl/legged_control2/issues/5">#5</a> from qiayuanl/fix/estimation_position_default
+Fix the behavior when estimation.position.topic and estimation.positi…</p></li>
+<li><p>Fix the behavior when estimation.position.topic and estimation.position.frame_id is empty</p></li>
+<li><p>Contributors: Qiayuan Liao, qiayuanl</p></li>
+</ul>
+</section>
+<section id="id18">
+<h3>2.3.0 (2025-05-31)<a class="headerlink" href="#id18" title="Link to this heading"></a></h3>
+</section>
+<section id="id19">
+<h3>2.2.0 (2025-05-26)<a class="headerlink" href="#id19" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Merge pull request <a class="reference external" href="https://github.com/qiayuanl/legged_control2/issues/4">#4</a> from qiayuanl/feature/joint_state
+Remove joint_state_broadcaster</p></li>
+<li><p>Remove joint_state_broadcaster</p></li>
+<li><p>Contributors: Qiayuan Liao, qiayuanl</p></li>
+</ul>
+</section>
+<section id="id21">
+<h3>2.1.1 (2025-05-01)<a class="headerlink" href="#id21" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Merge pull request <a class="reference external" href="https://github.com/qiayuanl/legged_control2/issues/3">#3</a> from qiayuanl/feature/lio_fuse
+Feature/lio fuse</p></li>
+<li><p>Merge branch ‘refs/heads/master’ into feature/lio_fuse</p></li>
+<li><p>Force worldToMap_ to be only rotated along z axis in StateEstimator</p></li>
+<li><p>Contributors: Qiayuan Liao, qiayuanl</p></li>
+</ul>
+</section>
+<section id="id23">
+<h3>2.1.0 (2025-04-28)<a class="headerlink" href="#id23" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Merge pull request <a class="reference external" href="https://github.com/qiayuanl/legged_control2/issues/2">#2</a> from qiayuanl/feature/lio_fuse
+Feature/lio fuse</p></li>
+<li><p>Merge pull request <a class="reference external" href="https://github.com/qiayuanl/legged_control2/issues/1">#1</a> from qiayuanl/fix/estimator
+Fix/estimator</p></li>
+<li><p>Move TF publication to StateEstimation and add odom_lio frame</p></li>
+<li><p>Add low pass filter for world-to-map in StateEstimator</p></li>
+<li><p>Map LIO information in world frame instead of overwriting everything to map frame</p></li>
+<li><p>Move the position sensor topic from LinearKalmanFilterRos2 to StateEstimator.</p></li>
+<li><p>Support position sensor from any frame on the robot</p></li>
+<li><p>Remove MoCap and call updatePositionMeasurement() in LinearKalmanFilterRos2</p></li>
+<li><p>Separate LinearKalmanFilter::update() to LinearKalmanFilter::updateImuProcess() and LinearKalmanFilter::updateContactsMeasurement()</p></li>
+<li><p>Separate chainable controllers from legged_controllers</p></li>
+<li><p>Correct joint order of StandbyController</p></li>
+<li><p>Adjust the RlController for new ControllerBase</p></li>
+<li><p>Change StateEstimator to ChainableController, so that all other controllers share the same state estimator. legged_controllers work, but legged_rl_controller still not.</p></li>
+<li><p>Add configuration for contact probabilities of LinearKalmanFilter</p></li>
+<li><p>Add acceleration bias estimation</p></li>
+<li><p>Override the xHat correctly in MoCap</p></li>
+<li><p>Add ZMP visualization for LinearKalmanFilterVisualization</p></li>
+<li><p>Add LinearKalmanFilter::updateContactProbabilities, use force threshold and ZMP to determine the probability</p></li>
+<li><p>Correct LinearKalmanFilterVisualization</p></li>
+<li><p>Add LinearKalmanFilter::reset</p></li>
+<li><p>Add LinearKalmanFilter::getImuProcessNoiseCovariance</p></li>
+<li><p>Remove foot velocity measurement from  LinearKalmanFilter</p></li>
+<li><p>Add visualization for LinearKalmanFilterRos2</p></li>
+<li><p>Add visualization_helpers</p></li>
+<li><p>Contributors: Qiayuan Liao, qiayuanl</p></li>
+</ul>
+</section>
+<section id="id26">
+<h3>2.0.0 (2025-04-08)<a class="headerlink" href="#id26" title="Link to this heading"></a></h3>
+</section>
+<section id="id27">
+<h3>1.4.0 (2025-04-02)<a class="headerlink" href="#id27" title="Link to this heading"></a></h3>
+</section>
+<section id="id28">
+<h3>1.3.1 (2025-04-01)<a class="headerlink" href="#id28" title="Link to this heading"></a></h3>
+</section>
+<section id="id29">
+<h3>1.3.0 (2025-03-29)<a class="headerlink" href="#id29" title="Link to this heading"></a></h3>
+</section>
+<section id="id30">
+<h3>1.2.1 (2025-03-29)<a class="headerlink" href="#id30" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Add and run pre-commit</p></li>
+<li><p>Contributors: qiayuanl</p></li>
+</ul>
+</section>
+<section id="id31">
+<h3>1.2.0 (2025-03-28)<a class="headerlink" href="#id31" title="Link to this heading"></a></h3>
+</section>
+<section id="id32">
+<h3>1.1.0 (2025-03-26)<a class="headerlink" href="#id32" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Update Mocap code</p></li>
+<li><p>Add gm_observer.cut_off_frequency and gm_observer.force_threshold configuration</p></li>
+<li><p>Update OnnxController with Manger</p></li>
+<li><p>Minor change for formate</p></li>
+<li><p>Remove the client for getting robot_description</p></li>
+<li><p>Correct phase cycle</p></li>
+<li><p>Add phase observation</p></li>
+<li><p>Move exec_depend from unitree_description to legged_controllers</p></li>
+<li><p>Use new hardware interface</p></li>
+<li><p>Get robot_description from robot_state_publisher</p></li>
+<li><p>Add TopicController</p></li>
+<li><p>Add default_position and kp, kd parameters interface</p></li>
+<li><p>Add StandbyController</p></li>
+<li><p>Fix some minor problems</p></li>
+<li><p>Call StateEstimator::on_deactivate at the beginning of ControllerBase::on_deactivate</p></li>
+<li><p>Fix a minor problem in Mocap</p></li>
+<li><p>Add Mocap</p></li>
+<li><p>Add param interface for LinearKalmanFilter</p></li>
+<li><p>Add param interface for LeggedModelRos2</p></li>
+<li><p>Add ControllerBase::on_deactivate</p></li>
+<li><p>Replace all ZYX with quaternion</p></li>
+<li><p>Fix a silly bug cause by copilot</p></li>
+<li><p>Fix minor problem in LeggedModel</p></li>
+<li><p>Add legged_rl_controllers</p></li>
+<li><p>Set frame names in StateEstimator manually</p></li>
+<li><p>Correct some return value in ControllerBase</p></li>
+<li><p>Add ControllerBase</p></li>
+<li><p>Add baseFrameIndex to contactIndices in GmObserverRos2</p></li>
+<li><p>Add unlock after setup message in realtime publisher</p></li>
+<li><p>Correct “Remove imu inside LeggedModelRos2”</p></li>
+<li><p>Remove imu inside LeggedModelRos2</p></li>
+<li><p>Add LinearKalmanFilterRos2</p></li>
+<li><p>Add LeggedModel::getFrameName</p></li>
+<li><p>Add GmObserverRos2</p></li>
+<li><p>Add GmObserverRos2</p></li>
+<li><p>Minor change</p></li>
+<li><p>Add legged_controllers</p></li>
+<li><p>Contributors: qiayuanl</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../standards.html" class="btn btn-neutral float-left" title="Standard Documents" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="PACKAGE.html" class="btn btn-neutral float-right" title="PACKAGE" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright The &lt;legged_controllers&gt; Contributors. License: Apache-2.0.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

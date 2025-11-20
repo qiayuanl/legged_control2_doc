@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1LastActionObservationTerm" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>legged::LastActionObservationTerm</compoundname>
+    <basecompoundref refid="classlegged_1_1ObservationTerm" prot="public" virt="non-virtual">legged::ObservationTerm</basecompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classlegged_1_1LastActionObservationTerm_1a0b4f316ca2ac7f128b31428a5acb86ec" prot="protected" static="no" mutable="no">
+        <type>Policy::SharedPtr</type>
+        <definition>Policy::SharedPtr legged::LastActionObservationTerm::policy_</definition>
+        <argsstring></argsstring>
+        <name>policy_</name>
+        <qualifiedname>legged::LastActionObservationTerm::policy_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="174" column="21" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlegged_1_1LastActionObservationTerm_1a6d0f8ea153a4b32e78636d48c9f05dc9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>legged::LastActionObservationTerm::LastActionObservationTerm</definition>
+        <argsstring>(Policy::SharedPtr policy)</argsstring>
+        <name>LastActionObservationTerm</name>
+        <qualifiedname>legged::LastActionObservationTerm::LastActionObservationTerm</qualifiedname>
+        <param>
+          <type>Policy::SharedPtr</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="169" column="3" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="169" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LastActionObservationTerm_1a98989e9a202e9591b9ab9cb1f1e74cfa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>size_t</type>
+        <definition>size_t legged::LastActionObservationTerm::getSize</definition>
+        <argsstring>() const override</argsstring>
+        <name>getSize</name>
+        <qualifiedname>legged::LastActionObservationTerm::getSize</qualifiedname>
+        <reimplements refid="classlegged_1_1ObservationTerm_1a7bf67168ef7eed36f83e3cfa016a6499">getSize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="170" column="10" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="170" bodyend="170"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classlegged_1_1LastActionObservationTerm_1a674998637f9ab78f0d9f696fae8b4870" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>vector_t</type>
+        <definition>vector_t legged::LastActionObservationTerm::evaluate</definition>
+        <argsstring>() override</argsstring>
+        <name>evaluate</name>
+        <qualifiedname>legged::LastActionObservationTerm::evaluate</qualifiedname>
+        <reimplements refid="classlegged_1_1ObservationTerm_1a93a4179a31588f23d4056cd3c4a560bf">evaluate</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="173" column="12" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="173" bodyend="173"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>legged::LastActionObservationTerm</label>
+        <link refid="classlegged_1_1LastActionObservationTerm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>legged::ObservationTerm</label>
+        <link refid="classlegged_1_1ObservationTerm"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>legged::LastActionObservationTerm</label>
+        <link refid="classlegged_1_1LastActionObservationTerm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>legged::ObservationTerm</label>
+        <link refid="classlegged_1_1ObservationTerm"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/legged_rl_controllers/ObservationManager.h" line="167" column="1" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="167" bodyend="175"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1LastActionObservationTerm_1a674998637f9ab78f0d9f696fae8b4870" prot="protected" virt="virtual"><scope>legged::LastActionObservationTerm</scope><name>evaluate</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a3e8d732bf648855a3ea3a57f29efed70" prot="public" virt="non-virtual"><scope>legged::LastActionObservationTerm</scope><name>getHistoryLength</name></member>
+      <member refid="classlegged_1_1LastActionObservationTerm_1a98989e9a202e9591b9ab9cb1f1e74cfa" prot="public" virt="virtual"><scope>legged::LastActionObservationTerm</scope><name>getSize</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a8560e826f364246851120ad55902f78b" prot="public" virt="non-virtual"><scope>legged::LastActionObservationTerm</scope><name>getTotalSize</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a5850878005f89e8437c7e0a989229c93" prot="public" virt="non-virtual"><scope>legged::LastActionObservationTerm</scope><name>getValue</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1aa2c87d8eb6d40955ef0b899ff3282c7f" prot="protected" virt="non-virtual"><scope>legged::LastActionObservationTerm</scope><name>history_</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a8224b2ebe2adc9ec9774b06c4eae8c4d" prot="protected" virt="non-virtual"><scope>legged::LastActionObservationTerm</scope><name>historyLength_</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a67484fe754557f02bbd193564344ec42" prot="protected" virt="non-virtual"><scope>legged::LastActionObservationTerm</scope><name>initialized_</name></member>
+      <member refid="classlegged_1_1LastActionObservationTerm_1a6d0f8ea153a4b32e78636d48c9f05dc9" prot="public" virt="non-virtual"><scope>legged::LastActionObservationTerm</scope><name>LastActionObservationTerm</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1aedd7dcb2346a282bb60ff5d6708f5b10" prot="protected" virt="non-virtual"><scope>legged::LastActionObservationTerm</scope><name>model_</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a5b4c6d4d8d6088554b4c055284cd1436" prot="protected" virt="virtual"><scope>legged::LastActionObservationTerm</scope><name>modify</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1aa1506ca6648380d406baba2a7d262103" prot="public" virt="non-virtual"><scope>legged::LastActionObservationTerm</scope><name>ObservationTerm</name></member>
+      <member refid="classlegged_1_1LastActionObservationTerm_1a0b4f316ca2ac7f128b31428a5acb86ec" prot="protected" virt="non-virtual"><scope>legged::LastActionObservationTerm</scope><name>policy_</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a2d4d7c6454eb10423d92891c9962d0c1" prot="public" virt="virtual"><scope>legged::LastActionObservationTerm</scope><name>reset</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1ad0d439aa8b3e17ffee134cc63f9719fc" prot="public" virt="non-virtual"><scope>legged::LastActionObservationTerm</scope><name>setHistoryLength</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1ae03af17c76ff709989f80fb8f7008eec" prot="public" virt="virtual"><scope>legged::LastActionObservationTerm</scope><name>setModel</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1aac6c0aef459411eb2f3e88fa31298c65" prot="public" virt="non-virtual"><scope>legged::LastActionObservationTerm</scope><name>SharedPtr</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a6631835909df0292eb219f84df0f380e" prot="public" virt="virtual"><scope>legged::LastActionObservationTerm</scope><name>~ObservationTerm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

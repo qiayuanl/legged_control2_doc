@@ -1,0 +1,451 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class LinearKalmanFilter &mdash; legged_estimation 3.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=dcedd534"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Directory include" href="dir_include.html" />
+    <link rel="prev" title="Class GmObserver" href="classlegged_1_1GmObserver.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            legged_estimation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">C++ API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#full-c-api">Full C++ API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#namespaces">Namespaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="namespace_legged.html">Namespace legged</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#classes-and-structs">Classes and Structs</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="structlegged_1_1LinearKalmanFilter_1_1Configurations.html">Struct LinearKalmanFilter::Configurations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1GmObserver.html">Class GmObserver</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Class LinearKalmanFilter</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#directories">Directories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dir_include.html">Directory include</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_legged_estimation.html">Directory legged_estimation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#files">Files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="file_include_legged_estimation_GmObserver.h.html">File GmObserver.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_legged_estimation_LinearKalmanFilter.h.html">File LinearKalmanFilter.h</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../standards.html">Standard Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../standard_docs/CHANGELOG.html">CHANGELOG</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/CHANGELOG.html#changelog-for-package-legged-estimation">Changelog for package legged_estimation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id1">3.2.2 (2025-10-27)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id2">3.2.1 (2025-10-21)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id3">3.2.0 (2025-10-15)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id4">3.1.0 (2025-10-07)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id5">3.0.1 (2025-10-01)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id6">3.0.0 (2025-09-16)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id7">2.8.0 (2025-09-15)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id8">2.7.3 (2025-07-27)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id9">2.7.2 (2025-07-21)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id10">2.7.1 (2025-07-11)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id11">2.7.0 (2025-06-17)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id12">2.6.0 (2025-06-17)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id13">2.5.0 (2025-06-15)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id14">2.4.0 (2025-06-14)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id15">2.3.1 (2025-06-02)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id16">2.3.0 (2025-05-31)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id17">2.2.0 (2025-05-26)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id18">2.1.1 (2025-05-01)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id19">2.1.0 (2025-04-28)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id22">2.0.0 (2025-04-08)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id23">1.4.0 (2025-04-02)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id24">1.3.1 (2025-04-01)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id25">1.3.0 (2025-03-29)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id26">1.2.1 (2025-03-29)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id27">1.2.0 (2025-03-28)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id28">1.1.0 (2025-03-26)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../standard_docs/PACKAGE.html">PACKAGE</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">legged_estimation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">C++ API</a></li>
+      <li class="breadcrumb-item active">Class LinearKalmanFilter</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/classlegged_1_1LinearKalmanFilter.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-linearkalmanfilter">
+<span id="exhale-class-classlegged-1-1linearkalmanfilter"></span><h1>Class LinearKalmanFilter<a class="headerlink" href="#class-linearkalmanfilter" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_include_legged_estimation_LinearKalmanFilter.h.html#file-include-legged-estimation-linearkalmanfilter-h"><span class="std std-ref">File LinearKalmanFilter.h</span></a></p></li>
+</ul>
+<section id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Link to this heading"></a></h2>
+<section id="nested-types">
+<h3>Nested Types<a class="headerlink" href="#nested-types" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference internal" href="structlegged_1_1LinearKalmanFilter_1_1Configurations.html#exhale-struct-structlegged-1-1linearkalmanfilter-1-1configurations"><span class="std std-ref">Struct LinearKalmanFilter::Configurations</span></a></p></li>
+</ul>
+</section>
+</section>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilterE">
+<span id="_CPPv3N6legged18LinearKalmanFilterE"></span><span id="_CPPv2N6legged18LinearKalmanFilterE"></span><span id="legged::LinearKalmanFilter"></span><span class="target" id="classlegged_1_1LinearKalmanFilter"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LinearKalmanFilter</span></span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilterE" title="Link to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-types">Public Types</p>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter9SharedPtrE">
+<span id="_CPPv3N6legged18LinearKalmanFilter9SharedPtrE"></span><span id="_CPPv2N6legged18LinearKalmanFilter9SharedPtrE"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1a14e1441e1662561b427514397f0aa908"></span><span class="k"><span class="pre">using</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SharedPtr</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4N6legged18LinearKalmanFilterE" title="legged::LinearKalmanFilter"><span class="n"><span class="pre">LinearKalmanFilter</span></span></a><span class="p"><span class="pre">&gt;</span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter9SharedPtrE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter18LinearKalmanFilterERKNSt10shared_ptrI11LeggedModelEE">
+<span id="_CPPv3N6legged18LinearKalmanFilter18LinearKalmanFilterERKNSt10shared_ptrI11LeggedModelEE"></span><span id="_CPPv2N6legged18LinearKalmanFilter18LinearKalmanFilterERKNSt10shared_ptrI11LeggedModelEE"></span><span id="legged::LinearKalmanFilter::LinearKalmanFilter__std::shared_ptr:LeggedModel:CR"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1a5bc59dd4e31388448b3ce2dd24282a83"></span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LinearKalmanFilter</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">shared_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">LeggedModel</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">leggedModel</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter18LinearKalmanFilterERKNSt10shared_ptrI11LeggedModelEE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilterD0Ev">
+<span id="_CPPv3N6legged18LinearKalmanFilterD0Ev"></span><span id="_CPPv2N6legged18LinearKalmanFilterD0Ev"></span><span id="legged::LinearKalmanFilter::~LinearKalmanFilter"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1ae142d1841ec84e81bea29ed7ce5296a4"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~LinearKalmanFilter</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilterD0Ev" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter17setConfigurationsERK14Configurations">
+<span id="_CPPv3N6legged18LinearKalmanFilter17setConfigurationsERK14Configurations"></span><span id="_CPPv2N6legged18LinearKalmanFilter17setConfigurationsERK14Configurations"></span><span id="legged::LinearKalmanFilter::setConfigurations__ConfigurationsCR"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1a295e3d4b10e2db6d292711ef3021e74c"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setConfigurations</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N6legged18LinearKalmanFilter14ConfigurationsE" title="legged::LinearKalmanFilter::Configurations"><span class="n"><span class="pre">Configurations</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">configs</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter17setConfigurationsERK14Configurations" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter5resetEv">
+<span id="_CPPv3N6legged18LinearKalmanFilter5resetEv"></span><span id="_CPPv2N6legged18LinearKalmanFilter5resetEv"></span><span id="legged::LinearKalmanFilter::reset"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1a7eff454b79a524ac34c317a26b967711"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">reset</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter5resetEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter16updateImuProcessE8scalar_t">
+<span id="_CPPv3N6legged18LinearKalmanFilter16updateImuProcessE8scalar_t"></span><span id="_CPPv2N6legged18LinearKalmanFilter16updateImuProcessE8scalar_t"></span><span id="legged::LinearKalmanFilter::updateImuProcess__scalar_t"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1a6855aabe1ba869d31a12b7dfc8e596ad"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updateImuProcess</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">scalar_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">period</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter16updateImuProcessE8scalar_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter25updateContactsMeasurementE8scalar_t">
+<span id="_CPPv3N6legged18LinearKalmanFilter25updateContactsMeasurementE8scalar_t"></span><span id="_CPPv2N6legged18LinearKalmanFilter25updateContactsMeasurementE8scalar_t"></span><span id="legged::LinearKalmanFilter::updateContactsMeasurement__scalar_t"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1a585fbb265803b66b6072f004633530fc"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updateContactsMeasurement</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">scalar_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">period</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter25updateContactsMeasurementE8scalar_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter25updatePositionMeasurementE8scalar_t9vector3_t">
+<span id="_CPPv3N6legged18LinearKalmanFilter25updatePositionMeasurementE8scalar_t9vector3_t"></span><span id="_CPPv2N6legged18LinearKalmanFilter25updatePositionMeasurementE8scalar_t9vector3_t"></span><span id="legged::LinearKalmanFilter::updatePositionMeasurement__scalar_t.vector3_t"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1ac5b5df362d7ad693a5826664a118d18e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updatePositionMeasurement</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">scalar_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">period</span></span>, <span class="n"><span class="pre">vector3_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">position</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter25updatePositionMeasurementE8scalar_t9vector3_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter20setAccelerationLocalERK9vector3_t">
+<span id="_CPPv3N6legged18LinearKalmanFilter20setAccelerationLocalERK9vector3_t"></span><span id="_CPPv2N6legged18LinearKalmanFilter20setAccelerationLocalERK9vector3_t"></span><span id="legged::LinearKalmanFilter::setAccelerationLocal__vector3_tCR"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1ab9293f2047e158710b9b9b832c1757b0"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setAccelerationLocal</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector3_t</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">accelerationLocal</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter20setAccelerationLocalERK9vector3_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter18setContactWrenchesERKNSt6vectorI8vector_tEE">
+<span id="_CPPv3N6legged18LinearKalmanFilter18setContactWrenchesERKNSt6vectorI8vector_tEE"></span><span id="_CPPv2N6legged18LinearKalmanFilter18setContactWrenchesERKNSt6vectorI8vector_tEE"></span><span id="legged::LinearKalmanFilter::setContactWrenches__std::vector:vector_t:CR"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1a0b1b24994bb5fcf44d56864ddfdb322a"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setContactWrenches</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector_t</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">wrenches</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter18setContactWrenchesERKNSt6vectorI8vector_tEE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6legged18LinearKalmanFilter11getPositionEv">
+<span id="_CPPv3NK6legged18LinearKalmanFilter11getPositionEv"></span><span id="_CPPv2NK6legged18LinearKalmanFilter11getPositionEv"></span><span id="legged::LinearKalmanFilter::getPositionC"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1a426fec5fd6ab6879318d9f302a697401"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">vector3_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getPosition</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK6legged18LinearKalmanFilter11getPositionEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6legged18LinearKalmanFilter17getVelocityGlobalEv">
+<span id="_CPPv3NK6legged18LinearKalmanFilter17getVelocityGlobalEv"></span><span id="_CPPv2NK6legged18LinearKalmanFilter17getVelocityGlobalEv"></span><span id="legged::LinearKalmanFilter::getVelocityGlobalC"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1aae8e43206b01b9322246dfd6cf9ec4c9"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">vector3_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getVelocityGlobal</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK6legged18LinearKalmanFilter17getVelocityGlobalEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6legged18LinearKalmanFilter16getVelocityLocalEv">
+<span id="_CPPv3NK6legged18LinearKalmanFilter16getVelocityLocalEv"></span><span id="_CPPv2NK6legged18LinearKalmanFilter16getVelocityLocalEv"></span><span id="legged::LinearKalmanFilter::getVelocityLocalC"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1a9c4f297e98b79e11f1aeda9a38ed7bf1"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">vector3_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getVelocityLocal</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK6legged18LinearKalmanFilter16getVelocityLocalEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter18highSuspectNumber_E">
+<span id="_CPPv3N6legged18LinearKalmanFilter18highSuspectNumber_E"></span><span id="_CPPv2N6legged18LinearKalmanFilter18highSuspectNumber_E"></span><span id="legged::LinearKalmanFilter::highSuspectNumber___scalar_tC"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1a68b218e8e7aeba9a311a7f7b83b9d4ed"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">scalar_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">highSuspectNumber_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="m"><span class="pre">1e-3</span></span><span class="p"><span class="pre">}</span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter18highSuspectNumber_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-functions">Protected Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6legged18LinearKalmanFilter11getRotationEv">
+<span id="_CPPv3NK6legged18LinearKalmanFilter11getRotationEv"></span><span id="_CPPv2NK6legged18LinearKalmanFilter11getRotationEv"></span><span id="legged::LinearKalmanFilter::getRotationC"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1a697d8a79a1d0309fa75c7f21f360411d"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">matrix3_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getRotation</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK6legged18LinearKalmanFilter11getRotationEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6legged18LinearKalmanFilter13getKalmanGainE8matrix_t8matrix_t">
+<span id="_CPPv3NK6legged18LinearKalmanFilter13getKalmanGainE8matrix_t8matrix_t"></span><span id="_CPPv2NK6legged18LinearKalmanFilter13getKalmanGainE8matrix_t8matrix_t"></span><span id="legged::LinearKalmanFilter::getKalmanGain__matrix_t.matrix_tC"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1a35e325e68b02a1e2ceb46ce633a15aa7"></span><span class="n"><span class="pre">matrix_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getKalmanGain</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">matrix_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">c</span></span>, <span class="n"><span class="pre">matrix_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">r</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK6legged18LinearKalmanFilter13getKalmanGainE8matrix_t8matrix_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK6legged18LinearKalmanFilter28getImuProcessNoiseCovarianceE8scalar_t">
+<span id="_CPPv3NK6legged18LinearKalmanFilter28getImuProcessNoiseCovarianceE8scalar_t"></span><span id="_CPPv2NK6legged18LinearKalmanFilter28getImuProcessNoiseCovarianceE8scalar_t"></span><span id="legged::LinearKalmanFilter::getImuProcessNoiseCovariance__scalar_tC"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1ab7220d97047ecfd12c9cba08a2a73725"></span><span class="n"><span class="pre">matrix_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getImuProcessNoiseCovariance</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">scalar_t</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dt</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK6legged18LinearKalmanFilter28getImuProcessNoiseCovarianceE8scalar_t" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter26updateContactProbabilitiesEv">
+<span id="_CPPv3N6legged18LinearKalmanFilter26updateContactProbabilitiesEv"></span><span id="_CPPv2N6legged18LinearKalmanFilter26updateContactProbabilitiesEv"></span><span id="legged::LinearKalmanFilter::updateContactProbabilities"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1aa55948c7b2c498485d4905956eb11aa8"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updateContactProbabilities</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter26updateContactProbabilitiesEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter12leggedModel_E">
+<span id="_CPPv3N6legged18LinearKalmanFilter12leggedModel_E"></span><span id="_CPPv2N6legged18LinearKalmanFilter12leggedModel_E"></span><span id="legged::LinearKalmanFilter::leggedModel___LeggedModel::SharedPtr"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1ad98949824cfa0413691ce339de017256"></span><span class="n"><span class="pre">LeggedModel</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">SharedPtr</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">leggedModel_</span></span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter12leggedModel_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter12numContacts_E">
+<span id="_CPPv3N6legged18LinearKalmanFilter12numContacts_E"></span><span id="_CPPv2N6legged18LinearKalmanFilter12numContacts_E"></span><span id="legged::LinearKalmanFilter::numContacts___s"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1a4adb5578d5c959db1e7d2d60f40585f2"></span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">numContacts_</span></span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter12numContacts_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter12dimContacts_E">
+<span id="_CPPv3N6legged18LinearKalmanFilter12dimContacts_E"></span><span id="_CPPv2N6legged18LinearKalmanFilter12dimContacts_E"></span><span id="legged::LinearKalmanFilter::dimContacts___s"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1a77aa03a60f386b6a3f83d05635503dd4"></span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dimContacts_</span></span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter12dimContacts_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter9numState_E">
+<span id="_CPPv3N6legged18LinearKalmanFilter9numState_E"></span><span id="_CPPv2N6legged18LinearKalmanFilter9numState_E"></span><span id="legged::LinearKalmanFilter::numState___s"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1a7fcd5d6b59fe35c311b39295dd7a6573"></span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">numState_</span></span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter9numState_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter18dimContactObserve_E">
+<span id="_CPPv3N6legged18LinearKalmanFilter18dimContactObserve_E"></span><span id="_CPPv2N6legged18LinearKalmanFilter18dimContactObserve_E"></span><span id="legged::LinearKalmanFilter::dimContactObserve___s"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1a750112a76ce9ac1b3b617aefdb44ff26"></span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dimContactObserve_</span></span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter18dimContactObserve_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter8configs_E">
+<span id="_CPPv3N6legged18LinearKalmanFilter8configs_E"></span><span id="_CPPv2N6legged18LinearKalmanFilter8configs_E"></span><span id="legged::LinearKalmanFilter::configs___Configurations"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1a615b6c2bad3168e7c29dfed1329433f8"></span><a class="reference internal" href="#_CPPv4N6legged18LinearKalmanFilter14ConfigurationsE" title="legged::LinearKalmanFilter::Configurations"><span class="n"><span class="pre">Configurations</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">configs_</span></span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter8configs_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter18accelerationLocal_E">
+<span id="_CPPv3N6legged18LinearKalmanFilter18accelerationLocal_E"></span><span id="_CPPv2N6legged18LinearKalmanFilter18accelerationLocal_E"></span><span id="legged::LinearKalmanFilter::accelerationLocal___vector3_t"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1a6efe5558e5a875524ba5deb8b9d44aaa"></span><span class="n"><span class="pre">vector3_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">accelerationLocal_</span></span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter18accelerationLocal_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter16contactWrenches_E">
+<span id="_CPPv3N6legged18LinearKalmanFilter16contactWrenches_E"></span><span id="_CPPv2N6legged18LinearKalmanFilter16contactWrenches_E"></span><span id="legged::LinearKalmanFilter::contactWrenches___std::vector:vector_t:"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1a420e29e907b9385b4c69afe43c5869d4"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector_t</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">contactWrenches_</span></span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter16contactWrenches_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter12feetHeights_E">
+<span id="_CPPv3N6legged18LinearKalmanFilter12feetHeights_E"></span><span id="_CPPv2N6legged18LinearKalmanFilter12feetHeights_E"></span><span id="legged::LinearKalmanFilter::feetHeights___vector_t"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1aa0b91e7ca78244b21d1b9f95855e4e61"></span><span class="n"><span class="pre">vector_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">feetHeights_</span></span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter12feetHeights_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter21contactProbabilities_E">
+<span id="_CPPv3N6legged18LinearKalmanFilter21contactProbabilities_E"></span><span id="_CPPv2N6legged18LinearKalmanFilter21contactProbabilities_E"></span><span id="legged::LinearKalmanFilter::contactProbabilities___vector_t"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1a47026bf23fe4336a6aa4e68bd4965430"></span><span class="n"><span class="pre">vector_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">contactProbabilities_</span></span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter21contactProbabilities_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter5zmps_E">
+<span id="_CPPv3N6legged18LinearKalmanFilter5zmps_E"></span><span id="_CPPv2N6legged18LinearKalmanFilter5zmps_E"></span><span id="legged::LinearKalmanFilter::zmps___std::vector:vector2_t:"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1ad73912996b3e91d28611871d2018b3d9"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector2_t</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">zmps_</span></span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter5zmps_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter2a_E">
+<span id="_CPPv3N6legged18LinearKalmanFilter2a_E"></span><span id="_CPPv2N6legged18LinearKalmanFilter2a_E"></span><span id="legged::LinearKalmanFilter::a___matrix_t"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1a1cc44014209a4e8bf75cd78cbe501fa9"></span><span class="n"><span class="pre">matrix_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">a_</span></span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter2a_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter2b_E">
+<span id="_CPPv3N6legged18LinearKalmanFilter2b_E"></span><span id="_CPPv2N6legged18LinearKalmanFilter2b_E"></span><span id="legged::LinearKalmanFilter::b___matrix_t"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1a68b0fc61208417f4d819f6703664f623"></span><span class="n"><span class="pre">matrix_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">b_</span></span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter2b_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter2p_E">
+<span id="_CPPv3N6legged18LinearKalmanFilter2p_E"></span><span id="_CPPv2N6legged18LinearKalmanFilter2p_E"></span><span id="legged::LinearKalmanFilter::p___matrix_t"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1a7bdd67f0f05064183f7f73c98433ef30"></span><span class="n"><span class="pre">matrix_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">p_</span></span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter2p_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter9cContact_E">
+<span id="_CPPv3N6legged18LinearKalmanFilter9cContact_E"></span><span id="_CPPv2N6legged18LinearKalmanFilter9cContact_E"></span><span id="legged::LinearKalmanFilter::cContact___matrix_t"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1ae4bf0b0433a41679ada450e5d465f72a"></span><span class="n"><span class="pre">matrix_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cContact_</span></span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter9cContact_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter10cPosition_E">
+<span id="_CPPv3N6legged18LinearKalmanFilter10cPosition_E"></span><span id="_CPPv2N6legged18LinearKalmanFilter10cPosition_E"></span><span id="legged::LinearKalmanFilter::cPosition___matrix_t"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1a987736e368544f7a587a4acc339b8fef"></span><span class="n"><span class="pre">matrix_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cPosition_</span></span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter10cPosition_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter5xHat_E">
+<span id="_CPPv3N6legged18LinearKalmanFilter5xHat_E"></span><span id="_CPPv2N6legged18LinearKalmanFilter5xHat_E"></span><span id="legged::LinearKalmanFilter::xHat___vector_t"></span><span class="target" id="classlegged_1_1LinearKalmanFilter_1a8d7b8f57db2e1b317536da99e6b43309"></span><span class="n"><span class="pre">vector_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">xHat_</span></span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter5xHat_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter14ConfigurationsE">
+<span id="_CPPv3N6legged18LinearKalmanFilter14ConfigurationsE"></span><span id="_CPPv2N6legged18LinearKalmanFilter14ConfigurationsE"></span><span id="legged::LinearKalmanFilter::Configurations"></span><span class="target" id="structlegged_1_1LinearKalmanFilter_1_1Configurations"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Configurations</span></span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter14ConfigurationsE" title="Link to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter14Configurations27imuAccelerationNoiseDensityE">
+<span id="_CPPv3N6legged18LinearKalmanFilter14Configurations27imuAccelerationNoiseDensityE"></span><span id="_CPPv2N6legged18LinearKalmanFilter14Configurations27imuAccelerationNoiseDensityE"></span><span id="legged::LinearKalmanFilter::Configurations::imuAccelerationNoiseDensity__scalar_t"></span><span class="target" id="structlegged_1_1LinearKalmanFilter_1_1Configurations_1ae9ee775b828af5b86b6e65bc8f29901b"></span><span class="n"><span class="pre">scalar_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">imuAccelerationNoiseDensity</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1e-2</span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter14Configurations27imuAccelerationNoiseDensityE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter14Configurations31imuAccelerationBiasNoiseDensityE">
+<span id="_CPPv3N6legged18LinearKalmanFilter14Configurations31imuAccelerationBiasNoiseDensityE"></span><span id="_CPPv2N6legged18LinearKalmanFilter14Configurations31imuAccelerationBiasNoiseDensityE"></span><span id="legged::LinearKalmanFilter::Configurations::imuAccelerationBiasNoiseDensity__scalar_t"></span><span class="target" id="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a4ba59f413f2769f91811272f4cdcdcd9"></span><span class="n"><span class="pre">scalar_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">imuAccelerationBiasNoiseDensity</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">5e-3</span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter14Configurations31imuAccelerationBiasNoiseDensityE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter14Configurations27contactProcessNoisePositionE">
+<span id="_CPPv3N6legged18LinearKalmanFilter14Configurations27contactProcessNoisePositionE"></span><span id="_CPPv2N6legged18LinearKalmanFilter14Configurations27contactProcessNoisePositionE"></span><span id="legged::LinearKalmanFilter::Configurations::contactProcessNoisePosition__scalar_t"></span><span class="target" id="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a3e91660a1ac39d9074f6d0f6079c78c0"></span><span class="n"><span class="pre">scalar_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">contactProcessNoisePosition</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.002</span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter14Configurations27contactProcessNoisePositionE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter14Configurations26contactSensorNoisePositionE">
+<span id="_CPPv3N6legged18LinearKalmanFilter14Configurations26contactSensorNoisePositionE"></span><span id="_CPPv2N6legged18LinearKalmanFilter14Configurations26contactSensorNoisePositionE"></span><span id="legged::LinearKalmanFilter::Configurations::contactSensorNoisePosition__scalar_t"></span><span class="target" id="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a64bc238ca364f1b255ac99bb2a088da7"></span><span class="n"><span class="pre">scalar_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">contactSensorNoisePosition</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.002</span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter14Configurations26contactSensorNoisePositionE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter14Configurations24contactHeightSensorNoiseE">
+<span id="_CPPv3N6legged18LinearKalmanFilter14Configurations24contactHeightSensorNoiseE"></span><span id="_CPPv2N6legged18LinearKalmanFilter14Configurations24contactHeightSensorNoiseE"></span><span id="legged::LinearKalmanFilter::Configurations::contactHeightSensorNoise__scalar_t"></span><span class="target" id="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a70edad9bc134e3b0b478464ac02f90de"></span><span class="n"><span class="pre">scalar_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">contactHeightSensorNoise</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.002</span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter14Configurations24contactHeightSensorNoiseE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter14Configurations13contactRadiusE">
+<span id="_CPPv3N6legged18LinearKalmanFilter14Configurations13contactRadiusE"></span><span id="_CPPv2N6legged18LinearKalmanFilter14Configurations13contactRadiusE"></span><span id="legged::LinearKalmanFilter::Configurations::contactRadius__scalar_t"></span><span class="target" id="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a930d625cc03e6ff5e1b6a61e411cdffd"></span><span class="n"><span class="pre">scalar_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">contactRadius</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.</span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter14Configurations13contactRadiusE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter14Configurations21contactForceThresholdE">
+<span id="_CPPv3N6legged18LinearKalmanFilter14Configurations21contactForceThresholdE"></span><span id="_CPPv2N6legged18LinearKalmanFilter14Configurations21contactForceThresholdE"></span><span id="legged::LinearKalmanFilter::Configurations::contactForceThreshold__scalar_t"></span><span class="target" id="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a753f6f16c11a5a0511bc96ae09f1d8a0"></span><span class="n"><span class="pre">scalar_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">contactForceThreshold</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">150.</span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter14Configurations21contactForceThresholdE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter14Configurations17contactForceScaleE">
+<span id="_CPPv3N6legged18LinearKalmanFilter14Configurations17contactForceScaleE"></span><span id="_CPPv2N6legged18LinearKalmanFilter14Configurations17contactForceScaleE"></span><span id="legged::LinearKalmanFilter::Configurations::contactForceScale__scalar_t"></span><span class="target" id="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a10f2f10c9df537a2439621f257b30bfb"></span><span class="n"><span class="pre">scalar_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">contactForceScale</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">15.</span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter14Configurations17contactForceScaleE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter14Configurations17contactZmpLengthXE">
+<span id="_CPPv3N6legged18LinearKalmanFilter14Configurations17contactZmpLengthXE"></span><span id="_CPPv2N6legged18LinearKalmanFilter14Configurations17contactZmpLengthXE"></span><span id="legged::LinearKalmanFilter::Configurations::contactZmpLengthX__scalar_t"></span><span class="target" id="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a02ac513f6d71bcdc41a30bcb03e32e49"></span><span class="n"><span class="pre">scalar_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">contactZmpLengthX</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.08</span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter14Configurations17contactZmpLengthXE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter14Configurations17contactZmpLengthYE">
+<span id="_CPPv3N6legged18LinearKalmanFilter14Configurations17contactZmpLengthYE"></span><span id="_CPPv2N6legged18LinearKalmanFilter14Configurations17contactZmpLengthYE"></span><span id="legged::LinearKalmanFilter::Configurations::contactZmpLengthY__scalar_t"></span><span class="target" id="structlegged_1_1LinearKalmanFilter_1_1Configurations_1ab7466b0d61019ef6cb1c0b295cf3039e"></span><span class="n"><span class="pre">scalar_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">contactZmpLengthY</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0.025</span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter14Configurations17contactZmpLengthYE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged18LinearKalmanFilter14Configurations20positionNoiseDensityE">
+<span id="_CPPv3N6legged18LinearKalmanFilter14Configurations20positionNoiseDensityE"></span><span id="_CPPv2N6legged18LinearKalmanFilter14Configurations20positionNoiseDensityE"></span><span id="legged::LinearKalmanFilter::Configurations::positionNoiseDensity__scalar_t"></span><span class="target" id="structlegged_1_1LinearKalmanFilter_1_1Configurations_1a96054644c288effe18922e66193c6d9a"></span><span class="n"><span class="pre">scalar_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">positionNoiseDensity</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">1e-2</span></span><a class="headerlink" href="#_CPPv4N6legged18LinearKalmanFilter14Configurations20positionNoiseDensityE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="classlegged_1_1GmObserver.html" class="btn btn-neutral float-left" title="Class GmObserver" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="dir_include.html" class="btn btn-neutral float-right" title="Directory include" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright The &lt;legged_estimation&gt; Contributors. License: Apache-2.0.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

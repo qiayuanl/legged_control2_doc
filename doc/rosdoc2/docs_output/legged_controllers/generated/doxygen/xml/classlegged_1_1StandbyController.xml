@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1StandbyController" kind="class" language="C++" prot="public">
+    <compoundname>legged::StandbyController</compoundname>
+    <basecompoundref refid="classlegged_1_1ControllerBase" prot="public" virt="non-virtual">legged::ControllerBase</basecompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classlegged_1_1StandbyController_1aca0f5a467c9f882a459d195636fb4dc4" prot="protected" static="no" mutable="no">
+        <type>vector_t</type>
+        <definition>vector_t legged::StandbyController::defaultPosition_</definition>
+        <argsstring></argsstring>
+        <name>defaultPosition_</name>
+        <qualifiedname>legged::StandbyController::defaultPosition_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StandbyController.h" line="22" column="12" bodyfile="include/legged_controllers/StandbyController.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1StandbyController_1a47774a839a92bd5870ec60a5b3cb6048" prot="protected" static="no" mutable="no">
+        <type>vector_t</type>
+        <definition>vector_t legged::StandbyController::kp_</definition>
+        <argsstring></argsstring>
+        <name>kp_</name>
+        <qualifiedname>legged::StandbyController::kp_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StandbyController.h" line="23" column="12" bodyfile="include/legged_controllers/StandbyController.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1StandbyController_1abae1c18f17cd444b9a56f2acb70dd725" prot="protected" static="no" mutable="no">
+        <type>vector_t</type>
+        <definition>vector_t legged::StandbyController::kd_</definition>
+        <argsstring></argsstring>
+        <name>kd_</name>
+        <qualifiedname>legged::StandbyController::kd_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StandbyController.h" line="23" column="16" bodyfile="include/legged_controllers/StandbyController.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1StandbyController_1a0f9078bfd133d496b7a30a010f2fbfa8" prot="protected" static="no" mutable="no">
+        <type>scalar_t</type>
+        <definition>scalar_t legged::StandbyController::totalTime_</definition>
+        <argsstring></argsstring>
+        <name>totalTime_</name>
+        <qualifiedname>legged::StandbyController::totalTime_</qualifiedname>
+        <initializer>{2.}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StandbyController.h" line="25" column="12" bodyfile="include/legged_controllers/StandbyController.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1StandbyController_1a7eee7af6c19e6141dcdd43a691087a1a" prot="protected" static="no" mutable="no">
+        <type>scalar_t</type>
+        <definition>scalar_t legged::StandbyController::maxError_</definition>
+        <argsstring></argsstring>
+        <name>maxError_</name>
+        <qualifiedname>legged::StandbyController::maxError_</qualifiedname>
+        <initializer>{0.34}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StandbyController.h" line="25" column="23" bodyfile="include/legged_controllers/StandbyController.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1StandbyController_1ae6b3487dead208e80d25c78c38f44b8e" prot="protected" static="no" mutable="no">
+        <type>vector_t</type>
+        <definition>vector_t legged::StandbyController::startPosition_</definition>
+        <argsstring></argsstring>
+        <name>startPosition_</name>
+        <qualifiedname>legged::StandbyController::startPosition_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StandbyController.h" line="26" column="12" bodyfile="include/legged_controllers/StandbyController.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1StandbyController_1aab3ad22ce66f4e83098aa90421597632" prot="protected" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time legged::StandbyController::startTime_</definition>
+        <argsstring></argsstring>
+        <name>startTime_</name>
+        <qualifiedname>legged::StandbyController::startTime_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StandbyController.h" line="27" column="16" bodyfile="include/legged_controllers/StandbyController.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1StandbyController_1a4b0ec3ad7820db3c99771302e9bc2fb5" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool legged::StandbyController::firstUpdate_</definition>
+        <argsstring></argsstring>
+        <name>firstUpdate_</name>
+        <qualifiedname>legged::StandbyController::firstUpdate_</qualifiedname>
+        <initializer>{true}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StandbyController.h" line="28" column="8" bodyfile="include/legged_controllers/StandbyController.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlegged_1_1StandbyController_1ae21ade3c27978502776a0b64ebbcd614" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>controller_interface::CallbackReturn</type>
+        <definition>controller_interface::CallbackReturn legged::StandbyController::on_init</definition>
+        <argsstring>() override</argsstring>
+        <name>on_init</name>
+        <qualifiedname>legged::StandbyController::on_init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StandbyController.h" line="13" column="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1StandbyController_1a07bc09542afdb143fcac1eaa58cf245f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>controller_interface::return_type</type>
+        <definition>controller_interface::return_type legged::StandbyController::update</definition>
+        <argsstring>(const rclcpp::Time &amp;time, const rclcpp::Duration &amp;period) override</argsstring>
+        <name>update</name>
+        <qualifiedname>legged::StandbyController::update</qualifiedname>
+        <param>
+          <type>const rclcpp::Time &amp;</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>const rclcpp::Duration &amp;</type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StandbyController.h" line="15" column="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1StandbyController_1a2e8c46ccf4be1c3943b205ec2f43bd82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>controller_interface::CallbackReturn</type>
+        <definition>controller_interface::CallbackReturn legged::StandbyController::on_configure</definition>
+        <argsstring>(const rclcpp_lifecycle::State &amp;previous_state) override</argsstring>
+        <name>on_configure</name>
+        <qualifiedname>legged::StandbyController::on_configure</qualifiedname>
+        <param>
+          <type>const rclcpp_lifecycle::State &amp;</type>
+          <declname>previous_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StandbyController.h" line="17" column="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1StandbyController_1a17a61db3bc478c02aed811fb0bd83840" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>controller_interface::CallbackReturn</type>
+        <definition>controller_interface::CallbackReturn legged::StandbyController::on_activate</definition>
+        <argsstring>(const rclcpp_lifecycle::State &amp;previous_state) override</argsstring>
+        <name>on_activate</name>
+        <qualifiedname>legged::StandbyController::on_activate</qualifiedname>
+        <param>
+          <type>const rclcpp_lifecycle::State &amp;</type>
+          <declname>previous_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StandbyController.h" line="19" column="40"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>controller_interface::ControllerInterface</label>
+      </node>
+      <node id="2">
+        <label>legged::ControllerBase</label>
+        <link refid="classlegged_1_1ControllerBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>legged::StandbyController</label>
+        <link refid="classlegged_1_1StandbyController"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>controller_interface::ControllerInterface</label>
+      </node>
+      <node id="2">
+        <label>legged::ControllerBase</label>
+        <link refid="classlegged_1_1ControllerBase"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>legged::StandbyController</label>
+        <link refid="classlegged_1_1StandbyController"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>defaultPosition_</edgelabel>
+          <edgelabel>kd_</edgelabel>
+          <edgelabel>kp_</edgelabel>
+          <edgelabel>startPosition_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vector_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/legged_controllers/StandbyController.h" line="11" column="1" bodyfile="include/legged_controllers/StandbyController.h" bodystart="11" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1ControllerBase_1a76f81fec172140d9ab5cba17e1f96dd6" prot="public" virt="non-virtual"><scope>legged::StandbyController</scope><name>command_interface_configuration</name></member>
+      <member refid="classlegged_1_1StandbyController_1aca0f5a467c9f882a459d195636fb4dc4" prot="protected" virt="non-virtual"><scope>legged::StandbyController</scope><name>defaultPosition_</name></member>
+      <member refid="classlegged_1_1StandbyController_1a4b0ec3ad7820db3c99771302e9bc2fb5" prot="protected" virt="non-virtual"><scope>legged::StandbyController</scope><name>firstUpdate_</name></member>
+      <member refid="classlegged_1_1ControllerBase_1ae5c0d94626d31c7e9844492b3c48a7a9" prot="public" virt="non-virtual"><scope>legged::StandbyController</scope><name>interfaceName_</name></member>
+      <member refid="classlegged_1_1ControllerBase_1af4994478dce65d7fce39a8e53ba341c5" prot="protected" virt="non-virtual"><scope>legged::StandbyController</scope><name>jointNameInControl_</name></member>
+      <member refid="classlegged_1_1StandbyController_1abae1c18f17cd444b9a56f2acb70dd725" prot="protected" virt="non-virtual"><scope>legged::StandbyController</scope><name>kd_</name></member>
+      <member refid="classlegged_1_1StandbyController_1a47774a839a92bd5870ec60a5b3cb6048" prot="protected" virt="non-virtual"><scope>legged::StandbyController</scope><name>kp_</name></member>
+      <member refid="classlegged_1_1ControllerBase_1af9a048d24be04d1adb414bfddea030a4" prot="protected" virt="non-virtual"><scope>legged::StandbyController</scope><name>leggedModel</name></member>
+      <member refid="classlegged_1_1ControllerBase_1a868cf4ce63d38495ae5a7830d67bef0c" prot="protected" virt="non-virtual"><scope>legged::StandbyController</scope><name>leggedModel_</name></member>
+      <member refid="classlegged_1_1StandbyController_1a7eee7af6c19e6141dcdd43a691087a1a" prot="protected" virt="non-virtual"><scope>legged::StandbyController</scope><name>maxError_</name></member>
+      <member refid="classlegged_1_1StandbyController_1a17a61db3bc478c02aed811fb0bd83840" prot="public" virt="non-virtual"><scope>legged::StandbyController</scope><name>on_activate</name></member>
+      <member refid="classlegged_1_1StandbyController_1a2e8c46ccf4be1c3943b205ec2f43bd82" prot="public" virt="non-virtual"><scope>legged::StandbyController</scope><name>on_configure</name></member>
+      <member refid="classlegged_1_1StandbyController_1ae21ade3c27978502776a0b64ebbcd614" prot="public" virt="non-virtual"><scope>legged::StandbyController</scope><name>on_init</name></member>
+      <member refid="classlegged_1_1ControllerBase_1a15a806e928457e80a2c0dc6df46dc471" prot="protected" virt="non-virtual"><scope>legged::StandbyController</scope><name>setCommands</name></member>
+      <member refid="classlegged_1_1ControllerBase_1a456609d4dfffe185d3f7823d1267bb5e" prot="protected" virt="non-virtual"><scope>legged::StandbyController</scope><name>setDampings</name></member>
+      <member refid="classlegged_1_1ControllerBase_1a79fe96932dc70d6bdbb41f5ee75e7146" prot="protected" virt="non-virtual"><scope>legged::StandbyController</scope><name>setEfforts</name></member>
+      <member refid="classlegged_1_1ControllerBase_1aa6195c3734a1ee856df161d1e31ae9f0" prot="protected" virt="non-virtual"><scope>legged::StandbyController</scope><name>setPositions</name></member>
+      <member refid="classlegged_1_1ControllerBase_1a874f12d14c2c80f4d5f088b444af3395" prot="protected" virt="non-virtual"><scope>legged::StandbyController</scope><name>setStiffnesses</name></member>
+      <member refid="classlegged_1_1ControllerBase_1a01ca37404084da0db7cf94183283ca77" prot="protected" virt="non-virtual"><scope>legged::StandbyController</scope><name>setVelocities</name></member>
+      <member refid="classlegged_1_1StandbyController_1ae6b3487dead208e80d25c78c38f44b8e" prot="protected" virt="non-virtual"><scope>legged::StandbyController</scope><name>startPosition_</name></member>
+      <member refid="classlegged_1_1StandbyController_1aab3ad22ce66f4e83098aa90421597632" prot="protected" virt="non-virtual"><scope>legged::StandbyController</scope><name>startTime_</name></member>
+      <member refid="classlegged_1_1ControllerBase_1a1b7728d68c39bf5120aa0b21f04b3d8c" prot="public" virt="non-virtual"><scope>legged::StandbyController</scope><name>state_interface_configuration</name></member>
+      <member refid="classlegged_1_1StandbyController_1a0f9078bfd133d496b7a30a010f2fbfa8" prot="protected" virt="non-virtual"><scope>legged::StandbyController</scope><name>totalTime_</name></member>
+      <member refid="classlegged_1_1StandbyController_1a07bc09542afdb143fcac1eaa58cf245f" prot="public" virt="non-virtual"><scope>legged::StandbyController</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

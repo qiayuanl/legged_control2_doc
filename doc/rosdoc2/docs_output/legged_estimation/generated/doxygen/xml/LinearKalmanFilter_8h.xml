@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="LinearKalmanFilter_8h" kind="file" language="C++">
+    <compoundname>LinearKalmanFilter.h</compoundname>
+    <includes local="no">legged_model/LeggedModel.h</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">vector</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>include/legged_estimation/LinearKalmanFilter.h</label>
+        <link refid="LinearKalmanFilter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>legged_model/LeggedModel.h</label>
+      </node>
+      <node id="3">
+        <label>memory</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classlegged_1_1LinearKalmanFilter" prot="public">legged::LinearKalmanFilter</innerclass>
+    <innerclass refid="structlegged_1_1LinearKalmanFilter_1_1Configurations" prot="public">legged::LinearKalmanFilter::Configurations</innerclass>
+    <innernamespace refid="namespacelegged">legged</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>qiayuanl<sp/>on<sp/>8/31/24.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;legged_model/LeggedModel.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">legged<sp/>{</highlight></codeline>
+<codeline lineno="13" refid="classlegged_1_1LinearKalmanFilter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlegged_1_1LinearKalmanFilter" kindref="compound">LinearKalmanFilter</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">SharedPtr<sp/>=<sp/>std::shared_ptr&lt;LinearKalmanFilter&gt;;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>scalar_t<sp/>highSuspectNumber_{1e-3};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="structlegged_1_1LinearKalmanFilter_1_1Configurations" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlegged_1_1LinearKalmanFilter_1_1Configurations" kindref="compound">Configurations</ref><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>scalar_t<sp/>imuAccelerationNoiseDensity<sp/>=<sp/>1e-2;<sp/><sp/></highlight><highlight class="comment">//<sp/>100ug/sqrt(Hz)<sp/>~<sp/>100<sp/>*<sp/>1e-6<sp/>*<sp/>9.81<sp/>~<sp/>1e-3<sp/>m/s^2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>scalar_t<sp/>imuAccelerationBiasNoiseDensity<sp/>=<sp/>5e-3;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>scalar_t<sp/>contactProcessNoisePosition<sp/>=<sp/>0.002;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>scalar_t<sp/>contactSensorNoisePosition<sp/>=<sp/>0.002;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>scalar_t<sp/>contactHeightSensorNoise<sp/>=<sp/>0.002;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>scalar_t<sp/>contactRadius<sp/>=<sp/>0.;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>scalar_t<sp/>contactForceThreshold<sp/>=<sp/>150.;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>scalar_t<sp/>contactForceScale<sp/>=<sp/>15.;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>scalar_t<sp/>contactZmpLengthX<sp/>=<sp/>0.08;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>scalar_t<sp/>contactZmpLengthY<sp/>=<sp/>0.025;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>scalar_t<sp/>positionNoiseDensity<sp/>=<sp/>1e-2;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classlegged_1_1LinearKalmanFilter" kindref="compound">LinearKalmanFilter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;LeggedModel&gt;&amp;<sp/>leggedModel);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classlegged_1_1LinearKalmanFilter" kindref="compound">~LinearKalmanFilter</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setConfigurations(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structlegged_1_1LinearKalmanFilter_1_1Configurations" kindref="compound">Configurations</ref>&amp;<sp/>configs)<sp/>{<sp/>configs_<sp/>=<sp/>configs;<sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reset();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>updateImuProcess(scalar_t<sp/>period);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>updateContactsMeasurement(scalar_t<sp/>period);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>updatePositionMeasurement(scalar_t<sp/>period,<sp/>vector3_t<sp/>position);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setAccelerationLocal(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector3_t&amp;<sp/>accelerationLocal)<sp/>{<sp/>accelerationLocal_<sp/>=<sp/>accelerationLocal;<sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setContactWrenches(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;vector_t&gt;&amp;<sp/>wrenches)<sp/>{<sp/>contactWrenches_<sp/>=<sp/>wrenches;<sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>vector3_t<sp/>getPosition()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>xHat_.head(3);<sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>vector3_t<sp/>getVelocityGlobal()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>xHat_.segment(3,<sp/>3);<sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>vector3_t<sp/>getVelocityLocal()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getRotation().inverse()<sp/>*<sp/>getVelocityGlobal();<sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>matrix3_t<sp/>getRotation()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>quaternion_t(leggedModel_-&gt;getGeneralizedPosition().segment&lt;4&gt;(3)).toRotationMatrix();<sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>matrix_t<sp/>getKalmanGain(matrix_t<sp/>c,<sp/>matrix_t<sp/>r)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>[[nodiscard]]<sp/>matrix_t<sp/>getImuProcessNoiseCovariance(scalar_t<sp/>dt)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>updateContactProbabilities();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>LeggedModel::SharedPtr<sp/>leggedModel_;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>numContacts_,<sp/>dimContacts_,<sp/>numState_,<sp/>dimContactObserve_;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>Configurations<sp/>configs_;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>vector3_t<sp/>accelerationLocal_;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>std::vector&lt;vector_t&gt;<sp/>contactWrenches_;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>vector_t<sp/>feetHeights_;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>vector_t<sp/>contactProbabilities_;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>std::vector&lt;vector2_t&gt;<sp/>zmps_;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>matrix_t<sp/>a_,<sp/>b_,<sp/>p_,<sp/>cContact_,<sp/>cPosition_;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>vector_t<sp/>xHat_;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>legged</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/legged_estimation/LinearKalmanFilter.h"/>
+  </compounddef>
+</doxygen>

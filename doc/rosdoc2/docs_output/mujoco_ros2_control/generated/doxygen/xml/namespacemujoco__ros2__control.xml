@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacemujoco__ros2__control" kind="namespace" language="C++">
+    <compoundname>mujoco_ros2_control</compoundname>
+    <innerclass refid="structmujoco__ros2__control_1_1CameraData" prot="public">mujoco_ros2_control::CameraData</innerclass>
+    <innerclass refid="classmujoco__ros2__control_1_1MujocoCameras" prot="public">mujoco_ros2_control::MujocoCameras</innerclass>
+    <innerclass refid="classmujoco__ros2__control_1_1MujocoRendering" prot="public">mujoco_ros2_control::MujocoRendering</innerclass>
+    <innerclass refid="classmujoco__ros2__control_1_1MujocoRos2Control" prot="public">mujoco_ros2_control::MujocoRos2Control</innerclass>
+    <innerclass refid="classmujoco__ros2__control_1_1MujocoRos2ControlPlugin" prot="public">mujoco_ros2_control::MujocoRos2ControlPlugin</innerclass>
+    <innerclass refid="classmujoco__ros2__control_1_1MujocoSystem" prot="public">mujoco_ros2_control::MujocoSystem</innerclass>
+    <innerclass refid="classmujoco__ros2__control_1_1MujocoSystemInterface" prot="public">mujoco_ros2_control::MujocoSystemInterface</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="mujoco__system__interface_8hpp_1ad61493c4f5cf48aee2654e4c3a7bd2fc" prot="public" static="no">
+        <type>rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn</type>
+        <definition>using mujoco_ros2_control::CallbackReturn = typedef rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn</definition>
+        <argsstring></argsstring>
+        <name>CallbackReturn</name>
+        <qualifiedname>mujoco_ros2_control::CallbackReturn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system_interface.hpp" line="31" column="1" bodyfile="include/mujoco_ros2_control/mujoco_system_interface.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="mujoco__system_8hpp_1ac51074381bd7ecd32cd11d0445cff323" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr char</type>
+        <definition>constexpr char mujoco_ros2_control::HW_IF_STIFFNESS[]</definition>
+        <argsstring>[]</argsstring>
+        <name>HW_IF_STIFFNESS</name>
+        <qualifiedname>mujoco_ros2_control::HW_IF_STIFFNESS</qualifiedname>
+        <initializer>= &quot;stiffness&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="32" column="16" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="mujoco__system_8hpp_1ad6f5a3b76cf98c6a7bd6c61446b81675" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr char</type>
+        <definition>constexpr char mujoco_ros2_control::HW_IF_DAMPING[]</definition>
+        <argsstring>[]</argsstring>
+        <name>HW_IF_DAMPING</name>
+        <qualifiedname>mujoco_ros2_control::HW_IF_DAMPING</qualifiedname>
+        <initializer>= &quot;damping&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="33" column="16" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/mujoco_ros2_control/mujoco_cameras.hpp" line="35" column="1"/>
+  </compounddef>
+</doxygen>

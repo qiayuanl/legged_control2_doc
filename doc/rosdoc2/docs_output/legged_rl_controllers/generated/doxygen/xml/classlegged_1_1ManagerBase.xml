@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1ManagerBase" kind="class" language="C++" prot="public">
+    <compoundname>legged::ManagerBase</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename TermType</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlegged_1_1ManagerBase_1aa4b10489f81aba2aa3c79292cbf54888" prot="public" static="no">
+        <type>typename TermType::SharedPtr</type>
+        <definition>using legged::ManagerBase&lt; TermType &gt;::TermPtr =  typename TermType::SharedPtr</definition>
+        <argsstring></argsstring>
+        <name>TermPtr</name>
+        <qualifiedname>legged::ManagerBase::TermPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ManagerBased.h" line="18" column="3" bodyfile="include/legged_rl_controllers/ManagerBased.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlegged_1_1ManagerBase_1aa53c33361c6a124470eef5289084bc80" prot="public" static="no">
+        <type>std::vector&lt; TermPtr &gt;</type>
+        <definition>using legged::ManagerBase&lt; TermType &gt;::Terms =  std::vector&lt;TermPtr&gt;</definition>
+        <argsstring></argsstring>
+        <name>Terms</name>
+        <qualifiedname>legged::ManagerBase::Terms</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ManagerBased.h" line="19" column="3" bodyfile="include/legged_rl_controllers/ManagerBased.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classlegged_1_1ManagerBase_1a9c2e42723e6c013a5e12c6674eed5cf7" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classlegged_1_1ManagerBase" kindref="compound">ManagerBase</ref> &gt;</type>
+        <definition>using legged::ManagerBase&lt; TermType &gt;::SharedPtr =  std::shared_ptr&lt;ManagerBase&gt;</definition>
+        <argsstring></argsstring>
+        <name>SharedPtr</name>
+        <qualifiedname>legged::ManagerBase::SharedPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ManagerBased.h" line="20" column="3" bodyfile="include/legged_rl_controllers/ManagerBased.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classlegged_1_1ManagerBase_1a3fc40a973ade6ad12f29724cac59c542" prot="protected" static="no" mutable="no">
+        <type>LeggedModel::SharedPtr</type>
+        <definition>LeggedModel::SharedPtr legged::ManagerBase&lt; TermType &gt;::model_</definition>
+        <argsstring></argsstring>
+        <name>model_</name>
+        <qualifiedname>legged::ManagerBase::model_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ManagerBased.h" line="32" column="26" bodyfile="include/legged_rl_controllers/ManagerBased.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1ManagerBase_1a63ebb0da1cfd2821c4889635c51b1469" prot="protected" static="no" mutable="no">
+        <type>Terms</type>
+        <definition>Terms legged::ManagerBase&lt; TermType &gt;::terms_</definition>
+        <argsstring></argsstring>
+        <name>terms_</name>
+        <qualifiedname>legged::ManagerBase::terms_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ManagerBased.h" line="33" column="9" bodyfile="include/legged_rl_controllers/ManagerBased.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlegged_1_1ManagerBase_1aa09dbd80254b2751fff23f06b6da15a5" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>legged::ManagerBase&lt; TermType &gt;::ManagerBase</definition>
+        <argsstring>(LeggedModel::SharedPtr model)</argsstring>
+        <name>ManagerBase</name>
+        <qualifiedname>legged::ManagerBase::ManagerBase</qualifiedname>
+        <param>
+          <type>LeggedModel::SharedPtr</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ManagerBased.h" line="22" column="12" bodyfile="include/legged_rl_controllers/ManagerBased.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1ManagerBase_1a38082391c908f3ac75ab8078491ecb29" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual legged::ManagerBase&lt; TermType &gt;::~ManagerBase</definition>
+        <argsstring>()=default</argsstring>
+        <name>~ManagerBase</name>
+        <qualifiedname>legged::ManagerBase::~ManagerBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ManagerBased.h" line="23" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1ManagerBase_1a791712025d4e844443c417a0d7263cfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void legged::ManagerBase&lt; TermType &gt;::addTerm</definition>
+        <argsstring>(TermPtr term)</argsstring>
+        <name>addTerm</name>
+        <qualifiedname>legged::ManagerBase::addTerm</qualifiedname>
+        <param>
+          <type>TermPtr</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ManagerBased.h" line="25" column="8" bodyfile="include/legged_rl_controllers/ManagerBasedImpl.h" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1ManagerBase_1a62457d0d0d8555552aaf7b9cb9e9d713" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Terms</type>
+        <definition>ManagerBase&lt; TermType &gt;::Terms legged::ManagerBase&lt; TermType &gt;::getTerms</definition>
+        <argsstring>() const</argsstring>
+        <name>getTerms</name>
+        <qualifiedname>legged::ManagerBase::getTerms</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ManagerBased.h" line="26" column="9" bodyfile="include/legged_rl_controllers/ManagerBasedImpl.h" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1ManagerBase_1acd7d20bb9972881f02b013a179b1e90d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>vector_t</type>
+        <definition>vector_t legged::ManagerBase&lt; TermType &gt;::getValue</definition>
+        <argsstring>()</argsstring>
+        <name>getValue</name>
+        <qualifiedname>legged::ManagerBase::getValue</qualifiedname>
+        <reimplementedby refid="classlegged_1_1ObservationManager_1abfc19c44df73e84113ecff216fec5e6a">getValue</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ManagerBased.h" line="27" column="20" bodyfile="include/legged_rl_controllers/ManagerBasedImpl.h" bodystart="18" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1ManagerBase_1ab4321846ddb1ffd5a5e5096656747693" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>size_t legged::ManagerBase&lt; TermType &gt;::getSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getSize</name>
+        <qualifiedname>legged::ManagerBase::getSize</qualifiedname>
+        <reimplementedby refid="classlegged_1_1ObservationManager_1a16362c2878cfcb408e428fea61b62f22">getSize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ManagerBased.h" line="28" column="18" bodyfile="include/legged_rl_controllers/ManagerBasedImpl.h" bodystart="36" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1ManagerBase_1a8ada74014b84d348c06e083ec9970942" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void legged::ManagerBase&lt; TermType &gt;::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>legged::ManagerBase::reset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ManagerBased.h" line="29" column="16" bodyfile="include/legged_rl_controllers/ManagerBasedImpl.h" bodystart="45" bodyend="49"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/legged_rl_controllers/ManagerBased.h" line="16" column="1" bodyfile="include/legged_rl_controllers/ManagerBased.h" bodystart="16" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1ManagerBase_1a791712025d4e844443c417a0d7263cfe" prot="public" virt="non-virtual"><scope>legged::ManagerBase</scope><name>addTerm</name></member>
+      <member refid="classlegged_1_1ManagerBase_1ab4321846ddb1ffd5a5e5096656747693" prot="public" virt="virtual"><scope>legged::ManagerBase</scope><name>getSize</name></member>
+      <member refid="classlegged_1_1ManagerBase_1a62457d0d0d8555552aaf7b9cb9e9d713" prot="public" virt="non-virtual"><scope>legged::ManagerBase</scope><name>getTerms</name></member>
+      <member refid="classlegged_1_1ManagerBase_1acd7d20bb9972881f02b013a179b1e90d" prot="public" virt="virtual"><scope>legged::ManagerBase</scope><name>getValue</name></member>
+      <member refid="classlegged_1_1ManagerBase_1aa09dbd80254b2751fff23f06b6da15a5" prot="public" virt="non-virtual"><scope>legged::ManagerBase</scope><name>ManagerBase</name></member>
+      <member refid="classlegged_1_1ManagerBase_1a3fc40a973ade6ad12f29724cac59c542" prot="protected" virt="non-virtual"><scope>legged::ManagerBase</scope><name>model_</name></member>
+      <member refid="classlegged_1_1ManagerBase_1a8ada74014b84d348c06e083ec9970942" prot="public" virt="virtual"><scope>legged::ManagerBase</scope><name>reset</name></member>
+      <member refid="classlegged_1_1ManagerBase_1a9c2e42723e6c013a5e12c6674eed5cf7" prot="public" virt="non-virtual"><scope>legged::ManagerBase</scope><name>SharedPtr</name></member>
+      <member refid="classlegged_1_1ManagerBase_1aa4b10489f81aba2aa3c79292cbf54888" prot="public" virt="non-virtual"><scope>legged::ManagerBase</scope><name>TermPtr</name></member>
+      <member refid="classlegged_1_1ManagerBase_1aa53c33361c6a124470eef5289084bc80" prot="public" virt="non-virtual"><scope>legged::ManagerBase</scope><name>Terms</name></member>
+      <member refid="classlegged_1_1ManagerBase_1a63ebb0da1cfd2821c4889635c51b1469" prot="protected" virt="non-virtual"><scope>legged::ManagerBase</scope><name>terms_</name></member>
+      <member refid="classlegged_1_1ManagerBase_1a38082391c908f3ac75ab8078491ecb29" prot="public" virt="virtual"><scope>legged::ManagerBase</scope><name>~ManagerBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

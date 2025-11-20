@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1LinearKalmanFilterRos2" kind="class" language="C++" prot="public">
+    <compoundname>legged::LinearKalmanFilterRos2</compoundname>
+    <basecompoundref refid="classlegged_1_1LinearKalmanFilter" prot="public" virt="non-virtual">legged::LinearKalmanFilter</basecompoundref>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlegged_1_1LinearKalmanFilterRos2_1ac9f07fc06611389345eee9bfb97cd5d1" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classlegged_1_1LinearKalmanFilterRos2" kindref="compound">LinearKalmanFilterRos2</ref> &gt;</type>
+        <definition>using legged::LinearKalmanFilterRos2::SharedPtr =  std::shared_ptr&lt;LinearKalmanFilterRos2&gt;</definition>
+        <argsstring></argsstring>
+        <name>SharedPtr</name>
+        <qualifiedname>legged::LinearKalmanFilterRos2::SharedPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/LinearKalmanFilterRos2.h" line="42" column="3" bodyfile="include/legged_controllers/LinearKalmanFilterRos2.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilterRos2_1a9fbf2f5fbdf73aa78cca953838300d50" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; rclcpp::Publisher&lt; nav_msgs::msg::Odometry &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;rclcpp::Publisher&lt;nav_msgs::msg::Odometry&gt; &gt; legged::LinearKalmanFilterRos2::odomPublisher_</definition>
+        <argsstring></argsstring>
+        <name>odomPublisher_</name>
+        <qualifiedname>legged::LinearKalmanFilterRos2::odomPublisher_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/LinearKalmanFilterRos2.h" line="49" column="19" bodyfile="include/legged_controllers/LinearKalmanFilterRos2.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilterRos2_1a7ae250c0c7a20b42df1d32ab2a97a1d5" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; realtime_tools::RealtimePublisher&lt; nav_msgs::msg::Odometry &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;realtime_tools::RealtimePublisher&lt;nav_msgs::msg::Odometry&gt; &gt; legged::LinearKalmanFilterRos2::odomPublisherRealtime_</definition>
+        <argsstring></argsstring>
+        <name>odomPublisherRealtime_</name>
+        <qualifiedname>legged::LinearKalmanFilterRos2::odomPublisherRealtime_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/LinearKalmanFilterRos2.h" line="50" column="19" bodyfile="include/legged_controllers/LinearKalmanFilterRos2.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LinearKalmanFilterRos2_1ac4ad43d06d946b25787203adc84eb282" prot="protected" static="no" mutable="no">
+        <type>LinearKalmanFilterVisualization::SharedPtr</type>
+        <definition>LinearKalmanFilterVisualization::SharedPtr legged::LinearKalmanFilterRos2::visualization_</definition>
+        <argsstring></argsstring>
+        <name>visualization_</name>
+        <qualifiedname>legged::LinearKalmanFilterRos2::visualization_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/LinearKalmanFilterRos2.h" line="52" column="46" bodyfile="include/legged_controllers/LinearKalmanFilterRos2.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlegged_1_1LinearKalmanFilterRos2_1a755e4717f21757c543e01c5f96bc9eef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>legged::LinearKalmanFilterRos2::LinearKalmanFilterRos2</definition>
+        <argsstring>(const rclcpp_lifecycle::LifecycleNode::SharedPtr &amp;node, const LeggedModel::SharedPtr &amp;leggedModel)</argsstring>
+        <name>LinearKalmanFilterRos2</name>
+        <qualifiedname>legged::LinearKalmanFilterRos2::LinearKalmanFilterRos2</qualifiedname>
+        <param>
+          <type>const rclcpp_lifecycle::LifecycleNode::SharedPtr &amp;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const LeggedModel::SharedPtr &amp;</type>
+          <declname>leggedModel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/LinearKalmanFilterRos2.h" line="44" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LinearKalmanFilterRos2_1acb9864b6bae0e6018943303c2d5eeefd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void legged::LinearKalmanFilterRos2::update</definition>
+        <argsstring>(const rclcpp::Time &amp;time, const rclcpp::Duration &amp;period)</argsstring>
+        <name>update</name>
+        <qualifiedname>legged::LinearKalmanFilterRos2::update</qualifiedname>
+        <param>
+          <type>const rclcpp::Time &amp;</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>const rclcpp::Duration &amp;</type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/LinearKalmanFilterRos2.h" line="45" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LinearKalmanFilterRos2_1a483cfe4bbb9e969fb38124054f6b4421" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void legged::LinearKalmanFilterRos2::sendRos</definition>
+        <argsstring>(const rclcpp::Time &amp;time, const rclcpp::Duration &amp;period)</argsstring>
+        <name>sendRos</name>
+        <qualifiedname>legged::LinearKalmanFilterRos2::sendRos</qualifiedname>
+        <param>
+          <type>const rclcpp::Time &amp;</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>const rclcpp::Duration &amp;</type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/LinearKalmanFilterRos2.h" line="46" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>legged::LinearKalmanFilter</label>
+        <link refid="classlegged_1_1LinearKalmanFilter" external="/home/runner/work/legged_control2_doc/legged_control2_doc/build/html/doc/rosdoc2/cross_reference/legged_estimation/legged_estimation.tag"/>
+      </node>
+      <node id="1">
+        <label>legged::LinearKalmanFilterRos2</label>
+        <link refid="classlegged_1_1LinearKalmanFilterRos2"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>legged::LinearKalmanFilter</label>
+        <link refid="classlegged_1_1LinearKalmanFilter" external="/home/runner/work/legged_control2_doc/legged_control2_doc/build/html/doc/rosdoc2/cross_reference/legged_estimation/legged_estimation.tag"/>
+      </node>
+      <node id="1">
+        <label>legged::LinearKalmanFilterRos2</label>
+        <link refid="classlegged_1_1LinearKalmanFilterRos2"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/legged_controllers/LinearKalmanFilterRos2.h" line="40" column="1" bodyfile="include/legged_controllers/LinearKalmanFilterRos2.h" bodystart="40" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1LinearKalmanFilterRos2_1a755e4717f21757c543e01c5f96bc9eef" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilterRos2</scope><name>LinearKalmanFilterRos2</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilterRos2_1a9fbf2f5fbdf73aa78cca953838300d50" prot="protected" virt="non-virtual"><scope>legged::LinearKalmanFilterRos2</scope><name>odomPublisher_</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilterRos2_1a7ae250c0c7a20b42df1d32ab2a97a1d5" prot="protected" virt="non-virtual"><scope>legged::LinearKalmanFilterRos2</scope><name>odomPublisherRealtime_</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilterRos2_1a483cfe4bbb9e969fb38124054f6b4421" prot="public" virt="virtual"><scope>legged::LinearKalmanFilterRos2</scope><name>sendRos</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilterRos2_1ac9f07fc06611389345eee9bfb97cd5d1" prot="public" virt="non-virtual"><scope>legged::LinearKalmanFilterRos2</scope><name>SharedPtr</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilterRos2_1acb9864b6bae0e6018943303c2d5eeefd" prot="public" virt="virtual"><scope>legged::LinearKalmanFilterRos2</scope><name>update</name></member>
+      <member refid="classlegged_1_1LinearKalmanFilterRos2_1ac4ad43d06d946b25787203adc84eb282" prot="protected" virt="non-virtual"><scope>legged::LinearKalmanFilterRos2</scope><name>visualization_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,59 @@
+
+Full C++ API
+------------
+
+Namespaces
+**********
+
+
+.. toctree::
+   :maxdepth: 1
+
+   namespace_legged.rst
+
+Classes and Structs
+*******************
+
+
+.. toctree::
+   :maxdepth: 1
+
+   structlegged_1_1LinearKalmanFilter_1_1Configurations.rst
+
+.. toctree::
+   :maxdepth: 1
+
+   classlegged_1_1GmObserver.rst
+
+.. toctree::
+   :maxdepth: 1
+
+   classlegged_1_1LinearKalmanFilter.rst
+
+Directories
+***********
+
+
+.. toctree::
+   :maxdepth: 1
+
+   dir_include.rst
+
+.. toctree::
+   :maxdepth: 1
+
+   dir_include_legged_estimation.rst
+
+Files
+*****
+
+
+.. toctree::
+   :maxdepth: 1
+
+   file_include_legged_estimation_GmObserver.h.rst
+
+.. toctree::
+   :maxdepth: 1
+
+   file_include_legged_estimation_LinearKalmanFilter.h.rst

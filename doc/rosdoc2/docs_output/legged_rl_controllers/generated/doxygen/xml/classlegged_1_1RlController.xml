@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1RlController" kind="class" language="C++" prot="public">
+    <compoundname>legged::RlController</compoundname>
+    <basecompoundref refid="classlegged_1_1ControllerBase" prot="public" virt="non-virtual">legged::ControllerBase</basecompoundref>
+    <derivedcompoundref refid="classlegged_1_1OnnxController" prot="public" virt="non-virtual">legged::OnnxController</derivedcompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classlegged_1_1RlController_1a7c0240904dc497e6d706f2245d7cc7da" prot="protected" static="no" mutable="no">
+        <type>Policy::SharedPtr</type>
+        <definition>Policy::SharedPtr legged::RlController::policy_</definition>
+        <argsstring></argsstring>
+        <name>policy_</name>
+        <qualifiedname>legged::RlController::policy_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="35" column="21" bodyfile="include/legged_rl_controllers/RlController.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1RlController_1a40f16b48c7b55107bbdcecc70c1f274b" prot="protected" static="no" mutable="no">
+        <type>CommandManager::SharedPtr</type>
+        <definition>CommandManager::SharedPtr legged::RlController::commandManager_</definition>
+        <argsstring></argsstring>
+        <name>commandManager_</name>
+        <qualifiedname>legged::RlController::commandManager_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="36" column="29" bodyfile="include/legged_rl_controllers/RlController.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1RlController_1ad51ab0f4a259f089e17a6286c65db75e" prot="protected" static="no" mutable="no">
+        <type>ObservationManager::SharedPtr</type>
+        <definition>ObservationManager::SharedPtr legged::RlController::observationManager_</definition>
+        <argsstring></argsstring>
+        <name>observationManager_</name>
+        <qualifiedname>legged::RlController::observationManager_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="37" column="33" bodyfile="include/legged_rl_controllers/RlController.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1RlController_1ac2b15483d8063cdfa3379b6552e6b94a" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string legged::RlController::actionType_</definition>
+        <argsstring></argsstring>
+        <name>actionType_</name>
+        <qualifiedname>legged::RlController::actionType_</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="40" column="15" bodyfile="include/legged_rl_controllers/RlController.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1RlController_1a11914344db6de3d01afa619f5b7f0125" prot="protected" static="no" mutable="no">
+        <type>vector_t</type>
+        <definition>vector_t legged::RlController::desiredPosition_</definition>
+        <argsstring></argsstring>
+        <name>desiredPosition_</name>
+        <qualifiedname>legged::RlController::desiredPosition_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="41" column="12" bodyfile="include/legged_rl_controllers/RlController.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1RlController_1a7cf81edac649b0f2237bcdcd082ee0c0" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; rclcpp::Publisher&lt; std_msgs::msg::Float64MultiArray &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;rclcpp::Publisher&lt;std_msgs::msg::Float64MultiArray&gt; &gt; legged::RlController::publisher_</definition>
+        <argsstring></argsstring>
+        <name>publisher_</name>
+        <qualifiedname>legged::RlController::publisher_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="44" column="19" bodyfile="include/legged_rl_controllers/RlController.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1RlController_1a37af8c6ac5dc035f283dcd80e48a999b" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; realtime_tools::RealtimePublisher&lt; std_msgs::msg::Float64MultiArray &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;realtime_tools::RealtimePublisher&lt;std_msgs::msg::Float64MultiArray&gt; &gt; legged::RlController::publisherRealtime_</definition>
+        <argsstring></argsstring>
+        <name>publisherRealtime_</name>
+        <qualifiedname>legged::RlController::publisherRealtime_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="45" column="19" bodyfile="include/legged_rl_controllers/RlController.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlegged_1_1RlController_1a4a739648f43a617db4eed846514090a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>controller_interface::CallbackReturn</type>
+        <definition>controller_interface::CallbackReturn legged::RlController::on_init</definition>
+        <argsstring>() override</argsstring>
+        <name>on_init</name>
+        <qualifiedname>legged::RlController::on_init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="23" column="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1RlController_1a8555c53662801ea239eda8c80a22b485" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>controller_interface::return_type</type>
+        <definition>controller_interface::return_type legged::RlController::update</definition>
+        <argsstring>(const rclcpp::Time &amp;time, const rclcpp::Duration &amp;period) override</argsstring>
+        <name>update</name>
+        <qualifiedname>legged::RlController::update</qualifiedname>
+        <param>
+          <type>const rclcpp::Time &amp;</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>const rclcpp::Duration &amp;</type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="25" column="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1RlController_1a5ec7a46d74a76669365070e59a4a3b0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>controller_interface::CallbackReturn</type>
+        <definition>controller_interface::CallbackReturn legged::RlController::on_configure</definition>
+        <argsstring>(const rclcpp_lifecycle::State &amp;previous_state) override</argsstring>
+        <name>on_configure</name>
+        <qualifiedname>legged::RlController::on_configure</qualifiedname>
+        <param>
+          <type>const rclcpp_lifecycle::State &amp;</type>
+          <declname>previous_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="27" column="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1RlController_1aba099d55c29ee1b2e9fac44bebe1a542" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>controller_interface::CallbackReturn</type>
+        <definition>controller_interface::CallbackReturn legged::RlController::on_activate</definition>
+        <argsstring>(const rclcpp_lifecycle::State &amp;previous_state) override</argsstring>
+        <name>on_activate</name>
+        <qualifiedname>legged::RlController::on_activate</qualifiedname>
+        <param>
+          <type>const rclcpp_lifecycle::State &amp;</type>
+          <declname>previous_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="29" column="40"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classlegged_1_1RlController_1a65c46894b89687d98b8a86dbf61db44c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool legged::RlController::parserCommand</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>parserCommand</name>
+        <qualifiedname>legged::RlController::parserCommand</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="32" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1RlController_1a1d6bf846aff307ed6781b938ba7c7160" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool legged::RlController::parserObservation</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>parserObservation</name>
+        <qualifiedname>legged::RlController::parserObservation</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/RlController.h" line="33" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>legged::ControllerBase</label>
+        <link refid="classlegged_1_1ControllerBase" external="/home/runner/work/legged_control2_doc/legged_control2_doc/build/html/doc/rosdoc2/cross_reference/legged_controllers/legged_controllers.tag"/>
+      </node>
+      <node id="3">
+        <label>legged::OnnxController</label>
+        <link refid="classlegged_1_1OnnxController"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>legged::RlController</label>
+        <link refid="classlegged_1_1RlController"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>legged::ControllerBase</label>
+        <link refid="classlegged_1_1ControllerBase" external="/home/runner/work/legged_control2_doc/legged_control2_doc/build/html/doc/rosdoc2/cross_reference/legged_controllers/legged_controllers.tag"/>
+      </node>
+      <node id="1">
+        <label>legged::RlController</label>
+        <link refid="classlegged_1_1RlController"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/legged_rl_controllers/RlController.h" line="21" column="1" bodyfile="include/legged_rl_controllers/RlController.h" bodystart="21" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1RlController_1ac2b15483d8063cdfa3379b6552e6b94a" prot="protected" virt="non-virtual"><scope>legged::RlController</scope><name>actionType_</name></member>
+      <member refid="classlegged_1_1RlController_1a40f16b48c7b55107bbdcecc70c1f274b" prot="protected" virt="non-virtual"><scope>legged::RlController</scope><name>commandManager_</name></member>
+      <member refid="classlegged_1_1RlController_1a11914344db6de3d01afa619f5b7f0125" prot="protected" virt="non-virtual"><scope>legged::RlController</scope><name>desiredPosition_</name></member>
+      <member refid="classlegged_1_1RlController_1ad51ab0f4a259f089e17a6286c65db75e" prot="protected" virt="non-virtual"><scope>legged::RlController</scope><name>observationManager_</name></member>
+      <member refid="classlegged_1_1RlController_1aba099d55c29ee1b2e9fac44bebe1a542" prot="public" virt="non-virtual"><scope>legged::RlController</scope><name>on_activate</name></member>
+      <member refid="classlegged_1_1RlController_1a5ec7a46d74a76669365070e59a4a3b0a" prot="public" virt="non-virtual"><scope>legged::RlController</scope><name>on_configure</name></member>
+      <member refid="classlegged_1_1RlController_1a4a739648f43a617db4eed846514090a0" prot="public" virt="non-virtual"><scope>legged::RlController</scope><name>on_init</name></member>
+      <member refid="classlegged_1_1RlController_1a65c46894b89687d98b8a86dbf61db44c" prot="protected" virt="virtual"><scope>legged::RlController</scope><name>parserCommand</name></member>
+      <member refid="classlegged_1_1RlController_1a1d6bf846aff307ed6781b938ba7c7160" prot="protected" virt="virtual"><scope>legged::RlController</scope><name>parserObservation</name></member>
+      <member refid="classlegged_1_1RlController_1a7c0240904dc497e6d706f2245d7cc7da" prot="protected" virt="non-virtual"><scope>legged::RlController</scope><name>policy_</name></member>
+      <member refid="classlegged_1_1RlController_1a7cf81edac649b0f2237bcdcd082ee0c0" prot="protected" virt="non-virtual"><scope>legged::RlController</scope><name>publisher_</name></member>
+      <member refid="classlegged_1_1RlController_1a37af8c6ac5dc035f283dcd80e48a999b" prot="protected" virt="non-virtual"><scope>legged::RlController</scope><name>publisherRealtime_</name></member>
+      <member refid="classlegged_1_1RlController_1a8555c53662801ea239eda8c80a22b485" prot="public" virt="non-virtual"><scope>legged::RlController</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

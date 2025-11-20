@@ -1,0 +1,256 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>File RlController.h &mdash; legged_rl_controllers 3.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=dcedd534"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Program Listing for File RlController.h" href="program_listing_file_include_legged_rl_controllers_RlController.h.html" />
+    <link rel="prev" title="Program Listing for File Policy.h" href="program_listing_file_include_legged_rl_controllers_Policy.h.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            legged_rl_controllers
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">C++ API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#full-c-api">Full C++ API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#namespaces">Namespaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="namespace_legged.html">Namespace legged</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#classes-and-structs">Classes and Structs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1BaseAngVelObservationTerm.html">Class BaseAngVelObservationTerm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1BaseLinVelObservationTerm.html">Class BaseLinVelObservationTerm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1CommandManager.html">Class CommandManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1CommandObservationTerm.html">Class CommandObservationTerm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1CommandTerm.html">Class CommandTerm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1JointObservationTerm.html">Class JointObservationTerm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1JointPositionsObservationTerm.html">Class JointPositionsObservationTerm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1JointVelocitiesObservationTerm.html">Class JointVelocitiesObservationTerm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1LastActionObservationTerm.html">Class LastActionObservationTerm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1LocalObservationTerm.html">Class LocalObservationTerm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1ManagerBase.html">Template Class ManagerBase</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1ObservationManager.html">Class ObservationManager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1ObservationTerm.html">Class ObservationTerm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1OnnxController.html">Class OnnxController</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1OnnxPolicy.html">Class OnnxPolicy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1PhaseObservationTerm.html">Class PhaseObservationTerm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1Policy.html">Class Policy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1ProjectedGravityObservationTerm.html">Class ProjectedGravityObservationTerm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1RlController.html">Class RlController</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1VelocityTopicCommandTerm.html">Class VelocityTopicCommandTerm</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="function_OnnxPolicy_8h_1a966afa3b76b693ebf0268f15204c4f05.html">Template Function legged::operator&lt;&lt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_OnnxPolicy_8h_1a1290afcc76b523d41afbaccb8300c990.html">Template Function legged::parseCsv</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#directories">Directories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dir_include.html">Directory include</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_legged_rl_controllers.html">Directory legged_rl_controllers</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#files">Files</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="file_include_legged_rl_controllers_CommandManager.h.html">File CommandManager.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_legged_rl_controllers_ManagerBased.h.html">File ManagerBased.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_legged_rl_controllers_ManagerBasedImpl.h.html">File ManagerBasedImpl.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_legged_rl_controllers_ObservationManager.h.html">File ObservationManager.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_legged_rl_controllers_OnnxController.h.html">File OnnxController.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_legged_rl_controllers_OnnxPolicy.h.html">File OnnxPolicy.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_legged_rl_controllers_Policy.h.html">File Policy.h</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">File RlController.h</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../standards.html">Standard Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../standard_docs/CHANGELOG.html">CHANGELOG</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/CHANGELOG.html#changelog-for-package-legged-rl-controllers">Changelog for package legged_rl_controllers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id1">3.2.2 (2025-10-27)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id2">3.2.1 (2025-10-21)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id3">3.2.0 (2025-10-15)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id4">3.1.0 (2025-10-07)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id5">3.0.1 (2025-10-01)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id6">3.0.0 (2025-09-16)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id7">2.8.0 (2025-09-15)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id8">2.7.3 (2025-07-27)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id9">2.7.2 (2025-07-21)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id10">2.7.1 (2025-07-11)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id11">2.7.0 (2025-06-17)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id13">2.6.0 (2025-06-17)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id14">2.5.0 (2025-06-15)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id16">2.4.0 (2025-06-14)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id18">2.3.1 (2025-06-02)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id19">2.3.0 (2025-05-31)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id20">2.2.0 (2025-05-26)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id21">2.1.1 (2025-05-01)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id22">2.1.0 (2025-04-28)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id24">2.0.0 (2025-04-08)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id25">1.4.0 (2025-04-02)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id26">1.3.1 (2025-04-01)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id27">1.3.0 (2025-03-29)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id28">1.2.1 (2025-03-29)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id29">1.2.0 (2025-03-28)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id30">1.1.0 (2025-03-26)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../standard_docs/PACKAGE.html">PACKAGE</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">legged_rl_controllers</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">C++ API</a></li>
+      <li class="breadcrumb-item active">File RlController.h</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/file_include_legged_rl_controllers_RlController.h.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="file-rlcontroller-h">
+<span id="file-include-legged-rl-controllers-rlcontroller-h"></span><h1>File RlController.h<a class="headerlink" href="#file-rlcontroller-h" title="Link to this heading"></a></h1>
+<p>↰ <a class="reference internal" href="dir_include_legged_rl_controllers.html#dir-include-legged-rl-controllers"><span class="std std-ref">Parent directory</span></a> (<code class="docutils literal notranslate"><span class="pre">include/legged_rl_controllers</span></code>)</p>
+<nav class="contents local" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#definition-include-legged-rl-controllers-rlcontroller-h" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">include/legged_rl_controllers/RlController.h</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
+<li><p><a class="reference internal" href="#included-by" id="id3">Included By</a></p></li>
+<li><p><a class="reference internal" href="#namespaces" id="id4">Namespaces</a></p></li>
+<li><p><a class="reference internal" href="#classes" id="id5">Classes</a></p></li>
+</ul>
+</nav>
+<section id="definition-include-legged-rl-controllers-rlcontroller-h">
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">include/legged_rl_controllers/RlController.h</span></code>)<a class="headerlink" href="#definition-include-legged-rl-controllers-rlcontroller-h" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="program_listing_file_include_legged_rl_controllers_RlController.h.html">Program Listing for File RlController.h</a></li>
+</ul>
+</div>
+</section>
+<section id="includes">
+<h2>Includes<a class="headerlink" href="#includes" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">legged_controllers/ControllerBase.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">legged_rl_controllers/CommandManager.h</span></code> (<a class="reference internal" href="file_include_legged_rl_controllers_CommandManager.h.html#file-include-legged-rl-controllers-commandmanager-h"><span class="std std-ref">File CommandManager.h</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">legged_rl_controllers/ObservationManager.h</span></code> (<a class="reference internal" href="file_include_legged_rl_controllers_ObservationManager.h.html#file-include-legged-rl-controllers-observationmanager-h"><span class="std std-ref">File ObservationManager.h</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">legged_rl_controllers/Policy.h</span></code> (<a class="reference internal" href="file_include_legged_rl_controllers_Policy.h.html#file-include-legged-rl-controllers-policy-h"><span class="std std-ref">File Policy.h</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">memory</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">realtime_tools/realtime_publisher.hpp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">std_msgs/msg/float64_multi_array.hpp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p></li>
+</ul>
+</section>
+<section id="included-by">
+<h2>Included By<a class="headerlink" href="#included-by" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="file_include_legged_rl_controllers_OnnxController.h.html#file-include-legged-rl-controllers-onnxcontroller-h"><span class="std std-ref">File OnnxController.h</span></a></p></li>
+</ul>
+</section>
+<section id="namespaces">
+<h2>Namespaces<a class="headerlink" href="#namespaces" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="namespace_legged.html#namespace-legged"><span class="std std-ref">Namespace legged</span></a></p></li>
+</ul>
+</section>
+<section id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="classlegged_1_1RlController.html#exhale-class-classlegged-1-1rlcontroller"><span class="std std-ref">Class RlController</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="program_listing_file_include_legged_rl_controllers_Policy.h.html" class="btn btn-neutral float-left" title="Program Listing for File Policy.h" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="program_listing_file_include_legged_rl_controllers_RlController.h.html" class="btn btn-neutral float-right" title="Program Listing for File RlController.h" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright The &lt;legged_rl_controllers&gt; Contributors. License: Apache-2.0.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

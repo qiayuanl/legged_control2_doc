@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespacelegged" kind="namespace" language="C++">
+    <compoundname>legged</compoundname>
+    <innerclass refid="classlegged_1_1BaseAngVelObservationTerm" prot="public">legged::BaseAngVelObservationTerm</innerclass>
+    <innerclass refid="classlegged_1_1BaseLinVelObservationTerm" prot="public">legged::BaseLinVelObservationTerm</innerclass>
+    <innerclass refid="classlegged_1_1CommandManager" prot="public">legged::CommandManager</innerclass>
+    <innerclass refid="classlegged_1_1CommandObservationTerm" prot="public">legged::CommandObservationTerm</innerclass>
+    <innerclass refid="classlegged_1_1CommandTerm" prot="public">legged::CommandTerm</innerclass>
+    <innerclass refid="classlegged_1_1ControllerBase" prot="public">legged::ControllerBase</innerclass>
+    <innerclass refid="classlegged_1_1GmObserver" prot="public">legged::GmObserver</innerclass>
+    <innerclass refid="classlegged_1_1GmObserverRos2" prot="public">legged::GmObserverRos2</innerclass>
+    <innerclass refid="classlegged_1_1JointObservationTerm" prot="public">legged::JointObservationTerm</innerclass>
+    <innerclass refid="classlegged_1_1JointPositionsObservationTerm" prot="public">legged::JointPositionsObservationTerm</innerclass>
+    <innerclass refid="classlegged_1_1JointVelocitiesObservationTerm" prot="public">legged::JointVelocitiesObservationTerm</innerclass>
+    <innerclass refid="classlegged_1_1LastActionObservationTerm" prot="public">legged::LastActionObservationTerm</innerclass>
+    <innerclass refid="classlegged_1_1LeggedModel" prot="public">legged::LeggedModel</innerclass>
+    <innerclass refid="classlegged_1_1LinearKalmanFilter" prot="public">legged::LinearKalmanFilter</innerclass>
+    <innerclass refid="classlegged_1_1LinearKalmanFilterRos2" prot="public">legged::LinearKalmanFilterRos2</innerclass>
+    <innerclass refid="classlegged_1_1LinearKalmanFilterVisualization" prot="public">legged::LinearKalmanFilterVisualization</innerclass>
+    <innerclass refid="classlegged_1_1LocalObservationTerm" prot="public">legged::LocalObservationTerm</innerclass>
+    <innerclass refid="classlegged_1_1ManagerBase" prot="public">legged::ManagerBase</innerclass>
+    <innerclass refid="classlegged_1_1ObservationManager" prot="public">legged::ObservationManager</innerclass>
+    <innerclass refid="classlegged_1_1ObservationTerm" prot="public">legged::ObservationTerm</innerclass>
+    <innerclass refid="classlegged_1_1OnnxController" prot="public">legged::OnnxController</innerclass>
+    <innerclass refid="classlegged_1_1OnnxPolicy" prot="public">legged::OnnxPolicy</innerclass>
+    <innerclass refid="classlegged_1_1PhaseObservationTerm" prot="public">legged::PhaseObservationTerm</innerclass>
+    <innerclass refid="classlegged_1_1Policy" prot="public">legged::Policy</innerclass>
+    <innerclass refid="classlegged_1_1ProjectedGravityObservationTerm" prot="public">legged::ProjectedGravityObservationTerm</innerclass>
+    <innerclass refid="classlegged_1_1RlController" prot="public">legged::RlController</innerclass>
+    <innerclass refid="classlegged_1_1StandbyController" prot="public">legged::StandbyController</innerclass>
+    <innerclass refid="classlegged_1_1StateEstimator" prot="public">legged::StateEstimator</innerclass>
+    <innerclass refid="classlegged_1_1VelocityTopicCommandTerm" prot="public">legged::VelocityTopicCommandTerm</innerclass>
+    <innernamespace refid="structlegged_1_1LinearKalmanFilter_1_1Configurations">legged::LinearKalmanFilter</innernamespace>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="OnnxPolicy_8h_1a1290afcc76b523d41afbaccb8300c990" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt; T &gt; legged::parseCsv</definition>
+        <argsstring>(const std::string &amp;s, char delim=&apos;,&apos;)</argsstring>
+        <name>parseCsv</name>
+        <qualifiedname>legged::parseCsv</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>delim</declname>
+          <defval>&apos;,&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/OnnxPolicy.h" line="21" column="13" bodyfile="include/legged_rl_controllers/OnnxPolicy.h" bodystart="21" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="OnnxPolicy_8h_1a966afa3b76b693ebf0268f15204c4f05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; legged::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const std::vector&lt; T &gt; &amp;vec)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>legged::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; T &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/OnnxPolicy.h" line="40" column="1" bodyfile="include/legged_rl_controllers/OnnxPolicy.h" bodystart="40" bodyend="47"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/legged_rl_controllers/CommandManager.h" line="18" column="1"/>
+  </compounddef>
+</doxygen>

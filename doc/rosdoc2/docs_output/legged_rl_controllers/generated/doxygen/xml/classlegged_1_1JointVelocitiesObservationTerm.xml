@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1JointVelocitiesObservationTerm" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>legged::JointVelocitiesObservationTerm</compoundname>
+    <basecompoundref refid="classlegged_1_1JointObservationTerm" prot="public" virt="non-virtual">legged::JointObservationTerm</basecompoundref>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classlegged_1_1JointVelocitiesObservationTerm_1a458520eb58b05e4f2cac8c6730c8f1a4" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>vector_t</type>
+        <definition>vector_t legged::JointVelocitiesObservationTerm::evaluate</definition>
+        <argsstring>() override</argsstring>
+        <name>evaluate</name>
+        <qualifiedname>legged::JointVelocitiesObservationTerm::evaluate</qualifiedname>
+        <reimplements refid="classlegged_1_1ObservationTerm_1a93a4179a31588f23d4056cd3c4a560bf">evaluate</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="164" column="12" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="164" bodyend="164"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlegged_1_1JointVelocitiesObservationTerm_1af804b2c2f5766b6b85303f29285bdc38" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>legged::JointObservationTerm::JointObservationTerm</definition>
+        <argsstring>(std::vector&lt; std::string &gt; jointNameInPolicy)</argsstring>
+        <name>JointObservationTerm</name>
+        <qualifiedname>legged::JointVelocitiesObservationTerm::JointObservationTerm</qualifiedname>
+        <param>
+          <type>std::vector&lt; std::string &gt;</type>
+          <declname>jointNameInPolicy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="161" column="3" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="133" bodyend="133"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>legged::JointObservationTerm</label>
+        <link refid="classlegged_1_1JointObservationTerm"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>legged::JointVelocitiesObservationTerm</label>
+        <link refid="classlegged_1_1JointVelocitiesObservationTerm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>legged::ObservationTerm</label>
+        <link refid="classlegged_1_1ObservationTerm"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>legged::JointObservationTerm</label>
+        <link refid="classlegged_1_1JointObservationTerm"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>legged::JointVelocitiesObservationTerm</label>
+        <link refid="classlegged_1_1JointVelocitiesObservationTerm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>legged::ObservationTerm</label>
+        <link refid="classlegged_1_1ObservationTerm"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/legged_rl_controllers/ObservationManager.h" line="159" column="1" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="159" bodyend="165"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1JointVelocitiesObservationTerm_1a458520eb58b05e4f2cac8c6730c8f1a4" prot="protected" virt="virtual"><scope>legged::JointVelocitiesObservationTerm</scope><name>evaluate</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a3e8d732bf648855a3ea3a57f29efed70" prot="public" virt="non-virtual"><scope>legged::JointVelocitiesObservationTerm</scope><name>getHistoryLength</name></member>
+      <member refid="classlegged_1_1JointObservationTerm_1adc7ca9ae450fd6361b685e97313ddd9c" prot="public" virt="virtual"><scope>legged::JointVelocitiesObservationTerm</scope><name>getSize</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a8560e826f364246851120ad55902f78b" prot="public" virt="non-virtual"><scope>legged::JointVelocitiesObservationTerm</scope><name>getTotalSize</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a5850878005f89e8437c7e0a989229c93" prot="public" virt="non-virtual"><scope>legged::JointVelocitiesObservationTerm</scope><name>getValue</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1aa2c87d8eb6d40955ef0b899ff3282c7f" prot="protected" virt="non-virtual"><scope>legged::JointVelocitiesObservationTerm</scope><name>history_</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a8224b2ebe2adc9ec9774b06c4eae8c4d" prot="protected" virt="non-virtual"><scope>legged::JointVelocitiesObservationTerm</scope><name>historyLength_</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a67484fe754557f02bbd193564344ec42" prot="protected" virt="non-virtual"><scope>legged::JointVelocitiesObservationTerm</scope><name>initialized_</name></member>
+      <member refid="classlegged_1_1JointObservationTerm_1ac1025d3a9d2923bdb3fd244e154f1eee" prot="protected" virt="non-virtual"><scope>legged::JointVelocitiesObservationTerm</scope><name>jointNameInPolicy_</name></member>
+      <member refid="classlegged_1_1JointVelocitiesObservationTerm_1af804b2c2f5766b6b85303f29285bdc38" prot="public" virt="non-virtual"><scope>legged::JointVelocitiesObservationTerm</scope><name>JointObservationTerm</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1aedd7dcb2346a282bb60ff5d6708f5b10" prot="protected" virt="non-virtual"><scope>legged::JointVelocitiesObservationTerm</scope><name>model_</name></member>
+      <member refid="classlegged_1_1JointObservationTerm_1ab8f60518c2d7b46239175bca5b6d0666" prot="protected" virt="virtual"><scope>legged::JointVelocitiesObservationTerm</scope><name>modify</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1aa1506ca6648380d406baba2a7d262103" prot="public" virt="non-virtual"><scope>legged::JointVelocitiesObservationTerm</scope><name>ObservationTerm</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a2d4d7c6454eb10423d92891c9962d0c1" prot="public" virt="virtual"><scope>legged::JointVelocitiesObservationTerm</scope><name>reset</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1ad0d439aa8b3e17ffee134cc63f9719fc" prot="public" virt="non-virtual"><scope>legged::JointVelocitiesObservationTerm</scope><name>setHistoryLength</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1ae03af17c76ff709989f80fb8f7008eec" prot="public" virt="virtual"><scope>legged::JointVelocitiesObservationTerm</scope><name>setModel</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1aac6c0aef459411eb2f3e88fa31298c65" prot="public" virt="non-virtual"><scope>legged::JointVelocitiesObservationTerm</scope><name>SharedPtr</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a6631835909df0292eb219f84df0f380e" prot="public" virt="virtual"><scope>legged::JointVelocitiesObservationTerm</scope><name>~ObservationTerm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

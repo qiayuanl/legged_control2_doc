@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData" kind="struct" language="C++" prot="public">
+    <compoundname>mujoco_ros2_control::MujocoSystem::SensorData</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData_1a33fb3073dd1f566101ba64f4c38c21b1" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mujoco_ros2_control::MujocoSystem::SensorData&lt; T &gt;::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::SensorData::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="80" column="17" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData_1af820273514bb30ec785951aab8d6f9a9" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T mujoco_ros2_control::MujocoSystem::SensorData&lt; T &gt;::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::SensorData::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="81" column="7" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData_1a8673e285788e5607e9b2a69cd1df12dc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mujoco_ros2_control::MujocoSystem::SensorData&lt; T &gt;::mj_sensor_index</definition>
+        <argsstring></argsstring>
+        <name>mj_sensor_index</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::SensorData::mj_sensor_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="82" column="9" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="78" column="3" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="79" bodyend="83"/>
+    <listofallmembers>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData_1af820273514bb30ec785951aab8d6f9a9" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::SensorData</scope><name>data</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData_1a8673e285788e5607e9b2a69cd1df12dc" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::SensorData</scope><name>mj_sensor_index</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData_1a33fb3073dd1f566101ba64f4c38c21b1" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::SensorData</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

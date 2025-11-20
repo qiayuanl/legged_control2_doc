@@ -1,0 +1,291 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class StandbyController &mdash; legged_controllers 3.2.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/collapsible-lists/css/tree_view.css?v=a885cde7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=dcedd534"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js?v=73120307"></script>
+      <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js?v=660e4f45"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class StateEstimator" href="classlegged_1_1StateEstimator.html" />
+    <link rel="prev" title="Class LinearKalmanFilterVisualization" href="classlegged_1_1LinearKalmanFilterVisualization.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            legged_controllers
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">C++ API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#class-hierarchy">Class Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#file-hierarchy">File Hierarchy</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#full-c-api">Full C++ API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#namespaces">Namespaces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="namespace_controller_interface.html">Namespace controller_interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_legged.html">Namespace legged</a></li>
+<li class="toctree-l4"><a class="reference internal" href="namespace_semantic_components.html">Namespace semantic_components</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#classes-and-structs">Classes and Structs</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1ControllerBase.html">Class ControllerBase</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1GmObserverRos2.html">Class GmObserverRos2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1LinearKalmanFilterRos2.html">Class LinearKalmanFilterRos2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1LinearKalmanFilterVisualization.html">Class LinearKalmanFilterVisualization</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Class StandbyController</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classlegged_1_1StateEstimator.html">Class StateEstimator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classsemantic__components_1_1JointSensors.html">Class JointSensors</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#enums">Enums</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="enum_visualization__helpers_8h_1aedc28248df61a9e3c01bb5210e0e6512.html">Enum Color</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#functions">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="function_visualization__helpers_8h_1a266bc720d7192fb6bb572487691a85ce.html">Function legged::getColorFromId</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_visualization__helpers_8h_1a0ebaa758e4e58ae0e2aa1e2b7433be97.html">Function legged::getColorMsg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_visualization__helpers_8h_1a9d7b9ffb5bdd3027eff620cc2e1e3017.html">Function legged::getColorMsgFromId</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_visualization__helpers_8h_1a6d9e1b8a32f48aa9012e53c47faecb38.html">Function legged::getEllipseMsg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_visualization__helpers_8h_1afc3ee56d2eedcf24ae1a1b11ee5eba71.html">Function legged::getLineMsg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_visualization__helpers_8h_1af657af087c0c7a5030a858066b8264f4.html">Function legged::getOrientationMsg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_visualization__helpers_8h_1ac82beddc246bdab580d88402dceb448f.html">Function legged::getPointMsg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_visualization__helpers_8h_1a88fe8ae4a77b7550f6e0178995a58e8f.html">Function legged::getRGB</a></li>
+<li class="toctree-l4"><a class="reference internal" href="function_StateEstimator_8h_1ad1c56be35a48c34bc5aa700c324a9e20.html">Template Function legged::yawQuaternion</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#directories">Directories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dir_include.html">Directory include</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dir_include_legged_controllers.html">Directory legged_controllers</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#files">Files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="file_include_legged_controllers_ControllerBase.h.html">File ControllerBase.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_legged_controllers_GmObserverRos2.h.html">File GmObserverRos2.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_legged_controllers_JointSensors.h.html">File JointSensors.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_legged_controllers_LinearKalmanFilterRos2.h.html">File LinearKalmanFilterRos2.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_legged_controllers_StandbyController.h.html">File StandbyController.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_legged_controllers_StateEstimator.h.html">File StateEstimator.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="file_include_legged_controllers_visualization_helpers.h.html">File visualization_helpers.h</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../standards.html">Standard Documents</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../standard_docs/CHANGELOG.html">CHANGELOG</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../standard_docs/CHANGELOG.html#changelog-for-package-legged-controllers">Changelog for package legged_controllers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id1">3.2.2 (2025-10-27)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id2">3.2.1 (2025-10-21)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id3">3.2.0 (2025-10-15)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id4">3.1.0 (2025-10-07)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id5">3.0.1 (2025-10-01)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id6">3.0.0 (2025-09-16)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id7">2.8.0 (2025-09-15)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id8">2.7.3 (2025-07-27)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id9">2.7.2 (2025-07-21)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id10">2.7.1 (2025-07-11)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id11">2.7.0 (2025-06-17)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id12">2.6.0 (2025-06-17)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id13">2.5.0 (2025-06-15)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id15">2.4.0 (2025-06-14)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id16">2.3.1 (2025-06-02)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id18">2.3.0 (2025-05-31)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id19">2.2.0 (2025-05-26)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id21">2.1.1 (2025-05-01)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id23">2.1.0 (2025-04-28)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id26">2.0.0 (2025-04-08)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id27">1.4.0 (2025-04-02)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id28">1.3.1 (2025-04-01)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id29">1.3.0 (2025-03-29)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id30">1.2.1 (2025-03-29)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id31">1.2.0 (2025-03-28)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../standard_docs/CHANGELOG.html#id32">1.1.0 (2025-03-26)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../standard_docs/PACKAGE.html">PACKAGE</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">legged_controllers</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">C++ API</a></li>
+      <li class="breadcrumb-item active">Class StandbyController</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/generated/classlegged_1_1StandbyController.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="class-standbycontroller">
+<span id="exhale-class-classlegged-1-1standbycontroller"></span><h1>Class StandbyController<a class="headerlink" href="#class-standbycontroller" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p>Defined in <a class="reference internal" href="file_include_legged_controllers_StandbyController.h.html#file-include-legged-controllers-standbycontroller-h"><span class="std std-ref">File StandbyController.h</span></a></p></li>
+</ul>
+<section id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Link to this heading"></a></h2>
+<section id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">legged::ControllerBase</span></code> (<a class="reference internal" href="classlegged_1_1ControllerBase.html#exhale-class-classlegged-1-1controllerbase"><span class="std std-ref">Class ControllerBase</span></a>)</p></li>
+</ul>
+</section>
+</section>
+<section id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Link to this heading"></a></h2>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged17StandbyControllerE">
+<span id="_CPPv3N6legged17StandbyControllerE"></span><span id="_CPPv2N6legged17StandbyControllerE"></span><span id="legged::StandbyController"></span><span class="target" id="classlegged_1_1StandbyController"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">StandbyController</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><span class="n"><span class="pre">legged</span></span><span class="p"><span class="pre">::</span></span><a class="reference internal" href="classlegged_1_1ControllerBase.html#_CPPv4N6legged14ControllerBaseE" title="legged::ControllerBase"><span class="n"><span class="pre">ControllerBase</span></span></a><a class="headerlink" href="#_CPPv4N6legged17StandbyControllerE" title="Link to this definition"></a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged17StandbyController7on_initEv">
+<span id="_CPPv3N6legged17StandbyController7on_initEv"></span><span id="_CPPv2N6legged17StandbyController7on_initEv"></span><span id="legged::StandbyController::on_init"></span><span class="target" id="classlegged_1_1StandbyController_1ae21ade3c27978502776a0b64ebbcd614"></span><span class="n"><span class="pre">controller_interface</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">CallbackReturn</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">on_init</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N6legged17StandbyController7on_initEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged17StandbyController6updateERKN6rclcpp4TimeERKN6rclcpp8DurationE">
+<span id="_CPPv3N6legged17StandbyController6updateERKN6rclcpp4TimeERKN6rclcpp8DurationE"></span><span id="_CPPv2N6legged17StandbyController6updateERKN6rclcpp4TimeERKN6rclcpp8DurationE"></span><span id="legged::StandbyController::update__rclcpp::TimeCR.rclcpp::DurationCR"></span><span class="target" id="classlegged_1_1StandbyController_1a07bc09542afdb143fcac1eaa58cf245f"></span><span class="n"><span class="pre">controller_interface</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">return_type</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">update</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">rclcpp</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Time</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">time</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">rclcpp</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Duration</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">period</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N6legged17StandbyController6updateERKN6rclcpp4TimeERKN6rclcpp8DurationE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged17StandbyController12on_configureERKN16rclcpp_lifecycle5StateE">
+<span id="_CPPv3N6legged17StandbyController12on_configureERKN16rclcpp_lifecycle5StateE"></span><span id="_CPPv2N6legged17StandbyController12on_configureERKN16rclcpp_lifecycle5StateE"></span><span id="legged::StandbyController::on_configure__rclcpp_lifecycle::StateCR"></span><span class="target" id="classlegged_1_1StandbyController_1a2e8c46ccf4be1c3943b205ec2f43bd82"></span><span class="n"><span class="pre">controller_interface</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">CallbackReturn</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">on_configure</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">rclcpp_lifecycle</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">State</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">previous_state</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N6legged17StandbyController12on_configureERKN16rclcpp_lifecycle5StateE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged17StandbyController11on_activateERKN16rclcpp_lifecycle5StateE">
+<span id="_CPPv3N6legged17StandbyController11on_activateERKN16rclcpp_lifecycle5StateE"></span><span id="_CPPv2N6legged17StandbyController11on_activateERKN16rclcpp_lifecycle5StateE"></span><span id="legged::StandbyController::on_activate__rclcpp_lifecycle::StateCR"></span><span class="target" id="classlegged_1_1StandbyController_1a17a61db3bc478c02aed811fb0bd83840"></span><span class="n"><span class="pre">controller_interface</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">CallbackReturn</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">on_activate</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">rclcpp_lifecycle</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">State</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">previous_state</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N6legged17StandbyController11on_activateERKN16rclcpp_lifecycle5StateE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged17StandbyController16defaultPosition_E">
+<span id="_CPPv3N6legged17StandbyController16defaultPosition_E"></span><span id="_CPPv2N6legged17StandbyController16defaultPosition_E"></span><span id="legged::StandbyController::defaultPosition___vector_t"></span><span class="target" id="classlegged_1_1StandbyController_1aca0f5a467c9f882a459d195636fb4dc4"></span><span class="n"><span class="pre">vector_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">defaultPosition_</span></span></span><a class="headerlink" href="#_CPPv4N6legged17StandbyController16defaultPosition_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged17StandbyController3kp_E">
+<span id="_CPPv3N6legged17StandbyController3kp_E"></span><span id="_CPPv2N6legged17StandbyController3kp_E"></span><span id="legged::StandbyController::kp___vector_t"></span><span class="target" id="classlegged_1_1StandbyController_1a47774a839a92bd5870ec60a5b3cb6048"></span><span class="n"><span class="pre">vector_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">kp_</span></span></span><a class="headerlink" href="#_CPPv4N6legged17StandbyController3kp_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged17StandbyController3kd_E">
+<span id="_CPPv3N6legged17StandbyController3kd_E"></span><span id="_CPPv2N6legged17StandbyController3kd_E"></span><span id="legged::StandbyController::kd___vector_t"></span><span class="target" id="classlegged_1_1StandbyController_1abae1c18f17cd444b9a56f2acb70dd725"></span><span class="n"><span class="pre">vector_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">kd_</span></span></span><a class="headerlink" href="#_CPPv4N6legged17StandbyController3kd_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged17StandbyController10totalTime_E">
+<span id="_CPPv3N6legged17StandbyController10totalTime_E"></span><span id="_CPPv2N6legged17StandbyController10totalTime_E"></span><span id="legged::StandbyController::totalTime___scalar_t"></span><span class="target" id="classlegged_1_1StandbyController_1a0f9078bfd133d496b7a30a010f2fbfa8"></span><span class="n"><span class="pre">scalar_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">totalTime_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="m"><span class="pre">2.</span></span><span class="p"><span class="pre">}</span></span><a class="headerlink" href="#_CPPv4N6legged17StandbyController10totalTime_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged17StandbyController9maxError_E">
+<span id="_CPPv3N6legged17StandbyController9maxError_E"></span><span id="_CPPv2N6legged17StandbyController9maxError_E"></span><span id="legged::StandbyController::maxError___scalar_t"></span><span class="target" id="classlegged_1_1StandbyController_1a7eee7af6c19e6141dcdd43a691087a1a"></span><span class="n"><span class="pre">scalar_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">maxError_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="m"><span class="pre">0.34</span></span><span class="p"><span class="pre">}</span></span><a class="headerlink" href="#_CPPv4N6legged17StandbyController9maxError_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged17StandbyController14startPosition_E">
+<span id="_CPPv3N6legged17StandbyController14startPosition_E"></span><span id="_CPPv2N6legged17StandbyController14startPosition_E"></span><span id="legged::StandbyController::startPosition___vector_t"></span><span class="target" id="classlegged_1_1StandbyController_1ae6b3487dead208e80d25c78c38f44b8e"></span><span class="n"><span class="pre">vector_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">startPosition_</span></span></span><a class="headerlink" href="#_CPPv4N6legged17StandbyController14startPosition_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged17StandbyController10startTime_E">
+<span id="_CPPv3N6legged17StandbyController10startTime_E"></span><span id="_CPPv2N6legged17StandbyController10startTime_E"></span><span id="legged::StandbyController::startTime___rclcpp::Time"></span><span class="target" id="classlegged_1_1StandbyController_1aab3ad22ce66f4e83098aa90421597632"></span><span class="n"><span class="pre">rclcpp</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">Time</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">startTime_</span></span></span><a class="headerlink" href="#_CPPv4N6legged17StandbyController10startTime_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N6legged17StandbyController12firstUpdate_E">
+<span id="_CPPv3N6legged17StandbyController12firstUpdate_E"></span><span id="_CPPv2N6legged17StandbyController12firstUpdate_E"></span><span id="legged::StandbyController::firstUpdate___b"></span><span class="target" id="classlegged_1_1StandbyController_1a4b0ec3ad7820db3c99771302e9bc2fb5"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">firstUpdate_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">{</span></span><span class="k"><span class="pre">true</span></span><span class="p"><span class="pre">}</span></span><a class="headerlink" href="#_CPPv4N6legged17StandbyController12firstUpdate_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="classlegged_1_1LinearKalmanFilterVisualization.html" class="btn btn-neutral float-left" title="Class LinearKalmanFilterVisualization" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="classlegged_1_1StateEstimator.html" class="btn btn-neutral float-right" title="Class StateEstimator" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright The &lt;legged_controllers&gt; Contributors. License: Apache-2.0.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData" kind="struct" language="C++" prot="public">
+    <compoundname>mujoco_ros2_control::MujocoSystem::IMUSensorData</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData_1ac1db7e0319fd95530214a2785da38af9" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string mujoco_ros2_control::MujocoSystem::IMUSensorData::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::IMUSensorData::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="94" column="17" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData_1aa9c83dc2867fd9c2a44b2ac882738034" prot="public" static="no" mutable="no">
+        <type><ref refid="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData" kindref="compound">SensorData</ref>&lt; Eigen::Quaternion&lt; double &gt; &gt;</type>
+        <definition>SensorData&lt;Eigen::Quaternion&lt;double&gt; &gt; mujoco_ros2_control::MujocoSystem::IMUSensorData::orientation</definition>
+        <argsstring></argsstring>
+        <name>orientation</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::IMUSensorData::orientation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="95" column="16" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData_1a5f5124f485d87e362656a17e7e243c3a" prot="public" static="no" mutable="no">
+        <type><ref refid="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData" kindref="compound">SensorData</ref>&lt; Eigen::Vector3d &gt;</type>
+        <definition>SensorData&lt;Eigen::Vector3d&gt; mujoco_ros2_control::MujocoSystem::IMUSensorData::angular_velocity</definition>
+        <argsstring></argsstring>
+        <name>angular_velocity</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::IMUSensorData::angular_velocity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="96" column="16" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData_1afc6ec91913fa2d60ab5f786dab4a18cd" prot="public" static="no" mutable="no">
+        <type><ref refid="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData" kindref="compound">SensorData</ref>&lt; Eigen::Vector3d &gt;</type>
+        <definition>SensorData&lt;Eigen::Vector3d&gt; mujoco_ros2_control::MujocoSystem::IMUSensorData::linear_acceleration</definition>
+        <argsstring></argsstring>
+        <name>linear_acceleration</name>
+        <qualifiedname>mujoco_ros2_control::MujocoSystem::IMUSensorData::linear_acceleration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="97" column="16" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>mujoco_ros2_control::MujocoSystem::SensorData&lt; Eigen::Quaternion&lt; double &gt; &gt;</label>
+        <link refid="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData"/>
+      </node>
+      <node id="3">
+        <label>mujoco_ros2_control::MujocoSystem::SensorData&lt; Eigen::Vector3d &gt;</label>
+        <link refid="structmujoco__ros2__control_1_1MujocoSystem_1_1SensorData"/>
+      </node>
+      <node id="1">
+        <label>mujoco_ros2_control::MujocoSystem::IMUSensorData</label>
+        <link refid="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>orientation</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>angular_velocity</edgelabel>
+          <edgelabel>linear_acceleration</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/mujoco_ros2_control/mujoco_system.hpp" line="92" column="3" bodyfile="include/mujoco_ros2_control/mujoco_system.hpp" bodystart="93" bodyend="98"/>
+    <listofallmembers>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData_1a5f5124f485d87e362656a17e7e243c3a" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::IMUSensorData</scope><name>angular_velocity</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData_1afc6ec91913fa2d60ab5f786dab4a18cd" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::IMUSensorData</scope><name>linear_acceleration</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData_1ac1db7e0319fd95530214a2785da38af9" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::IMUSensorData</scope><name>name</name></member>
+      <member refid="structmujoco__ros2__control_1_1MujocoSystem_1_1IMUSensorData_1aa9c83dc2867fd9c2a44b2ac882738034" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoSystem::IMUSensorData</scope><name>orientation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

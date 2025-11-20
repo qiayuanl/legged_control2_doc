@@ -1,0 +1,339 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmujoco__ros2__control_1_1MujocoRos2Control" kind="class" language="C++" prot="public">
+    <compoundname>mujoco_ros2_control::MujocoRos2Control</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoRos2Control_1a0f9618755950bb656a21b5ddb949efac" prot="private" static="no" mutable="no">
+        <type>rclcpp::Node::SharedPtr</type>
+        <definition>rclcpp::Node::SharedPtr mujoco_ros2_control::MujocoRos2Control::node_</definition>
+        <argsstring></argsstring>
+        <name>node_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2Control::node_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control.hpp" line="50" column="27" bodyfile="include/mujoco_ros2_control/mujoco_ros2_control.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoRos2Control_1a4817e5b63ff9357eaff337e17a4742ed" prot="private" static="no" mutable="no">
+        <type>mjModel *</type>
+        <definition>mjModel* mujoco_ros2_control::MujocoRos2Control::mj_model_</definition>
+        <argsstring></argsstring>
+        <name>mj_model_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2Control::mj_model_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control.hpp" line="51" column="11" bodyfile="include/mujoco_ros2_control/mujoco_ros2_control.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoRos2Control_1a398e256b4b9804437775da62053f83b2" prot="private" static="no" mutable="no">
+        <type>mjData *</type>
+        <definition>mjData* mujoco_ros2_control::MujocoRos2Control::mj_data_</definition>
+        <argsstring></argsstring>
+        <name>mj_data_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2Control::mj_data_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control.hpp" line="52" column="10" bodyfile="include/mujoco_ros2_control/mujoco_ros2_control.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoRos2Control_1ab70a31d72e12cad60287c7dd2d2e693d" prot="private" static="no" mutable="no">
+        <type>rclcpp::Logger</type>
+        <definition>rclcpp::Logger mujoco_ros2_control::MujocoRos2Control::logger_</definition>
+        <argsstring></argsstring>
+        <name>logger_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2Control::logger_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control.hpp" line="54" column="18" bodyfile="include/mujoco_ros2_control/mujoco_ros2_control.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoRos2Control_1a7aef99015571464f079dc1421e6cb4d9" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; pluginlib::ClassLoader&lt; <ref refid="classmujoco__ros2__control_1_1MujocoSystemInterface" kindref="compound">MujocoSystemInterface</ref> &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;pluginlib::ClassLoader&lt;MujocoSystemInterface&gt; &gt; mujoco_ros2_control::MujocoRos2Control::robot_hw_sim_loader_</definition>
+        <argsstring></argsstring>
+        <name>robot_hw_sim_loader_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2Control::robot_hw_sim_loader_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control.hpp" line="55" column="19" bodyfile="include/mujoco_ros2_control/mujoco_ros2_control.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoRos2Control_1ab2f669eb4641297e208328a0591a997b" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; controller_manager::ControllerManager &gt;</type>
+        <definition>std::shared_ptr&lt;controller_manager::ControllerManager&gt; mujoco_ros2_control::MujocoRos2Control::controller_manager_</definition>
+        <argsstring></argsstring>
+        <name>controller_manager_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2Control::controller_manager_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control.hpp" line="57" column="19" bodyfile="include/mujoco_ros2_control/mujoco_ros2_control.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoRos2Control_1a59f2575ac62285186918b291014ff5f4" prot="private" static="no" mutable="no">
+        <type>rclcpp::executors::MultiThreadedExecutor::SharedPtr</type>
+        <definition>rclcpp::executors::MultiThreadedExecutor::SharedPtr mujoco_ros2_control::MujocoRos2Control::cm_executor_</definition>
+        <argsstring></argsstring>
+        <name>cm_executor_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2Control::cm_executor_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control.hpp" line="58" column="55" bodyfile="include/mujoco_ros2_control/mujoco_ros2_control.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoRos2Control_1a176195395ecd9a05270ed859d7af4946" prot="private" static="no" mutable="no">
+        <type>std::thread</type>
+        <definition>std::thread mujoco_ros2_control::MujocoRos2Control::cm_thread_</definition>
+        <argsstring></argsstring>
+        <name>cm_thread_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2Control::cm_thread_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control.hpp" line="59" column="15" bodyfile="include/mujoco_ros2_control/mujoco_ros2_control.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoRos2Control_1a37a7d1f074604ed22ca04c4c2169df75" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool mujoco_ros2_control::MujocoRos2Control::stop_cm_thread_</definition>
+        <argsstring></argsstring>
+        <name>stop_cm_thread_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2Control::stop_cm_thread_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control.hpp" line="60" column="8" bodyfile="include/mujoco_ros2_control/mujoco_ros2_control.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoRos2Control_1abc11f61039b1b10a74a8c65760e44961" prot="private" static="no" mutable="no">
+        <type>rclcpp::Duration</type>
+        <definition>rclcpp::Duration mujoco_ros2_control::MujocoRos2Control::control_period_</definition>
+        <argsstring></argsstring>
+        <name>control_period_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2Control::control_period_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control.hpp" line="61" column="20" bodyfile="include/mujoco_ros2_control/mujoco_ros2_control.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoRos2Control_1a5ccee2e714d58c61f5aebba3ac2a014a" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time mujoco_ros2_control::MujocoRos2Control::last_update_sim_time_ros_</definition>
+        <argsstring></argsstring>
+        <name>last_update_sim_time_ros_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2Control::last_update_sim_time_ros_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control.hpp" line="63" column="16" bodyfile="include/mujoco_ros2_control/mujoco_ros2_control.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoRos2Control_1a7d605230b5fd4a893ac3478e6991d3b6" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; rosgraph_msgs::msg::Clock &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;rosgraph_msgs::msg::Clock&gt;::SharedPtr mujoco_ros2_control::MujocoRos2Control::clock_publisher_</definition>
+        <argsstring></argsstring>
+        <name>clock_publisher_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2Control::clock_publisher_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control.hpp" line="64" column="33" bodyfile="include/mujoco_ros2_control/mujoco_ros2_control.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoRos2Control_1a2841f36f3893edb559d5971f2b3959f1" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, rclcpp::Publisher&lt; nav_msgs::msg::Odometry &gt;::SharedPtr &gt;</type>
+        <definition>std::map&lt;std::string, rclcpp::Publisher&lt;nav_msgs::msg::Odometry&gt;::SharedPtr&gt; mujoco_ros2_control::MujocoRos2Control::odom_publishers_</definition>
+        <argsstring></argsstring>
+        <name>odom_publishers_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2Control::odom_publishers_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control.hpp" line="65" column="13" bodyfile="include/mujoco_ros2_control/mujoco_ros2_control.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmujoco__ros2__control_1_1MujocoRos2Control_1af792d5a22f9cec854b6fe152170ff193" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, nav_msgs::msg::Odometry &gt;</type>
+        <definition>std::map&lt;std::string, nav_msgs::msg::Odometry&gt; mujoco_ros2_control::MujocoRos2Control::odom_msgs_</definition>
+        <argsstring></argsstring>
+        <name>odom_msgs_</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2Control::odom_msgs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control.hpp" line="66" column="12" bodyfile="include/mujoco_ros2_control/mujoco_ros2_control.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoRos2Control_1aa0855370702e12e7b25ee9c0bb79689d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mujoco_ros2_control::MujocoRos2Control::MujocoRos2Control</definition>
+        <argsstring>(rclcpp::Node::SharedPtr &amp;node, mjModel *mujoco_model, mjData *mujoco_data)</argsstring>
+        <name>MujocoRos2Control</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2Control::MujocoRos2Control</qualifiedname>
+        <param>
+          <type>rclcpp::Node::SharedPtr &amp;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>mjModel *</type>
+          <declname>mujoco_model</declname>
+        </param>
+        <param>
+          <type>mjData *</type>
+          <declname>mujoco_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control.hpp" line="41" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoRos2Control_1a927a9d3221c5485385d0ca97d72e1884" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mujoco_ros2_control::MujocoRos2Control::~MujocoRos2Control</definition>
+        <argsstring>()</argsstring>
+        <name>~MujocoRos2Control</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2Control::~MujocoRos2Control</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control.hpp" line="42" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoRos2Control_1a94de2c782bf1e50efe3ee834a071da2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mujoco_ros2_control::MujocoRos2Control::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2Control::init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control.hpp" line="43" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoRos2Control_1a4c23e1fc1b2e0d3d20c9a3cf71291f2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mujoco_ros2_control::MujocoRos2Control::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2Control::update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control.hpp" line="44" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoRos2Control_1a11c2866ec24bacd256801ec6beb5f7c2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mujoco_ros2_control::MujocoRos2Control::publish_sim_time</definition>
+        <argsstring>(rclcpp::Time sim_time)</argsstring>
+        <name>publish_sim_time</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2Control::publish_sim_time</qualifiedname>
+        <param>
+          <type>rclcpp::Time</type>
+          <declname>sim_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control.hpp" line="47" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__ros2__control_1_1MujocoRos2Control_1a6f9f146500a7fca5aaac59636e36c459" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mujoco_ros2_control::MujocoRos2Control::publish_poses</definition>
+        <argsstring>(rclcpp::Time sim_time)</argsstring>
+        <name>publish_poses</name>
+        <qualifiedname>mujoco_ros2_control::MujocoRos2Control::publish_poses</qualifiedname>
+        <param>
+          <type>rclcpp::Time</type>
+          <declname>sim_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_ros2_control/mujoco_ros2_control.hpp" line="48" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/mujoco_ros2_control/mujoco_ros2_control.hpp" line="38" column="1" bodyfile="include/mujoco_ros2_control/mujoco_ros2_control.hpp" bodystart="39" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a7d605230b5fd4a893ac3478e6991d3b6" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2Control</scope><name>clock_publisher_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a59f2575ac62285186918b291014ff5f4" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2Control</scope><name>cm_executor_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a176195395ecd9a05270ed859d7af4946" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2Control</scope><name>cm_thread_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1abc11f61039b1b10a74a8c65760e44961" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2Control</scope><name>control_period_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1ab2f669eb4641297e208328a0591a997b" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2Control</scope><name>controller_manager_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a94de2c782bf1e50efe3ee834a071da2a" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2Control</scope><name>init</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a5ccee2e714d58c61f5aebba3ac2a014a" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2Control</scope><name>last_update_sim_time_ros_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1ab70a31d72e12cad60287c7dd2d2e693d" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2Control</scope><name>logger_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a398e256b4b9804437775da62053f83b2" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2Control</scope><name>mj_data_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a4817e5b63ff9357eaff337e17a4742ed" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2Control</scope><name>mj_model_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1aa0855370702e12e7b25ee9c0bb79689d" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2Control</scope><name>MujocoRos2Control</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a0f9618755950bb656a21b5ddb949efac" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2Control</scope><name>node_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1af792d5a22f9cec854b6fe152170ff193" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2Control</scope><name>odom_msgs_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a2841f36f3893edb559d5971f2b3959f1" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2Control</scope><name>odom_publishers_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a6f9f146500a7fca5aaac59636e36c459" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2Control</scope><name>publish_poses</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a11c2866ec24bacd256801ec6beb5f7c2" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2Control</scope><name>publish_sim_time</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a7aef99015571464f079dc1421e6cb4d9" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2Control</scope><name>robot_hw_sim_loader_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a37a7d1f074604ed22ca04c4c2169df75" prot="private" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2Control</scope><name>stop_cm_thread_</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a4c23e1fc1b2e0d3d20c9a3cf71291f2b" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2Control</scope><name>update</name></member>
+      <member refid="classmujoco__ros2__control_1_1MujocoRos2Control_1a927a9d3221c5485385d0ca97d72e1884" prot="public" virt="non-virtual"><scope>mujoco_ros2_control::MujocoRos2Control</scope><name>~MujocoRos2Control</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

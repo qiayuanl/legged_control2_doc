@@ -1,0 +1,631 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1LeggedModel" kind="class" language="C++" prot="public">
+    <compoundname>legged::LeggedModel</compoundname>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlegged_1_1LeggedModel_1af43c4f8e9ed02589f2dad8556e28a0af" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classlegged_1_1LeggedModel" kindref="compound">LeggedModel</ref> &gt;</type>
+        <definition>using legged::LeggedModel::SharedPtr =  std::shared_ptr&lt;LeggedModel&gt;</definition>
+        <argsstring></argsstring>
+        <name>SharedPtr</name>
+        <qualifiedname>legged::LeggedModel::SharedPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="19" column="3" bodyfile="include/legged_model/LeggedModel.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classlegged_1_1LeggedModel_1a9068fcf9996af9e8899944aafaa149ae" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; pinocchio::Model &gt;</type>
+        <definition>std::shared_ptr&lt;pinocchio::Model&gt; legged::LeggedModel::pinModelPtr_</definition>
+        <argsstring></argsstring>
+        <name>pinModelPtr_</name>
+        <qualifiedname>legged::LeggedModel::pinModelPtr_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="57" column="19" bodyfile="include/legged_model/LeggedModel.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LeggedModel_1ab96ebaa55f74a30919d20db19eac053f" prot="protected" static="no" mutable="no">
+        <type>std::unique_ptr&lt; pinocchio::Data &gt;</type>
+        <definition>std::unique_ptr&lt;pinocchio::Data&gt; legged::LeggedModel::pinDataPtr_</definition>
+        <argsstring></argsstring>
+        <name>pinDataPtr_</name>
+        <qualifiedname>legged::LeggedModel::pinDataPtr_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="58" column="19" bodyfile="include/legged_model/LeggedModel.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LeggedModel_1ab5d28cdff3139da1f98c3f4500a409b5" prot="protected" static="no" mutable="no">
+        <type>vector_t</type>
+        <definition>vector_t legged::LeggedModel::q_</definition>
+        <argsstring></argsstring>
+        <name>q_</name>
+        <qualifiedname>legged::LeggedModel::q_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="59" column="12" bodyfile="include/legged_model/LeggedModel.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LeggedModel_1a3c4c081063e28e5781e8eb96341300f3" prot="protected" static="no" mutable="no">
+        <type>vector_t</type>
+        <definition>vector_t legged::LeggedModel::v_</definition>
+        <argsstring></argsstring>
+        <name>v_</name>
+        <qualifiedname>legged::LeggedModel::v_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="59" column="15" bodyfile="include/legged_model/LeggedModel.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LeggedModel_1a8d9758bd6d8123f99000e84144597bcc" prot="protected" static="no" mutable="no">
+        <type>vector_t</type>
+        <definition>vector_t legged::LeggedModel::tau_</definition>
+        <argsstring></argsstring>
+        <name>tau_</name>
+        <qualifiedname>legged::LeggedModel::tau_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="59" column="18" bodyfile="include/legged_model/LeggedModel.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LeggedModel_1a5033c13343632a884fb71b50a4fa7824" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t legged::LeggedModel::numThreeDofContacts_</definition>
+        <argsstring></argsstring>
+        <name>numThreeDofContacts_</name>
+        <qualifiedname>legged::LeggedModel::numThreeDofContacts_</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="61" column="10" bodyfile="include/legged_model/LeggedModel.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LeggedModel_1ad2cb42e9754c0362f2818fe5d02f611f" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t legged::LeggedModel::numSixDofContacts_</definition>
+        <argsstring></argsstring>
+        <name>numSixDofContacts_</name>
+        <qualifiedname>legged::LeggedModel::numSixDofContacts_</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="62" column="10" bodyfile="include/legged_model/LeggedModel.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LeggedModel_1aa66deaf79be60d9a1f5b316b19e5e5ad" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; size_t &gt;</type>
+        <definition>std::vector&lt;size_t&gt; legged::LeggedModel::endEffectorFrameIndices_</definition>
+        <argsstring></argsstring>
+        <name>endEffectorFrameIndices_</name>
+        <qualifiedname>legged::LeggedModel::endEffectorFrameIndices_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="63" column="15" bodyfile="include/legged_model/LeggedModel.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LeggedModel_1ab21dfc3a8c1825a853fe2a72949be701" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t legged::LeggedModel::baseFrameIndex_</definition>
+        <argsstring></argsstring>
+        <name>baseFrameIndex_</name>
+        <qualifiedname>legged::LeggedModel::baseFrameIndex_</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="64" column="10" bodyfile="include/legged_model/LeggedModel.h" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1LeggedModel_1a66f453536ea27ac1ea507df925bca72b" prot="protected" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, size_t &gt;</type>
+        <definition>std::unordered_map&lt;std::string, size_t&gt; legged::LeggedModel::jointIndexMap_</definition>
+        <argsstring></argsstring>
+        <name>jointIndexMap_</name>
+        <qualifiedname>legged::LeggedModel::jointIndexMap_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="65" column="22" bodyfile="include/legged_model/LeggedModel.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1a3d508fc6f8648ef3a8be87993f0f9441" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>legged::LeggedModel::LeggedModel</definition>
+        <argsstring>(const std::string &amp;urdfXmlString)</argsstring>
+        <name>LeggedModel</name>
+        <qualifiedname>legged::LeggedModel::LeggedModel</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>urdfXmlString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="21" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1a7a1ef9c09ee942f54ed07ab03e98fef9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual legged::LeggedModel::~LeggedModel</definition>
+        <argsstring>()=default</argsstring>
+        <name>~LeggedModel</name>
+        <qualifiedname>legged::LeggedModel::~LeggedModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="22" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1a6a2960cbfc78016639b0bdd6e157386f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void legged::LeggedModel::setEndEffectorNames</definition>
+        <argsstring>(const std::vector&lt; std::string &gt; &amp;threeDofContactNames, const std::vector&lt; std::string &gt; &amp;sixDofContactNames)</argsstring>
+        <name>setEndEffectorNames</name>
+        <qualifiedname>legged::LeggedModel::setEndEffectorNames</qualifiedname>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>threeDofContactNames</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>sixDofContactNames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="24" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1aae60acb737652477ef33fb6297ad6470" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void legged::LeggedModel::setBaseNames</definition>
+        <argsstring>(const std::string &amp;baseName)</argsstring>
+        <name>setBaseNames</name>
+        <qualifiedname>legged::LeggedModel::setBaseNames</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>baseName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="25" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1aa7f10226a59822e8751683f1a4c58190" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string legged::LeggedModel::getFrameName</definition>
+        <argsstring>(const size_t &amp;frameIndex) const</argsstring>
+        <name>getFrameName</name>
+        <qualifiedname>legged::LeggedModel::getFrameName</qualifiedname>
+        <param>
+          <type>const size_t &amp;</type>
+          <declname>frameIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="26" column="15" bodyfile="include/legged_model/LeggedModel.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1a49e187cdbd45ddb1d19c05bac3b5105a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string legged::LeggedModel::getBaseName</definition>
+        <argsstring>() const</argsstring>
+        <name>getBaseName</name>
+        <qualifiedname>legged::LeggedModel::getBaseName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="27" column="15" bodyfile="include/legged_model/LeggedModel.h" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1a37884613660d30804a3d26ece8af7919" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; legged::LeggedModel::getContactNames</definition>
+        <argsstring>() const</argsstring>
+        <name>getContactNames</name>
+        <qualifiedname>legged::LeggedModel::getContactNames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="28" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1a080abdc87bb91b9aacb8033b56fdc608" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; legged::LeggedModel::getJointNames</definition>
+        <argsstring>() const</argsstring>
+        <name>getJointNames</name>
+        <qualifiedname>legged::LeggedModel::getJointNames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="29" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1a886e2b9895a1c1483a790862b6dad98d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const pinocchio::Model &amp;</type>
+        <definition>const pinocchio::Model &amp; legged::LeggedModel::getPinModel</definition>
+        <argsstring>() const</argsstring>
+        <name>getPinModel</name>
+        <qualifiedname>legged::LeggedModel::getPinModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="31" column="26" bodyfile="include/legged_model/LeggedModel.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1a8058cce0407b739012c71351c6ffee51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>pinocchio::Data &amp;</type>
+        <definition>pinocchio::Data &amp; legged::LeggedModel::getPinData</definition>
+        <argsstring>()</argsstring>
+        <name>getPinData</name>
+        <qualifiedname>legged::LeggedModel::getPinData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="32" column="19" bodyfile="include/legged_model/LeggedModel.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1aca78d99a2b2c7b926ba9b1e43261f8ca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const pinocchio::Data &amp;</type>
+        <definition>const pinocchio::Data &amp; legged::LeggedModel::getPinData</definition>
+        <argsstring>() const</argsstring>
+        <name>getPinData</name>
+        <qualifiedname>legged::LeggedModel::getPinData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="33" column="25" bodyfile="include/legged_model/LeggedModel.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1a4e47b029f8099239ca973212d3a03e33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vector_t &amp;</type>
+        <definition>vector_t &amp; legged::LeggedModel::getGeneralizedPosition</definition>
+        <argsstring>()</argsstring>
+        <name>getGeneralizedPosition</name>
+        <qualifiedname>legged::LeggedModel::getGeneralizedPosition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="35" column="12" bodyfile="include/legged_model/LeggedModel.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1a1754416ccd811f4ff1a00817a671483e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vector_t &amp;</type>
+        <definition>vector_t &amp; legged::LeggedModel::getGeneralizedVelocity</definition>
+        <argsstring>()</argsstring>
+        <name>getGeneralizedVelocity</name>
+        <qualifiedname>legged::LeggedModel::getGeneralizedVelocity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="36" column="12" bodyfile="include/legged_model/LeggedModel.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1a43137469d3b6f082f5a37c324f3daf0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>vector_t &amp;</type>
+        <definition>vector_t &amp; legged::LeggedModel::getTorque</definition>
+        <argsstring>()</argsstring>
+        <name>getTorque</name>
+        <qualifiedname>legged::LeggedModel::getTorque</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="37" column="12" bodyfile="include/legged_model/LeggedModel.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1a75583db19723070954de5bf9364dd032" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void legged::LeggedModel::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <qualifiedname>legged::LeggedModel::update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="39" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1aa26713dbf820be0d3219fc11f8479763" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t legged::LeggedModel::getNumJoints</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumJoints</name>
+        <qualifiedname>legged::LeggedModel::getNumJoints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="41" column="10" bodyfile="include/legged_model/LeggedModel.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1a36e41dc13ab97a26dae90d5c184183cf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t legged::LeggedModel::getNumThreeDofContacts</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumThreeDofContacts</name>
+        <qualifiedname>legged::LeggedModel::getNumThreeDofContacts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="42" column="10" bodyfile="include/legged_model/LeggedModel.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1af1b4b92ec7810731d5896df49ab21346" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t legged::LeggedModel::getNumSixDofContacts</definition>
+        <argsstring>() const</argsstring>
+        <name>getNumSixDofContacts</name>
+        <qualifiedname>legged::LeggedModel::getNumSixDofContacts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="43" column="10" bodyfile="include/legged_model/LeggedModel.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1a713b94bca99de2604297613dbdd6ce9a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; size_t &gt; &amp;</type>
+        <definition>const std::vector&lt; size_t &gt; &amp; legged::LeggedModel::getEndEffectorFrameIndices</definition>
+        <argsstring>() const</argsstring>
+        <name>getEndEffectorFrameIndices</name>
+        <qualifiedname>legged::LeggedModel::getEndEffectorFrameIndices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="44" column="21" bodyfile="include/legged_model/LeggedModel.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1ad14fd02f87a10a3532f5fc8f87bb2127" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t legged::LeggedModel::getBaseFrameIndex</definition>
+        <argsstring>() const</argsstring>
+        <name>getBaseFrameIndex</name>
+        <qualifiedname>legged::LeggedModel::getBaseFrameIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="45" column="10" bodyfile="include/legged_model/LeggedModel.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1a7d30eac45996ceed15906c5c35582bde" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t legged::LeggedModel::getJointIndex</definition>
+        <argsstring>(std::string jointName) const</argsstring>
+        <name>getJointIndex</name>
+        <qualifiedname>legged::LeggedModel::getJointIndex</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <declname>jointName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="46" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1ab1581b546cad39aa5a0ea7c7890fe1a8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>quaternion_t</type>
+        <definition>quaternion_t legged::LeggedModel::getBaseRotation</definition>
+        <argsstring>() const</argsstring>
+        <name>getBaseRotation</name>
+        <qualifiedname>legged::LeggedModel::getBaseRotation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="48" column="16" bodyfile="include/legged_model/LeggedModel.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1a93df1a8cb4cd4a73a776d256325fc43d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>matrix_t</type>
+        <definition>matrix_t legged::LeggedModel::getMassMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>getMassMatrix</name>
+        <qualifiedname>legged::LeggedModel::getMassMatrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="49" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1aeef6a217006674a8624a5fe9bb78de0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>matrix_t</type>
+        <definition>matrix_t legged::LeggedModel::getCoriolisMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>getCoriolisMatrix</name>
+        <qualifiedname>legged::LeggedModel::getCoriolisMatrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="50" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1abd5433d0ff9ce516fc8c128786f4e2bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>matrix_t</type>
+        <definition>matrix_t legged::LeggedModel::getGeneralizedGravity</definition>
+        <argsstring>()</argsstring>
+        <name>getGeneralizedGravity</name>
+        <qualifiedname>legged::LeggedModel::getGeneralizedGravity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="51" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1ac191ef055f449b42e9016162b3d740e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>matrix_t</type>
+        <definition>matrix_t legged::LeggedModel::getSelectionMatrix</definition>
+        <argsstring>()</argsstring>
+        <name>getSelectionMatrix</name>
+        <qualifiedname>legged::LeggedModel::getSelectionMatrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="52" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1a2d0366c20b4cd39d1a3c51d2a1266d76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>matrix_t</type>
+        <definition>matrix_t legged::LeggedModel::getContactJacobian</definition>
+        <argsstring>()</argsstring>
+        <name>getContactJacobian</name>
+        <qualifiedname>legged::LeggedModel::getContactJacobian</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="53" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1LeggedModel_1a77c5856ee4a79c74124d797bb71a567d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>matrix_t</type>
+        <definition>matrix_t legged::LeggedModel::getBaseJacobian</definition>
+        <argsstring>()</argsstring>
+        <name>getBaseJacobian</name>
+        <qualifiedname>legged::LeggedModel::getBaseJacobian</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_model/LeggedModel.h" line="54" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/legged_model/LeggedModel.h" line="17" column="1" bodyfile="include/legged_model/LeggedModel.h" bodystart="17" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1LeggedModel_1ab21dfc3a8c1825a853fe2a72949be701" prot="protected" virt="non-virtual"><scope>legged::LeggedModel</scope><name>baseFrameIndex_</name></member>
+      <member refid="classlegged_1_1LeggedModel_1aa66deaf79be60d9a1f5b316b19e5e5ad" prot="protected" virt="non-virtual"><scope>legged::LeggedModel</scope><name>endEffectorFrameIndices_</name></member>
+      <member refid="classlegged_1_1LeggedModel_1ad14fd02f87a10a3532f5fc8f87bb2127" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>getBaseFrameIndex</name></member>
+      <member refid="classlegged_1_1LeggedModel_1a77c5856ee4a79c74124d797bb71a567d" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>getBaseJacobian</name></member>
+      <member refid="classlegged_1_1LeggedModel_1a49e187cdbd45ddb1d19c05bac3b5105a" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>getBaseName</name></member>
+      <member refid="classlegged_1_1LeggedModel_1ab1581b546cad39aa5a0ea7c7890fe1a8" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>getBaseRotation</name></member>
+      <member refid="classlegged_1_1LeggedModel_1a2d0366c20b4cd39d1a3c51d2a1266d76" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>getContactJacobian</name></member>
+      <member refid="classlegged_1_1LeggedModel_1a37884613660d30804a3d26ece8af7919" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>getContactNames</name></member>
+      <member refid="classlegged_1_1LeggedModel_1aeef6a217006674a8624a5fe9bb78de0b" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>getCoriolisMatrix</name></member>
+      <member refid="classlegged_1_1LeggedModel_1a713b94bca99de2604297613dbdd6ce9a" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>getEndEffectorFrameIndices</name></member>
+      <member refid="classlegged_1_1LeggedModel_1aa7f10226a59822e8751683f1a4c58190" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>getFrameName</name></member>
+      <member refid="classlegged_1_1LeggedModel_1abd5433d0ff9ce516fc8c128786f4e2bb" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>getGeneralizedGravity</name></member>
+      <member refid="classlegged_1_1LeggedModel_1a4e47b029f8099239ca973212d3a03e33" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>getGeneralizedPosition</name></member>
+      <member refid="classlegged_1_1LeggedModel_1a1754416ccd811f4ff1a00817a671483e" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>getGeneralizedVelocity</name></member>
+      <member refid="classlegged_1_1LeggedModel_1a7d30eac45996ceed15906c5c35582bde" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>getJointIndex</name></member>
+      <member refid="classlegged_1_1LeggedModel_1a080abdc87bb91b9aacb8033b56fdc608" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>getJointNames</name></member>
+      <member refid="classlegged_1_1LeggedModel_1a93df1a8cb4cd4a73a776d256325fc43d" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>getMassMatrix</name></member>
+      <member refid="classlegged_1_1LeggedModel_1aa26713dbf820be0d3219fc11f8479763" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>getNumJoints</name></member>
+      <member refid="classlegged_1_1LeggedModel_1af1b4b92ec7810731d5896df49ab21346" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>getNumSixDofContacts</name></member>
+      <member refid="classlegged_1_1LeggedModel_1a36e41dc13ab97a26dae90d5c184183cf" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>getNumThreeDofContacts</name></member>
+      <member refid="classlegged_1_1LeggedModel_1a8058cce0407b739012c71351c6ffee51" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>getPinData</name></member>
+      <member refid="classlegged_1_1LeggedModel_1aca78d99a2b2c7b926ba9b1e43261f8ca" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>getPinData</name></member>
+      <member refid="classlegged_1_1LeggedModel_1a886e2b9895a1c1483a790862b6dad98d" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>getPinModel</name></member>
+      <member refid="classlegged_1_1LeggedModel_1ac191ef055f449b42e9016162b3d740e2" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>getSelectionMatrix</name></member>
+      <member refid="classlegged_1_1LeggedModel_1a43137469d3b6f082f5a37c324f3daf0a" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>getTorque</name></member>
+      <member refid="classlegged_1_1LeggedModel_1a66f453536ea27ac1ea507df925bca72b" prot="protected" virt="non-virtual"><scope>legged::LeggedModel</scope><name>jointIndexMap_</name></member>
+      <member refid="classlegged_1_1LeggedModel_1a3d508fc6f8648ef3a8be87993f0f9441" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>LeggedModel</name></member>
+      <member refid="classlegged_1_1LeggedModel_1ad2cb42e9754c0362f2818fe5d02f611f" prot="protected" virt="non-virtual"><scope>legged::LeggedModel</scope><name>numSixDofContacts_</name></member>
+      <member refid="classlegged_1_1LeggedModel_1a5033c13343632a884fb71b50a4fa7824" prot="protected" virt="non-virtual"><scope>legged::LeggedModel</scope><name>numThreeDofContacts_</name></member>
+      <member refid="classlegged_1_1LeggedModel_1ab96ebaa55f74a30919d20db19eac053f" prot="protected" virt="non-virtual"><scope>legged::LeggedModel</scope><name>pinDataPtr_</name></member>
+      <member refid="classlegged_1_1LeggedModel_1a9068fcf9996af9e8899944aafaa149ae" prot="protected" virt="non-virtual"><scope>legged::LeggedModel</scope><name>pinModelPtr_</name></member>
+      <member refid="classlegged_1_1LeggedModel_1ab5d28cdff3139da1f98c3f4500a409b5" prot="protected" virt="non-virtual"><scope>legged::LeggedModel</scope><name>q_</name></member>
+      <member refid="classlegged_1_1LeggedModel_1aae60acb737652477ef33fb6297ad6470" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>setBaseNames</name></member>
+      <member refid="classlegged_1_1LeggedModel_1a6a2960cbfc78016639b0bdd6e157386f" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>setEndEffectorNames</name></member>
+      <member refid="classlegged_1_1LeggedModel_1af43c4f8e9ed02589f2dad8556e28a0af" prot="public" virt="non-virtual"><scope>legged::LeggedModel</scope><name>SharedPtr</name></member>
+      <member refid="classlegged_1_1LeggedModel_1a8d9758bd6d8123f99000e84144597bcc" prot="protected" virt="non-virtual"><scope>legged::LeggedModel</scope><name>tau_</name></member>
+      <member refid="classlegged_1_1LeggedModel_1a75583db19723070954de5bf9364dd032" prot="public" virt="virtual"><scope>legged::LeggedModel</scope><name>update</name></member>
+      <member refid="classlegged_1_1LeggedModel_1a3c4c081063e28e5781e8eb96341300f3" prot="protected" virt="non-virtual"><scope>legged::LeggedModel</scope><name>v_</name></member>
+      <member refid="classlegged_1_1LeggedModel_1a7a1ef9c09ee942f54ed07ab03e98fef9" prot="public" virt="virtual"><scope>legged::LeggedModel</scope><name>~LeggedModel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

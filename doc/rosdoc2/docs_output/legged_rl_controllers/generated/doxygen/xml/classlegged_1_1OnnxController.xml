@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1OnnxController" kind="class" language="C++" prot="public">
+    <compoundname>legged::OnnxController</compoundname>
+    <basecompoundref refid="classlegged_1_1RlController" prot="public" virt="non-virtual">legged::RlController</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlegged_1_1OnnxController_1aa98dca0eb2488347303d8c62dc35031f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>controller_interface::CallbackReturn</type>
+        <definition>controller_interface::CallbackReturn legged::OnnxController::on_configure</definition>
+        <argsstring>(const rclcpp_lifecycle::State &amp;previous_state) override</argsstring>
+        <name>on_configure</name>
+        <qualifiedname>legged::OnnxController::on_configure</qualifiedname>
+        <param>
+          <type>const rclcpp_lifecycle::State &amp;</type>
+          <declname>previous_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/OnnxController.h" line="12" column="40"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>legged::ControllerBase</label>
+        <link refid="classlegged_1_1ControllerBase" external="/home/runner/work/legged_control2_doc/legged_control2_doc/build/html/doc/rosdoc2/cross_reference/legged_controllers/legged_controllers.tag"/>
+      </node>
+      <node id="1">
+        <label>legged::OnnxController</label>
+        <link refid="classlegged_1_1OnnxController"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>legged::RlController</label>
+        <link refid="classlegged_1_1RlController"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>legged::ControllerBase</label>
+        <link refid="classlegged_1_1ControllerBase" external="/home/runner/work/legged_control2_doc/legged_control2_doc/build/html/doc/rosdoc2/cross_reference/legged_controllers/legged_controllers.tag"/>
+      </node>
+      <node id="1">
+        <label>legged::OnnxController</label>
+        <link refid="classlegged_1_1OnnxController"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>legged::RlController</label>
+        <link refid="classlegged_1_1RlController"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/legged_rl_controllers/OnnxController.h" line="10" column="1" bodyfile="include/legged_rl_controllers/OnnxController.h" bodystart="10" bodyend="13"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1RlController_1ac2b15483d8063cdfa3379b6552e6b94a" prot="protected" virt="non-virtual"><scope>legged::OnnxController</scope><name>actionType_</name></member>
+      <member refid="classlegged_1_1RlController_1a40f16b48c7b55107bbdcecc70c1f274b" prot="protected" virt="non-virtual"><scope>legged::OnnxController</scope><name>commandManager_</name></member>
+      <member refid="classlegged_1_1RlController_1a11914344db6de3d01afa619f5b7f0125" prot="protected" virt="non-virtual"><scope>legged::OnnxController</scope><name>desiredPosition_</name></member>
+      <member refid="classlegged_1_1RlController_1ad51ab0f4a259f089e17a6286c65db75e" prot="protected" virt="non-virtual"><scope>legged::OnnxController</scope><name>observationManager_</name></member>
+      <member refid="classlegged_1_1RlController_1aba099d55c29ee1b2e9fac44bebe1a542" prot="public" virt="non-virtual"><scope>legged::OnnxController</scope><name>on_activate</name></member>
+      <member refid="classlegged_1_1OnnxController_1aa98dca0eb2488347303d8c62dc35031f" prot="public" virt="non-virtual"><scope>legged::OnnxController</scope><name>on_configure</name></member>
+      <member refid="classlegged_1_1RlController_1a4a739648f43a617db4eed846514090a0" prot="public" virt="non-virtual"><scope>legged::OnnxController</scope><name>on_init</name></member>
+      <member refid="classlegged_1_1RlController_1a65c46894b89687d98b8a86dbf61db44c" prot="protected" virt="virtual"><scope>legged::OnnxController</scope><name>parserCommand</name></member>
+      <member refid="classlegged_1_1RlController_1a1d6bf846aff307ed6781b938ba7c7160" prot="protected" virt="virtual"><scope>legged::OnnxController</scope><name>parserObservation</name></member>
+      <member refid="classlegged_1_1RlController_1a7c0240904dc497e6d706f2245d7cc7da" prot="protected" virt="non-virtual"><scope>legged::OnnxController</scope><name>policy_</name></member>
+      <member refid="classlegged_1_1RlController_1a7cf81edac649b0f2237bcdcd082ee0c0" prot="protected" virt="non-virtual"><scope>legged::OnnxController</scope><name>publisher_</name></member>
+      <member refid="classlegged_1_1RlController_1a37af8c6ac5dc035f283dcd80e48a999b" prot="protected" virt="non-virtual"><scope>legged::OnnxController</scope><name>publisherRealtime_</name></member>
+      <member refid="classlegged_1_1RlController_1a8555c53662801ea239eda8c80a22b485" prot="public" virt="non-virtual"><scope>legged::OnnxController</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,193 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mujoco_ros2_control &mdash; legged_control2 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=2709fde1"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            legged_control2
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../digging-deeper.html">Digging Deeper</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_list/api_list.html">API Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">legged_control2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">mujoco_ros2_control</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/mujoco_ros2_control/doc/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="mujoco-ros2-control">
+<h1>mujoco_ros2_control<a class="headerlink" href="#mujoco-ros2-control" title="Link to this heading"></a></h1>
+<p>These are the basic examples of using Mujoco with ROS2.</p>
+<img alt="Cart" src="../../_images/cart_position.gif" />
+<img alt="DiffBot" src="../../_images/diff_drive.gif" />
+</section>
+<section id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h1>
+<section id="ros2-control-tag-in-urdf">
+<h2>ros2_control tag in URDF<a class="headerlink" href="#ros2-control-tag-in-urdf" title="Link to this heading"></a></h2>
+<p>Use <code class="docutils literal notranslate"><span class="pre">mujoco_ros2_control/MujocoSystem</span></code> for plugin</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;ros2_control</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;MujocoSystem&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;system&quot;</span><span class="nt">&gt;</span>
+<span class="w">  </span><span class="nt">&lt;hardware&gt;</span>
+<span class="w">    </span><span class="nt">&lt;plugin&gt;</span>mujoco_ros2_control/MujocoSystem<span class="nt">&lt;/plugin&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/hardware&gt;</span>
+<span class="w">  </span><span class="nt">&lt;joint</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;slider_to_cart&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;command_interface</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;position&quot;</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;param</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;min&quot;</span><span class="nt">&gt;</span>-15<span class="nt">&lt;/param&gt;</span>
+<span class="w">      </span><span class="nt">&lt;param</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;max&quot;</span><span class="nt">&gt;</span>15<span class="nt">&lt;/param&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/command_interface&gt;</span>
+<span class="w">    </span><span class="nt">&lt;state_interface</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;position&quot;</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;param</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;initial_value&quot;</span><span class="nt">&gt;</span>1.0<span class="nt">&lt;/param&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/state_interface&gt;</span>
+<span class="w">    </span><span class="nt">&lt;state_interface</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;velocity&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;state_interface</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;effort&quot;</span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/joint&gt;</span>
+<span class="w">  </span><span class="nt">&lt;sensor</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;cart_imu&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;state_interface</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;orientation.x&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;state_interface</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;orientation.y&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;state_interface</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;orientation.z&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;state_interface</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;orientation.w&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;state_interface</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;angular_velocity.x&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;state_interface</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;angular_velocity.y&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;state_interface</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;angular_velocity.z&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;state_interface</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;linear_acceleration.x&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;state_interface</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;linear_acceleration.y&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;state_interface</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;linear_acceleration.z&quot;</span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/sensor&gt;</span>
+<span class="w">  </span><span class="nt">&lt;sensor</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;motor_fts&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;state_interface</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;force.x&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;state_interface</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;force.y&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;state_interface</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;force.z&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;state_interface</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;torque.x&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;state_interface</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;torque.y&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;state_interface</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;torque.z&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;param</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;frame_id&quot;</span><span class="nt">&gt;</span>motor_fts<span class="nt">&lt;/param&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/sensor&gt;</span>
+<span class="nt">&lt;/ros2_control&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="convert-urdf-model-to-xml">
+<h2>Convert URDF model to XML<a class="headerlink" href="#convert-urdf-model-to-xml" title="Link to this heading"></a></h2>
+<p>URDF models must be converted to <a class="reference external" href="https://mujoco.readthedocs.io/en/latest/modeling.html">MJCF XML</a> files.
+Make sure to use the same name for the link and joint, which are mapped to the body and joint in Mujoco.
+You need to specify &lt;limit&gt; which is mapped to <code class="docutils literal notranslate"><span class="pre">range</span></code> in MJCF.
+For now, there is no way to specify velocity or acceleration limit.</p>
+<p>For an IMU sensor, we add <code class="docutils literal notranslate"><span class="pre">framequat</span></code>, <code class="docutils literal notranslate"><span class="pre">gyro</span></code>, and <code class="docutils literal notranslate"><span class="pre">accelerometer</span></code> sensors in the MJCF since there is no combined IMU in MuJoCo.
+The name of each sensor should be <code class="docutils literal notranslate"><span class="pre">sensor_name</span></code> + <code class="docutils literal notranslate"><span class="pre">_quat</span></code>, <code class="docutils literal notranslate"><span class="pre">sensor_name</span></code> + <code class="docutils literal notranslate"><span class="pre">_gyro</span></code>, and <code class="docutils literal notranslate"><span class="pre">sensor_name</span></code> + <code class="docutils literal notranslate"><span class="pre">_accel</span></code> respectively.</p>
+<p>For a force torque sensor, we map both a force sensor and a torque sensor in the MJCF since there is no combined force torque sensor in MuJoCo.
+The name of each sensor should be <code class="docutils literal notranslate"><span class="pre">sensor_name</span></code> + <code class="docutils literal notranslate"><span class="pre">_force</span></code> and <code class="docutils literal notranslate"><span class="pre">sensor_name</span></code> + <code class="docutils literal notranslate"><span class="pre">_torque</span></code>.
+For example, if you have a force torque sensor called <code class="docutils literal notranslate"><span class="pre">my_sensor</span></code>, you need to create <code class="docutils literal notranslate"><span class="pre">my_sensor_force</span></code> and <code class="docutils literal notranslate"><span class="pre">my_sensor_torque</span></code> in MJCF.</p>
+<p>The drivers additionally support simulated RGB-D cameras for publishing simulated color images and depth maps.
+Cameras must be given a name and be attached to a joint called <code class="docutils literal notranslate"><span class="pre">&lt;name&gt;_optical_frame</span></code>.
+The camera_info, color, and depth images will be published to topics called <code class="docutils literal notranslate"><span class="pre">&lt;name&gt;/camera_info</span></code>,
+<code class="docutils literal notranslate"><span class="pre">&lt;name&gt;/color</span></code>, and <code class="docutils literal notranslate"><span class="pre">&lt;name&gt;/depth</span></code>, repectively.
+Also note that MuJuCo’s conventions for cameras are different than ROS’s, and which must be accounted for.
+An overview is available through the “camera” demo.</p>
+<p>For additional information refer to the <code class="docutils literal notranslate"><span class="pre">mujoco_ros2_control_demos/mujoco_models</span></code> for examples.</p>
+</section>
+<section id="specify-the-location-of-mujoco-models-and-the-controller-configuration-file">
+<h2>Specify the location of Mujoco models and the controller configuration file<a class="headerlink" href="#specify-the-location-of-mujoco-models-and-the-controller-configuration-file" title="Link to this heading"></a></h2>
+<p>You need to pass parameters for paths as shown in the following example.</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">controller_config_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">mujoco_ros2_control_demos_path</span><span class="p">,</span> <span class="s1">&#39;config&#39;</span><span class="p">,</span> <span class="s1">&#39;cartpole_controller_position.yaml&#39;</span><span class="p">)</span>
+
+<span class="n">node_mujoco_ros2_control</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span>
+    <span class="n">package</span><span class="o">=</span><span class="s1">&#39;mujoco_ros2_control&#39;</span><span class="p">,</span>
+    <span class="n">executable</span><span class="o">=</span><span class="s1">&#39;mujoco_ros2_control&#39;</span><span class="p">,</span>
+    <span class="n">output</span><span class="o">=</span><span class="s1">&#39;screen&#39;</span><span class="p">,</span>
+    <span class="n">parameters</span><span class="o">=</span><span class="p">[</span>
+        <span class="n">robot_description</span><span class="p">,</span>
+        <span class="n">controller_config_file</span><span class="p">,</span>
+        <span class="p">{</span><span class="s1">&#39;mujoco_model_path&#39;</span><span class="p">:</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">mujoco_ros2_control_demos_path</span><span class="p">,</span> <span class="s1">&#39;mujoco_models&#39;</span><span class="p">,</span> <span class="s1">&#39;test_cart_position.xml&#39;</span><span class="p">)}</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Qiayuan Liao.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
