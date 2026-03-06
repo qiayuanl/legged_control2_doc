@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classmujoco__sim__ros2_1_1MujocoPhysicsPlugin" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>mujoco_sim_ros2::MujocoPhysicsPlugin</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmujoco__sim__ros2_1_1MujocoPhysicsPlugin_1a61ce9dba0bcfaec0cb0c9f2416eef038" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual mujoco_sim_ros2::MujocoPhysicsPlugin::~MujocoPhysicsPlugin</definition>
+        <argsstring>()=default</argsstring>
+        <name>~MujocoPhysicsPlugin</name>
+        <qualifiedname>mujoco_sim_ros2::MujocoPhysicsPlugin::~MujocoPhysicsPlugin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_sim_ros2/mujoco_physics_plugin.hpp" line="18" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__sim__ros2_1_1MujocoPhysicsPlugin_1a5e7eb246479576c465cb06c5fc2568c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mujoco_sim_ros2::MujocoPhysicsPlugin::Configure</definition>
+        <argsstring>(rclcpp::Node::SharedPtr &amp;node, rclcpp::NodeOptions cm_node_option, mjModel *model, mjData *data)=0</argsstring>
+        <name>Configure</name>
+        <qualifiedname>mujoco_sim_ros2::MujocoPhysicsPlugin::Configure</qualifiedname>
+        <param>
+          <type>rclcpp::Node::SharedPtr &amp;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>rclcpp::NodeOptions</type>
+          <declname>cm_node_option</declname>
+        </param>
+        <param>
+          <type>mjModel *</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>mjData *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_sim_ros2/mujoco_physics_plugin.hpp" line="21" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__sim__ros2_1_1MujocoPhysicsPlugin_1a87f1fa9d7011d2d7a43df5904b1f2770" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void mujoco_sim_ros2::MujocoPhysicsPlugin::Reset</definition>
+        <argsstring>(mjModel *model, mjData *data)=0</argsstring>
+        <name>Reset</name>
+        <qualifiedname>mujoco_sim_ros2::MujocoPhysicsPlugin::Reset</qualifiedname>
+        <param>
+          <type>mjModel *</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>mjData *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_sim_ros2/mujoco_physics_plugin.hpp" line="24" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__sim__ros2_1_1MujocoPhysicsPlugin_1ad4a91ed408e9fe3cfe658c2525a4e8a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void mujoco_sim_ros2::MujocoPhysicsPlugin::PreUpdate</definition>
+        <argsstring>(mjModel *model, mjData *data)</argsstring>
+        <name>PreUpdate</name>
+        <qualifiedname>mujoco_sim_ros2::MujocoPhysicsPlugin::PreUpdate</qualifiedname>
+        <param>
+          <type>mjModel *</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>mjData *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_sim_ros2/mujoco_physics_plugin.hpp" line="25" column="16" bodyfile="include/mujoco_sim_ros2/mujoco_physics_plugin.hpp" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__sim__ros2_1_1MujocoPhysicsPlugin_1a3a3bbbeb2d46e840f73853f0639d103a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void mujoco_sim_ros2::MujocoPhysicsPlugin::Update</definition>
+        <argsstring>(mjModel *model, mjData *data)</argsstring>
+        <name>Update</name>
+        <qualifiedname>mujoco_sim_ros2::MujocoPhysicsPlugin::Update</qualifiedname>
+        <param>
+          <type>mjModel *</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>mjData *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_sim_ros2/mujoco_physics_plugin.hpp" line="26" column="16" bodyfile="include/mujoco_sim_ros2/mujoco_physics_plugin.hpp" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classmujoco__sim__ros2_1_1MujocoPhysicsPlugin_1ae1faee17882ffe1273f8c46cf7b742c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void mujoco_sim_ros2::MujocoPhysicsPlugin::PostUpdate</definition>
+        <argsstring>(mjModel *model, mjData *data)</argsstring>
+        <name>PostUpdate</name>
+        <qualifiedname>mujoco_sim_ros2::MujocoPhysicsPlugin::PostUpdate</qualifiedname>
+        <param>
+          <type>mjModel *</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>mjData *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_sim_ros2/mujoco_physics_plugin.hpp" line="27" column="16" bodyfile="include/mujoco_sim_ros2/mujoco_physics_plugin.hpp" bodystart="27" bodyend="27"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classmujoco__sim__ros2_1_1MujocoPhysicsPlugin_1a571bb4e32a67fd95c510a8bad9690349" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mujoco_sim_ros2::MujocoPhysicsPlugin::MujocoPhysicsPlugin</definition>
+        <argsstring>()=default</argsstring>
+        <name>MujocoPhysicsPlugin</name>
+        <qualifiedname>mujoco_sim_ros2::MujocoPhysicsPlugin::MujocoPhysicsPlugin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/mujoco_sim_ros2/mujoco_physics_plugin.hpp" line="30" column="3"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/mujoco_sim_ros2/mujoco_physics_plugin.hpp" line="16" column="1" bodyfile="include/mujoco_sim_ros2/mujoco_physics_plugin.hpp" bodystart="16" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classmujoco__sim__ros2_1_1MujocoPhysicsPlugin_1a5e7eb246479576c465cb06c5fc2568c7" prot="public" virt="pure-virtual"><scope>mujoco_sim_ros2::MujocoPhysicsPlugin</scope><name>Configure</name></member>
+      <member refid="classmujoco__sim__ros2_1_1MujocoPhysicsPlugin_1a571bb4e32a67fd95c510a8bad9690349" prot="protected" virt="non-virtual"><scope>mujoco_sim_ros2::MujocoPhysicsPlugin</scope><name>MujocoPhysicsPlugin</name></member>
+      <member refid="classmujoco__sim__ros2_1_1MujocoPhysicsPlugin_1ae1faee17882ffe1273f8c46cf7b742c1" prot="public" virt="virtual"><scope>mujoco_sim_ros2::MujocoPhysicsPlugin</scope><name>PostUpdate</name></member>
+      <member refid="classmujoco__sim__ros2_1_1MujocoPhysicsPlugin_1ad4a91ed408e9fe3cfe658c2525a4e8a1" prot="public" virt="virtual"><scope>mujoco_sim_ros2::MujocoPhysicsPlugin</scope><name>PreUpdate</name></member>
+      <member refid="classmujoco__sim__ros2_1_1MujocoPhysicsPlugin_1a87f1fa9d7011d2d7a43df5904b1f2770" prot="public" virt="pure-virtual"><scope>mujoco_sim_ros2::MujocoPhysicsPlugin</scope><name>Reset</name></member>
+      <member refid="classmujoco__sim__ros2_1_1MujocoPhysicsPlugin_1a3a3bbbeb2d46e840f73853f0639d103a" prot="public" virt="virtual"><scope>mujoco_sim_ros2::MujocoPhysicsPlugin</scope><name>Update</name></member>
+      <member refid="classmujoco__sim__ros2_1_1MujocoPhysicsPlugin_1a61ce9dba0bcfaec0cb0c9f2416eef038" prot="public" virt="virtual"><scope>mujoco_sim_ros2::MujocoPhysicsPlugin</scope><name>~MujocoPhysicsPlugin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

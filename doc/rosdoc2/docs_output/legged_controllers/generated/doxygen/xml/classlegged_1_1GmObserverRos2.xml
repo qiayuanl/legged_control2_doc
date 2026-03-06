@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1GmObserverRos2" kind="class" language="C++" prot="public">
+    <compoundname>legged::GmObserverRos2</compoundname>
+    <basecompoundref refid="classlegged_1_1GmObserver" prot="public" virt="non-virtual">legged::GmObserver</basecompoundref>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlegged_1_1GmObserverRos2_1a95a9ab177418060b4b17732dc3613ab9" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classlegged_1_1GmObserverRos2" kindref="compound">GmObserverRos2</ref> &gt;</type>
+        <definition>using legged::GmObserverRos2::SharedPtr =  std::shared_ptr&lt;GmObserverRos2&gt;</definition>
+        <argsstring></argsstring>
+        <name>SharedPtr</name>
+        <qualifiedname>legged::GmObserverRos2::SharedPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/GmObserverRos2.h" line="19" column="3" bodyfile="include/legged_controllers/GmObserverRos2.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classlegged_1_1GmObserverRos2_1aca61f1d579fdc06daf844c636467c69b" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::shared_ptr&lt; rclcpp::Publisher&lt; geometry_msgs::msg::WrenchStamped &gt; &gt; &gt;</type>
+        <definition>std::vector&lt;std::shared_ptr&lt;rclcpp::Publisher&lt;geometry_msgs::msg::WrenchStamped&gt; &gt; &gt; legged::GmObserverRos2::wrenchesPub_</definition>
+        <argsstring></argsstring>
+        <name>wrenchesPub_</name>
+        <qualifiedname>legged::GmObserverRos2::wrenchesPub_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/GmObserverRos2.h" line="26" column="15" bodyfile="include/legged_controllers/GmObserverRos2.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1GmObserverRos2_1acfb7c8991696f906ba4bd9f04d26b9af" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::shared_ptr&lt; realtime_tools::RealtimePublisher&lt; geometry_msgs::msg::WrenchStamped &gt; &gt; &gt;</type>
+        <definition>std::vector&lt;std::shared_ptr&lt;realtime_tools::RealtimePublisher&lt;geometry_msgs::msg::WrenchStamped&gt; &gt; &gt; legged::GmObserverRos2::wrenchesPubRealtime_</definition>
+        <argsstring></argsstring>
+        <name>wrenchesPubRealtime_</name>
+        <qualifiedname>legged::GmObserverRos2::wrenchesPubRealtime_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/GmObserverRos2.h" line="27" column="15" bodyfile="include/legged_controllers/GmObserverRos2.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlegged_1_1GmObserverRos2_1a09aad653d9c8b1d59b551e9cd4682aad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>legged::GmObserverRos2::GmObserverRos2</definition>
+        <argsstring>(const std::shared_ptr&lt; rclcpp_lifecycle::LifecycleNode &gt; &amp;node, const std::shared_ptr&lt; LeggedModel &gt; &amp;leggedModel, scalar_t cutoffFrequency=10)</argsstring>
+        <name>GmObserverRos2</name>
+        <qualifiedname>legged::GmObserverRos2::GmObserverRos2</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; rclcpp_lifecycle::LifecycleNode &gt; &amp;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="classlegged_1_1LeggedModel" kindref="compound" external="/home/runner/work/legged_control2_doc/legged_control2_doc/build/html/doc/rosdoc2/cross_reference/legged_model/legged_model.tag">LeggedModel</ref> &gt; &amp;</type>
+          <declname>leggedModel</declname>
+        </param>
+        <param>
+          <type>scalar_t</type>
+          <declname>cutoffFrequency</declname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/GmObserverRos2.h" line="20" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1GmObserverRos2_1af439511e7e881563e35a36dc593cdcde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void legged::GmObserverRos2::update</definition>
+        <argsstring>(const rclcpp::Time &amp;time, const rclcpp::Duration &amp;period)</argsstring>
+        <name>update</name>
+        <qualifiedname>legged::GmObserverRos2::update</qualifiedname>
+        <param>
+          <type>const rclcpp::Time &amp;</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>const rclcpp::Duration &amp;</type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/GmObserverRos2.h" line="23" column="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>legged::GmObserver</label>
+        <link refid="classlegged_1_1GmObserver" external="/home/runner/work/legged_control2_doc/legged_control2_doc/build/html/doc/rosdoc2/cross_reference/legged_estimation/legged_estimation.tag"/>
+      </node>
+      <node id="1">
+        <label>legged::GmObserverRos2</label>
+        <link refid="classlegged_1_1GmObserverRos2"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>legged::GmObserver</label>
+        <link refid="classlegged_1_1GmObserver" external="/home/runner/work/legged_control2_doc/legged_control2_doc/build/html/doc/rosdoc2/cross_reference/legged_estimation/legged_estimation.tag"/>
+      </node>
+      <node id="1">
+        <label>legged::GmObserverRos2</label>
+        <link refid="classlegged_1_1GmObserverRos2"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/legged_controllers/GmObserverRos2.h" line="17" column="1" bodyfile="include/legged_controllers/GmObserverRos2.h" bodystart="17" bodyend="28"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1GmObserverRos2_1a09aad653d9c8b1d59b551e9cd4682aad" prot="public" virt="non-virtual"><scope>legged::GmObserverRos2</scope><name>GmObserverRos2</name></member>
+      <member refid="classlegged_1_1GmObserverRos2_1a95a9ab177418060b4b17732dc3613ab9" prot="public" virt="non-virtual"><scope>legged::GmObserverRos2</scope><name>SharedPtr</name></member>
+      <member refid="classlegged_1_1GmObserverRos2_1af439511e7e881563e35a36dc593cdcde" prot="public" virt="non-virtual"><scope>legged::GmObserverRos2</scope><name>update</name></member>
+      <member refid="classlegged_1_1GmObserverRos2_1aca61f1d579fdc06daf844c636467c69b" prot="protected" virt="non-virtual"><scope>legged::GmObserverRos2</scope><name>wrenchesPub_</name></member>
+      <member refid="classlegged_1_1GmObserverRos2_1acfb7c8991696f906ba4bd9f04d26b9af" prot="protected" virt="non-virtual"><scope>legged::GmObserverRos2</scope><name>wrenchesPubRealtime_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

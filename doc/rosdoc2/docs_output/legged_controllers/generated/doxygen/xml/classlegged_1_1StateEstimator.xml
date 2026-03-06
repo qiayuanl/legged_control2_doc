@@ -1,0 +1,482 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1StateEstimator" kind="class" language="C++" prot="public">
+    <compoundname>legged::StateEstimator</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">controller_interface::ChainableControllerInterface</basecompoundref>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlegged_1_1StateEstimator_1a2dd9896e9ed5bc4805ff8ee1e93e4974" prot="public" static="no">
+        <type>nav_msgs::msg::Odometry</type>
+        <definition>using legged::StateEstimator::Odom =  nav_msgs::msg::Odometry</definition>
+        <argsstring></argsstring>
+        <name>Odom</name>
+        <qualifiedname>legged::StateEstimator::Odom</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="24" column="3" bodyfile="include/legged_controllers/StateEstimator.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlegged_1_1StateEstimator_1a9c74320355b79039877d18af2d7ffd9d" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string legged::StateEstimator::tfTopic_</definition>
+        <argsstring></argsstring>
+        <name>tfTopic_</name>
+        <qualifiedname>legged::StateEstimator::tfTopic_</qualifiedname>
+        <initializer>= &quot;/tf&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="25" column="21" bodyfile="include/legged_controllers/StateEstimator.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1StateEstimator_1a0b56099552a1a76899d703c6b0be4a1e" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string legged::StateEstimator::jointTopic_</definition>
+        <argsstring></argsstring>
+        <name>jointTopic_</name>
+        <qualifiedname>legged::StateEstimator::jointTopic_</qualifiedname>
+        <initializer>= &quot;/joint_states&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="26" column="21" bodyfile="include/legged_controllers/StateEstimator.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classlegged_1_1StateEstimator_1a9c6b03bc3620d97a22879b4ee18078bc" prot="protected" static="no" mutable="no">
+        <type>LeggedModel::SharedPtr</type>
+        <definition>LeggedModel::SharedPtr legged::StateEstimator::leggedModel_</definition>
+        <argsstring></argsstring>
+        <name>leggedModel_</name>
+        <qualifiedname>legged::StateEstimator::leggedModel_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="49" column="26" bodyfile="include/legged_controllers/StateEstimator.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1StateEstimator_1a1c1b171d288bcfaa30886d6ba7b1fbd5" prot="protected" static="no" mutable="no">
+        <type>LeggedModel::SharedPtr *</type>
+        <definition>LeggedModel::SharedPtr* legged::StateEstimator::leggedModelPtr_</definition>
+        <argsstring></argsstring>
+        <name>leggedModelPtr_</name>
+        <qualifiedname>legged::StateEstimator::leggedModelPtr_</qualifiedname>
+        <initializer>= &amp;leggedModel_</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="50" column="26" bodyfile="include/legged_controllers/StateEstimator.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1StateEstimator_1a569d5babdd5be75eb54ef3c047b36ef3" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classsemantic__components_1_1JointSensors" kindref="compound">semantic_components::JointSensors</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;semantic_components::JointSensors&gt; legged::StateEstimator::joints_</definition>
+        <argsstring></argsstring>
+        <name>joints_</name>
+        <qualifiedname>legged::StateEstimator::joints_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="52" column="19" bodyfile="include/legged_controllers/StateEstimator.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1StateEstimator_1a3da97625e3960ed69b4f08bd77c9680c" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; semantic_components::IMUSensor &gt;</type>
+        <definition>std::shared_ptr&lt;semantic_components::IMUSensor&gt; legged::StateEstimator::imu_</definition>
+        <argsstring></argsstring>
+        <name>imu_</name>
+        <qualifiedname>legged::StateEstimator::imu_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="53" column="19" bodyfile="include/legged_controllers/StateEstimator.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1StateEstimator_1a2908ce9be9fc15b8408684eeac9c3b02" prot="protected" static="no" mutable="no">
+        <type>GmObserverRos2::SharedPtr</type>
+        <definition>GmObserverRos2::SharedPtr legged::StateEstimator::gmObserver_</definition>
+        <argsstring></argsstring>
+        <name>gmObserver_</name>
+        <qualifiedname>legged::StateEstimator::gmObserver_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="55" column="29" bodyfile="include/legged_controllers/StateEstimator.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1StateEstimator_1acf96391f18737b84927b6fc5de1f61ec" prot="protected" static="no" mutable="no">
+        <type>LinearKalmanFilterRos2::SharedPtr</type>
+        <definition>LinearKalmanFilterRos2::SharedPtr legged::StateEstimator::linearKalmanFilter_</definition>
+        <argsstring></argsstring>
+        <name>linearKalmanFilter_</name>
+        <qualifiedname>legged::StateEstimator::linearKalmanFilter_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="56" column="37" bodyfile="include/legged_controllers/StateEstimator.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1StateEstimator_1a25244fef1132f1779dbe8283291e07a6" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; rclcpp::Subscription&lt; Odom &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;rclcpp::Subscription&lt;Odom&gt; &gt; legged::StateEstimator::poseSubscriber_</definition>
+        <argsstring></argsstring>
+        <name>poseSubscriber_</name>
+        <qualifiedname>legged::StateEstimator::poseSubscriber_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="58" column="19" bodyfile="include/legged_controllers/StateEstimator.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1StateEstimator_1a4bbba6ac69aa7df693fbca86fb4b8c90" prot="protected" static="no" mutable="no">
+        <type>realtime_tools::RealtimeThreadSafeBox&lt; Odom &gt;</type>
+        <definition>realtime_tools::RealtimeThreadSafeBox&lt;Odom&gt; legged::StateEstimator::poseStamped_</definition>
+        <argsstring></argsstring>
+        <name>poseStamped_</name>
+        <qualifiedname>legged::StateEstimator::poseStamped_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="59" column="41" bodyfile="include/legged_controllers/StateEstimator.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1StateEstimator_1a250915a50fa3106460fa18722217bdd1" prot="protected" static="no" mutable="no">
+        <type>Odom</type>
+        <definition>Odom legged::StateEstimator::poseStampedLast_</definition>
+        <argsstring></argsstring>
+        <name>poseStampedLast_</name>
+        <qualifiedname>legged::StateEstimator::poseStampedLast_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="60" column="8" bodyfile="include/legged_controllers/StateEstimator.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1StateEstimator_1a21f124b858b51a2e5c9bbe3718d7a452" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t legged::StateEstimator::topicFrameIndex_</definition>
+        <argsstring></argsstring>
+        <name>topicFrameIndex_</name>
+        <qualifiedname>legged::StateEstimator::topicFrameIndex_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="61" column="10" bodyfile="include/legged_controllers/StateEstimator.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1StateEstimator_1a8daacd082fa63ed15245289cc8f913e0" prot="protected" static="no" mutable="no">
+        <type>quaternion_t</type>
+        <definition>quaternion_t legged::StateEstimator::worldToMap_</definition>
+        <argsstring></argsstring>
+        <name>worldToMap_</name>
+        <qualifiedname>legged::StateEstimator::worldToMap_</qualifiedname>
+        <initializer>= quaternion_t::Identity()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="62" column="16" bodyfile="include/legged_controllers/StateEstimator.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1StateEstimator_1a115408418b9a50fe9b8210838fade12a" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; rclcpp::Publisher&lt; tf2_msgs::msg::TFMessage &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;rclcpp::Publisher&lt;tf2_msgs::msg::TFMessage&gt; &gt; legged::StateEstimator::odomTfPublisher_</definition>
+        <argsstring></argsstring>
+        <name>odomTfPublisher_</name>
+        <qualifiedname>legged::StateEstimator::odomTfPublisher_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="64" column="19" bodyfile="include/legged_controllers/StateEstimator.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1StateEstimator_1a098a7147668e64cb84297acf4c2cb8df" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; realtime_tools::RealtimePublisher&lt; tf2_msgs::msg::TFMessage &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;realtime_tools::RealtimePublisher&lt;tf2_msgs::msg::TFMessage&gt; &gt; legged::StateEstimator::odomTfPublisherRealtime_</definition>
+        <argsstring></argsstring>
+        <name>odomTfPublisherRealtime_</name>
+        <qualifiedname>legged::StateEstimator::odomTfPublisherRealtime_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="65" column="19" bodyfile="include/legged_controllers/StateEstimator.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1StateEstimator_1aac0e63eb8387bc12369b609a7f201d6d" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; rclcpp::Publisher&lt; sensor_msgs::msg::JointState &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;rclcpp::Publisher&lt;sensor_msgs::msg::JointState&gt; &gt; legged::StateEstimator::jointStatesPublisher_</definition>
+        <argsstring></argsstring>
+        <name>jointStatesPublisher_</name>
+        <qualifiedname>legged::StateEstimator::jointStatesPublisher_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="67" column="19" bodyfile="include/legged_controllers/StateEstimator.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1StateEstimator_1ae2ee65e4b2d5ec3156a63472cfac39d3" prot="protected" static="no" mutable="no">
+        <type>std::shared_ptr&lt; realtime_tools::RealtimePublisher&lt; sensor_msgs::msg::JointState &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;realtime_tools::RealtimePublisher&lt;sensor_msgs::msg::JointState&gt; &gt; legged::StateEstimator::jointStatesPublisherRealtime_</definition>
+        <argsstring></argsstring>
+        <name>jointStatesPublisherRealtime_</name>
+        <qualifiedname>legged::StateEstimator::jointStatesPublisherRealtime_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="68" column="19" bodyfile="include/legged_controllers/StateEstimator.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlegged_1_1StateEstimator_1a475ee0cd6f994ef2ee9c9f6d5f0c2b97" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>controller_interface::InterfaceConfiguration</type>
+        <definition>controller_interface::InterfaceConfiguration legged::StateEstimator::command_interface_configuration</definition>
+        <argsstring>() const override</argsstring>
+        <name>command_interface_configuration</name>
+        <qualifiedname>legged::StateEstimator::command_interface_configuration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="28" column="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1StateEstimator_1ab355639863c4a18d83cf0e60a72195fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>controller_interface::InterfaceConfiguration</type>
+        <definition>controller_interface::InterfaceConfiguration legged::StateEstimator::state_interface_configuration</definition>
+        <argsstring>() const override</argsstring>
+        <name>state_interface_configuration</name>
+        <qualifiedname>legged::StateEstimator::state_interface_configuration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="30" column="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1StateEstimator_1a32c1b261b6aa31cb0e1a108ee21e3e69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>controller_interface::return_type</type>
+        <definition>controller_interface::return_type legged::StateEstimator::update_and_write_commands</definition>
+        <argsstring>(const rclcpp::Time &amp;time, const rclcpp::Duration &amp;period) override</argsstring>
+        <name>update_and_write_commands</name>
+        <qualifiedname>legged::StateEstimator::update_and_write_commands</qualifiedname>
+        <param>
+          <type>const rclcpp::Time &amp;</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>const rclcpp::Duration &amp;</type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="32" column="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1StateEstimator_1a423065a5b3ab598b5c7b825ce39c11ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>controller_interface::CallbackReturn</type>
+        <definition>controller_interface::CallbackReturn legged::StateEstimator::on_init</definition>
+        <argsstring>() override</argsstring>
+        <name>on_init</name>
+        <qualifiedname>legged::StateEstimator::on_init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="34" column="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1StateEstimator_1ad9c230da133988e473fe3a39726b0c9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>controller_interface::CallbackReturn</type>
+        <definition>controller_interface::CallbackReturn legged::StateEstimator::on_configure</definition>
+        <argsstring>(const rclcpp_lifecycle::State &amp;previous_state) override</argsstring>
+        <name>on_configure</name>
+        <qualifiedname>legged::StateEstimator::on_configure</qualifiedname>
+        <param>
+          <type>const rclcpp_lifecycle::State &amp;</type>
+          <declname>previous_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="36" column="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1StateEstimator_1a39805282d2702e7434a9d5952c5e8013" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>controller_interface::CallbackReturn</type>
+        <definition>controller_interface::CallbackReturn legged::StateEstimator::on_activate</definition>
+        <argsstring>(const rclcpp_lifecycle::State &amp;previous_state) override</argsstring>
+        <name>on_activate</name>
+        <qualifiedname>legged::StateEstimator::on_activate</qualifiedname>
+        <param>
+          <type>const rclcpp_lifecycle::State &amp;</type>
+          <declname>previous_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="38" column="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1StateEstimator_1a792563bafe6c12ebabe5471a6b073352" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>controller_interface::CallbackReturn</type>
+        <definition>controller_interface::CallbackReturn legged::StateEstimator::on_deactivate</definition>
+        <argsstring>(const rclcpp_lifecycle::State &amp;previous_state) override</argsstring>
+        <name>on_deactivate</name>
+        <qualifiedname>legged::StateEstimator::on_deactivate</qualifiedname>
+        <param>
+          <type>const rclcpp_lifecycle::State &amp;</type>
+          <declname>previous_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="40" column="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1StateEstimator_1a40a8e21499d0a907ea9a72b81d1ced2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; hardware_interface::StateInterface &gt;</type>
+        <definition>std::vector&lt; hardware_interface::StateInterface &gt; legged::StateEstimator::on_export_state_interfaces</definition>
+        <argsstring>() override</argsstring>
+        <name>on_export_state_interfaces</name>
+        <qualifiedname>legged::StateEstimator::on_export_state_interfaces</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="42" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1StateEstimator_1ab65b9f359a5836d2178e8f8a35dee115" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>controller_interface::return_type</type>
+        <definition>controller_interface::return_type legged::StateEstimator::update_reference_from_subscribers</definition>
+        <argsstring>(const rclcpp::Time &amp;time, const rclcpp::Duration &amp;period) override</argsstring>
+        <name>update_reference_from_subscribers</name>
+        <qualifiedname>legged::StateEstimator::update_reference_from_subscribers</qualifiedname>
+        <param>
+          <type>const rclcpp::Time &amp;</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>const rclcpp::Duration &amp;</type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/StateEstimator.h" line="44" column="37" bodyfile="include/legged_controllers/StateEstimator.h" bodystart="44" bodyend="46"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>controller_interface::ChainableControllerInterface</label>
+      </node>
+      <node id="1">
+        <label>legged::StateEstimator</label>
+        <link refid="classlegged_1_1StateEstimator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>controller_interface::ChainableControllerInterface</label>
+      </node>
+      <node id="1">
+        <label>legged::StateEstimator</label>
+        <link refid="classlegged_1_1StateEstimator"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/legged_controllers/StateEstimator.h" line="22" column="1" bodyfile="include/legged_controllers/StateEstimator.h" bodystart="22" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1StateEstimator_1a475ee0cd6f994ef2ee9c9f6d5f0c2b97" prot="public" virt="non-virtual"><scope>legged::StateEstimator</scope><name>command_interface_configuration</name></member>
+      <member refid="classlegged_1_1StateEstimator_1a2908ce9be9fc15b8408684eeac9c3b02" prot="protected" virt="non-virtual"><scope>legged::StateEstimator</scope><name>gmObserver_</name></member>
+      <member refid="classlegged_1_1StateEstimator_1a3da97625e3960ed69b4f08bd77c9680c" prot="protected" virt="non-virtual"><scope>legged::StateEstimator</scope><name>imu_</name></member>
+      <member refid="classlegged_1_1StateEstimator_1a569d5babdd5be75eb54ef3c047b36ef3" prot="protected" virt="non-virtual"><scope>legged::StateEstimator</scope><name>joints_</name></member>
+      <member refid="classlegged_1_1StateEstimator_1aac0e63eb8387bc12369b609a7f201d6d" prot="protected" virt="non-virtual"><scope>legged::StateEstimator</scope><name>jointStatesPublisher_</name></member>
+      <member refid="classlegged_1_1StateEstimator_1ae2ee65e4b2d5ec3156a63472cfac39d3" prot="protected" virt="non-virtual"><scope>legged::StateEstimator</scope><name>jointStatesPublisherRealtime_</name></member>
+      <member refid="classlegged_1_1StateEstimator_1a0b56099552a1a76899d703c6b0be4a1e" prot="public" virt="non-virtual"><scope>legged::StateEstimator</scope><name>jointTopic_</name></member>
+      <member refid="classlegged_1_1StateEstimator_1a9c6b03bc3620d97a22879b4ee18078bc" prot="protected" virt="non-virtual"><scope>legged::StateEstimator</scope><name>leggedModel_</name></member>
+      <member refid="classlegged_1_1StateEstimator_1a1c1b171d288bcfaa30886d6ba7b1fbd5" prot="protected" virt="non-virtual"><scope>legged::StateEstimator</scope><name>leggedModelPtr_</name></member>
+      <member refid="classlegged_1_1StateEstimator_1acf96391f18737b84927b6fc5de1f61ec" prot="protected" virt="non-virtual"><scope>legged::StateEstimator</scope><name>linearKalmanFilter_</name></member>
+      <member refid="classlegged_1_1StateEstimator_1a2dd9896e9ed5bc4805ff8ee1e93e4974" prot="public" virt="non-virtual"><scope>legged::StateEstimator</scope><name>Odom</name></member>
+      <member refid="classlegged_1_1StateEstimator_1a115408418b9a50fe9b8210838fade12a" prot="protected" virt="non-virtual"><scope>legged::StateEstimator</scope><name>odomTfPublisher_</name></member>
+      <member refid="classlegged_1_1StateEstimator_1a098a7147668e64cb84297acf4c2cb8df" prot="protected" virt="non-virtual"><scope>legged::StateEstimator</scope><name>odomTfPublisherRealtime_</name></member>
+      <member refid="classlegged_1_1StateEstimator_1a39805282d2702e7434a9d5952c5e8013" prot="public" virt="non-virtual"><scope>legged::StateEstimator</scope><name>on_activate</name></member>
+      <member refid="classlegged_1_1StateEstimator_1ad9c230da133988e473fe3a39726b0c9e" prot="public" virt="non-virtual"><scope>legged::StateEstimator</scope><name>on_configure</name></member>
+      <member refid="classlegged_1_1StateEstimator_1a792563bafe6c12ebabe5471a6b073352" prot="public" virt="non-virtual"><scope>legged::StateEstimator</scope><name>on_deactivate</name></member>
+      <member refid="classlegged_1_1StateEstimator_1a40a8e21499d0a907ea9a72b81d1ced2c" prot="public" virt="non-virtual"><scope>legged::StateEstimator</scope><name>on_export_state_interfaces</name></member>
+      <member refid="classlegged_1_1StateEstimator_1a423065a5b3ab598b5c7b825ce39c11ef" prot="public" virt="non-virtual"><scope>legged::StateEstimator</scope><name>on_init</name></member>
+      <member refid="classlegged_1_1StateEstimator_1a4bbba6ac69aa7df693fbca86fb4b8c90" prot="protected" virt="non-virtual"><scope>legged::StateEstimator</scope><name>poseStamped_</name></member>
+      <member refid="classlegged_1_1StateEstimator_1a250915a50fa3106460fa18722217bdd1" prot="protected" virt="non-virtual"><scope>legged::StateEstimator</scope><name>poseStampedLast_</name></member>
+      <member refid="classlegged_1_1StateEstimator_1a25244fef1132f1779dbe8283291e07a6" prot="protected" virt="non-virtual"><scope>legged::StateEstimator</scope><name>poseSubscriber_</name></member>
+      <member refid="classlegged_1_1StateEstimator_1ab355639863c4a18d83cf0e60a72195fa" prot="public" virt="non-virtual"><scope>legged::StateEstimator</scope><name>state_interface_configuration</name></member>
+      <member refid="classlegged_1_1StateEstimator_1a9c74320355b79039877d18af2d7ffd9d" prot="public" virt="non-virtual"><scope>legged::StateEstimator</scope><name>tfTopic_</name></member>
+      <member refid="classlegged_1_1StateEstimator_1a21f124b858b51a2e5c9bbe3718d7a452" prot="protected" virt="non-virtual"><scope>legged::StateEstimator</scope><name>topicFrameIndex_</name></member>
+      <member refid="classlegged_1_1StateEstimator_1a32c1b261b6aa31cb0e1a108ee21e3e69" prot="public" virt="non-virtual"><scope>legged::StateEstimator</scope><name>update_and_write_commands</name></member>
+      <member refid="classlegged_1_1StateEstimator_1ab65b9f359a5836d2178e8f8a35dee115" prot="public" virt="non-virtual"><scope>legged::StateEstimator</scope><name>update_reference_from_subscribers</name></member>
+      <member refid="classlegged_1_1StateEstimator_1a8daacd082fa63ed15245289cc8f913e0" prot="protected" virt="non-virtual"><scope>legged::StateEstimator</scope><name>worldToMap_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

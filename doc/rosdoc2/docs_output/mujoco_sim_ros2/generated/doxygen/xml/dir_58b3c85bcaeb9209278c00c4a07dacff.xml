@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_58b3c85bcaeb9209278c00c4a07dacff" kind="dir">
+    <compoundname>include/mujoco_sim_ros2</compoundname>
+    <innerfile refid="mujoco__physics__plugin_8hpp">mujoco_physics_plugin.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/mujoco_sim_ros2/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,402 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1Policy" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>legged::Policy</compoundname>
+    <derivedcompoundref refid="classlegged_1_1OnnxPolicy" prot="public" virt="non-virtual">legged::OnnxPolicy</derivedcompoundref>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classlegged_1_1Policy_1a58ed7ae76d1fb6fc19ea793fa92e9b39" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classlegged_1_1Policy" kindref="compound">Policy</ref> &gt;</type>
+        <definition>using legged::Policy::SharedPtr =  std::shared_ptr&lt;Policy&gt;</definition>
+        <argsstring></argsstring>
+        <name>SharedPtr</name>
+        <qualifiedname>legged::Policy::SharedPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="17" column="3" bodyfile="include/legged_rl_controllers/Policy.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classlegged_1_1Policy_1a2e63ace704c82473dff580e81348f0f7" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; legged::Policy::jointNames_</definition>
+        <argsstring></argsstring>
+        <name>jointNames_</name>
+        <qualifiedname>legged::Policy::jointNames_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="38" column="15" bodyfile="include/legged_rl_controllers/Policy.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1Policy_1a6a532a9036e6a18c00530b8b046275e8" prot="protected" static="no" mutable="no">
+        <type>vector_t</type>
+        <definition>vector_t legged::Policy::jointStiffness_</definition>
+        <argsstring></argsstring>
+        <name>jointStiffness_</name>
+        <qualifiedname>legged::Policy::jointStiffness_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="39" column="12" bodyfile="include/legged_rl_controllers/Policy.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1Policy_1ab9047d7bd986be9ad769c934097de2b8" prot="protected" static="no" mutable="no">
+        <type>vector_t</type>
+        <definition>vector_t legged::Policy::jointDamping_</definition>
+        <argsstring></argsstring>
+        <name>jointDamping_</name>
+        <qualifiedname>legged::Policy::jointDamping_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="40" column="12" bodyfile="include/legged_rl_controllers/Policy.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1Policy_1a3fa68cee5cff59221962a853a0752795" prot="protected" static="no" mutable="no">
+        <type>vector_t</type>
+        <definition>vector_t legged::Policy::defaultJointPositions_</definition>
+        <argsstring></argsstring>
+        <name>defaultJointPositions_</name>
+        <qualifiedname>legged::Policy::defaultJointPositions_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="41" column="12" bodyfile="include/legged_rl_controllers/Policy.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1Policy_1ae2ea11725ef15cba8e707a5661372735" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; legged::Policy::commandNames_</definition>
+        <argsstring></argsstring>
+        <name>commandNames_</name>
+        <qualifiedname>legged::Policy::commandNames_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="43" column="15" bodyfile="include/legged_rl_controllers/Policy.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1Policy_1a59f77e2570558e1d3f6b54a9fc9ae6f0" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; legged::Policy::observationNames_</definition>
+        <argsstring></argsstring>
+        <name>observationNames_</name>
+        <qualifiedname>legged::Policy::observationNames_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="44" column="15" bodyfile="include/legged_rl_controllers/Policy.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1Policy_1a016875a518ed602909b447ebab86234e" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; size_t &gt;</type>
+        <definition>std::vector&lt;size_t&gt; legged::Policy::observationHistoryLengths_</definition>
+        <argsstring></argsstring>
+        <name>observationHistoryLengths_</name>
+        <qualifiedname>legged::Policy::observationHistoryLengths_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="45" column="15" bodyfile="include/legged_rl_controllers/Policy.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1Policy_1a01cf3e69b1acfcdba28314d9eecb6472" prot="protected" static="no" mutable="no">
+        <type>vector_t</type>
+        <definition>vector_t legged::Policy::actionScale_</definition>
+        <argsstring></argsstring>
+        <name>actionScale_</name>
+        <qualifiedname>legged::Policy::actionScale_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="46" column="12" bodyfile="include/legged_rl_controllers/Policy.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlegged_1_1Policy_1af08fd661726c2ae6b8815b39ab3e0f87" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual legged::Policy::~Policy</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Policy</name>
+        <qualifiedname>legged::Policy::~Policy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="18" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1Policy_1a2f0e7a4a7cd12ced827af9bb2280c155" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t</type>
+        <definition>virtual size_t legged::Policy::getObservationSize</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getObservationSize</name>
+        <qualifiedname>legged::Policy::getObservationSize</qualifiedname>
+        <reimplementedby refid="classlegged_1_1OnnxPolicy_1ac5d9de9c01b252fed2016d95ee2d44c2">getObservationSize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="19" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1Policy_1a13978ee8a1982cba2692954b082bb4fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t</type>
+        <definition>virtual size_t legged::Policy::getActionSize</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getActionSize</name>
+        <qualifiedname>legged::Policy::getActionSize</qualifiedname>
+        <reimplementedby refid="classlegged_1_1OnnxPolicy_1a3793c4f8ad0dfca4917601806dc0897c">getActionSize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="20" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1Policy_1ab523cdd77472a2edb27e2e796c5f2060" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void legged::Policy::init</definition>
+        <argsstring>()=0</argsstring>
+        <name>init</name>
+        <qualifiedname>legged::Policy::init</qualifiedname>
+        <reimplementedby refid="classlegged_1_1OnnxPolicy_1a8544a0f30824fa9a52d91223a8120a3f">init</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="22" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1Policy_1a2b31e71b8e3ff8b65de4868a485a4449" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void legged::Policy::reset</definition>
+        <argsstring>()=0</argsstring>
+        <name>reset</name>
+        <qualifiedname>legged::Policy::reset</qualifiedname>
+        <reimplementedby refid="classlegged_1_1OnnxPolicy_1ada57bc34be5bd8ab82ba9c37e5324d47">reset</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="23" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1Policy_1a19c83c44a2ad6ea91fa16785f79b2fc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>vector_t</type>
+        <definition>virtual vector_t legged::Policy::forward</definition>
+        <argsstring>(const vector_t &amp;observations)=0</argsstring>
+        <name>forward</name>
+        <qualifiedname>legged::Policy::forward</qualifiedname>
+        <reimplementedby refid="classlegged_1_1OnnxPolicy_1aee0031432d534c0de7fd5f89dd988995">forward</reimplementedby>
+        <param>
+          <type>const vector_t &amp;</type>
+          <declname>observations</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="24" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1Policy_1aaa9ca17c40c21988ec715197f8972361" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>vector_t</type>
+        <definition>virtual vector_t legged::Policy::getLastAction</definition>
+        <argsstring>()=0</argsstring>
+        <name>getLastAction</name>
+        <qualifiedname>legged::Policy::getLastAction</qualifiedname>
+        <reimplementedby refid="classlegged_1_1OnnxPolicy_1a775ce1a7b1041d05ab35ae627644ddfc">getLastAction</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="25" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1Policy_1a7f885f9f98edb48c4c659418e14a7d56" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; legged::Policy::getJointNames</definition>
+        <argsstring>() const</argsstring>
+        <name>getJointNames</name>
+        <qualifiedname>legged::Policy::getJointNames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="27" column="15" bodyfile="include/legged_rl_controllers/Policy.h" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1Policy_1a7b28e0f308ca17e4d59997c9d4e027b7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>vector_t</type>
+        <definition>vector_t legged::Policy::getJointStiffness</definition>
+        <argsstring>() const</argsstring>
+        <name>getJointStiffness</name>
+        <qualifiedname>legged::Policy::getJointStiffness</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="28" column="12" bodyfile="include/legged_rl_controllers/Policy.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1Policy_1a37db5bf8f286461e1d160efaf30433d8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>vector_t</type>
+        <definition>vector_t legged::Policy::getJointDamping</definition>
+        <argsstring>() const</argsstring>
+        <name>getJointDamping</name>
+        <qualifiedname>legged::Policy::getJointDamping</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="29" column="12" bodyfile="include/legged_rl_controllers/Policy.h" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1Policy_1a7130b2db46ba8422436c2b99f775dc11" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>vector_t</type>
+        <definition>vector_t legged::Policy::getDefaultJointPositions</definition>
+        <argsstring>() const</argsstring>
+        <name>getDefaultJointPositions</name>
+        <qualifiedname>legged::Policy::getDefaultJointPositions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="30" column="12" bodyfile="include/legged_rl_controllers/Policy.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1Policy_1a48468ed3d2183fb019f01f403ff3d7e0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; legged::Policy::getCommandNames</definition>
+        <argsstring>() const</argsstring>
+        <name>getCommandNames</name>
+        <qualifiedname>legged::Policy::getCommandNames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="32" column="15" bodyfile="include/legged_rl_controllers/Policy.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1Policy_1a745a8dbcaada65b329aee18dd31a5652" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt; std::string &gt; legged::Policy::getObservationNames</definition>
+        <argsstring>() const</argsstring>
+        <name>getObservationNames</name>
+        <qualifiedname>legged::Policy::getObservationNames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="33" column="15" bodyfile="include/legged_rl_controllers/Policy.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1Policy_1a399e519d5364fe900721e5f099e98672" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; size_t &gt;</type>
+        <definition>std::vector&lt; size_t &gt; legged::Policy::observationHistoryLengths</definition>
+        <argsstring>() const</argsstring>
+        <name>observationHistoryLengths</name>
+        <qualifiedname>legged::Policy::observationHistoryLengths</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="34" column="15" bodyfile="include/legged_rl_controllers/Policy.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1Policy_1a74932a88e720030143be718a69a9599d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>vector_t</type>
+        <definition>vector_t legged::Policy::getActionScale</definition>
+        <argsstring>() const</argsstring>
+        <name>getActionScale</name>
+        <qualifiedname>legged::Policy::getActionScale</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/Policy.h" line="35" column="12" bodyfile="include/legged_rl_controllers/Policy.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>legged::OnnxPolicy</label>
+        <link refid="classlegged_1_1OnnxPolicy"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>legged::Policy</label>
+        <link refid="classlegged_1_1Policy"/>
+      </node>
+    </inheritancegraph>
+    <location file="include/legged_rl_controllers/Policy.h" line="15" column="1" bodyfile="include/legged_rl_controllers/Policy.h" bodystart="15" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1Policy_1a01cf3e69b1acfcdba28314d9eecb6472" prot="protected" virt="non-virtual"><scope>legged::Policy</scope><name>actionScale_</name></member>
+      <member refid="classlegged_1_1Policy_1ae2ea11725ef15cba8e707a5661372735" prot="protected" virt="non-virtual"><scope>legged::Policy</scope><name>commandNames_</name></member>
+      <member refid="classlegged_1_1Policy_1a3fa68cee5cff59221962a853a0752795" prot="protected" virt="non-virtual"><scope>legged::Policy</scope><name>defaultJointPositions_</name></member>
+      <member refid="classlegged_1_1Policy_1a19c83c44a2ad6ea91fa16785f79b2fc0" prot="public" virt="pure-virtual"><scope>legged::Policy</scope><name>forward</name></member>
+      <member refid="classlegged_1_1Policy_1a74932a88e720030143be718a69a9599d" prot="public" virt="non-virtual"><scope>legged::Policy</scope><name>getActionScale</name></member>
+      <member refid="classlegged_1_1Policy_1a13978ee8a1982cba2692954b082bb4fa" prot="public" virt="pure-virtual"><scope>legged::Policy</scope><name>getActionSize</name></member>
+      <member refid="classlegged_1_1Policy_1a48468ed3d2183fb019f01f403ff3d7e0" prot="public" virt="non-virtual"><scope>legged::Policy</scope><name>getCommandNames</name></member>
+      <member refid="classlegged_1_1Policy_1a7130b2db46ba8422436c2b99f775dc11" prot="public" virt="non-virtual"><scope>legged::Policy</scope><name>getDefaultJointPositions</name></member>
+      <member refid="classlegged_1_1Policy_1a37db5bf8f286461e1d160efaf30433d8" prot="public" virt="non-virtual"><scope>legged::Policy</scope><name>getJointDamping</name></member>
+      <member refid="classlegged_1_1Policy_1a7f885f9f98edb48c4c659418e14a7d56" prot="public" virt="non-virtual"><scope>legged::Policy</scope><name>getJointNames</name></member>
+      <member refid="classlegged_1_1Policy_1a7b28e0f308ca17e4d59997c9d4e027b7" prot="public" virt="non-virtual"><scope>legged::Policy</scope><name>getJointStiffness</name></member>
+      <member refid="classlegged_1_1Policy_1aaa9ca17c40c21988ec715197f8972361" prot="public" virt="pure-virtual"><scope>legged::Policy</scope><name>getLastAction</name></member>
+      <member refid="classlegged_1_1Policy_1a745a8dbcaada65b329aee18dd31a5652" prot="public" virt="non-virtual"><scope>legged::Policy</scope><name>getObservationNames</name></member>
+      <member refid="classlegged_1_1Policy_1a2f0e7a4a7cd12ced827af9bb2280c155" prot="public" virt="pure-virtual"><scope>legged::Policy</scope><name>getObservationSize</name></member>
+      <member refid="classlegged_1_1Policy_1ab523cdd77472a2edb27e2e796c5f2060" prot="public" virt="pure-virtual"><scope>legged::Policy</scope><name>init</name></member>
+      <member refid="classlegged_1_1Policy_1ab9047d7bd986be9ad769c934097de2b8" prot="protected" virt="non-virtual"><scope>legged::Policy</scope><name>jointDamping_</name></member>
+      <member refid="classlegged_1_1Policy_1a2e63ace704c82473dff580e81348f0f7" prot="protected" virt="non-virtual"><scope>legged::Policy</scope><name>jointNames_</name></member>
+      <member refid="classlegged_1_1Policy_1a6a532a9036e6a18c00530b8b046275e8" prot="protected" virt="non-virtual"><scope>legged::Policy</scope><name>jointStiffness_</name></member>
+      <member refid="classlegged_1_1Policy_1a399e519d5364fe900721e5f099e98672" prot="public" virt="non-virtual"><scope>legged::Policy</scope><name>observationHistoryLengths</name></member>
+      <member refid="classlegged_1_1Policy_1a016875a518ed602909b447ebab86234e" prot="protected" virt="non-virtual"><scope>legged::Policy</scope><name>observationHistoryLengths_</name></member>
+      <member refid="classlegged_1_1Policy_1a59f77e2570558e1d3f6b54a9fc9ae6f0" prot="protected" virt="non-virtual"><scope>legged::Policy</scope><name>observationNames_</name></member>
+      <member refid="classlegged_1_1Policy_1a2b31e71b8e3ff8b65de4868a485a4449" prot="public" virt="pure-virtual"><scope>legged::Policy</scope><name>reset</name></member>
+      <member refid="classlegged_1_1Policy_1a58ed7ae76d1fb6fc19ea793fa92e9b39" prot="public" virt="non-virtual"><scope>legged::Policy</scope><name>SharedPtr</name></member>
+      <member refid="classlegged_1_1Policy_1af08fd661726c2ae6b8815b39ab3e0f87" prot="public" virt="virtual"><scope>legged::Policy</scope><name>~Policy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

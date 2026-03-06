@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="classlegged_1_1BaseAngVelObservationTerm" kind="class"><name>legged::BaseAngVelObservationTerm</name>
+    <member refid="classlegged_1_1BaseAngVelObservationTerm_1a15e59ac98d725636627150feddcae4ff" kind="function"><name>getSize</name></member>
+    <member refid="classlegged_1_1BaseAngVelObservationTerm_1aa1506ca6648380d406baba2a7d262103" kind="function"><name>ObservationTerm</name></member>
+    <member refid="classlegged_1_1BaseAngVelObservationTerm_1a223d716b85d1a4c4f00c7313d8b24e75" kind="function"><name>evaluate</name></member>
+  </compound>
+  <compound refid="classlegged_1_1BaseLinVelObservationTerm" kind="class"><name>legged::BaseLinVelObservationTerm</name>
+    <member refid="classlegged_1_1BaseLinVelObservationTerm_1a6922a664a7fd0e822689a487ffbee7b1" kind="function"><name>getSize</name></member>
+    <member refid="classlegged_1_1BaseLinVelObservationTerm_1aa1506ca6648380d406baba2a7d262103" kind="function"><name>ObservationTerm</name></member>
+    <member refid="classlegged_1_1BaseLinVelObservationTerm_1aeef3e8bef26f0ca11447c58de7b5e6fb" kind="function"><name>evaluate</name></member>
+  </compound>
+  <compound refid="classlegged_1_1CommandManager" kind="class"><name>legged::CommandManager</name>
+    <member refid="classlegged_1_1CommandManager_1aa09dbd80254b2751fff23f06b6da15a5" kind="function"><name>ManagerBase</name></member>
+  </compound>
+  <compound refid="classlegged_1_1CommandObservationTerm" kind="class"><name>legged::CommandObservationTerm</name>
+    <member refid="classlegged_1_1CommandObservationTerm_1ae27cc74b29fea3d03d862a8b4f75359b" kind="variable"><name>commandManager_</name></member>
+    <member refid="classlegged_1_1CommandObservationTerm_1a667f5d786f1c66f55a6d528d536b0542" kind="function"><name>CommandObservationTerm</name></member>
+    <member refid="classlegged_1_1CommandObservationTerm_1a7ce9ba52ab19dcaa61535058db3d5fbe" kind="function"><name>getSize</name></member>
+    <member refid="classlegged_1_1CommandObservationTerm_1af008797e36cb62ee6733c33c962e20c9" kind="function"><name>evaluate</name></member>
+  </compound>
+  <compound refid="classlegged_1_1CommandTerm" kind="class"><name>legged::CommandTerm</name>
+    <member refid="classlegged_1_1CommandTerm_1ab50d173d3484f694a16ebecddc9617da" kind="typedef"><name>SharedPtr</name></member>
+    <member refid="classlegged_1_1CommandTerm_1aeacff5b3fe4f88094299f8bd2219238e" kind="variable"><name>model_</name></member>
+    <member refid="classlegged_1_1CommandTerm_1ab0cb0b8f7209acc5b6b7e8bb3d9536ba" kind="function"><name>CommandTerm</name></member>
+    <member refid="classlegged_1_1CommandTerm_1a8d2caf8cdcb1edacd0fac0ef1b2e6908" kind="function"><name>~CommandTerm</name></member>
+    <member refid="classlegged_1_1CommandTerm_1a3b6f5577cd5b81884f02afa1bde5950e" kind="function"><name>getValue</name></member>
+    <member refid="classlegged_1_1CommandTerm_1a1f7ca19266a794428e2224848fbc28e5" kind="function"><name>reset</name></member>
+    <member refid="classlegged_1_1CommandTerm_1a4f17152b4c0fbdcc4bce67c0e4362726" kind="function"><name>getSize</name></member>
+    <member refid="classlegged_1_1CommandTerm_1a98e185fd51d15006b7b3dddce2146bdb" kind="function"><name>setModel</name></member>
+  </compound>
+  <compound refid="classlegged_1_1JointObservationTerm" kind="class"><name>legged::JointObservationTerm</name>
+    <member refid="classlegged_1_1JointObservationTerm_1ac1025d3a9d2923bdb3fd244e154f1eee" kind="variable"><name>jointNameInPolicy_</name></member>
+    <member refid="classlegged_1_1JointObservationTerm_1af804b2c2f5766b6b85303f29285bdc38" kind="function"><name>JointObservationTerm</name></member>
+    <member refid="classlegged_1_1JointObservationTerm_1adc7ca9ae450fd6361b685e97313ddd9c" kind="function"><name>getSize</name></member>
+    <member refid="classlegged_1_1JointObservationTerm_1ab8f60518c2d7b46239175bca5b6d0666" kind="function"><name>modify</name></member>
+  </compound>
+  <compound refid="classlegged_1_1JointPositionsObservationTerm" kind="class"><name>legged::JointPositionsObservationTerm</name>
+    <member refid="classlegged_1_1JointPositionsObservationTerm_1af8968591167a41057442eb5d57250924" kind="variable"><name>defaultPosition_</name></member>
+    <member refid="classlegged_1_1JointPositionsObservationTerm_1ade60fa140eba2c857721af03f43fff7e" kind="function"><name>JointPositionsObservationTerm</name></member>
+    <member refid="classlegged_1_1JointPositionsObservationTerm_1acad4a2c9f41633108765bac9f15c4c0c" kind="function"><name>evaluate</name></member>
+    <member refid="classlegged_1_1JointPositionsObservationTerm_1a020ee70e3d8309a05b887a76cfeeb2ee" kind="function"><name>modify</name></member>
+  </compound>
+  <compound refid="classlegged_1_1JointVelocitiesObservationTerm" kind="class"><name>legged::JointVelocitiesObservationTerm</name>
+    <member refid="classlegged_1_1JointVelocitiesObservationTerm_1a458520eb58b05e4f2cac8c6730c8f1a4" kind="function"><name>evaluate</name></member>
+    <member refid="classlegged_1_1JointVelocitiesObservationTerm_1af804b2c2f5766b6b85303f29285bdc38" kind="function"><name>JointObservationTerm</name></member>
+  </compound>
+  <compound refid="classlegged_1_1LastActionObservationTerm" kind="class"><name>legged::LastActionObservationTerm</name>
+    <member refid="classlegged_1_1LastActionObservationTerm_1a0b4f316ca2ac7f128b31428a5acb86ec" kind="variable"><name>policy_</name></member>
+    <member refid="classlegged_1_1LastActionObservationTerm_1a6d0f8ea153a4b32e78636d48c9f05dc9" kind="function"><name>LastActionObservationTerm</name></member>
+    <member refid="classlegged_1_1LastActionObservationTerm_1a98989e9a202e9591b9ab9cb1f1e74cfa" kind="function"><name>getSize</name></member>
+    <member refid="classlegged_1_1LastActionObservationTerm_1a674998637f9ab78f0d9f696fae8b4870" kind="function"><name>evaluate</name></member>
+  </compound>
+  <compound refid="classlegged_1_1LocalObservationTerm" kind="class"><name>legged::LocalObservationTerm</name>
+    <member refid="classlegged_1_1LocalObservationTerm_1aeec700a3e974d04eb66415565b0810bb" kind="function"><name>getSize</name></member>
+    <member refid="classlegged_1_1LocalObservationTerm_1aa1506ca6648380d406baba2a7d262103" kind="function"><name>ObservationTerm</name></member>
+    <member refid="classlegged_1_1LocalObservationTerm_1ae6653c1a239397300327288ab0d26506" kind="function"><name>modify</name></member>
+  </compound>
+  <compound refid="classlegged_1_1ManagerBase" kind="class"><name>legged::ManagerBase</name>
+    <member refid="classlegged_1_1ManagerBase_1aa4b10489f81aba2aa3c79292cbf54888" kind="typedef"><name>TermPtr</name></member>
+    <member refid="classlegged_1_1ManagerBase_1aa53c33361c6a124470eef5289084bc80" kind="typedef"><name>Terms</name></member>
+    <member refid="classlegged_1_1ManagerBase_1a9c2e42723e6c013a5e12c6674eed5cf7" kind="typedef"><name>SharedPtr</name></member>
+    <member refid="classlegged_1_1ManagerBase_1a3fc40a973ade6ad12f29724cac59c542" kind="variable"><name>model_</name></member>
+    <member refid="classlegged_1_1ManagerBase_1a63ebb0da1cfd2821c4889635c51b1469" kind="variable"><name>terms_</name></member>
+    <member refid="classlegged_1_1ManagerBase_1aa09dbd80254b2751fff23f06b6da15a5" kind="function"><name>ManagerBase</name></member>
+    <member refid="classlegged_1_1ManagerBase_1a38082391c908f3ac75ab8078491ecb29" kind="function"><name>~ManagerBase</name></member>
+    <member refid="classlegged_1_1ManagerBase_1a791712025d4e844443c417a0d7263cfe" kind="function"><name>addTerm</name></member>
+    <member refid="classlegged_1_1ManagerBase_1a62457d0d0d8555552aaf7b9cb9e9d713" kind="function"><name>getTerms</name></member>
+    <member refid="classlegged_1_1ManagerBase_1acd7d20bb9972881f02b013a179b1e90d" kind="function"><name>getValue</name></member>
+    <member refid="classlegged_1_1ManagerBase_1ab4321846ddb1ffd5a5e5096656747693" kind="function"><name>getSize</name></member>
+    <member refid="classlegged_1_1ManagerBase_1a8ada74014b84d348c06e083ec9970942" kind="function"><name>reset</name></member>
+  </compound>
+  <compound refid="classlegged_1_1ObservationManager" kind="class"><name>legged::ObservationManager</name>
+    <member refid="classlegged_1_1ObservationManager_1a35195df1764624ccad04289af8157cf0" kind="typedef"><name>SharedPtr</name></member>
+    <member refid="classlegged_1_1ObservationManager_1a8b1dc5928c34f088e1734ded4e704880" kind="function"><name>ObservationManager</name></member>
+    <member refid="classlegged_1_1ObservationManager_1a24a8f06442db208828d87f61e07165c4" kind="function"><name>setHistoryLengths</name></member>
+    <member refid="classlegged_1_1ObservationManager_1abfc19c44df73e84113ecff216fec5e6a" kind="function"><name>getValue</name></member>
+    <member refid="classlegged_1_1ObservationManager_1a16362c2878cfcb408e428fea61b62f22" kind="function"><name>getSize</name></member>
+  </compound>
+  <compound refid="classlegged_1_1ObservationTerm" kind="class"><name>legged::ObservationTerm</name>
+    <member refid="classlegged_1_1ObservationTerm_1aac6c0aef459411eb2f3e88fa31298c65" kind="typedef"><name>SharedPtr</name></member>
+    <member refid="classlegged_1_1ObservationTerm_1aedd7dcb2346a282bb60ff5d6708f5b10" kind="variable"><name>model_</name></member>
+    <member refid="classlegged_1_1ObservationTerm_1a8224b2ebe2adc9ec9774b06c4eae8c4d" kind="variable"><name>historyLength_</name></member>
+    <member refid="classlegged_1_1ObservationTerm_1a67484fe754557f02bbd193564344ec42" kind="variable"><name>initialized_</name></member>
+    <member refid="classlegged_1_1ObservationTerm_1aa2c87d8eb6d40955ef0b899ff3282c7f" kind="variable"><name>history_</name></member>
+    <member refid="classlegged_1_1ObservationTerm_1aa1506ca6648380d406baba2a7d262103" kind="function"><name>ObservationTerm</name></member>
+    <member refid="classlegged_1_1ObservationTerm_1a6631835909df0292eb219f84df0f380e" kind="function"><name>~ObservationTerm</name></member>
+    <member refid="classlegged_1_1ObservationTerm_1a5850878005f89e8437c7e0a989229c93" kind="function"><name>getValue</name></member>
+    <member refid="classlegged_1_1ObservationTerm_1a7bf67168ef7eed36f83e3cfa016a6499" kind="function"><name>getSize</name></member>
+    <member refid="classlegged_1_1ObservationTerm_1ad0d439aa8b3e17ffee134cc63f9719fc" kind="function"><name>setHistoryLength</name></member>
+    <member refid="classlegged_1_1ObservationTerm_1a3e8d732bf648855a3ea3a57f29efed70" kind="function"><name>getHistoryLength</name></member>
+    <member refid="classlegged_1_1ObservationTerm_1a8560e826f364246851120ad55902f78b" kind="function"><name>getTotalSize</name></member>
+    <member refid="classlegged_1_1ObservationTerm_1a2d4d7c6454eb10423d92891c9962d0c1" kind="function"><name>reset</name></member>
+    <member refid="classlegged_1_1ObservationTerm_1ae03af17c76ff709989f80fb8f7008eec" kind="function"><name>setModel</name></member>
+    <member refid="classlegged_1_1ObservationTerm_1a93a4179a31588f23d4056cd3c4a560bf" kind="function"><name>evaluate</name></member>
+    <member refid="classlegged_1_1ObservationTerm_1a5b4c6d4d8d6088554b4c055284cd1436" kind="function"><name>modify</name></member>
+  </compound>
+  <compound refid="classlegged_1_1OnnxController" kind="class"><name>legged::OnnxController</name>
+    <member refid="classlegged_1_1OnnxController_1aa98dca0eb2488347303d8c62dc35031f" kind="function"><name>on_configure</name></member>
+  </compound>
+  <compound refid="classlegged_1_1OnnxPolicy" kind="class"><name>legged::OnnxPolicy</name>
+    <member refid="classlegged_1_1OnnxPolicy_1a4485fdd8d8000549ce3bd83e19368939" kind="typedef"><name>SharedPtr</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1a335f36fa0f3fc087d15b12544b5dd825" kind="typedef"><name>tensor_element_t</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1a4612671bd7bd45f1cf840370b30b76fb" kind="typedef"><name>tensor2d_t</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1a7a56e6e54a5ab7c59288e04561ae59c9" kind="variable"><name>onnxEnvPrt_</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1a2e11e757daffff53a0c002db6414ce1f" kind="variable"><name>sessionPtr_</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1a8751b978d98f4afde38feb6add6bf095" kind="variable"><name>name2Metadata_</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1a6d326cde87b1ea863363f4a514e9adda" kind="variable"><name>inputNamesRaw_</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1a77126e269296caaa9be7c37fd0a707f4" kind="variable"><name>outputNamesRaw_</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1aaa0d1f6144b9ce40aea9619224d17636" kind="variable"><name>inputNames_</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1ad780a7f76da5de1c17793fb116545b14" kind="variable"><name>outputNames_</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1a36c2c9f0d1008e4be71d42713ac539fe" kind="variable"><name>inputShapes_</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1a36100b0fb8422eaba349944f5a8bdf59" kind="variable"><name>outputShapes_</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1a08c07ef3f6026da7f2b8a025a32bc898" kind="variable"><name>name2Index_</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1a3ccee3b4b68b359772f053f611623df3" kind="variable"><name>inputTensors_</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1a0e63ca1df2a3aa6962f92f2d4d08d3bd" kind="variable"><name>outputTensors_</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1aec5db2a7b4c66ca9c2af5a7e43e8ea8d" kind="function"><name>OnnxPolicy</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1ac5d9de9c01b252fed2016d95ee2d44c2" kind="function"><name>getObservationSize</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1a3793c4f8ad0dfca4917601806dc0897c" kind="function"><name>getActionSize</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1a8544a0f30824fa9a52d91223a8120a3f" kind="function"><name>init</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1ada57bc34be5bd8ab82ba9c37e5324d47" kind="function"><name>reset</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1a775ce1a7b1041d05ab35ae627644ddfc" kind="function"><name>getLastAction</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1aee0031432d534c0de7fd5f89dd988995" kind="function"><name>forward</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1ae0795577a495a22cef1691fd6160a215" kind="function"><name>getMetadataStr</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1aa5edefee1092bd002717f88538bb12f7" kind="function"><name>getMetadataVector</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1ade10da76897e4502c7d83f3d3636b519" kind="function"><name>parseMetadata</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1ab58802b4583775c7d8524cf577492ca6" kind="function"><name>parseInputOutput</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1ad003c29cd3105009cb42ea71a3383c5b" kind="function"><name>checkInputOutput</name></member>
+    <member refid="classlegged_1_1OnnxPolicy_1af5ca4a45c3d1b67b81bea2841ef898e3" kind="function"><name>run</name></member>
+  </compound>
+  <compound refid="classlegged_1_1PhaseObservationTerm" kind="class"><name>legged::PhaseObservationTerm</name>
+    <member refid="classlegged_1_1PhaseObservationTerm_1a4791eb3e7439e6e90adad926e164914f" kind="variable"><name>phase_</name></member>
+    <member refid="classlegged_1_1PhaseObservationTerm_1ad8bfcc026709e63eeba568eaf737c1c0" kind="variable"><name>phaseDt_</name></member>
+    <member refid="classlegged_1_1PhaseObservationTerm_1a08bd8cd6245d800ee67a7d2a290450f7" kind="function"><name>PhaseObservationTerm</name></member>
+    <member refid="classlegged_1_1PhaseObservationTerm_1a7edcccb70a811ac4bb198e10ef3ebbe5" kind="function"><name>getSize</name></member>
+    <member refid="classlegged_1_1PhaseObservationTerm_1aef40012004a5a85cc557715dabccdccc" kind="function"><name>reset</name></member>
+    <member refid="classlegged_1_1PhaseObservationTerm_1aa1506ca6648380d406baba2a7d262103" kind="function"><name>ObservationTerm</name></member>
+    <member refid="classlegged_1_1PhaseObservationTerm_1a75e64cfce2dceb7fd861a85ed83d4897" kind="function"><name>evaluate</name></member>
+  </compound>
+  <compound refid="classlegged_1_1Policy" kind="class"><name>legged::Policy</name>
+    <member refid="classlegged_1_1Policy_1a58ed7ae76d1fb6fc19ea793fa92e9b39" kind="typedef"><name>SharedPtr</name></member>
+    <member refid="classlegged_1_1Policy_1a2e63ace704c82473dff580e81348f0f7" kind="variable"><name>jointNames_</name></member>
+    <member refid="classlegged_1_1Policy_1a6a532a9036e6a18c00530b8b046275e8" kind="variable"><name>jointStiffness_</name></member>
+    <member refid="classlegged_1_1Policy_1ab9047d7bd986be9ad769c934097de2b8" kind="variable"><name>jointDamping_</name></member>
+    <member refid="classlegged_1_1Policy_1a3fa68cee5cff59221962a853a0752795" kind="variable"><name>defaultJointPositions_</name></member>
+    <member refid="classlegged_1_1Policy_1ae2ea11725ef15cba8e707a5661372735" kind="variable"><name>commandNames_</name></member>
+    <member refid="classlegged_1_1Policy_1a59f77e2570558e1d3f6b54a9fc9ae6f0" kind="variable"><name>observationNames_</name></member>
+    <member refid="classlegged_1_1Policy_1a016875a518ed602909b447ebab86234e" kind="variable"><name>observationHistoryLengths_</name></member>
+    <member refid="classlegged_1_1Policy_1a01cf3e69b1acfcdba28314d9eecb6472" kind="variable"><name>actionScale_</name></member>
+    <member refid="classlegged_1_1Policy_1af08fd661726c2ae6b8815b39ab3e0f87" kind="function"><name>~Policy</name></member>
+    <member refid="classlegged_1_1Policy_1a2f0e7a4a7cd12ced827af9bb2280c155" kind="function"><name>getObservationSize</name></member>
+    <member refid="classlegged_1_1Policy_1a13978ee8a1982cba2692954b082bb4fa" kind="function"><name>getActionSize</name></member>
+    <member refid="classlegged_1_1Policy_1ab523cdd77472a2edb27e2e796c5f2060" kind="function"><name>init</name></member>
+    <member refid="classlegged_1_1Policy_1a2b31e71b8e3ff8b65de4868a485a4449" kind="function"><name>reset</name></member>
+    <member refid="classlegged_1_1Policy_1a19c83c44a2ad6ea91fa16785f79b2fc0" kind="function"><name>forward</name></member>
+    <member refid="classlegged_1_1Policy_1aaa9ca17c40c21988ec715197f8972361" kind="function"><name>getLastAction</name></member>
+    <member refid="classlegged_1_1Policy_1a7f885f9f98edb48c4c659418e14a7d56" kind="function"><name>getJointNames</name></member>
+    <member refid="classlegged_1_1Policy_1a7b28e0f308ca17e4d59997c9d4e027b7" kind="function"><name>getJointStiffness</name></member>
+    <member refid="classlegged_1_1Policy_1a37db5bf8f286461e1d160efaf30433d8" kind="function"><name>getJointDamping</name></member>
+    <member refid="classlegged_1_1Policy_1a7130b2db46ba8422436c2b99f775dc11" kind="function"><name>getDefaultJointPositions</name></member>
+    <member refid="classlegged_1_1Policy_1a48468ed3d2183fb019f01f403ff3d7e0" kind="function"><name>getCommandNames</name></member>
+    <member refid="classlegged_1_1Policy_1a745a8dbcaada65b329aee18dd31a5652" kind="function"><name>getObservationNames</name></member>
+    <member refid="classlegged_1_1Policy_1a399e519d5364fe900721e5f099e98672" kind="function"><name>observationHistoryLengths</name></member>
+    <member refid="classlegged_1_1Policy_1a74932a88e720030143be718a69a9599d" kind="function"><name>getActionScale</name></member>
+  </compound>
+  <compound refid="classlegged_1_1ProjectedGravityObservationTerm" kind="class"><name>legged::ProjectedGravityObservationTerm</name>
+    <member refid="classlegged_1_1ProjectedGravityObservationTerm_1a9abc0c890f455d9a6a0050a03b8a417d" kind="function"><name>evaluate</name></member>
+  </compound>
+  <compound refid="classlegged_1_1RlController" kind="class"><name>legged::RlController</name>
+    <member refid="classlegged_1_1RlController_1a7c0240904dc497e6d706f2245d7cc7da" kind="variable"><name>policy_</name></member>
+    <member refid="classlegged_1_1RlController_1a40f16b48c7b55107bbdcecc70c1f274b" kind="variable"><name>commandManager_</name></member>
+    <member refid="classlegged_1_1RlController_1ad51ab0f4a259f089e17a6286c65db75e" kind="variable"><name>observationManager_</name></member>
+    <member refid="classlegged_1_1RlController_1ac2b15483d8063cdfa3379b6552e6b94a" kind="variable"><name>actionType_</name></member>
+    <member refid="classlegged_1_1RlController_1a11914344db6de3d01afa619f5b7f0125" kind="variable"><name>desiredPosition_</name></member>
+    <member refid="classlegged_1_1RlController_1a7cf81edac649b0f2237bcdcd082ee0c0" kind="variable"><name>publisher_</name></member>
+    <member refid="classlegged_1_1RlController_1a37af8c6ac5dc035f283dcd80e48a999b" kind="variable"><name>publisherRealtime_</name></member>
+    <member refid="classlegged_1_1RlController_1a4a739648f43a617db4eed846514090a0" kind="function"><name>on_init</name></member>
+    <member refid="classlegged_1_1RlController_1a8555c53662801ea239eda8c80a22b485" kind="function"><name>update</name></member>
+    <member refid="classlegged_1_1RlController_1a5ec7a46d74a76669365070e59a4a3b0a" kind="function"><name>on_configure</name></member>
+    <member refid="classlegged_1_1RlController_1aba099d55c29ee1b2e9fac44bebe1a542" kind="function"><name>on_activate</name></member>
+    <member refid="classlegged_1_1RlController_1a65c46894b89687d98b8a86dbf61db44c" kind="function"><name>parserCommand</name></member>
+    <member refid="classlegged_1_1RlController_1a1d6bf846aff307ed6781b938ba7c7160" kind="function"><name>parserObservation</name></member>
+  </compound>
+  <compound refid="classlegged_1_1VelocityTopicCommandTerm" kind="class"><name>legged::VelocityTopicCommandTerm</name>
+    <member refid="classlegged_1_1VelocityTopicCommandTerm_1af21e07cbfd96926bb57be6b83b29afb7" kind="typedef"><name>Twist</name></member>
+    <member refid="classlegged_1_1VelocityTopicCommandTerm_1abaf70b94429930e85d68fe92f0e283af" kind="variable"><name>node_</name></member>
+    <member refid="classlegged_1_1VelocityTopicCommandTerm_1a9ce6ef78d4420c3f6a9b3b4e910fecab" kind="variable"><name>subscriber_</name></member>
+    <member refid="classlegged_1_1VelocityTopicCommandTerm_1a8a477df9124fe1f9055417799d186708" kind="variable"><name>receivedMsg_</name></member>
+    <member refid="classlegged_1_1VelocityTopicCommandTerm_1afdf3f46b1219b286f507893ea5e60bde" kind="function"><name>VelocityTopicCommandTerm</name></member>
+    <member refid="classlegged_1_1VelocityTopicCommandTerm_1a02972912e27b81b047da3cce7ab61663" kind="function"><name>getValue</name></member>
+    <member refid="classlegged_1_1VelocityTopicCommandTerm_1a94bef758d64b37df8d282d7a57199270" kind="function"><name>reset</name></member>
+    <member refid="classlegged_1_1VelocityTopicCommandTerm_1a270da0f4b11f5eb95d52260bb374cbd6" kind="function"><name>getSize</name></member>
+  </compound>
+  <compound refid="namespacelegged" kind="namespace"><name>legged</name>
+    <member refid="OnnxPolicy_8h_1a1290afcc76b523d41afbaccb8300c990" kind="function"><name>parseCsv</name></member>
+    <member refid="OnnxPolicy_8h_1a966afa3b76b693ebf0268f15204c4f05" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="CommandManager_8h" kind="file"><name>CommandManager.h</name>
+  </compound>
+  <compound refid="ManagerBased_8h" kind="file"><name>ManagerBased.h</name>
+  </compound>
+  <compound refid="ManagerBasedImpl_8h" kind="file"><name>ManagerBasedImpl.h</name>
+  </compound>
+  <compound refid="ObservationManager_8h" kind="file"><name>ObservationManager.h</name>
+  </compound>
+  <compound refid="OnnxController_8h" kind="file"><name>OnnxController.h</name>
+  </compound>
+  <compound refid="OnnxPolicy_8h" kind="file"><name>OnnxPolicy.h</name>
+  </compound>
+  <compound refid="Policy_8h" kind="file"><name>Policy.h</name>
+  </compound>
+  <compound refid="RlController_8h" kind="file"><name>RlController.h</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_a25d77f70819c3e09b3c4506fc81aac5" kind="dir"><name>include/legged_rl_controllers</name>
+  </compound>
+</doxygenindex>

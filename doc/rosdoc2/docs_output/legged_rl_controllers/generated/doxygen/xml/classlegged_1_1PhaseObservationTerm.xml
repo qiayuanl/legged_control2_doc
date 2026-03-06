@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1PhaseObservationTerm" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>legged::PhaseObservationTerm</compoundname>
+    <basecompoundref refid="classlegged_1_1ObservationTerm" prot="public" virt="non-virtual">legged::ObservationTerm</basecompoundref>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classlegged_1_1PhaseObservationTerm_1a4791eb3e7439e6e90adad926e164914f" prot="protected" static="no" mutable="no">
+        <type>vector_t</type>
+        <definition>vector_t legged::PhaseObservationTerm::phase_</definition>
+        <argsstring></argsstring>
+        <name>phase_</name>
+        <qualifiedname>legged::PhaseObservationTerm::phase_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="202" column="12" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1PhaseObservationTerm_1ad8bfcc026709e63eeba568eaf737c1c0" prot="protected" static="no" mutable="no">
+        <type>scalar_t</type>
+        <definition>scalar_t legged::PhaseObservationTerm::phaseDt_</definition>
+        <argsstring></argsstring>
+        <name>phaseDt_</name>
+        <qualifiedname>legged::PhaseObservationTerm::phaseDt_</qualifiedname>
+        <initializer>{2 * M_PI * 0.02 * 1.5}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="203" column="12" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="203" bodyend="203"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlegged_1_1PhaseObservationTerm_1a08bd8cd6245d800ee67a7d2a290450f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>legged::PhaseObservationTerm::PhaseObservationTerm</definition>
+        <argsstring>()</argsstring>
+        <name>PhaseObservationTerm</name>
+        <qualifiedname>legged::PhaseObservationTerm::PhaseObservationTerm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="180" column="3" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="180" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1PhaseObservationTerm_1a7edcccb70a811ac4bb198e10ef3ebbe5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>size_t</type>
+        <definition>size_t legged::PhaseObservationTerm::getSize</definition>
+        <argsstring>() const override</argsstring>
+        <name>getSize</name>
+        <qualifiedname>legged::PhaseObservationTerm::getSize</qualifiedname>
+        <reimplements refid="classlegged_1_1ObservationTerm_1a7bf67168ef7eed36f83e3cfa016a6499">getSize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="181" column="10" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="181" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1PhaseObservationTerm_1aef40012004a5a85cc557715dabccdccc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void legged::PhaseObservationTerm::reset</definition>
+        <argsstring>() override</argsstring>
+        <name>reset</name>
+        <qualifiedname>legged::PhaseObservationTerm::reset</qualifiedname>
+        <reimplements refid="classlegged_1_1ObservationTerm_1a2d4d7c6454eb10423d92891c9962d0c1">reset</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="182" column="8" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1PhaseObservationTerm_1aa1506ca6648380d406baba2a7d262103" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>legged::ObservationTerm::ObservationTerm</definition>
+        <argsstring>()=default</argsstring>
+        <name>ObservationTerm</name>
+        <qualifiedname>legged::PhaseObservationTerm::ObservationTerm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="179" column="3"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classlegged_1_1PhaseObservationTerm_1a75e64cfce2dceb7fd861a85ed83d4897" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>vector_t</type>
+        <definition>vector_t legged::PhaseObservationTerm::evaluate</definition>
+        <argsstring>() override</argsstring>
+        <name>evaluate</name>
+        <qualifiedname>legged::PhaseObservationTerm::evaluate</qualifiedname>
+        <reimplements refid="classlegged_1_1ObservationTerm_1a93a4179a31588f23d4056cd3c4a560bf">evaluate</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_rl_controllers/ObservationManager.h" line="188" column="12" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="188" bodyend="200"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>legged::ObservationTerm</label>
+        <link refid="classlegged_1_1ObservationTerm"/>
+      </node>
+      <node id="1">
+        <label>legged::PhaseObservationTerm</label>
+        <link refid="classlegged_1_1PhaseObservationTerm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>legged::ObservationTerm</label>
+        <link refid="classlegged_1_1ObservationTerm"/>
+      </node>
+      <node id="1">
+        <label>legged::PhaseObservationTerm</label>
+        <link refid="classlegged_1_1PhaseObservationTerm"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/legged_rl_controllers/ObservationManager.h" line="177" column="1" bodyfile="include/legged_rl_controllers/ObservationManager.h" bodystart="177" bodyend="204"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1PhaseObservationTerm_1a75e64cfce2dceb7fd861a85ed83d4897" prot="protected" virt="virtual"><scope>legged::PhaseObservationTerm</scope><name>evaluate</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a3e8d732bf648855a3ea3a57f29efed70" prot="public" virt="non-virtual"><scope>legged::PhaseObservationTerm</scope><name>getHistoryLength</name></member>
+      <member refid="classlegged_1_1PhaseObservationTerm_1a7edcccb70a811ac4bb198e10ef3ebbe5" prot="public" virt="virtual"><scope>legged::PhaseObservationTerm</scope><name>getSize</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a8560e826f364246851120ad55902f78b" prot="public" virt="non-virtual"><scope>legged::PhaseObservationTerm</scope><name>getTotalSize</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a5850878005f89e8437c7e0a989229c93" prot="public" virt="non-virtual"><scope>legged::PhaseObservationTerm</scope><name>getValue</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1aa2c87d8eb6d40955ef0b899ff3282c7f" prot="protected" virt="non-virtual"><scope>legged::PhaseObservationTerm</scope><name>history_</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a8224b2ebe2adc9ec9774b06c4eae8c4d" prot="protected" virt="non-virtual"><scope>legged::PhaseObservationTerm</scope><name>historyLength_</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a67484fe754557f02bbd193564344ec42" prot="protected" virt="non-virtual"><scope>legged::PhaseObservationTerm</scope><name>initialized_</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1aedd7dcb2346a282bb60ff5d6708f5b10" prot="protected" virt="non-virtual"><scope>legged::PhaseObservationTerm</scope><name>model_</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a5b4c6d4d8d6088554b4c055284cd1436" prot="protected" virt="virtual"><scope>legged::PhaseObservationTerm</scope><name>modify</name></member>
+      <member refid="classlegged_1_1PhaseObservationTerm_1aa1506ca6648380d406baba2a7d262103" prot="public" virt="non-virtual"><scope>legged::PhaseObservationTerm</scope><name>ObservationTerm</name></member>
+      <member refid="classlegged_1_1PhaseObservationTerm_1a4791eb3e7439e6e90adad926e164914f" prot="protected" virt="non-virtual"><scope>legged::PhaseObservationTerm</scope><name>phase_</name></member>
+      <member refid="classlegged_1_1PhaseObservationTerm_1ad8bfcc026709e63eeba568eaf737c1c0" prot="protected" virt="non-virtual"><scope>legged::PhaseObservationTerm</scope><name>phaseDt_</name></member>
+      <member refid="classlegged_1_1PhaseObservationTerm_1a08bd8cd6245d800ee67a7d2a290450f7" prot="public" virt="non-virtual"><scope>legged::PhaseObservationTerm</scope><name>PhaseObservationTerm</name></member>
+      <member refid="classlegged_1_1PhaseObservationTerm_1aef40012004a5a85cc557715dabccdccc" prot="public" virt="virtual"><scope>legged::PhaseObservationTerm</scope><name>reset</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1ad0d439aa8b3e17ffee134cc63f9719fc" prot="public" virt="non-virtual"><scope>legged::PhaseObservationTerm</scope><name>setHistoryLength</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1ae03af17c76ff709989f80fb8f7008eec" prot="public" virt="virtual"><scope>legged::PhaseObservationTerm</scope><name>setModel</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1aac6c0aef459411eb2f3e88fa31298c65" prot="public" virt="non-virtual"><scope>legged::PhaseObservationTerm</scope><name>SharedPtr</name></member>
+      <member refid="classlegged_1_1ObservationTerm_1a6631835909df0292eb219f84df0f380e" prot="public" virt="virtual"><scope>legged::PhaseObservationTerm</scope><name>~ObservationTerm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

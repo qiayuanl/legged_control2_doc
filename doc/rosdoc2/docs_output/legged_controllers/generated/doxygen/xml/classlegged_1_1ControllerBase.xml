@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classlegged_1_1ControllerBase" kind="class" language="C++" prot="public">
+    <compoundname>legged::ControllerBase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">controller_interface::ControllerInterface</basecompoundref>
+    <derivedcompoundref refid="classlegged_1_1StandbyController" prot="public" virt="non-virtual">legged::StandbyController</derivedcompoundref>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlegged_1_1ControllerBase_1ae5c0d94626d31c7e9844492b3c48a7a9" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string legged::ControllerBase::interfaceName_</definition>
+        <argsstring></argsstring>
+        <name>interfaceName_</name>
+        <qualifiedname>legged::ControllerBase::interfaceName_</qualifiedname>
+        <initializer>= &quot;state_estimator/legged_model&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/ControllerBase.h" line="17" column="21" bodyfile="include/legged_controllers/ControllerBase.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classlegged_1_1ControllerBase_1af4994478dce65d7fce39a8e53ba341c5" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; legged::ControllerBase::jointNameInControl_</definition>
+        <argsstring></argsstring>
+        <name>jointNameInControl_</name>
+        <qualifiedname>legged::ControllerBase::jointNameInControl_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/ControllerBase.h" line="39" column="15" bodyfile="include/legged_controllers/ControllerBase.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlegged_1_1ControllerBase_1a868cf4ce63d38495ae5a7830d67bef0c" prot="protected" static="no" mutable="no">
+        <type>LeggedModel::SharedPtr *</type>
+        <definition>LeggedModel::SharedPtr* legged::ControllerBase::leggedModel_</definition>
+        <argsstring></argsstring>
+        <name>leggedModel_</name>
+        <qualifiedname>legged::ControllerBase::leggedModel_</qualifiedname>
+        <initializer>{nullptr}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/ControllerBase.h" line="40" column="26" bodyfile="include/legged_controllers/ControllerBase.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlegged_1_1ControllerBase_1a76f81fec172140d9ab5cba17e1f96dd6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>controller_interface::InterfaceConfiguration</type>
+        <definition>controller_interface::InterfaceConfiguration legged::ControllerBase::command_interface_configuration</definition>
+        <argsstring>() const override</argsstring>
+        <name>command_interface_configuration</name>
+        <qualifiedname>legged::ControllerBase::command_interface_configuration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/ControllerBase.h" line="19" column="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1ControllerBase_1a1b7728d68c39bf5120aa0b21f04b3d8c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>controller_interface::InterfaceConfiguration</type>
+        <definition>controller_interface::InterfaceConfiguration legged::ControllerBase::state_interface_configuration</definition>
+        <argsstring>() const override</argsstring>
+        <name>state_interface_configuration</name>
+        <qualifiedname>legged::ControllerBase::state_interface_configuration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/ControllerBase.h" line="21" column="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1ControllerBase_1aeb9cae2df5d4f51918b35031aa8a3cc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>controller_interface::return_type</type>
+        <definition>controller_interface::return_type legged::ControllerBase::update</definition>
+        <argsstring>(const rclcpp::Time &amp;time, const rclcpp::Duration &amp;period) override</argsstring>
+        <name>update</name>
+        <qualifiedname>legged::ControllerBase::update</qualifiedname>
+        <param>
+          <type>const rclcpp::Time &amp;</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>const rclcpp::Duration &amp;</type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/ControllerBase.h" line="23" column="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1ControllerBase_1a8247b704ed72a8a17835c96ad84ce9fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>controller_interface::CallbackReturn</type>
+        <definition>controller_interface::CallbackReturn legged::ControllerBase::on_init</definition>
+        <argsstring>() override</argsstring>
+        <name>on_init</name>
+        <qualifiedname>legged::ControllerBase::on_init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/ControllerBase.h" line="25" column="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1ControllerBase_1aa4812d229cc27f66ff70c71e3be90e3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>controller_interface::CallbackReturn</type>
+        <definition>controller_interface::CallbackReturn legged::ControllerBase::on_activate</definition>
+        <argsstring>(const rclcpp_lifecycle::State &amp;previous_state) override</argsstring>
+        <name>on_activate</name>
+        <qualifiedname>legged::ControllerBase::on_activate</qualifiedname>
+        <param>
+          <type>const rclcpp_lifecycle::State &amp;</type>
+          <declname>previous_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/ControllerBase.h" line="27" column="40"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classlegged_1_1ControllerBase_1a15a806e928457e80a2c0dc6df46dc471" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void legged::ControllerBase::setCommands</definition>
+        <argsstring>(vector_t commands, size_t offset)</argsstring>
+        <name>setCommands</name>
+        <qualifiedname>legged::ControllerBase::setCommands</qualifiedname>
+        <param>
+          <type>vector_t</type>
+          <declname>commands</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/ControllerBase.h" line="30" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1ControllerBase_1aa6195c3734a1ee856df161d1e31ae9f0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void legged::ControllerBase::setPositions</definition>
+        <argsstring>(const vector_t &amp;commands)</argsstring>
+        <name>setPositions</name>
+        <qualifiedname>legged::ControllerBase::setPositions</qualifiedname>
+        <param>
+          <type>const vector_t &amp;</type>
+          <declname>commands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/ControllerBase.h" line="31" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1ControllerBase_1a01ca37404084da0db7cf94183283ca77" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void legged::ControllerBase::setVelocities</definition>
+        <argsstring>(const vector_t &amp;commands)</argsstring>
+        <name>setVelocities</name>
+        <qualifiedname>legged::ControllerBase::setVelocities</qualifiedname>
+        <param>
+          <type>const vector_t &amp;</type>
+          <declname>commands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/ControllerBase.h" line="32" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1ControllerBase_1a79fe96932dc70d6bdbb41f5ee75e7146" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void legged::ControllerBase::setEfforts</definition>
+        <argsstring>(const vector_t &amp;commands)</argsstring>
+        <name>setEfforts</name>
+        <qualifiedname>legged::ControllerBase::setEfforts</qualifiedname>
+        <param>
+          <type>const vector_t &amp;</type>
+          <declname>commands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/ControllerBase.h" line="33" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1ControllerBase_1a874f12d14c2c80f4d5f088b444af3395" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void legged::ControllerBase::setStiffnesses</definition>
+        <argsstring>(const vector_t &amp;commands)</argsstring>
+        <name>setStiffnesses</name>
+        <qualifiedname>legged::ControllerBase::setStiffnesses</qualifiedname>
+        <param>
+          <type>const vector_t &amp;</type>
+          <declname>commands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/ControllerBase.h" line="34" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1ControllerBase_1a456609d4dfffe185d3f7823d1267bb5e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void legged::ControllerBase::setDampings</definition>
+        <argsstring>(const vector_t &amp;commands)</argsstring>
+        <name>setDampings</name>
+        <qualifiedname>legged::ControllerBase::setDampings</qualifiedname>
+        <param>
+          <type>const vector_t &amp;</type>
+          <declname>commands</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/ControllerBase.h" line="35" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classlegged_1_1ControllerBase_1af9a048d24be04d1adb414bfddea030a4" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>LeggedModel::SharedPtr</type>
+        <definition>LeggedModel::SharedPtr legged::ControllerBase::leggedModel</definition>
+        <argsstring>() const</argsstring>
+        <name>leggedModel</name>
+        <qualifiedname>legged::ControllerBase::leggedModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/legged_controllers/ControllerBase.h" line="37" column="27" bodyfile="include/legged_controllers/ControllerBase.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>controller_interface::ControllerInterface</label>
+      </node>
+      <node id="1">
+        <label>legged::ControllerBase</label>
+        <link refid="classlegged_1_1ControllerBase"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>legged::StandbyController</label>
+        <link refid="classlegged_1_1StandbyController"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>controller_interface::ControllerInterface</label>
+      </node>
+      <node id="1">
+        <label>legged::ControllerBase</label>
+        <link refid="classlegged_1_1ControllerBase"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/legged_controllers/ControllerBase.h" line="15" column="1" bodyfile="include/legged_controllers/ControllerBase.h" bodystart="15" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classlegged_1_1ControllerBase_1a76f81fec172140d9ab5cba17e1f96dd6" prot="public" virt="non-virtual"><scope>legged::ControllerBase</scope><name>command_interface_configuration</name></member>
+      <member refid="classlegged_1_1ControllerBase_1ae5c0d94626d31c7e9844492b3c48a7a9" prot="public" virt="non-virtual"><scope>legged::ControllerBase</scope><name>interfaceName_</name></member>
+      <member refid="classlegged_1_1ControllerBase_1af4994478dce65d7fce39a8e53ba341c5" prot="protected" virt="non-virtual"><scope>legged::ControllerBase</scope><name>jointNameInControl_</name></member>
+      <member refid="classlegged_1_1ControllerBase_1af9a048d24be04d1adb414bfddea030a4" prot="protected" virt="non-virtual"><scope>legged::ControllerBase</scope><name>leggedModel</name></member>
+      <member refid="classlegged_1_1ControllerBase_1a868cf4ce63d38495ae5a7830d67bef0c" prot="protected" virt="non-virtual"><scope>legged::ControllerBase</scope><name>leggedModel_</name></member>
+      <member refid="classlegged_1_1ControllerBase_1aa4812d229cc27f66ff70c71e3be90e3d" prot="public" virt="non-virtual"><scope>legged::ControllerBase</scope><name>on_activate</name></member>
+      <member refid="classlegged_1_1ControllerBase_1a8247b704ed72a8a17835c96ad84ce9fd" prot="public" virt="non-virtual"><scope>legged::ControllerBase</scope><name>on_init</name></member>
+      <member refid="classlegged_1_1ControllerBase_1a15a806e928457e80a2c0dc6df46dc471" prot="protected" virt="non-virtual"><scope>legged::ControllerBase</scope><name>setCommands</name></member>
+      <member refid="classlegged_1_1ControllerBase_1a456609d4dfffe185d3f7823d1267bb5e" prot="protected" virt="non-virtual"><scope>legged::ControllerBase</scope><name>setDampings</name></member>
+      <member refid="classlegged_1_1ControllerBase_1a79fe96932dc70d6bdbb41f5ee75e7146" prot="protected" virt="non-virtual"><scope>legged::ControllerBase</scope><name>setEfforts</name></member>
+      <member refid="classlegged_1_1ControllerBase_1aa6195c3734a1ee856df161d1e31ae9f0" prot="protected" virt="non-virtual"><scope>legged::ControllerBase</scope><name>setPositions</name></member>
+      <member refid="classlegged_1_1ControllerBase_1a874f12d14c2c80f4d5f088b444af3395" prot="protected" virt="non-virtual"><scope>legged::ControllerBase</scope><name>setStiffnesses</name></member>
+      <member refid="classlegged_1_1ControllerBase_1a01ca37404084da0db7cf94183283ca77" prot="protected" virt="non-virtual"><scope>legged::ControllerBase</scope><name>setVelocities</name></member>
+      <member refid="classlegged_1_1ControllerBase_1a1b7728d68c39bf5120aa0b21f04b3d8c" prot="public" virt="non-virtual"><scope>legged::ControllerBase</scope><name>state_interface_configuration</name></member>
+      <member refid="classlegged_1_1ControllerBase_1aeb9cae2df5d4f51918b35031aa8a3cc2" prot="public" virt="non-virtual"><scope>legged::ControllerBase</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

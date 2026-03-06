@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="classlegged_1_1ControllerBase" kind="class"><name>legged::ControllerBase</name>
+    <member refid="classlegged_1_1ControllerBase_1ae5c0d94626d31c7e9844492b3c48a7a9" kind="variable"><name>interfaceName_</name></member>
+    <member refid="classlegged_1_1ControllerBase_1af4994478dce65d7fce39a8e53ba341c5" kind="variable"><name>jointNameInControl_</name></member>
+    <member refid="classlegged_1_1ControllerBase_1a868cf4ce63d38495ae5a7830d67bef0c" kind="variable"><name>leggedModel_</name></member>
+    <member refid="classlegged_1_1ControllerBase_1a76f81fec172140d9ab5cba17e1f96dd6" kind="function"><name>command_interface_configuration</name></member>
+    <member refid="classlegged_1_1ControllerBase_1a1b7728d68c39bf5120aa0b21f04b3d8c" kind="function"><name>state_interface_configuration</name></member>
+    <member refid="classlegged_1_1ControllerBase_1aeb9cae2df5d4f51918b35031aa8a3cc2" kind="function"><name>update</name></member>
+    <member refid="classlegged_1_1ControllerBase_1a8247b704ed72a8a17835c96ad84ce9fd" kind="function"><name>on_init</name></member>
+    <member refid="classlegged_1_1ControllerBase_1aa4812d229cc27f66ff70c71e3be90e3d" kind="function"><name>on_activate</name></member>
+    <member refid="classlegged_1_1ControllerBase_1a15a806e928457e80a2c0dc6df46dc471" kind="function"><name>setCommands</name></member>
+    <member refid="classlegged_1_1ControllerBase_1aa6195c3734a1ee856df161d1e31ae9f0" kind="function"><name>setPositions</name></member>
+    <member refid="classlegged_1_1ControllerBase_1a01ca37404084da0db7cf94183283ca77" kind="function"><name>setVelocities</name></member>
+    <member refid="classlegged_1_1ControllerBase_1a79fe96932dc70d6bdbb41f5ee75e7146" kind="function"><name>setEfforts</name></member>
+    <member refid="classlegged_1_1ControllerBase_1a874f12d14c2c80f4d5f088b444af3395" kind="function"><name>setStiffnesses</name></member>
+    <member refid="classlegged_1_1ControllerBase_1a456609d4dfffe185d3f7823d1267bb5e" kind="function"><name>setDampings</name></member>
+    <member refid="classlegged_1_1ControllerBase_1af9a048d24be04d1adb414bfddea030a4" kind="function"><name>leggedModel</name></member>
+  </compound>
+  <compound refid="classlegged_1_1GmObserverRos2" kind="class"><name>legged::GmObserverRos2</name>
+    <member refid="classlegged_1_1GmObserverRos2_1a95a9ab177418060b4b17732dc3613ab9" kind="typedef"><name>SharedPtr</name></member>
+    <member refid="classlegged_1_1GmObserverRos2_1aca61f1d579fdc06daf844c636467c69b" kind="variable"><name>wrenchesPub_</name></member>
+    <member refid="classlegged_1_1GmObserverRos2_1acfb7c8991696f906ba4bd9f04d26b9af" kind="variable"><name>wrenchesPubRealtime_</name></member>
+    <member refid="classlegged_1_1GmObserverRos2_1a09aad653d9c8b1d59b551e9cd4682aad" kind="function"><name>GmObserverRos2</name></member>
+    <member refid="classlegged_1_1GmObserverRos2_1af439511e7e881563e35a36dc593cdcde" kind="function"><name>update</name></member>
+  </compound>
+  <compound refid="classsemantic__components_1_1JointSensors" kind="class"><name>semantic_components::JointSensors</name>
+    <member refid="classsemantic__components_1_1JointSensors_1af1c203b8954d566f50e9057602978357" kind="typedef"><name>SharedPtr</name></member>
+    <member refid="classsemantic__components_1_1JointSensors_1ab26e60bf0a1ee73add308302e3ac71a0" kind="variable"><name>numJoints_</name></member>
+    <member refid="classsemantic__components_1_1JointSensors_1a7cde3056a74a9153dd684fd0d8c65f7b" kind="variable"><name>model_</name></member>
+    <member refid="classsemantic__components_1_1JointSensors_1a91ff39d14a1b37cdb73ebb9e757020ba" kind="function"><name>JointSensors</name></member>
+    <member refid="classsemantic__components_1_1JointSensors_1aa970f111aafd9dfbbf78799e4f5d11f3" kind="function"><name>getPositions</name></member>
+    <member refid="classsemantic__components_1_1JointSensors_1a90bc54e595b0c0a9353a158059852e0e" kind="function"><name>getVelocities</name></member>
+    <member refid="classsemantic__components_1_1JointSensors_1aa9e11c6c6c1f54beb25ceec8edeb147b" kind="function"><name>getTorques</name></member>
+  </compound>
+  <compound refid="classlegged_1_1LinearKalmanFilterRos2" kind="class"><name>legged::LinearKalmanFilterRos2</name>
+    <member refid="classlegged_1_1LinearKalmanFilterRos2_1ac9f07fc06611389345eee9bfb97cd5d1" kind="typedef"><name>SharedPtr</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilterRos2_1a9fbf2f5fbdf73aa78cca953838300d50" kind="variable"><name>odomPublisher_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilterRos2_1a7ae250c0c7a20b42df1d32ab2a97a1d5" kind="variable"><name>odomPublisherRealtime_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilterRos2_1ac4ad43d06d946b25787203adc84eb282" kind="variable"><name>visualization_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilterRos2_1a755e4717f21757c543e01c5f96bc9eef" kind="function"><name>LinearKalmanFilterRos2</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilterRos2_1acb9864b6bae0e6018943303c2d5eeefd" kind="function"><name>update</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilterRos2_1a483cfe4bbb9e969fb38124054f6b4421" kind="function"><name>sendRos</name></member>
+  </compound>
+  <compound refid="classlegged_1_1LinearKalmanFilterVisualization" kind="class"><name>legged::LinearKalmanFilterVisualization</name>
+    <member refid="classlegged_1_1LinearKalmanFilterVisualization_1a74ee7e72588437078e3cce62bdcc2900" kind="typedef"><name>SharedPtr</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilterVisualization_1ac4421efa01dffd077db620ca8019c1f2" kind="variable"><name>frameId_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilterVisualization_1a9b40fd10c4c231046181efe6f5b9d5f3" kind="variable"><name>alpha_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilterVisualization_1a50bb89088ea83db4b0a5ecfa0eb5231e" kind="variable"><name>zmpScale_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilterVisualization_1aef243481c590fc0994e60221952c6749" kind="variable"><name>leggedModel_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilterVisualization_1a3e8a3397aeb74484db245fa3ed724c3a" kind="variable"><name>publisher_</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilterVisualization_1a67555435551c9fb4263852952bc1855a" kind="function"><name>LinearKalmanFilterVisualization</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilterVisualization_1aae1ff5463150f8a0206456849ae68049" kind="function"><name>~LinearKalmanFilterVisualization</name></member>
+    <member refid="classlegged_1_1LinearKalmanFilterVisualization_1af2db9e59075cfd32d473b03d0049d1c3" kind="function"><name>update</name></member>
+  </compound>
+  <compound refid="classlegged_1_1StandbyController" kind="class"><name>legged::StandbyController</name>
+    <member refid="classlegged_1_1StandbyController_1aca0f5a467c9f882a459d195636fb4dc4" kind="variable"><name>defaultPosition_</name></member>
+    <member refid="classlegged_1_1StandbyController_1a47774a839a92bd5870ec60a5b3cb6048" kind="variable"><name>kp_</name></member>
+    <member refid="classlegged_1_1StandbyController_1abae1c18f17cd444b9a56f2acb70dd725" kind="variable"><name>kd_</name></member>
+    <member refid="classlegged_1_1StandbyController_1a0f9078bfd133d496b7a30a010f2fbfa8" kind="variable"><name>totalTime_</name></member>
+    <member refid="classlegged_1_1StandbyController_1a7eee7af6c19e6141dcdd43a691087a1a" kind="variable"><name>maxError_</name></member>
+    <member refid="classlegged_1_1StandbyController_1ae6b3487dead208e80d25c78c38f44b8e" kind="variable"><name>startPosition_</name></member>
+    <member refid="classlegged_1_1StandbyController_1aab3ad22ce66f4e83098aa90421597632" kind="variable"><name>startTime_</name></member>
+    <member refid="classlegged_1_1StandbyController_1a4b0ec3ad7820db3c99771302e9bc2fb5" kind="variable"><name>firstUpdate_</name></member>
+    <member refid="classlegged_1_1StandbyController_1ae21ade3c27978502776a0b64ebbcd614" kind="function"><name>on_init</name></member>
+    <member refid="classlegged_1_1StandbyController_1a07bc09542afdb143fcac1eaa58cf245f" kind="function"><name>update</name></member>
+    <member refid="classlegged_1_1StandbyController_1a2e8c46ccf4be1c3943b205ec2f43bd82" kind="function"><name>on_configure</name></member>
+    <member refid="classlegged_1_1StandbyController_1a17a61db3bc478c02aed811fb0bd83840" kind="function"><name>on_activate</name></member>
+  </compound>
+  <compound refid="classlegged_1_1StateEstimator" kind="class"><name>legged::StateEstimator</name>
+    <member refid="classlegged_1_1StateEstimator_1a2dd9896e9ed5bc4805ff8ee1e93e4974" kind="typedef"><name>Odom</name></member>
+    <member refid="classlegged_1_1StateEstimator_1a9c74320355b79039877d18af2d7ffd9d" kind="variable"><name>tfTopic_</name></member>
+    <member refid="classlegged_1_1StateEstimator_1a0b56099552a1a76899d703c6b0be4a1e" kind="variable"><name>jointTopic_</name></member>
+    <member refid="classlegged_1_1StateEstimator_1a9c6b03bc3620d97a22879b4ee18078bc" kind="variable"><name>leggedModel_</name></member>
+    <member refid="classlegged_1_1StateEstimator_1a1c1b171d288bcfaa30886d6ba7b1fbd5" kind="variable"><name>leggedModelPtr_</name></member>
+    <member refid="classlegged_1_1StateEstimator_1a569d5babdd5be75eb54ef3c047b36ef3" kind="variable"><name>joints_</name></member>
+    <member refid="classlegged_1_1StateEstimator_1a3da97625e3960ed69b4f08bd77c9680c" kind="variable"><name>imu_</name></member>
+    <member refid="classlegged_1_1StateEstimator_1a2908ce9be9fc15b8408684eeac9c3b02" kind="variable"><name>gmObserver_</name></member>
+    <member refid="classlegged_1_1StateEstimator_1acf96391f18737b84927b6fc5de1f61ec" kind="variable"><name>linearKalmanFilter_</name></member>
+    <member refid="classlegged_1_1StateEstimator_1a25244fef1132f1779dbe8283291e07a6" kind="variable"><name>poseSubscriber_</name></member>
+    <member refid="classlegged_1_1StateEstimator_1a4bbba6ac69aa7df693fbca86fb4b8c90" kind="variable"><name>poseStamped_</name></member>
+    <member refid="classlegged_1_1StateEstimator_1a250915a50fa3106460fa18722217bdd1" kind="variable"><name>poseStampedLast_</name></member>
+    <member refid="classlegged_1_1StateEstimator_1a21f124b858b51a2e5c9bbe3718d7a452" kind="variable"><name>topicFrameIndex_</name></member>
+    <member refid="classlegged_1_1StateEstimator_1a8daacd082fa63ed15245289cc8f913e0" kind="variable"><name>worldToMap_</name></member>
+    <member refid="classlegged_1_1StateEstimator_1a115408418b9a50fe9b8210838fade12a" kind="variable"><name>odomTfPublisher_</name></member>
+    <member refid="classlegged_1_1StateEstimator_1a098a7147668e64cb84297acf4c2cb8df" kind="variable"><name>odomTfPublisherRealtime_</name></member>
+    <member refid="classlegged_1_1StateEstimator_1aac0e63eb8387bc12369b609a7f201d6d" kind="variable"><name>jointStatesPublisher_</name></member>
+    <member refid="classlegged_1_1StateEstimator_1ae2ee65e4b2d5ec3156a63472cfac39d3" kind="variable"><name>jointStatesPublisherRealtime_</name></member>
+    <member refid="classlegged_1_1StateEstimator_1a475ee0cd6f994ef2ee9c9f6d5f0c2b97" kind="function"><name>command_interface_configuration</name></member>
+    <member refid="classlegged_1_1StateEstimator_1ab355639863c4a18d83cf0e60a72195fa" kind="function"><name>state_interface_configuration</name></member>
+    <member refid="classlegged_1_1StateEstimator_1a32c1b261b6aa31cb0e1a108ee21e3e69" kind="function"><name>update_and_write_commands</name></member>
+    <member refid="classlegged_1_1StateEstimator_1a423065a5b3ab598b5c7b825ce39c11ef" kind="function"><name>on_init</name></member>
+    <member refid="classlegged_1_1StateEstimator_1ad9c230da133988e473fe3a39726b0c9e" kind="function"><name>on_configure</name></member>
+    <member refid="classlegged_1_1StateEstimator_1a39805282d2702e7434a9d5952c5e8013" kind="function"><name>on_activate</name></member>
+    <member refid="classlegged_1_1StateEstimator_1a792563bafe6c12ebabe5471a6b073352" kind="function"><name>on_deactivate</name></member>
+    <member refid="classlegged_1_1StateEstimator_1a40a8e21499d0a907ea9a72b81d1ced2c" kind="function"><name>on_export_state_interfaces</name></member>
+    <member refid="classlegged_1_1StateEstimator_1ab65b9f359a5836d2178e8f8a35dee115" kind="function"><name>update_reference_from_subscribers</name></member>
+  </compound>
+  <compound refid="namespacecontroller__interface" kind="namespace"><name>controller_interface</name>
+  </compound>
+  <compound refid="namespacelegged" kind="namespace"><name>legged</name>
+    <member refid="visualization__helpers_8h_1aedc28248df61a9e3c01bb5210e0e6512" kind="enum"><name>Color</name></member>
+    <member refid="visualization__helpers_8h_1aedc28248df61a9e3c01bb5210e0e6512a48d6215903dff56238e52e8891380c8f" kind="enumvalue"><name>blue</name></member>
+    <member refid="visualization__helpers_8h_1aedc28248df61a9e3c01bb5210e0e6512afe01d67a002dfa0f3ac084298142eccd" kind="enumvalue"><name>orange</name></member>
+    <member refid="visualization__helpers_8h_1aedc28248df61a9e3c01bb5210e0e6512ad487dd0b55dfcacdd920ccbdaeafa351" kind="enumvalue"><name>yellow</name></member>
+    <member refid="visualization__helpers_8h_1aedc28248df61a9e3c01bb5210e0e6512abb7aedfa61007447dd6efaf9f37641e3" kind="enumvalue"><name>purple</name></member>
+    <member refid="visualization__helpers_8h_1aedc28248df61a9e3c01bb5210e0e6512a9f27410725ab8cc8854a2769c7a516b8" kind="enumvalue"><name>green</name></member>
+    <member refid="visualization__helpers_8h_1aedc28248df61a9e3c01bb5210e0e6512abda9643ac6601722a28f238714274da4" kind="enumvalue"><name>red</name></member>
+    <member refid="visualization__helpers_8h_1aedc28248df61a9e3c01bb5210e0e6512a1ffd9e753c8054cc61456ac7fac1ac89" kind="enumvalue"><name>black</name></member>
+    <member refid="StateEstimator_8h_1ad1c56be35a48c34bc5aa700c324a9e20" kind="function"><name>yawQuaternion</name></member>
+    <member refid="visualization__helpers_8h_1a88fe8ae4a77b7550f6e0178995a58e8f" kind="function"><name>getRGB</name></member>
+    <member refid="visualization__helpers_8h_1a266bc720d7192fb6bb572487691a85ce" kind="function"><name>getColorFromId</name></member>
+    <member refid="visualization__helpers_8h_1a0ebaa758e4e58ae0e2aa1e2b7433be97" kind="function"><name>getColorMsg</name></member>
+    <member refid="visualization__helpers_8h_1a9d7b9ffb5bdd3027eff620cc2e1e3017" kind="function"><name>getColorMsgFromId</name></member>
+    <member refid="visualization__helpers_8h_1afc3ee56d2eedcf24ae1a1b11ee5eba71" kind="function"><name>getLineMsg</name></member>
+    <member refid="visualization__helpers_8h_1a6d9e1b8a32f48aa9012e53c47faecb38" kind="function"><name>getEllipseMsg</name></member>
+    <member refid="visualization__helpers_8h_1ac82beddc246bdab580d88402dceb448f" kind="function"><name>getPointMsg</name></member>
+    <member refid="visualization__helpers_8h_1af657af087c0c7a5030a858066b8264f4" kind="function"><name>getOrientationMsg</name></member>
+  </compound>
+  <compound refid="namespacesemantic__components" kind="namespace"><name>semantic_components</name>
+  </compound>
+  <compound refid="ControllerBase_8h" kind="file"><name>ControllerBase.h</name>
+  </compound>
+  <compound refid="GmObserverRos2_8h" kind="file"><name>GmObserverRos2.h</name>
+  </compound>
+  <compound refid="JointSensors_8h" kind="file"><name>JointSensors.h</name>
+  </compound>
+  <compound refid="LinearKalmanFilterRos2_8h" kind="file"><name>LinearKalmanFilterRos2.h</name>
+  </compound>
+  <compound refid="StandbyController_8h" kind="file"><name>StandbyController.h</name>
+  </compound>
+  <compound refid="StateEstimator_8h" kind="file"><name>StateEstimator.h</name>
+  </compound>
+  <compound refid="visualization__helpers_8h" kind="file"><name>visualization_helpers.h</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_4d707c3c2effa91f771b3b3991384e11" kind="dir"><name>include/legged_controllers</name>
+  </compound>
+</doxygenindex>
