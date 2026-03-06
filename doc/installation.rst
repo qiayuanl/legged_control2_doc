@@ -60,6 +60,22 @@ For Ubuntu 18.04, 20.04 and 24.04 users, especially for Unitree on-board compute
 We have pre-built Docker images for different specific robots. You can pull the image from Docker Hub. For more details, please refer to the TODO.
 
 
+Upgrading
+---------
+
+To upgrade the legged_control2 and all its dependencies to the latest version:
+
+    .. code-block:: bash
+
+        sudo apt-get update
+        sudo apt install --only-upgrade 'ros-jazzy-*'
+
+    .. note::
+
+        It is important to upgrade **all** ``ros-jazzy-*`` packages together. Upgrading only individual packages (e.g., ``ros-jazzy-legged-control-base``) may leave their dependencies at old versions, causing ABI/API incompatibilities.
+
+        Don't forget to rebuild your colcon workspace after upgrading.
+
 Build from Source
 ------------------
 
